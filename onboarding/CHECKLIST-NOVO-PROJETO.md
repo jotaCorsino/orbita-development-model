@@ -10,6 +10,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] identidade e ambientes do projeto compreendidos
 - [ ] processo de inicialização compreendido
 - [ ] contrato de trabalho para agentes lido
+- [ ] baseline de segurança e integridade lido
 
 ## B. Contexto e identidade inicial
 
@@ -68,9 +69,15 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 
 ## G. Segurança
 
+- [ ] riscos de segurança proporcionais ao projeto foram identificados
+- [ ] autenticação/autorização foram avaliadas quando aplicáveis
+- [ ] tratamento de entradas e dados sensíveis foi avaliado
 - [ ] nenhum segredo foi versionado
+- [ ] `.gitignore` e arquivos versionados foram revisados
 - [ ] dados reais só serão usados quando necessários e autorizados
 - [ ] dados fictícios/ambiente isolado foram considerados
+- [ ] dependências/configurações sensíveis foram consideradas
+- [ ] testes negativos ou de controles sensíveis foram definidos quando necessários
 - [ ] visibilidade pública ou privada do projeto foi avaliada
 - [ ] case sanitizado separado foi considerado quando aplicável
 
