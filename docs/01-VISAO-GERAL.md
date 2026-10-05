@@ -1,0 +1,37 @@
+# 01 — Visão geral
+
+## Definição
+
+O **Método ÓRBITA** é um modelo pessoal de organização do desenvolvimento de software assistido por IA com governança humana.
+
+Foi criado e é utilizado por **João Corsino**, em formação para atuar como Analista de Sistemas, como resposta a uma necessidade recorrente: aproveitar agentes de IA sem perder compreensão, rastreabilidade e autoridade sobre o processo de desenvolvimento.
+
+## Problema que o método procura resolver
+
+Agentes de IA reduzem o custo de produzir código, documentação e análises. Essa facilidade também pode incentivar alterações extensas sem planejamento suficiente, decisões não registradas, crescimento descontrolado de escopo e dificuldade para compreender por que determinada implementação existe.
+
+O ÓRBITA introduz uma estrutura explícita para esse trabalho.
+
+## Objetivo
+
+O objetivo não é maximizar a quantidade de código gerado. É criar um processo em que:
+
+- objetivos sejam compreendidos antes da implementação;
+- mudanças sejam divididas em unidades controláveis;
+- responsabilidades sejam claras;
+- implementação gere evidências;
+- decisões permaneçam rastreáveis;
+- a aprovação final continue humana;
+- o repositório represente o estado conhecido do projeto.
+
+## Escopo
+
+O modelo pode ser usado em projetos pessoais, acadêmicos, experimentais ou profissionais, desde que adaptado ao nível de risco e às políticas da organização.
+
+O ÓRBITA não substitui requisitos de segurança, revisão especializada, compliance, QA, gestão de projetos ou processos formais quando estes forem necessários.
+
+## Natureza do método
+
+O ÓRBITA não é apresentado como padrão de mercado ou metodologia universal.
+
+Ele é uma **sistematização pública da forma de trabalho de João Corsino**, construída a partir de experiência prática e destinada a continuar evoluindo.
