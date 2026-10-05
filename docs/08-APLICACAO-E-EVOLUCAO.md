@@ -13,18 +13,24 @@ Uma adoção mínima do ÓRBITA pode usar apenas:
 
 ## Organização recomendada de um projeto
 
-Na aplicação atual do método, um novo software é organizado com uma identidade comum:
+Na configuração de referência, um projeto novo é inicializado nesta ordem:
 
-1. definir o nome do projeto;
-2. criar um Projeto próprio no ChatGPT;
-3. criar um Projeto/workspace próprio no Codex;
-4. criar ou confirmar o repositório GitHub;
-5. clonar/criar a pasta local correspondente;
-6. manter os quatro ambientes associados pelo mesmo nome sempre que possível.
+1. definir o nome canônico;
+2. criar o Projeto de planejamento no ChatGPT;
+3. apresentar a ideia e os repositórios do ÓRBITA e do novo projeto;
+4. o agente de planejamento cria a fundação documental no repositório remoto;
+5. o responsável humano cria a pasta local e a abre no Codex;
+6. o agente de planejamento entrega a primeira tarefa de bootstrap;
+7. o Codex inicializa/valida Git e sincroniza a pasta com o remoto;
+8. somente depois começa a primeira implementação funcional.
 
-O repositório continua sendo a referência persistente. Os demais ambientes existem para reduzir troca de contexto e especializar o trabalho.
+Os quatro ambientes devem permanecer associados pelo mesmo nome sempre que possível.
+
+O repositório continua sendo a referência persistente. Os demais ambientes reduzem troca de contexto e especializam o trabalho.
 
 Essa organização é recomendada, não um requisito tecnológico universal. Se uma ferramenta mudar, o princípio permanece: **um projeto deve ter identidade clara e ambientes de trabalho inequivocamente associados ao mesmo repositório**.
+
+Ver [Inicialização de um novo projeto](11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 
 ## Níveis de formalidade
 
