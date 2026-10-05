@@ -30,10 +30,19 @@ Explique por que a tarefa existe e quais informações são necessárias para ex
 
 - regra ou limitação que deve ser respeitada.
 
+## Segurança e dados
+
+- superfícies sensíveis afetadas: [nenhuma / descrever];
+- dados sensíveis envolvidos: [nenhum / descrever];
+- autenticação/autorização afetadas: [não / sim — descrever];
+- validações de segurança esperadas: [descrever quando aplicável];
+- riscos conhecidos: [descrever ou indicar nenhum identificado].
+
 ## Critérios de aceite
 
 - [ ] critério verificável;
 - [ ] testes relevantes aprovados;
+- [ ] controles de segurança relevantes validados quando aplicável;
 - [ ] documentação atualizada quando necessário.
 
 ## Evidências esperadas
@@ -42,4 +51,5 @@ Explique por que a tarefa existe e quais informações são necessárias para ex
 - testes/build;
 - commit;
 - PR;
-- limitações encontradas.
+- limitações encontradas;
+- riscos de segurança identificados e verificações executadas, quando aplicável.
