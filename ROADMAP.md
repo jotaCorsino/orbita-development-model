@@ -29,7 +29,8 @@ Inclui:
 - papel da IA;
 - anti-padrões;
 - primeiros templates operacionais;
-- onboarding mínimo para adoção do método em novos projetos.
+- onboarding mínimo para adoção do método em novos projetos;
+- identidade e ambiente padronizados por projeto entre planejamento, implementação, working copy e GitHub.
 
 ### Gate
 
