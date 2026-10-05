@@ -38,10 +38,10 @@ Nem todo projeto exige a mesma burocracia. O ÓRBITA deve aumentar ou reduzir fo
 
 Cada software deve possuir uma identidade reconhecível e consistente nos ambientes em que é trabalhado.
 
-Na configuração atual, o padrão preferido é utilizar o mesmo nome para:
+Na configuração de referência, o padrão preferido é utilizar o mesmo nome para:
 
-- Projeto no ChatGPT;
-- Projeto/workspace no Codex;
+- contexto do agente de planejamento;
+- contexto do agente de implementação;
 - pasta local;
 - repositório GitHub.
 
@@ -68,3 +68,24 @@ releitura do estado atual
 ```
 
 O objetivo é impedir que a continuidade do projeto dependa de memória implícita de uma sessão específica.
+
+## Princípio transversal — Segurança proporcional ao risco
+
+Segurança deve ser considerada desde o planejamento até a homologação, e não apenas como revisão final.
+
+O nível de controle deve ser proporcional ao impacto, aos dados tratados, à exposição e à criticidade do projeto.
+
+Isso inclui, quando aplicável:
+
+- segurança do software;
+- segurança da informação;
+- proteção de segredos e dados sensíveis;
+- autenticação e autorização;
+- dependências;
+- exposição pública;
+- práticas seguras de Git/GitHub;
+- testes e verificações de segurança.
+
+Testes são evidência importante, mas não provam ausência de vulnerabilidades.
+
+Ver [12 — Segurança e integridade do projeto](12-SEGURANCA-E-INTEGRIDADE.md).
