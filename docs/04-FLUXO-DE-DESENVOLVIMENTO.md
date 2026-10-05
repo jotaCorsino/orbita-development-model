@@ -2,21 +2,25 @@
 
 ## Preparação de um novo projeto
 
-Antes do primeiro ciclo de implementação, um projeto novo deve ganhar uma identidade e um ambiente coerentes.
+Antes do primeiro ciclo normal de desenvolvimento, um projeto novo passa por uma etapa própria de inicialização.
 
-Fluxo recomendado:
+A ordem padrão é:
 
-1. definir um **nome canônico** para o projeto;
-2. criar um **Projeto próprio no ChatGPT** com esse nome;
-3. criar um **Projeto/workspace próprio no Codex** com o mesmo nome;
-4. criar ou confirmar o **repositório GitHub** correspondente;
-5. criar/clonar uma **pasta local com o mesmo nome**, vinculada ao remoto;
-6. registrar no repositório objetivo, contexto, regras e estado inicial;
-7. somente depois decompor e autorizar a primeira implementação.
+1. o responsável humano define um **nome canônico**;
+2. cria um **Projeto próprio no ChatGPT** com esse nome;
+3. inicia uma conversa de planejamento e apresenta a ideia do software;
+4. fornece o repositório do **Método ÓRBITA** e o **repositório remoto do novo projeto**;
+5. o agente de planejamento lê o método, compreende a ideia e inspeciona o repositório do projeto;
+6. o agente de planejamento cria no repositório remoto a **fundação documental inicial**: README, visão, planejamento, roadmap, regras, critérios e demais documentos proporcionais ao projeto;
+7. o agente confirma ao responsável humano o que foi criado;
+8. o responsável humano cria uma **pasta local** com o mesmo nome e abre essa pasta em um **Projeto/workspace no Codex**;
+9. o agente de planejamento gera a **primeira tarefa do Codex**, dedicada exclusivamente ao bootstrap local;
+10. o Codex inicializa Git se necessário, conecta a pasta ao repositório remoto, sincroniza a branch principal com segurança, valida documentação/remoto/HEAD e para;
+11. somente depois dessa cadeia estar vinculada começa a primeira tarefa funcional.
 
-Para projeto existente, o repositório já estabelecido normalmente define a identidade canônica. Os demais ambientes devem se alinhar a ele.
+A primeira tarefa do Codex em projeto novo, portanto, **não é implementar funcionalidade**. É estabelecer com segurança a working copy local do repositório já documentado.
 
-Esse bootstrap não precisa ser burocrático. Sua função é garantir que, desde o início, planejamento, implementação, arquivos locais e histórico persistente apontem para o mesmo software.
+A especificação completa está em [11 — Inicialização de um novo projeto](11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 
 ## Ciclo padrão
 
