@@ -68,3 +68,24 @@ O PR funciona como ponto de convergência entre:
 - histórico.
 
 Em projetos pequenos, nem toda mudança precisa do mesmo nível de formalidade, mas alterações relevantes devem permanecer rastreáveis.
+
+## Segurança do repositório
+
+Git/GitHub também fazem parte da superfície de segurança do projeto.
+
+Boas práticas esperadas, conforme a criticidade:
+
+- manter `.gitignore` adequado à tecnologia;
+- revisar arquivos staged e diff antes do commit;
+- não versionar senhas, tokens, chaves, bancos, dumps ou artefatos sensíveis;
+- trabalhar com branches e Pull Requests para mudanças relevantes;
+- evitar force push, reset destrutivo e reescrita de histórico sem autorização;
+- proteger a branch principal quando apropriado;
+- restringir permissões ao necessário;
+- revisar dependências, workflows e automações de CI;
+- habilitar análise de segredos/dependências quando disponível e adequada ao projeto;
+- revisar exposição antes de tornar um repositório público.
+
+Se um segredo real for encontrado no histórico, removê-lo do arquivo atual não é suficiente. O incidente deve ser reportado e a credencial deve ser revogada/rotacionada quando aplicável.
+
+Ver [Segurança e integridade](12-SEGURANCA-E-INTEGRIDADE.md).
