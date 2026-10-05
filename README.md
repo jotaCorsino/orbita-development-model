@@ -8,10 +8,10 @@
 
 Idealizado e utilizado por **João Corsino**, em formação para atuar como **Analista de Sistemas**.
 
-![Status](https://img.shields.io/badge/status-em%20documenta%C3%A7%C3%A3o-blue)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-v0.1%20candidate-blue)
+![Status](https://img.shields.io/badge/status-aguardando%20homologa%C3%A7%C3%A3o-orange)
 ![Idioma](https://img.shields.io/badge/idioma-PT--BR-green)
 ![Modelo](https://img.shields.io/badge/modelo-Human--in--the--Loop-purple)
-![GitHub](https://img.shields.io/badge/GitHub-fonte%20can%C3%B4nica-black)
 
 </div>
 
@@ -87,6 +87,26 @@ flowchart LR
 7. A documentação acompanha a evolução do projeto.
 8. A `main` deve representar um estado conhecido e aprovado.
 
+## O que o ÓRBITA evita deliberadamente?
+
+O método foi desenhado para reduzir alguns padrões que considero perigosos no desenvolvimento assistido por IA:
+
+- entregar um problema amplo a um agente e aceitar uma grande alteração sem decomposição;
+- permitir que o mesmo agente defina, implemente e aprove sozinho a solução;
+- tratar uma conversa como única fonte de documentação;
+- avançar para novas funcionalidades sem homologar a etapa anterior;
+- confundir “o código rodou” com “a necessidade foi atendida”;
+- permitir expansão silenciosa de escopo;
+- perder a relação entre requisito, implementação, evidência e decisão.
+
+A discussão completa está em [Anti-padrões](docs/09-ANTI-PADROES.md).
+
+## Evidência prática
+
+O ÓRBITA não nasceu apenas como conceito. Seus princípios vêm sendo aplicados em projetos reais.
+
+O primeiro estudo de caso documentado é o projeto **[Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md)**, no qual o desenvolvimento foi dividido em etapas como prova de conceito, persistência, scheduler, segurança contra duplicidade, processamento em lote e interface administrativa. Cada etapa avançou por implementação, validação, evidências e homologação antes da próxima.
+
 ## Documentação
 
 | Documento | Conteúdo |
@@ -99,8 +119,18 @@ flowchart LR
 | [Git e GitHub](docs/06-GIT-E-GITHUB.md) | Uso do repositório como fonte canônica |
 | [IA no método](docs/07-IA-NO-METODO.md) | Como os agentes são usados sem retirar controle humano |
 | [Aplicação e evolução](docs/08-APLICACAO-E-EVOLUCAO.md) | Como adotar, adaptar e evoluir o modelo |
+| [Anti-padrões](docs/09-ANTI-PADROES.md) | Comportamentos que o método procura evitar |
+| [Roadmap](ROADMAP.md) | Maturidade e próximas evoluções do próprio método |
 
-Também existem [templates](templates/) para tarefas, prompts de implementação e homologação.
+Também existem [templates](templates/) para tarefas, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
+
+## Estado atual do método
+
+Esta documentação representa a **candidata à versão v0.1**.
+
+A fundação está em **AGUARDANDO_HOMOLOGACAO**. O objetivo desta fase é estabilizar definição, princípios, papéis, fluxo, governança e exemplos antes de ampliar o método com novos templates e estudos de caso.
+
+Consulte o [roadmap](ROADMAP.md) para acompanhar a evolução.
 
 ## Para quem este repositório existe?
 
