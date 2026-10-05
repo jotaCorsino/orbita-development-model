@@ -39,11 +39,14 @@ Responsável por:
 
 - entender a necessidade;
 - levantar contexto;
+- estruturar e persistir a fundação documental inicial no repositório remoto quando autorizado;
+- criar README, planejamento, roadmap e regras proporcionais ao projeto;
 - decompor trabalho;
 - propor arquitetura;
 - registrar decisões;
 - escrever critérios de aceite;
 - preparar tarefas;
+- em projeto novo, gerar primeiro a tarefa de bootstrap local antes de qualquer implementação funcional;
 - interpretar evidências;
 - apoiar revisão e homologação.
 
