@@ -28,7 +28,8 @@ Inclui:
 - uso de Git/GitHub;
 - papel da IA;
 - anti-padrões;
-- primeiros templates operacionais.
+- primeiros templates operacionais;
+- onboarding mínimo para adoção do método em novos projetos.
 
 ### Gate
 
@@ -48,6 +49,8 @@ Primeiro estudo de caso:
 - [Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md).
 
 ## v0.3 — Kit operacional
+
+O onboarding mínimo já existe desde a fundação. Esta etapa deverá ampliar o kit com artefatos operacionais mais especializados.
 
 Itens candidatos:
 

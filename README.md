@@ -101,6 +101,16 @@ O método foi desenhado para reduzir alguns padrões que considero perigosos no 
 
 A discussão completa está em [Anti-padrões](docs/09-ANTI-PADROES.md).
 
+## Iniciar um novo projeto com o ÓRBITA
+
+Para aplicar o método em um novo software sem precisar reexplicar todo o processo a cada conversa, existe uma área permanente de **onboarding para agentes de IA**:
+
+**[Começar pelo onboarding](onboarding/README.md)**
+
+Ela define a ordem de leitura, o contrato de trabalho esperado, o checklist de início de projeto e um prompt reutilizável para apresentar o Método ÓRBITA em um novo chat.
+
+O objetivo é permitir que um novo agente compreenda **como trabalhar** antes de receber a descrição do software e o repositório específico que será desenvolvido.
+
 ## Evidência prática
 
 O ÓRBITA não nasceu apenas como conceito. Seus princípios vêm sendo aplicados em projetos reais.
@@ -120,6 +130,7 @@ O primeiro estudo de caso documentado é o projeto **[Tickets Recorrentes HESK](
 | [IA no método](docs/07-IA-NO-METODO.md) | Como os agentes são usados sem retirar controle humano |
 | [Aplicação e evolução](docs/08-APLICACAO-E-EVOLUCAO.md) | Como adotar, adaptar e evoluir o modelo |
 | [Anti-padrões](docs/09-ANTI-PADROES.md) | Comportamentos que o método procura evitar |
+| [Onboarding para novos projetos](onboarding/README.md) | Entrada permanente para novos agentes e novos projetos |
 | [Roadmap](ROADMAP.md) | Maturidade e próximas evoluções do próprio método |
 
 Também existem [templates](templates/) para tarefas, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
