@@ -21,7 +21,27 @@ Exemplos:
 - requisitos compreendidos antes de implementar;
 - testes aprovados antes do PR;
 - revisão antes do merge;
-- validação funcional antes da release.
+- validação funcional antes da release;
+- riscos de segurança relevantes tratados, aceitos conscientemente ou registrados antes do avanço.
+
+## Segurança no gate
+
+Uma tarefa não deve ser homologada apenas porque compilou ou porque os testes funcionais passaram.
+
+Quando a mudança tocar superfícies sensíveis, o gate deve considerar evidências proporcionais ao risco, como:
+
+- testes negativos;
+- autenticação/autorização;
+- análise de segredos;
+- dependências;
+- permissões;
+- exposição de dados;
+- configuração;
+- riscos ainda não tratados.
+
+Um risco crítico descoberto durante a tarefa deve ser comunicado antes do avanço.
+
+Ver [Segurança e integridade](12-SEGURANCA-E-INTEGRIDADE.md).
 
 ## Evidência antes de confiança
 
@@ -38,7 +58,8 @@ Dependendo da tarefa, evidências podem incluir:
 - commit SHA;
 - branch;
 - Pull Request;
-- limitações ou pontos não validados.
+- limitações ou pontos não validados;
+- riscos de segurança relevantes e verificações executadas, quando aplicável.
 
 ## Homologação
 
