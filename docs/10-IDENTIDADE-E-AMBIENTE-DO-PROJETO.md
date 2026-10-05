@@ -12,7 +12,7 @@ Por isso, o método adota o conceito de **identidade única do projeto**.
 
 > **Um projeto deve ser reconhecível como o mesmo projeto em todos os ambientes usados para trabalhá-lo.**
 
-Na configuração atual de João Corsino, o padrão preferido é:
+Na configuração de referência, o padrão preferido é:
 
 ```text
 NOME_DO_PROJETO
@@ -124,12 +124,12 @@ No início de um projeto deve existir um nome canônico.
 Exemplo:
 
 ```text
-Projeto: tickets-recorrentes-hesk
+Projeto: exemplo-projeto
 
-ChatGPT: tickets-recorrentes-hesk
-Codex: tickets-recorrentes-hesk
-Pasta local: tickets-recorrentes-hesk/
-GitHub: jotaCorsino/tickets-recorrentes-hesk
+ChatGPT: exemplo-projeto
+Codex: exemplo-projeto
+Pasta local: exemplo-projeto/
+GitHub: organizacao/exemplo-projeto
 ```
 
 Para projetos com nome comercial mais legível no ChatGPT/Codex, pequenas diferenças são aceitáveis, desde que não criem ambiguidade.
@@ -137,11 +137,27 @@ Para projetos com nome comercial mais legível no ChatGPT/Codex, pequenas difere
 Exemplo aceitável:
 
 ```text
-Nome humano: Tickets Recorrentes HESK
-Slug técnico: tickets-recorrentes-hesk
+Nome humano: Exemplo Projeto
+Slug técnico: exemplo-projeto
 ```
 
 O importante é existir uma associação inequívoca.
+
+## Ordem de vinculação em projeto novo
+
+Em projeto novo, os quatro espaços não surgem todos ao mesmo tempo.
+
+A ordem padrão é:
+
+1. contexto de planejamento criado no ChatGPT;
+2. repositório remoto do projeto fornecido ao agente de planejamento;
+3. fundação documental criada no repositório remoto;
+4. pasta local criada pelo responsável humano;
+5. pasta aberta no Codex;
+6. primeira tarefa do Codex inicializa/valida Git e sincroniza a pasta com o remoto;
+7. somente então começa a primeira implementação funcional.
+
+Essa sequência é detalhada em [11 — Inicialização de um novo projeto](11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 
 ## Regra para projetos existentes
 
