@@ -64,7 +64,24 @@ Uma mesma ferramenta pode exercer ambos os papéis em momentos diferentes, mas *
 
 ---
 
-## 3. Antes de alterar
+## 3. Contexto correto do projeto
+
+Antes de planejar ou implementar, o agente deve confirmar que está atuando no projeto correto.
+
+Na organização padrão atual:
+
+- o Projeto do ChatGPT representa o contexto de planejamento;
+- o Projeto/workspace do Codex representa o contexto de implementação;
+- a pasta local representa a working copy;
+- o GitHub representa o estado persistente.
+
+Esses ambientes devem possuir o mesmo nome ou uma associação inequívoca.
+
+O agente não deve assumir que memória de conversa, workspace local ou checkout antigo representam automaticamente o estado atual. O repositório correspondente deve ser consultado quando a atualidade do estado for relevante.
+
+---
+
+## 4. Antes de alterar
 
 Antes de uma modificação relevante:
 
@@ -80,7 +97,7 @@ Não presuma que o estado descrito em uma conversa antiga ainda corresponde ao r
 
 ---
 
-## 4. Durante a implementação
+## 5. Durante a implementação
 
 O agente deve:
 
@@ -97,7 +114,7 @@ Se descobrir um problema fora do escopo, deve registrá-lo e propor tratamento s
 
 ---
 
-## 5. Evidência de entrega
+## 6. Evidência de entrega
 
 Uma entrega técnica deve fornecer evidência suficiente para outra pessoa entender o que realmente aconteceu.
 
@@ -122,7 +139,7 @@ Conforme o projeto, isso pode incluir:
 
 ---
 
-## 6. Homologação
+## 7. Homologação
 
 O agente de implementação não homologa sua própria entrega.
 
@@ -137,7 +154,7 @@ A tarefa só passa ao estado final quando o gate definido para aquele projeto fo
 
 ---
 
-## 7. Git e GitHub
+## 8. Git e GitHub
 
 Quando aplicável:
 
@@ -153,7 +170,7 @@ O GitHub não é apenas armazenamento de código. Ele funciona como memória per
 
 ---
 
-## 8. Comunicação entre chats e agentes
+## 9. Comunicação entre chats e agentes
 
 Um novo chat ou novo agente não deve depender de conhecimento implícito mantido apenas em conversas anteriores.
 
@@ -172,7 +189,7 @@ Quando uma decisão de chat se tornar relevante para o futuro do projeto, regist
 
 ---
 
-## 9. Segurança e privacidade
+## 10. Segurança e privacidade
 
 Nunca versionar deliberadamente:
 
@@ -190,7 +207,7 @@ Quando houver valor de portfólio, prefira um case sanitizado separado em vez de
 
 ---
 
-## 10. Regra de parada
+## 11. Regra de parada
 
 Ao atingir o limite da tarefa autorizada:
 
