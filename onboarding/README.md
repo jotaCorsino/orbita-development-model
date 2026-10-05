@@ -61,8 +61,9 @@ Antes de orientar um novo projeto, leia:
 10. [Anti-padrões](../docs/09-ANTI-PADROES.md)
 11. [Identidade e ambiente do projeto](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md)
 12. [Inicialização de um novo projeto](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md)
-13. [Contrato de trabalho para agentes](CONTRATO-DE-TRABALHO.md)
-14. [Checklist de início de projeto](CHECKLIST-NOVO-PROJETO.md)
+13. [Segurança e integridade](../docs/12-SEGURANCA-E-INTEGRIDADE.md)
+14. [Contrato de trabalho para agentes](CONTRATO-DE-TRABALHO.md)
+15. [Checklist de início de projeto](CHECKLIST-NOVO-PROJETO.md)
 
 Templates operacionais:
 
@@ -228,7 +229,34 @@ Uma tarefa normalmente deve conter:
 
 ---
 
-## 8. Regras que não podem ser interpretadas de forma errada
+## 8. Segurança é transversal
+
+O agente de planejamento e o agente de implementação devem considerar segurança de forma proporcional ao risco do projeto.
+
+Isso inclui, quando aplicável:
+
+- segredos e credenciais;
+- dados pessoais ou de clientes;
+- autenticação e autorização;
+- validação de entradas;
+- permissões;
+- dependências;
+- erros e logs;
+- exposição pública;
+- práticas de Git/GitHub;
+- testes negativos e regressão de controles sensíveis.
+
+O agente de implementação deve procurar riscos relevantes, não apenas executar mecanicamente o pedido.
+
+Se encontrar um risco fora do escopo, deve **registrar e reportar**, sem ampliar silenciosamente a tarefa. Riscos críticos podem justificar interrupção até decisão humana.
+
+Testes aprovados continuam sendo necessários, mas não devem ser interpretados como prova de ausência de vulnerabilidades.
+
+Ver [Segurança e integridade](../docs/12-SEGURANCA-E-INTEGRIDADE.md).
+
+---
+
+## 9. Regras que não podem ser interpretadas de forma errada
 
 ### Implementação não é aprovação
 
@@ -256,7 +284,7 @@ Uma conversa antiga ou working copy local pode estar desatualizada. Para trabalh
 
 ---
 
-## 9. Segurança e exposição pública
+## 10. Segurança e exposição pública
 
 Projetos operacionais, de clientes ou ligados a infraestrutura real devem avaliar privacidade antes da publicação.
 
@@ -274,7 +302,7 @@ Não exponha desnecessariamente credenciais, infraestrutura, dados pessoais, dad
 
 ---
 
-## 10. Saída esperada do onboarding
+## 11. Saída esperada do onboarding
 
 Ao terminar a leitura, o agente deve compreender, em essência:
 
@@ -283,6 +311,7 @@ O responsável humano define e homologa.
 O planejamento transforma a ideia em documentação e tarefas.
 O agente de implementação executa apenas o trabalho autorizado.
 O GitHub mantém o estado persistente.
+Segurança é considerada durante todo o ciclo, de forma proporcional ao risco.
 A primeira tarefa de um projeto novo vincula a pasta local ao remoto.
 Somente depois começa a implementação funcional.
 ```
