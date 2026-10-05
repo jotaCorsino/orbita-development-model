@@ -16,7 +16,7 @@ Abaixo está um modelo de mensagem para iniciar um novo projeto em outro chat.
 >
 > Neste momento, **não implemente nada e não faça alterações em nenhum repositório**. Primeiro compreenda como eu separo decisão humana, planejamento, implementação, Git/GitHub, evidências e homologação.
 >
-> Depois da leitura, apresente uma confirmação curta do que entendeu sobre a forma como vamos trabalhar. Em seguida eu vou explicar:
+> Depois da leitura, apresente uma confirmação curta do que entendeu sobre a forma como vamos trabalhar, incluindo o padrão de manter o mesmo projeto organizado em ChatGPT, Codex, pasta local e GitHub. Em seguida eu vou explicar:
 >
 > - o que é o software;
 > - o problema que ele deve resolver;
@@ -24,13 +24,13 @@ Abaixo está um modelo de mensagem para iniciar um novo projeto em outro chat.
 > - o estado atual, se já existir;
 > - e o repositório remoto específico onde o projeto será documentado e desenvolvido.
 >
-> A partir daí, utilizaremos o Método ÓRBITA de forma proporcional à complexidade e ao risco deste projeto.
+> A partir daí, utilizaremos o Método ÓRBITA de forma proporcional à complexidade e ao risco deste projeto. Quando definirmos o nome do projeto, ele deve ser usado de forma consistente no Projeto do ChatGPT, Projeto/workspace do Codex, pasta local e repositório GitHub sempre que possível.
 
 ---
 
 ## Versão curta
 
-> Vamos iniciar um novo projeto usando o **Método ÓRBITA**. Leia primeiro **[LINK_DO_REPOSITORIO_ORBITA]**, começando por `onboarding/`, e familiarize-se com as regras, papéis e fluxo de trabalho. Não implemente nem altere nada ainda. Depois confirme resumidamente como entendeu o processo e aguarde minha descrição do software e o repositório específico do projeto.
+> Vamos iniciar um novo projeto usando o **Método ÓRBITA**. Leia primeiro **[LINK_DO_REPOSITORIO_ORBITA]**, começando por `onboarding/`, e familiarize-se com as regras, papéis, fluxo de trabalho e padrão de identidade do projeto entre ChatGPT, Codex, pasta local e GitHub. Não implemente nem altere nada ainda. Depois confirme resumidamente como entendeu o processo e aguarde minha descrição do software e o repositório específico do projeto.
 
 ---
 
