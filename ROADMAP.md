@@ -31,7 +31,8 @@ Inclui:
 - primeiros templates operacionais;
 - onboarding mínimo para adoção do método em novos projetos;
 - identidade e ambiente padronizados por projeto entre planejamento, implementação, working copy e GitHub;
-- protocolo de inicialização de novo projeto: fundação documental remota → bootstrap local → primeira funcionalidade.
+- protocolo de inicialização de novo projeto: fundação documental remota → bootstrap local → primeira funcionalidade;
+- baseline transversal de segurança de software, informação e Git/GitHub.
 
 ### Gate
 
