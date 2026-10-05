@@ -38,6 +38,7 @@ Esses espaços não competem entre si. Eles se complementam.
 A eficiência do modelo não vem de entregar tudo para a IA. Ela vem de **reduzir ambiguidade**: cada agente sabe qual é o seu papel, cada projeto possui um lugar definido, as mudanças são pequenas o suficiente para serem acompanhadas e o conhecimento importante volta para o repositório em vez de desaparecer dentro de uma conversa.
 
 É isso que o ÓRBITA procura preservar: **usar a velocidade da IA sem perder organização, entendimento e controle humano.**
+
 ## O que é o Método ÓRBITA?
 
 O **Método ÓRBITA** é a forma particular que desenvolvi para manter projetos de software assistidos por Inteligência Artificial **organizados, rastreáveis e sob governança humana**.
@@ -76,6 +77,42 @@ Essa padronização reduz trocas de contexto, nomes divergentes, uso acidental d
 O GitHub continua sendo a fonte persistente da verdade. Os projetos do ChatGPT e do Codex são contextos de trabalho; a pasta local é a working copy sincronizada com o repositório remoto.
 
 A especificação completa está em [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
+
+## Como um novo projeto nasce no ÓRBITA
+
+A organização começa **antes da primeira linha de código**.
+
+O responsável humano cria o Projeto no ChatGPT, inicia a conversa, apresenta a ideia e informa dois repositórios: o do Método ÓRBITA e o repositório remoto reservado ao novo software.
+
+A partir daí, o fluxo inicial é:
+
+```text
+Projeto no ChatGPT
+        ↓
+ideia + Método ÓRBITA + repositório do projeto
+        ↓
+ChatGPT entende o método e estrutura o software
+        ↓
+README + planejamento + documentação inicial no GitHub
+        ↓
+ChatGPT confirma a fundação
+        ↓
+primeira tarefa: bootstrap do Codex
+        ↓
+pasta local criada pelo responsável humano
+        ↓
+Codex inicializa/valida Git e sincroniza com o remoto
+        ↓
+ChatGPT + Codex + pasta local + GitHub
+estão vinculados ao mesmo projeto
+        ↓
+começa a primeira tarefa funcional
+```
+
+Esse detalhe é importante: **o ChatGPT funda e documenta o projeto antes da implementação; o Codex primeiro conecta a working copy local ao projeto já documentado; só depois começa o desenvolvimento funcional.**
+
+A especificação está em [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md).
+
 ## Os quatro elementos da órbita
 
 | Elemento | Responsabilidade principal |
@@ -85,7 +122,7 @@ A especificação completa está em [Identidade e ambiente do projeto](docs/10-I
 | **Agente de implementação** | Altera código, executa testes, builds e produz evidências técnicas |
 | **Git/GitHub** | Mantém o estado canônico, histórico, documentação e rastreabilidade |
 
-Na minha aplicação atual, esses papéis são normalmente exercidos por **João Corsino + ChatGPT + Codex + GitHub**. O modelo, porém, é conceitualmente independente das ferramentas específicas.
+Na configuração de referência, esses papéis correspondem a **responsável humano + ChatGPT + Codex + GitHub**. O modelo, porém, é conceitualmente independente das ferramentas específicas.
 
 ## O ciclo ÓRBITA
 
@@ -173,9 +210,10 @@ O primeiro estudo de caso documentado é o projeto **[Tickets Recorrentes HESK](
 | [Anti-padrões](docs/09-ANTI-PADROES.md) | Comportamentos que o método procura evitar |
 | [Onboarding para novos projetos](onboarding/README.md) | Entrada permanente para novos agentes e novos projetos |
 | [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md) | Organização do mesmo projeto entre ChatGPT, Codex, pasta local e GitHub |
+| [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) | Fundação documental remota e primeiro bootstrap local com Codex |
 | [Roadmap](ROADMAP.md) | Maturidade e próximas evoluções do próprio método |
 
-Também existem [templates](templates/) para tarefas, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
+Também existem [templates](templates/) para tarefas, bootstrap local, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
 
 ## Estado atual do método
 
