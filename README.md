@@ -130,6 +130,16 @@ A especificação está em [Inicialização de um novo projeto](docs/11-INICIALI
 
 Na configuração pessoal do autor, esses papéis correspondem a **responsável humano + ChatGPT + Codex + GitHub**. Essa combinação é apenas um exemplo de implementação; o método é independente das ferramentas específicas.
 
+## Segurança como responsabilidade transversal
+
+No ÓRBITA, segurança não é uma revisão deixada para o final. Planejamento, implementação, testes, evidências e homologação devem considerar os riscos proporcionais ao projeto.
+
+Isso inclui segurança do software, proteção de informações, uso adequado de dados, tratamento de segredos, dependências e boas práticas de Git/GitHub.
+
+Testes continuam sendo parte fundamental do método, mas **testes aprovados não significam ausência de vulnerabilidades**. Projetos de maior risco podem exigir validações negativas, revisão de código, análise de dependências, verificação de segredos ou revisão especializada.
+
+A referência completa está em [Segurança e integridade do projeto](docs/12-SEGURANCA-E-INTEGRIDADE.md).
+
 ## O ciclo ÓRBITA
 
 ```mermaid
@@ -170,6 +180,7 @@ flowchart LR
 6. Código executado não é automaticamente código homologado.
 7. A documentação acompanha a evolução do projeto.
 8. A `main` deve representar um estado conhecido e aprovado.
+9. Segurança deve ser considerada de forma proporcional ao risco durante todo o ciclo.
 
 ## O que o ÓRBITA evita deliberadamente?
 
@@ -217,6 +228,7 @@ O primeiro estudo de caso documentado é o projeto **[Tickets Recorrentes HESK](
 | [Onboarding para novos projetos](onboarding/README.md) | Entrada permanente para novos agentes e novos projetos |
 | [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md) | Organização do mesmo projeto entre ChatGPT, Codex, pasta local e GitHub |
 | [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) | Fundação documental remota e primeiro bootstrap local do agente de implementação |
+| [Segurança e integridade](docs/12-SEGURANCA-E-INTEGRIDADE.md) | Baseline transversal de segurança de software, informação e repositório |
 | [Roadmap](ROADMAP.md) | Maturidade e próximas evoluções do próprio método |
 
 Também existem [templates](templates/) para tarefas, bootstrap local, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
