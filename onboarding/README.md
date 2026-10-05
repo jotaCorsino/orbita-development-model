@@ -67,8 +67,8 @@ Antes de orientar um novo projeto, leia:
 Templates operacionais:
 
 - [Template de tarefa](../templates/TASK-TEMPLATE.md)
-- [Template de implementação](../templates/CODEX-PROMPT-TEMPLATE.md)
-- [Template de bootstrap local](../templates/BOOTSTRAP-AGENTE-PROMPT-TEMPLATE.md)
+- [Template de implementação](../templates/IMPLEMENTACAO-PROMPT-TEMPLATE.md)
+- [Template de bootstrap local](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md)
 - [Template de homologação](../templates/HOMOLOGACAO-TEMPLATE.md)
 
 ---
@@ -184,7 +184,7 @@ Ele **não deve implementar funcionalidades nessa primeira tarefa**.
 
 Se encontrar conteúdo local conflitante, remoto incorreto, histórico divergente ou necessidade de ação destrutiva, deve parar e relatar.
 
-Use o [template de bootstrap](../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md).
+Use o [template de bootstrap](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md).
 
 ---
 

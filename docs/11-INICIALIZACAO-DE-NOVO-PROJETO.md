@@ -116,7 +116,7 @@ Essa tarefa não deve implementar funcionalidades do produto.
 
 Se a pasta já possuir conteúdo, histórico Git ou remoto diferente, o agente de implementação deve inspecionar e reportar a situação antes de qualquer ação destrutiva.
 
-Um template específico está em [../templates/BOOTSTRAP-AGENTE-PROMPT-TEMPLATE.md](../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md).
+Um template específico está em [../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md).
 
 ## Estado ao final do bootstrap
 

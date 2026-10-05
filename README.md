@@ -216,7 +216,7 @@ O primeiro estudo de caso documentado é o projeto **[Tickets Recorrentes HESK](
 | [Anti-padrões](docs/09-ANTI-PADROES.md) | Comportamentos que o método procura evitar |
 | [Onboarding para novos projetos](onboarding/README.md) | Entrada permanente para novos agentes e novos projetos |
 | [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md) | Organização do mesmo projeto entre ChatGPT, Codex, pasta local e GitHub |
-| [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) | Fundação documental remota e primeiro bootstrap local com Codex |
+| [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) | Fundação documental remota e primeiro bootstrap local do agente de implementação |
 | [Roadmap](ROADMAP.md) | Maturidade e próximas evoluções do próprio método |
 
 Também existem [templates](templates/) para tarefas, bootstrap local, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
