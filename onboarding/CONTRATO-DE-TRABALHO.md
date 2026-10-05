@@ -58,6 +58,8 @@ Responsável por:
 - executar somente a tarefa autorizada;
 - alterar código e arquivos;
 - executar testes e builds;
+- considerar riscos de segurança proporcionais ao escopo;
+- executar verificações de segurança relevantes;
 - registrar evidências;
 - manter a árvore de trabalho controlada;
 - criar commits/branches/PRs quando o fluxo exigir;
@@ -73,8 +75,8 @@ Antes de planejar ou implementar, o agente deve confirmar que está atuando no p
 
 Na organização padrão atual:
 
-- o Projeto do ChatGPT representa o contexto de planejamento;
-- o Projeto/workspace do Codex representa o contexto de implementação;
+- o contexto do agente de planejamento representa o espaço de análise e coordenação;
+- o contexto do agente de implementação representa o espaço de execução técnica;
 - a pasta local representa a working copy;
 - o GitHub representa o estado persistente.
 
@@ -111,9 +113,13 @@ O agente deve:
 - não esconder limitações;
 - registrar decisões que alterem arquitetura ou contrato;
 - usar dados fictícios/isolados quando testes reais puderem causar impacto indevido;
-- não introduzir segredos no Git.
+- não introduzir segredos no Git;
+- validar entradas, permissões, autenticação/autorização e tratamento de dados quando aplicável;
+- evitar exposição sensível em erros e logs;
+- revisar dependências/configurações relevantes;
+- reportar riscos de segurança encontrados.
 
-Se descobrir um problema fora do escopo, deve registrá-lo e propor tratamento separado.
+Se descobrir um problema fora do escopo, deve registrá-lo e propor tratamento separado. Se o problema representar risco de segurança relevante, deve destacá-lo explicitamente e não ignorá-lo por estar fora do escopo.
 
 ---
 
@@ -194,6 +200,8 @@ Quando uma decisão de chat se tornar relevante para o futuro do projeto, regist
 
 ## 10. Segurança e privacidade
 
+Segurança é uma responsabilidade transversal. O agente deve consultar [Segurança e integridade](../docs/12-SEGURANCA-E-INTEGRIDADE.md) e aplicar controles proporcionais ao risco.
+
 Nunca versionar deliberadamente:
 
 - senhas;
@@ -207,6 +215,8 @@ Nunca versionar deliberadamente:
 Projetos operacionais devem avaliar exposição antes de serem tornados públicos.
 
 Quando houver valor de portfólio, prefira um case sanitizado separado em vez de publicar o ambiente operacional completo.
+
+Testes de segurança, análise de dependências, verificação de segredos e revisão especializada devem ser utilizados quando o risco justificar. Testes aprovados não equivalem a prova de ausência de vulnerabilidades.
 
 ---
 
