@@ -33,3 +33,38 @@ Esse ciclo é o núcleo operacional do método.
 ## Princípio de proporcionalidade
 
 Nem todo projeto exige a mesma burocracia. O ÓRBITA deve aumentar ou reduzir formalidade conforme complexidade, impacto, número de participantes e risco da mudança.
+
+## Princípio complementar — Identidade única do projeto
+
+Cada software deve possuir uma identidade reconhecível e consistente nos ambientes em que é trabalhado.
+
+Na configuração atual, o padrão preferido é utilizar o mesmo nome para:
+
+- Projeto no ChatGPT;
+- Projeto/workspace no Codex;
+- pasta local;
+- repositório GitHub.
+
+Quando uma limitação técnica exigir nomes diferentes, o mapeamento deve ser óbvio ou documentado.
+
+A intenção não é estética. Essa consistência reduz erros de contexto e facilita a retomada do projeto por humanos e agentes.
+
+## Princípio complementar — Sincronização de contexto
+
+Contexto de conversa pode ficar desatualizado. Antes de planejar ou implementar trabalho relevante, o agente deve consultar o estado atual do repositório correspondente.
+
+O fluxo de informação esperado é:
+
+```text
+conversa / planejamento
+        ↓
+decisão relevante
+        ↓
+repositório
+        ↓
+novo agente ou nova sessão
+        ↓
+releitura do estado atual
+```
+
+O objetivo é impedir que a continuidade do projeto dependa de memória implícita de uma sessão específica.
