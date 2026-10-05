@@ -67,3 +67,18 @@ A separação é intencional:
 **humano decide → planejador estrutura → implementador executa → repositório registra → humano homologa.**
 
 Um mesmo produto de IA pode tecnicamente exercer mais de um papel, mas os papéis devem continuar conceitualmente distintos.
+
+## Papéis e ambientes não são a mesma coisa
+
+O ÓRBITA separa **quem faz o quê** de **onde o trabalho acontece**.
+
+| Ambiente atual | Papel predominante | Observação |
+|---|---|---|
+| Projeto do ChatGPT | planejamento e coordenação | não substitui a documentação persistente |
+| Projeto/workspace do Codex | implementação e validação técnica | deve trabalhar sobre o repositório correto e o escopo autorizado |
+| Pasta local | execução material do projeto | contém a working copy Git sincronizada com o remoto |
+| GitHub | registro persistente | é a fonte canônica de código, documentação e histórico |
+
+O mesmo nome de projeto deve ser usado entre esses ambientes sempre que possível.
+
+Essa separação evita dois erros comuns: imaginar que o chat é o próprio projeto ou imaginar que a pasta local, isoladamente, representa o estado oficial do projeto.
