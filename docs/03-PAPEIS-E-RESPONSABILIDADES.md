@@ -4,8 +4,6 @@ O ÓRBITA trabalha com papéis, não com dependência obrigatória de ferramenta
 
 ## 1. Responsável humano
 
-Na implementação original do método: **João Corsino**.
-
 Responsabilidades:
 
 - definir necessidade e objetivo;
@@ -25,9 +23,12 @@ Responsabilidades:
 
 - transformar necessidades em problemas claros;
 - estruturar requisitos;
+- criar e manter a fundação documental inicial do projeto no repositório remoto, quando autorizado;
+- criar README, visão, planejamento, roadmap e regras proporcionais ao projeto;
 - decompor trabalho em tarefas;
 - identificar riscos e dependências;
 - produzir instruções de implementação;
+- gerar a primeira tarefa de bootstrap para vincular a pasta local ao repositório remoto antes da primeira funcionalidade;
 - interpretar evidências retornadas;
 - revisar coerência entre planejamento e execução;
 - manter visão global do projeto.
