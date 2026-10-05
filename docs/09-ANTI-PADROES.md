@@ -116,6 +116,24 @@ Tratar o repositório como referência persistente e atualizar documentação e 
 
 ---
 
+## 8. Fragmentação de identidade do projeto
+
+### Sintoma
+
+O mesmo software aparece com nomes diferentes ou contextos desconectados no ChatGPT, Codex, pasta local e GitHub, sem uma associação clara.
+
+Também ocorre quando um agente trabalha em uma cópia local ou repositório diferente daquele que o planejamento considera atual.
+
+### Risco
+
+Aumentam as chances de perda de contexto, implementação no projeto errado, documentação divergente e retomadas baseadas em estado obsoleto.
+
+### Resposta ÓRBITA
+
+Definir uma identidade canônica para o projeto, reutilizar o mesmo nome nos ambientes sempre que possível e confirmar o repositório/working copy antes de trabalho relevante.
+
+---
+
 ## Regra de leitura
 
 Quanto mais desses anti-padrões aparecem ao mesmo tempo, maior a necessidade de aumentar a formalidade do processo.
