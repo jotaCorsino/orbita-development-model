@@ -1,5 +1,23 @@
 # 04 — Fluxo de desenvolvimento
 
+## Preparação de um novo projeto
+
+Antes do primeiro ciclo de implementação, um projeto novo deve ganhar uma identidade e um ambiente coerentes.
+
+Fluxo recomendado:
+
+1. definir um **nome canônico** para o projeto;
+2. criar um **Projeto próprio no ChatGPT** com esse nome;
+3. criar um **Projeto/workspace próprio no Codex** com o mesmo nome;
+4. criar ou confirmar o **repositório GitHub** correspondente;
+5. criar/clonar uma **pasta local com o mesmo nome**, vinculada ao remoto;
+6. registrar no repositório objetivo, contexto, regras e estado inicial;
+7. somente depois decompor e autorizar a primeira implementação.
+
+Para projeto existente, o repositório já estabelecido normalmente define a identidade canônica. Os demais ambientes devem se alinhar a ele.
+
+Esse bootstrap não precisa ser burocrático. Sua função é garantir que, desde o início, planejamento, implementação, arquivos locais e histórico persistente apontem para o mesmo software.
+
 ## Ciclo padrão
 
 1. **Necessidade** — surge um problema, melhoria ou funcionalidade.
