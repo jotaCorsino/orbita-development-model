@@ -6,6 +6,21 @@ No ÓRBITA, conversas com agentes ajudam a raciocinar e coordenar, mas **o repos
 
 Uma decisão que precisa sobreviver ao contexto da conversa deve, quando relevante, ser transferida para documentação, issue, código, commit ou Pull Request.
 
+## Repositório remoto e pasta local
+
+O repositório GitHub e a pasta local representam o mesmo projeto, mas não são a mesma coisa.
+
+- **GitHub**: referência persistente e compartilhável;
+- **pasta local**: working copy usada para editar, executar e testar.
+
+Na organização padrão do ÓRBITA, a pasta local usa o mesmo nome do projeto/repositório sempre que possível e deve estar vinculada ao remoto correto.
+
+Antes de uma implementação, o agente deve confirmar que está trabalhando na pasta e no remoto correspondentes ao projeto. O estado local pode conter trabalho ainda não publicado e não deve ser confundido automaticamente com o estado oficial.
+
+Quando a implementação depender da base mais recente, a working copy deve ser sincronizada antes de criar a branch da tarefa.
+
+Ver também [Identidade e ambiente do projeto](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
+
 ## `main`
 
 A branch principal deve representar um estado conhecido e deliberadamente aceito.
