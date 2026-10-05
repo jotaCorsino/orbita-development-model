@@ -56,9 +56,10 @@ Antes de orientar um novo projeto, leia nesta ordem:
 7. [Git e GitHub](../docs/06-GIT-E-GITHUB.md)
 8. [IA no método](../docs/07-IA-NO-METODO.md)
 9. [Aplicação e evolução](../docs/08-APLICACAO-E-EVOLUCAO.md)
-10. [Anti-padrões](../docs/09-ANTI-PADROES.md)
-11. [Contrato de trabalho para agentes](CONTRATO-DE-TRABALHO.md)
-12. [Checklist de início de projeto](CHECKLIST-NOVO-PROJETO.md)
+10. [Identidade e ambiente do projeto](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md)
+11. [Anti-padrões](../docs/09-ANTI-PADROES.md)
+12. [Contrato de trabalho para agentes](CONTRATO-DE-TRABALHO.md)
+13. [Checklist de início de projeto](CHECKLIST-NOVO-PROJETO.md)
 
 Os templates existentes também devem ser consultados quando a etapa correspondente começar:
 
@@ -87,7 +88,8 @@ Confirme de forma objetiva que entendeu pelo menos:
 - que implementação não significa homologação;
 - que não se avança automaticamente para a próxima tarefa;
 - que alterações devem ser pequenas, rastreáveis e justificadas;
-- que o processo deve ser proporcional ao risco e à complexidade do projeto.
+- que o processo deve ser proporcional ao risco e à complexidade do projeto;
+- que cada projeto mantém identidade coerente entre ChatGPT, Codex, pasta local e GitHub.
 
 ### Em seguida
 
@@ -105,6 +107,21 @@ O repositório do método ensina **como trabalhar**.
 O repositório do projeto informa **o que está sendo construído**.
 
 ---
+
+### Identidade do projeto
+
+Quando o software e o repositório específico forem apresentados, identifique também o nome canônico do projeto.
+
+Na organização atual de João Corsino, o padrão esperado é que esse mesmo projeto possua:
+
+- Projeto próprio no ChatGPT;
+- Projeto/workspace próprio no Codex;
+- pasta local correspondente;
+- repositório GitHub correspondente.
+
+Os nomes devem coincidir sempre que possível. Se houver diferença, a associação deve ser inequívoca.
+
+Não crie, renomeie ou reorganize esses ambientes sem solicitação. Apenas reconheça o padrão e ajude a mantê-lo.
 
 ## 4. Primeira análise do repositório do projeto
 
