@@ -26,18 +26,18 @@ homologação humana
 
 ## Uso atual de ferramentas
 
-Na implementação original do método:
+Na configuração de referência:
 
-- **João Corsino** — responsável e homologador;
-- **ChatGPT** — planejamento, análise, especificação e revisão;
+- **responsável humano** — decisão, prioridade e homologação;
+- **ChatGPT** — planejamento, análise, documentação, especificação e revisão;
 - **Codex** — implementação e validação técnica;
-- **GitHub** — estado canônico e histórico.
+- **GitHub** — estado persistente e histórico.
 
 Essa composição pode mudar. O método deve sobreviver à substituição de qualquer ferramenta.
 
 ## Contextos dedicados por projeto
 
-Na aplicação prática atual, João mantém um contexto próprio para cada software tanto no ChatGPT quanto no Codex.
+Na aplicação de referência, cada software mantém um contexto próprio no ChatGPT e no Codex.
 
 O padrão preferido é:
 
@@ -52,6 +52,14 @@ mesmo projeto
 Usar o mesmo nome entre esses ambientes reduz ambiguidade e facilita a retomada.
 
 Os contextos de IA são úteis para continuidade, mas podem estar incompletos ou desatualizados. Por isso, antes de decisões ou alterações relevantes, o estado atual do repositório deve prevalecer.
+
+## Fundação documental antes da implementação
+
+Em projeto novo, o agente de planejamento deve transformar o contexto inicial em documentação persistente no repositório remoto antes do primeiro trabalho funcional do agente de implementação.
+
+A primeira tarefa do Codex é o bootstrap da working copy local com o repositório já documentado. Somente depois começa a implementação de funcionalidades.
+
+Ver [Inicialização de um novo projeto](11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 
 ## Contexto e documentação
 
