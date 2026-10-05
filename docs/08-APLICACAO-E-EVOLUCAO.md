@@ -11,6 +11,21 @@ Uma adoção mínima do ÓRBITA pode usar apenas:
 5. tarefas com critérios de aceite;
 6. validação antes do merge.
 
+## Organização recomendada de um projeto
+
+Na aplicação atual do método, um novo software é organizado com uma identidade comum:
+
+1. definir o nome do projeto;
+2. criar um Projeto próprio no ChatGPT;
+3. criar um Projeto/workspace próprio no Codex;
+4. criar ou confirmar o repositório GitHub;
+5. clonar/criar a pasta local correspondente;
+6. manter os quatro ambientes associados pelo mesmo nome sempre que possível.
+
+O repositório continua sendo a referência persistente. Os demais ambientes existem para reduzir troca de contexto e especializar o trabalho.
+
+Essa organização é recomendada, não um requisito tecnológico universal. Se uma ferramenta mudar, o princípio permanece: **um projeto deve ter identidade clara e ambientes de trabalho inequivocamente associados ao mesmo repositório**.
+
 ## Níveis de formalidade
 
 ### Projeto simples
