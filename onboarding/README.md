@@ -2,50 +2,50 @@
 
 > **Se você é uma IA ou agente que recebeu este repositório como referência para iniciar um novo projeto, comece por aqui.**
 
-Esta pasta existe para permitir que um novo projeto adote o Método ÓRBITA sem que o responsável humano precise reexplicar todo o processo de trabalho a cada conversa.
+Esta pasta existe para permitir que qualquer novo projeto adote o Método ÓRBITA sem que o responsável humano precise reexplicar manualmente o processo de trabalho a cada conversa.
 
-O objetivo não é fazer a IA memorizar um conjunto de frases. O objetivo é garantir que ela compreenda **como o trabalho será governado, documentado, executado e homologado** antes de participar de decisões ou implementação.
+O objetivo é garantir que o agente compreenda **como o projeto será organizado, documentado, implementado, validado e homologado** antes de participar de mudanças.
 
 ---
 
-## 1. O que você deve entender antes de trabalhar
+## 1. Papéis fundamentais
 
-O Método ÓRBITA organiza desenvolvimento de software assistido por IA sob quatro responsabilidades distintas:
+O Método ÓRBITA separa quatro responsabilidades:
 
 | Papel | Responsabilidade |
 |---|---|
-| **Responsável humano** | Define a necessidade, prioridades, restrições, aprova decisões e homologa resultados |
-| **Agente de planejamento** | Analisa, estrutura, especifica, decompõe tarefas, revisa evidências e coordena o processo |
-| **Agente de implementação** | Inspeciona o projeto, altera código, executa testes/builds e produz evidências técnicas |
-| **Git/GitHub** | Mantém o estado persistente do projeto, documentação, histórico, branches, commits e Pull Requests |
+| **Responsável humano** | Define necessidade, prioridades, restrições, decisões e homologação |
+| **Agente de planejamento** | Analisa, estrutura, documenta, planeja, decompõe tarefas e revisa evidências |
+| **Agente de implementação** | Trabalha na working copy, implementa tarefas autorizadas, testa e produz evidências |
+| **Git/GitHub** | Mantém o estado persistente, documentação, histórico e rastreabilidade |
 
-Na aplicação atual de João Corsino, esses papéis normalmente correspondem a:
+Na configuração de referência atual, esses papéis podem ser exercidos por:
 
 ```text
-João
-  ↓ decide e homologa
+Responsável humano
+        ↓ decide e homologa
 
 ChatGPT
-  ↓ analisa, planeja e coordena
+        ↓ planeja, documenta e coordena
 
 Codex
-  ↓ implementa e testa
+        ↓ implementa e valida tecnicamente
 
 Git / GitHub
-  ↓ registra o estado persistente
+        ↓ registra o estado persistente
 ```
 
-As ferramentas podem mudar. **Os papéis não devem ser confundidos apenas porque uma mesma ferramenta é tecnicamente capaz de realizar mais de uma função.**
+As ferramentas podem mudar. Os papéis e gates continuam válidos.
 
-O princípio operacional é:
+Princípio operacional:
 
 > **Planejar → Executar → Evidenciar → Homologar**
 
 ---
 
-## 2. Ordem de leitura obrigatória
+## 2. Ordem de leitura
 
-Antes de orientar um novo projeto, leia nesta ordem:
+Antes de orientar um novo projeto, leia:
 
 1. [README principal](../README.md)
 2. [Visão geral](../docs/01-VISAO-GERAL.md)
@@ -56,93 +56,139 @@ Antes de orientar um novo projeto, leia nesta ordem:
 7. [Git e GitHub](../docs/06-GIT-E-GITHUB.md)
 8. [IA no método](../docs/07-IA-NO-METODO.md)
 9. [Aplicação e evolução](../docs/08-APLICACAO-E-EVOLUCAO.md)
-10. [Identidade e ambiente do projeto](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md)
-11. [Anti-padrões](../docs/09-ANTI-PADROES.md)
-12. [Contrato de trabalho para agentes](CONTRATO-DE-TRABALHO.md)
-13. [Checklist de início de projeto](CHECKLIST-NOVO-PROJETO.md)
+10. [Anti-padrões](../docs/09-ANTI-PADROES.md)
+11. [Identidade e ambiente do projeto](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md)
+12. [Inicialização de um novo projeto](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md)
+13. [Contrato de trabalho para agentes](CONTRATO-DE-TRABALHO.md)
+14. [Checklist de início de projeto](CHECKLIST-NOVO-PROJETO.md)
 
-Os templates existentes também devem ser consultados quando a etapa correspondente começar:
+Templates operacionais:
 
 - [Template de tarefa](../templates/TASK-TEMPLATE.md)
-- [Template de prompt para implementação](../templates/CODEX-PROMPT-TEMPLATE.md)
+- [Template de implementação](../templates/CODEX-PROMPT-TEMPLATE.md)
+- [Template de bootstrap local](../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md)
 - [Template de homologação](../templates/HOMOLOGACAO-TEMPLATE.md)
 
 ---
 
-## 3. O que fazer ao receber este repositório em um novo chat
+## 3. Ao receber o Método ÓRBITA em um novo chat
 
-Quando o responsável humano disser que um novo projeto utilizará o Método ÓRBITA:
+O agente de planejamento deve primeiro compreender o método.
 
-### Primeiro
+Depois, deve confirmar de forma objetiva que entendeu:
 
-Leia esta documentação e compreenda o processo.
-
-### Depois
-
-Confirme de forma objetiva que entendeu pelo menos:
-
-- quem possui a autoridade final;
-- qual é o papel do agente de planejamento;
-- qual é o papel do agente de implementação;
-- que o repositório é a fonte persistente da verdade;
+- que a decisão final pertence ao responsável humano;
+- que planejamento e implementação são responsabilidades distintas;
+- que o repositório é a referência persistente;
+- que conversas ajudam a coordenar, mas não substituem documentação;
 - que implementação não significa homologação;
-- que não se avança automaticamente para a próxima tarefa;
-- que alterações devem ser pequenas, rastreáveis e justificadas;
-- que o processo deve ser proporcional ao risco e à complexidade do projeto;
-- que cada projeto mantém identidade coerente entre ChatGPT, Codex, pasta local e GitHub.
+- que não existe avanço automático;
+- que o escopo não deve crescer silenciosamente;
+- que o mesmo projeto deve possuir identidade coerente entre ChatGPT, Codex, pasta local e GitHub.
 
-### Em seguida
+Em seguida, deve receber do responsável humano:
 
-Aguarde o responsável humano fornecer:
+1. a ideia do software;
+2. o problema que deve resolver;
+3. usuários/contexto;
+4. restrições conhecidas;
+5. nome do projeto;
+6. repositório remoto específico do software.
 
-1. qual problema o software pretende resolver;
-2. contexto e usuários;
-3. restrições conhecidas;
-4. estado atual, se o projeto já existir;
-5. link do repositório específico do projeto.
-
-**Não comece a implementar o software apenas porque recebeu o link do Método ÓRBITA.**
-
-O repositório do método ensina **como trabalhar**.  
-O repositório do projeto informa **o que está sendo construído**.
+**Não implemente funcionalidades neste momento.**
 
 ---
 
-### Identidade do projeto
+## 4. Fundação documental é responsabilidade do planejamento
 
-Quando o software e o repositório específico forem apresentados, identifique também o nome canônico do projeto.
+Para um projeto novo, o agente de planejamento deve inspecionar o repositório remoto e transformar a ideia inicial em uma base persistente antes do primeiro handoff para implementação.
 
-Na organização atual de João Corsino, o padrão esperado é que esse mesmo projeto possua:
+Quando possuir acesso autorizado ao repositório, deve criar ou organizar diretamente nele, de forma proporcional ao projeto:
 
-- Projeto próprio no ChatGPT;
-- Projeto/workspace próprio no Codex;
-- pasta local correspondente;
-- repositório GitHub correspondente.
+- README no padrão do método;
+- objetivo e contexto;
+- escopo inicial;
+- planejamento/roadmap;
+- arquitetura inicial quando necessária;
+- regras locais;
+- estados de acompanhamento;
+- critérios de aceite e homologação;
+- riscos, restrições e decisões iniciais.
 
-Os nomes devem coincidir sempre que possível. Se houver diferença, a associação deve ser inequívoca.
+O repositório precisa conter contexto suficiente para que outra sessão ou agente consiga compreender o projeto sem depender exclusivamente da conversa original.
 
-Não crie, renomeie ou reorganize esses ambientes sem solicitação. Apenas reconheça o padrão e ajude a mantê-lo.
-
-## 4. Primeira análise do repositório do projeto
-
-Após receber o repositório específico:
-
-1. inspecione o estado atual antes de sugerir mudanças;
-2. leia README, AGENTS, documentação, roadmap, issues e estrutura existente quando aplicável;
-3. identifique se o projeto é novo, legado, experimental ou já utilizado em produção;
-4. identifique documentação existente que deve ser preservada;
-5. identifique riscos, dependências e decisões já tomadas;
-6. não substitua convenções existentes sem justificativa;
-7. proponha a estrutura inicial ou os ajustes necessários;
-8. obtenha aprovação humana antes de iniciar uma mudança estrutural importante.
-
-Se o repositório estiver vazio, a primeira entrega deve priorizar a **fundação documental e o planejamento**, não código produzido por impulso.
+Se o agente não possuir permissão de escrita, deve preparar a fundação para que ela seja persistida antes do avanço.
 
 ---
 
-## 5. Como o projeto deve avançar
+## 5. Cadeia padrão de inicialização
 
-O fluxo padrão é:
+O fluxo esperado de um projeto novo é:
+
+```text
+Responsável humano
+cria Projeto no ChatGPT
+        ↓
+inicia conversa + explica a ideia
+        ↓
+fornece ÓRBITA + repositório do projeto
+        ↓
+Agente de planejamento
+lê o método e estrutura o projeto
+        ↓
+cria documentação inicial no GitHub
+        ↓
+confirma fundação e planejamento
+        ↓
+gera a primeira tarefa do Codex
+        ↓
+Responsável humano
+cria/abre a pasta local no Codex
+        ↓
+Codex executa BOOTSTRAP
+        ↓
+Git local ↔ GitHub sincronizados
+        ↓
+ChatGPT + Codex + pasta local + GitHub
+representam o mesmo projeto
+        ↓
+primeira tarefa funcional
+```
+
+A descrição normativa completa está em [Inicialização de um novo projeto](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md).
+
+---
+
+## 6. Primeira tarefa do agente de implementação
+
+Em projeto novo, a primeira tarefa enviada ao Codex deve ser uma tarefa de **bootstrap local**.
+
+O responsável humano já terá criado e aberto a pasta destinada ao projeto.
+
+O Codex deve:
+
+1. confirmar a pasta correta;
+2. verificar se Git já existe;
+3. inicializar Git somente se necessário;
+4. configurar ou validar o remoto `origin`;
+5. buscar o repositório remoto;
+6. sincronizar a branch principal de forma segura;
+7. confirmar que README e documentação inicial estão presentes;
+8. verificar remoto, branch, HEAD e `git status`;
+9. retornar evidências;
+10. parar.
+
+Ele **não deve implementar funcionalidades nessa primeira tarefa**.
+
+Se encontrar conteúdo local conflitante, remoto incorreto, histórico divergente ou necessidade de ação destrutiva, deve parar e relatar.
+
+Use o [template de bootstrap](../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md).
+
+---
+
+## 7. Depois do bootstrap
+
+Somente quando os ambientes estiverem vinculados começa o ciclo normal:
 
 ```text
 Necessidade
@@ -153,21 +199,15 @@ Planejamento
    ↓
 Tarefa autorizada
    ↓
-Branch
-   ↓
 Implementação
    ↓
 Testes / evidências
-   ↓
-Pull Request
    ↓
 Revisão
    ↓
 Homologação humana
    ↓
-Merge
-   ↓
-Documentação / release
+Merge / documentação / release
    ↓
 Próxima tarefa
 ```
@@ -181,55 +221,44 @@ Uma tarefa normalmente deve conter:
 - escopo excluído;
 - restrições;
 - critérios de aceite;
-- validações esperadas;
-- evidências necessárias.
-
-O nível de formalidade deve crescer junto com risco, impacto, número de participantes e complexidade.
+- validações;
+- evidências esperadas.
 
 ---
 
-## 6. Regras que não podem ser inferidas de forma errada
+## 8. Regras que não podem ser interpretadas de forma errada
 
 ### Implementação não é aprovação
 
-O agente de implementação pode dizer:
+O agente de implementação apresenta evidências. A homologação pertence ao responsável humano.
 
-> testes passaram, build concluiu, arquivos foram alterados.
+### Conversa não é fonte persistente
 
-Ele **não deve declarar que a tarefa está homologada**.
-
-### Conversa não é documentação persistente
-
-Decisões importantes tomadas em chat devem ser registradas no repositório apropriado.
+Decisões relevantes devem convergir para o repositório.
 
 ### Capacidade não significa autoridade
 
-Uma IA poder fazer algo tecnicamente não significa que esteja autorizada a fazê-lo.
+Uma ferramenta poder executar uma ação não significa que esteja autorizada a fazê-la.
 
 ### Não existe avanço automático
 
-Depois de entregar uma tarefa, o agente deve parar no gate apropriado quando a homologação humana for necessária.
+Ao terminar a tarefa autorizada, o agente para no gate correspondente.
 
-### Não existe expansão silenciosa de escopo
+### Não existe expansão silenciosa
 
-Ao encontrar uma necessidade fora da tarefa atual:
+Nova necessidade deve ser registrada e planejada, não incorporada discretamente.
 
-- registre;
-- explique;
-- proponha nova tarefa ou replanejamento;
-- não incorpore silenciosamente à implementação.
+### Estado atual deve ser verificado
 
-### A `main` deve representar estado conhecido
-
-A branch principal deve representar um estado aprovado conforme o nível de governança definido para o projeto.
+Uma conversa antiga ou working copy local pode estar desatualizada. Para trabalho relevante, consulte o repositório atual.
 
 ---
 
-## 7. Segurança e exposição pública
+## 9. Segurança e exposição pública
 
-Projetos operacionais, integrações internas, projetos de clientes e sistemas ligados a infraestrutura real devem ser considerados **privados por padrão**, salvo decisão consciente em contrário.
+Projetos operacionais, de clientes ou ligados a infraestrutura real devem avaliar privacidade antes da publicação.
 
-Um projeto real pode gerar um case público separado e sanitizado.
+Quando apropriado:
 
 ```text
 projeto operacional privado
@@ -237,74 +266,23 @@ projeto operacional privado
 sanitização
         ↓
 case público
-        ↓
-arquitetura + decisões + processo + resultados
 ```
 
-O portfólio não precisa expor:
-
-- credenciais;
-- infraestrutura real;
-- URLs administrativas;
-- caminhos de servidor;
-- IDs operacionais;
-- dados pessoais;
-- dados de clientes;
-- configurações internas desnecessárias.
-
-A competência pode ser demonstrada pela qualidade da análise, arquitetura, decisões, evidências e resultados.
+Não exponha desnecessariamente credenciais, infraestrutura, dados pessoais, dados de clientes, identificadores operacionais ou configurações internas.
 
 ---
 
-## 8. Quando o método pode ser adaptado
+## 10. Saída esperada do onboarding
 
-O ÓRBITA não exige a mesma burocracia para todos os projetos.
-
-Um experimento pessoal de baixo risco pode ter:
-
-- menos documentos;
-- tarefas mais curtas;
-- validação simples.
-
-Um sistema operacional, empresarial ou com risco elevado pode exigir:
-
-- decisões técnicas formais;
-- threat model;
-- testes adicionais;
-- homologação em ambiente controlado;
-- plano de implantação;
-- rollback;
-- documentação operacional.
-
-A adaptação deve ser deliberada. Não use “projeto pequeno” como justificativa para perder rastreabilidade essencial.
-
----
-
-## 9. Saída esperada do onboarding
-
-Ao terminar esta leitura, o agente deve estar apto a dizer, em essência:
+Ao terminar a leitura, o agente deve compreender, em essência:
 
 ```text
-Entendi como o projeto será governado.
-
-Você define o problema, prioridades e homologação.
-Eu atuarei no papel que você me atribuir dentro do processo.
-O projeto será documentado no próprio repositório.
-Planejamento e implementação serão tratados como responsabilidades distintas.
-Não haverá avanço automático entre tarefas.
-Alterações deverão produzir evidências e passar pelos gates definidos.
-
-Agora posso receber a descrição do software e o repositório específico do projeto.
+O responsável humano define e homologa.
+O planejamento transforma a ideia em documentação e tarefas.
+O agente de implementação executa apenas o trabalho autorizado.
+O GitHub mantém o estado persistente.
+A primeira tarefa de um projeto novo vincula a pasta local ao remoto.
+Somente depois começa a implementação funcional.
 ```
 
-Não é necessário repetir esse texto literalmente. O importante é demonstrar que o processo foi compreendido.
-
----
-
-## 10. Prompt reutilizável
-
-Um exemplo pronto para iniciar um novo chat está em:
-
-**[PROMPT-INICIAL.md](PROMPT-INICIAL.md)**
-
-Esse prompt é apenas um ponto de entrada. A documentação deste repositório continua sendo a referência canônica do método.
+Um prompt reutilizável para iniciar esse processo está em [PROMPT-INICIAL.md](PROMPT-INICIAL.md).
