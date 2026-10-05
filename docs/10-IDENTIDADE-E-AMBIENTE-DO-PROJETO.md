@@ -17,17 +17,21 @@ Na configuração de referência, o padrão preferido é:
 ```text
 NOME_DO_PROJETO
 │
-├── Projeto no ChatGPT
-├── Projeto/workspace no Codex
+├── Contexto do agente de planejamento
+├── Contexto do agente de implementação
 ├── Pasta local no computador
 └── Repositório no GitHub
 ```
 
 Sempre que possível, os quatro usam o mesmo nome.
 
+## Ferramentas de referência
+
+O método não exige ChatGPT, Codex ou qualquer fornecedor específico. Na configuração pessoal que originou o ÓRBITA, o autor usa **ChatGPT para planejamento** e **Codex para implementação**. Outros usuários podem adotar Claude, Gemini ou ferramentas diferentes, desde que preservem os mesmos papéis e vínculos.
+
 ## Os quatro espaços
 
-### 1. Projeto no ChatGPT
+### 1. Contexto do agente de planejamento
 
 Função principal:
 
@@ -39,11 +43,11 @@ Função principal:
 - acompanhar decisões;
 - ajudar na administração do projeto.
 
-O Projeto do ChatGPT fornece continuidade de contexto para planejamento, mas **não substitui a documentação persistente do repositório**.
+O contexto do agente de planejamento fornece continuidade para análise e coordenação, mas **não substitui a documentação persistente do repositório**.
 
 Uma decisão que precisa sobreviver a sessões, agentes ou ferramentas deve ser registrada no projeto técnico.
 
-### 2. Projeto/workspace no Codex
+### 2. Contexto do agente de implementação
 
 Função principal:
 
@@ -53,7 +57,7 @@ Função principal:
 - produzir evidências;
 - preparar branches, commits e Pull Requests quando aplicável.
 
-O Codex deve receber o mesmo nome/contexto do software para reduzir a chance de misturar projetos.
+O agente de implementação deve receber o mesmo nome/contexto do software para reduzir a chance de misturar projetos.
 
 Antes de alterar, deve verificar o estado atual do repositório e as regras locais do projeto.
 
@@ -97,7 +101,7 @@ Conversas ajudam a pensar. O repositório permite reconstruir o projeto.
 ## Relação entre os espaços
 
 ```text
-Projeto ChatGPT
+Agente de planejamento
 planejamento / revisão
         │
         ▼
@@ -109,7 +113,7 @@ Pasta local                     │
 working copy Git                │
         │                       │
         ▼                       │
-Projeto Codex                   │
+Agente de implementação         │
 implementação / testes ─────────┘
 ```
 
@@ -126,13 +130,13 @@ Exemplo:
 ```text
 Projeto: exemplo-projeto
 
-ChatGPT: exemplo-projeto
-Codex: exemplo-projeto
+Planejamento: exemplo-projeto
+Implementação: exemplo-projeto
 Pasta local: exemplo-projeto/
 GitHub: organizacao/exemplo-projeto
 ```
 
-Para projetos com nome comercial mais legível no ChatGPT/Codex, pequenas diferenças são aceitáveis, desde que não criem ambiguidade.
+Para ferramentas que usam nomes de projeto mais legíveis que o slug técnico, pequenas diferenças são aceitáveis, desde que não criem ambiguidade.
 
 Exemplo aceitável:
 
@@ -149,12 +153,12 @@ Em projeto novo, os quatro espaços não surgem todos ao mesmo tempo.
 
 A ordem padrão é:
 
-1. contexto de planejamento criado no ChatGPT;
+1. contexto dedicado criado no agente de planejamento;
 2. repositório remoto do projeto fornecido ao agente de planejamento;
 3. fundação documental criada no repositório remoto;
 4. pasta local criada pelo responsável humano;
-5. pasta aberta no Codex;
-6. primeira tarefa do Codex inicializa/valida Git e sincroniza a pasta com o remoto;
+5. pasta aberta no ambiente do agente de implementação;
+6. primeira tarefa do agente de implementação inicializa/valida Git e sincroniza a pasta com o remoto;
 7. somente então começa a primeira implementação funcional.
 
 Essa sequência é detalhada em [11 — Inicialização de um novo projeto](11-INICIALIZACAO-DE-NOVO-PROJETO.md).
@@ -165,7 +169,7 @@ Quando o software já possui repositório e histórico:
 
 1. considerar o repositório existente como referência inicial de identidade;
 2. inspecionar antes de renomear;
-3. alinhar ChatGPT, Codex e pasta local ao projeto existente;
+3. alinhar os contextos dos agentes e a pasta local ao projeto existente;
 4. evitar criar um novo projeto apenas para reorganizar aparência;
 5. documentar qualquer transição necessária.
 
@@ -195,7 +199,7 @@ Uma nova sessão ou um novo agente consegue relacionar rapidamente conversa, imp
 
 ### Separação clara de função
 
-ChatGPT não vira armazenamento de código. Codex não vira gestor do projeto. A pasta local não vira documentação oficial. GitHub não precisa substituir o espaço de raciocínio.
+O agente de planejamento não vira armazenamento de código. O agente de implementação não vira gestor do projeto. A pasta local não vira documentação oficial. GitHub não precisa substituir o espaço de raciocínio.
 
 ### Escalabilidade pessoal
 

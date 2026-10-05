@@ -7,9 +7,9 @@ Este documento define como um projeto novo entra em operação no Método ÓRBIT
 A inicialização só é considerada concluída quando os quatro ambientes do projeto apontam inequivocamente para o mesmo software:
 
 ```text
-Projeto no ChatGPT
+Contexto do agente de planejamento
         ↕
-Projeto/workspace no Codex
+Contexto do agente de implementação
         ↕
 Pasta local
         ↕
@@ -18,6 +18,10 @@ Repositório GitHub
 
 O repositório GitHub continua sendo a referência persistente.
 
+## Independência de ferramenta
+
+A sequência abaixo descreve papéis. Na configuração pessoal do autor, o agente de planejamento é o ChatGPT e o agente de implementação é o Codex. Outras combinações de IA podem ser usadas sem alterar o fluxo.
+
 ## Sequência padrão
 
 ### 1. O responsável humano cria o contexto de planejamento
@@ -25,7 +29,7 @@ O repositório GitHub continua sendo a referência persistente.
 O responsável humano:
 
 1. define um nome para o projeto;
-2. cria um Projeto próprio no ChatGPT com esse nome;
+2. cria um contexto próprio no agente de planejamento escolhido com esse nome;
 3. inicia uma nova conversa dentro desse Projeto;
 4. apresenta a ideia inicial do software;
 5. fornece o repositório do Método ÓRBITA;
@@ -81,13 +85,13 @@ Somente depois dessa fundação o projeto está pronto para receber a primeira t
 O responsável humano:
 
 1. cria uma pasta local com o mesmo nome do projeto;
-2. abre essa pasta como Projeto/workspace no Codex;
-3. inicia a conversa do projeto no Codex;
-4. entrega ao Codex a primeira tarefa gerada pelo agente de planejamento.
+2. abre essa pasta no ambiente do agente de implementação escolhido;
+3. inicia a conversa/sessão do projeto nesse agente;
+4. entrega ao agente de implementação a primeira tarefa gerada pelo agente de planejamento.
 
 A pasta pode estar vazia. Ela não precisa ter Git inicializado previamente.
 
-### 6. Primeira tarefa do Codex — bootstrap local
+### 6. Primeira tarefa do agente de implementação — bootstrap local
 
 A primeira tarefa de implementação de um projeto novo é uma tarefa de **bootstrap**, não uma funcionalidade.
 
@@ -95,7 +99,7 @@ Objetivo:
 
 > transformar a pasta local já criada em uma working copy segura do repositório remoto que contém a fundação documental do projeto.
 
-O Codex deve, conforme o estado encontrado:
+O agente de implementação deve, conforme o estado encontrado:
 
 1. confirmar que está na pasta correta;
 2. verificar se Git já está inicializado;
@@ -110,9 +114,9 @@ O Codex deve, conforme o estado encontrado:
 
 Essa tarefa não deve implementar funcionalidades do produto.
 
-Se a pasta já possuir conteúdo, histórico Git ou remoto diferente, o Codex deve inspecionar e reportar a situação antes de qualquer ação destrutiva.
+Se a pasta já possuir conteúdo, histórico Git ou remoto diferente, o agente de implementação deve inspecionar e reportar a situação antes de qualquer ação destrutiva.
 
-Um template específico está em [../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md](../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md).
+Um template específico está em [../templates/BOOTSTRAP-AGENTE-PROMPT-TEMPLATE.md](../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md).
 
 ## Estado ao final do bootstrap
 
@@ -121,9 +125,9 @@ Ao concluir a inicialização:
 ```text
 Responsável humano
       │
-      ├── Projeto ChatGPT ── planejamento
+      ├── Agente de planejamento ── contexto
       │
-      ├── Projeto Codex ─── implementação
+      ├── Agente de implementação ─ implementação
       │
       ├── Pasta local ───── working copy
       │

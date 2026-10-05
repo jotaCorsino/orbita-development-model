@@ -17,8 +17,6 @@ O humano é o **proprietário da decisão**, não apenas o autor do prompt.
 
 ## 2. Agente de planejamento
 
-Na aplicação atual: normalmente **ChatGPT**.
-
 Responsabilidades:
 
 - transformar necessidades em problemas claros;
@@ -36,8 +34,6 @@ Responsabilidades:
 O agente de planejamento não substitui a homologação humana.
 
 ## 3. Agente de implementação
-
-Na aplicação atual: normalmente **Codex**.
 
 Responsabilidades:
 
@@ -75,11 +71,15 @@ O ÓRBITA separa **quem faz o quê** de **onde o trabalho acontece**.
 
 | Ambiente atual | Papel predominante | Observação |
 |---|---|---|
-| Projeto do ChatGPT | planejamento e coordenação | não substitui a documentação persistente |
-| Projeto/workspace do Codex | implementação e validação técnica | deve trabalhar sobre o repositório correto e o escopo autorizado |
+| Contexto do agente de planejamento | planejamento e coordenação | pode ser ChatGPT, Claude, Gemini ou outra ferramenta equivalente; não substitui a documentação persistente |
+| Contexto do agente de implementação | implementação e validação técnica | pode ser Codex ou outro agente capaz de trabalhar sobre o repositório e o escopo autorizado |
 | Pasta local | execução material do projeto | contém a working copy Git sincronizada com o remoto |
 | GitHub | registro persistente | é a fonte canônica de código, documentação e histórico |
 
 O mesmo nome de projeto deve ser usado entre esses ambientes sempre que possível.
 
 Essa separação evita dois erros comuns: imaginar que o chat é o próprio projeto ou imaginar que a pasta local, isoladamente, representa o estado oficial do projeto.
+
+## Configuração pessoal do autor
+
+Na aplicação que originou o método, o autor prefere **ChatGPT no papel de planejamento** e **Codex no papel de implementação**. Essa escolha serve como exemplo concreto, não como requisito. Outras ferramentas podem substituir qualquer um dos agentes desde que cumpram as responsabilidades definidas pelo ÓRBITA.

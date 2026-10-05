@@ -14,7 +14,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 ## B. Contexto e identidade inicial
 
 - [ ] nome canônico do projeto definido
-- [ ] Projeto próprio no ChatGPT criado/identificado
+- [ ] contexto próprio no agente de planejamento criado/identificado
 - [ ] ideia e problema do software explicados
 - [ ] usuários/contexto identificados
 - [ ] restrições conhecidas registradas
@@ -35,16 +35,16 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] riscos de segurança/publicação avaliados
 - [ ] fundação documental confirmada ao responsável humano
 
-## D. Preparação local e Codex
+## D. Preparação local e agente de implementação
 
 - [ ] pasta local com o nome do projeto criada pelo responsável humano
-- [ ] pasta aberta como Projeto/workspace no Codex
+- [ ] pasta aberta no ambiente do agente de implementação
 - [ ] primeira tarefa gerada pelo agente de planejamento é uma tarefa de bootstrap
 - [ ] tarefa de bootstrap identifica projeto, remoto e branch principal
 
 ## E. Bootstrap local
 
-- [ ] Codex confirmou a pasta correta
+- [ ] agente de implementação confirmou a pasta correta
 - [ ] Git foi detectado ou inicializado somente se necessário
 - [ ] `origin` corresponde ao repositório remoto correto
 - [ ] estado remoto foi buscado
@@ -56,7 +56,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 
 ## F. Gate para primeira funcionalidade
 
-- [ ] ChatGPT, Codex, pasta local e GitHub representam inequivocamente o mesmo projeto
+- [ ] agente de planejamento, agente de implementação, pasta local e repositório representam inequivocamente o mesmo projeto
 - [ ] documentação inicial existe no repositório
 - [ ] working copy local está vinculada ao remoto
 - [ ] primeira tarefa funcional possui ID

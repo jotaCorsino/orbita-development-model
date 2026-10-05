@@ -24,27 +24,27 @@ revisão
 homologação humana
 ```
 
-## Uso atual de ferramentas
+## Ferramentas são substituíveis
 
-Na configuração de referência:
+O ÓRBITA define funções, não produtos específicos.
 
 - **responsável humano** — decisão, prioridade e homologação;
-- **ChatGPT** — planejamento, análise, documentação, especificação e revisão;
-- **Codex** — implementação e validação técnica;
-- **GitHub** — estado persistente e histórico.
+- **agente de planejamento** — análise, documentação, especificação, coordenação e revisão;
+- **agente de implementação** — implementação e validação técnica;
+- **repositório Git** — estado persistente e histórico.
 
-Essa composição pode mudar. O método deve sobreviver à substituição de qualquer ferramenta.
+Na configuração pessoal do autor, ChatGPT exerce o papel de planejamento e Codex o papel de implementação. Outra pessoa pode usar Claude, Gemini ou qualquer combinação de ferramentas equivalente. O método deve sobreviver à substituição de qualquer IA.
 
 ## Contextos dedicados por projeto
 
-Na aplicação de referência, cada software mantém um contexto próprio no ChatGPT e no Codex.
+Cada software deve manter contextos próprios para planejamento e implementação, independentemente da ferramenta escolhida.
 
 O padrão preferido é:
 
 ```text
 mesmo projeto
-├── Projeto no ChatGPT — planejamento, análise e coordenação
-├── Projeto/workspace no Codex — implementação e validação
+├── contexto do agente de planejamento — análise e coordenação
+├── contexto do agente de implementação — implementação e validação
 ├── pasta local — working copy
 └── GitHub — estado persistente
 ```
@@ -57,7 +57,7 @@ Os contextos de IA são úteis para continuidade, mas podem estar incompletos ou
 
 Em projeto novo, o agente de planejamento deve transformar o contexto inicial em documentação persistente no repositório remoto antes do primeiro trabalho funcional do agente de implementação.
 
-A primeira tarefa do Codex é o bootstrap da working copy local com o repositório já documentado. Somente depois começa a implementação de funcionalidades.
+A primeira tarefa do agente de implementação é o bootstrap da working copy local com o repositório já documentado. Somente depois começa a implementação de funcionalidades.
 
 Ver [Inicialização de um novo projeto](11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 

@@ -23,17 +23,23 @@ O ÓRBITA nasceu porque eu percebi que **usar IA para desenvolver software funci
 
 Quando começo um projeto, eu não quero que ele exista apenas dentro de uma conversa, nem que a implementação avance mais rápido do que a minha capacidade de entender o que está acontecendo. Quero conseguir abrir o projeto dias ou semanas depois e saber com clareza **o que estamos construindo, por que tomamos determinada decisão, o que já foi feito, o que ainda falta e qual é o próximo passo**.
 
-Por isso organizo cada software como um projeto próprio em todos os ambientes que uso. O mesmo projeto possui um espaço de planejamento no ChatGPT, um espaço de implementação no Codex, uma pasta local de trabalho no computador e um repositório correspondente no GitHub. Sempre que possível, todos usam **o mesmo nome**.
+Por isso organizo cada software como um projeto próprio em todos os ambientes que uso. O mesmo projeto possui um espaço para planejamento com IA, um espaço para implementação com IA, uma pasta local de trabalho no computador e um repositório correspondente no GitHub. Sempre que possível, todos usam **o mesmo nome**.
 
 Na prática:
 
-- **ChatGPT** me ajuda a compreender o problema, planejar, revisar e administrar o projeto;
-- **Codex** trabalha na implementação e nas validações técnicas;
+- **o agente de planejamento** me ajuda a compreender o problema, planejar, revisar e administrar o projeto;
+- **o agente de implementação** trabalha na implementação e nas validações técnicas;
 - **a pasta local** é onde a cópia de trabalho do software existe no computador;
 - **o GitHub** mantém o registro persistente do código, da documentação e da evolução do projeto;
 - **eu continuo responsável pelas decisões, prioridades e homologação**.
 
 Esses espaços não competem entre si. Eles se complementam.
+
+### Ferramentas que eu uso
+
+Na minha configuração pessoal, prefiro usar **ChatGPT como agente de planejamento** e **Codex como agente de implementação**. Essa é apenas a combinação que escolhi para o meu fluxo atual, não uma exigência do ÓRBITA.
+
+Quem adotar o método pode usar **Claude, Gemini ou qualquer outra IA/agente** capaz de cumprir esses papéis. Também é possível trocar as ferramentas ao longo do tempo sem alterar o método, desde que as responsabilidades, a rastreabilidade e os gates permaneçam claros.
 
 A eficiência do modelo não vem de entregar tudo para a IA. Ela vem de **reduzir ambiguidade**: cada agente sabe qual é o seu papel, cada projeto possui um lugar definido, as mudanças são pequenas o suficiente para serem acompanhadas e o conhecimento importante volta para o repositório em vez de desaparecer dentro de uma conversa.
 
@@ -63,8 +69,8 @@ Na aplicação prática atual do ÓRBITA, cada software recebe uma identidade co
 
 | Espaço | Organização esperada | Função principal |
 |---|---|---|
-| **Projeto no ChatGPT** | projeto próprio com o nome do software | planejamento, análise, decisões, coordenação e revisão |
-| **Projeto/workspace no Codex** | projeto próprio com o mesmo nome | implementação, testes e produção de evidências |
+| **Contexto do agente de planejamento** | projeto/conversa/workspace próprio com o nome do software | planejamento, análise, decisões, coordenação e revisão |
+| **Contexto do agente de implementação** | projeto/workspace próprio com o mesmo nome | implementação, testes e produção de evidências |
 | **Pasta local** | pasta com o mesmo nome do projeto | working copy do Git, arquivos locais e execução técnica |
 | **Repositório GitHub** | repositório correspondente ao mesmo projeto | fonte persistente da verdade, histórico e documentação |
 
@@ -74,7 +80,7 @@ A regra prática é:
 
 Essa padronização reduz trocas de contexto, nomes divergentes, uso acidental do repositório errado e perda de continuidade entre planejamento e implementação.
 
-O GitHub continua sendo a fonte persistente da verdade. Os projetos do ChatGPT e do Codex são contextos de trabalho; a pasta local é a working copy sincronizada com o repositório remoto.
+O GitHub continua sendo a fonte persistente da verdade. Os ambientes dos agentes de planejamento e implementação são contextos de trabalho; a pasta local é a working copy sincronizada com o repositório remoto.
 
 A especificação completa está em [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
 
@@ -82,34 +88,34 @@ A especificação completa está em [Identidade e ambiente do projeto](docs/10-I
 
 A organização começa **antes da primeira linha de código**.
 
-O responsável humano cria o Projeto no ChatGPT, inicia a conversa, apresenta a ideia e informa dois repositórios: o do Método ÓRBITA e o repositório remoto reservado ao novo software.
+O responsável humano cria um contexto dedicado no agente de planejamento, inicia a conversa, apresenta a ideia e informa dois repositórios: o do Método ÓRBITA e o repositório remoto reservado ao novo software.
 
 A partir daí, o fluxo inicial é:
 
 ```text
-Projeto no ChatGPT
+Contexto do agente de planejamento
         ↓
 ideia + Método ÓRBITA + repositório do projeto
         ↓
-ChatGPT entende o método e estrutura o software
+agente de planejamento entende o método e estrutura o software
         ↓
 README + planejamento + documentação inicial no GitHub
         ↓
-ChatGPT confirma a fundação
+agente de planejamento confirma a fundação
         ↓
-primeira tarefa: bootstrap do Codex
+primeira tarefa: bootstrap do agente de implementação
         ↓
 pasta local criada pelo responsável humano
         ↓
-Codex inicializa/valida Git e sincroniza com o remoto
+agente de implementação inicializa/valida Git e sincroniza com o remoto
         ↓
-ChatGPT + Codex + pasta local + GitHub
+planejamento + implementação + pasta local + GitHub
 estão vinculados ao mesmo projeto
         ↓
 começa a primeira tarefa funcional
 ```
 
-Esse detalhe é importante: **o ChatGPT funda e documenta o projeto antes da implementação; o Codex primeiro conecta a working copy local ao projeto já documentado; só depois começa o desenvolvimento funcional.**
+Esse detalhe é importante: **o agente de planejamento funda e documenta o projeto antes da implementação; o agente de implementação primeiro conecta a working copy local ao projeto já documentado; só depois começa o desenvolvimento funcional.**
 
 A especificação está em [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 
@@ -122,7 +128,7 @@ A especificação está em [Inicialização de um novo projeto](docs/11-INICIALI
 | **Agente de implementação** | Altera código, executa testes, builds e produz evidências técnicas |
 | **Git/GitHub** | Mantém o estado canônico, histórico, documentação e rastreabilidade |
 
-Na configuração de referência, esses papéis correspondem a **responsável humano + ChatGPT + Codex + GitHub**. O modelo, porém, é conceitualmente independente das ferramentas específicas.
+Na configuração pessoal do autor, esses papéis correspondem a **responsável humano + ChatGPT + Codex + GitHub**. Essa combinação é apenas um exemplo de implementação; o método é independente das ferramentas específicas.
 
 ## O ciclo ÓRBITA
 

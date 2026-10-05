@@ -19,16 +19,16 @@ O Método ÓRBITA separa quatro responsabilidades:
 | **Agente de implementação** | Trabalha na working copy, implementa tarefas autorizadas, testa e produz evidências |
 | **Git/GitHub** | Mantém o estado persistente, documentação, histórico e rastreabilidade |
 
-Na configuração de referência atual, esses papéis podem ser exercidos por:
+Um exemplo de configuração é:
 
 ```text
 Responsável humano
         ↓ decide e homologa
 
-ChatGPT
+Agente de planejamento
         ↓ planeja, documenta e coordena
 
-Codex
+Agente de implementação
         ↓ implementa e valida tecnicamente
 
 Git / GitHub
@@ -36,6 +36,8 @@ Git / GitHub
 ```
 
 As ferramentas podem mudar. Os papéis e gates continuam válidos.
+
+Na configuração pessoal do autor, **ChatGPT** exerce o papel de planejamento e **Codex** o papel de implementação. Isso é apenas uma preferência pessoal. Claude, Gemini ou outras IAs podem ocupar esses papéis.
 
 Princípio operacional:
 
@@ -66,7 +68,7 @@ Templates operacionais:
 
 - [Template de tarefa](../templates/TASK-TEMPLATE.md)
 - [Template de implementação](../templates/CODEX-PROMPT-TEMPLATE.md)
-- [Template de bootstrap local](../templates/BOOTSTRAP-CODEX-PROMPT-TEMPLATE.md)
+- [Template de bootstrap local](../templates/BOOTSTRAP-AGENTE-PROMPT-TEMPLATE.md)
 - [Template de homologação](../templates/HOMOLOGACAO-TEMPLATE.md)
 
 ---
@@ -84,7 +86,7 @@ Depois, deve confirmar de forma objetiva que entendeu:
 - que implementação não significa homologação;
 - que não existe avanço automático;
 - que o escopo não deve crescer silenciosamente;
-- que o mesmo projeto deve possuir identidade coerente entre ChatGPT, Codex, pasta local e GitHub.
+- que o mesmo projeto deve possuir identidade coerente entre agentes de planejamento e implementação, pasta local e repositório.
 
 Em seguida, deve receber do responsável humano:
 
@@ -127,7 +129,7 @@ O fluxo esperado de um projeto novo é:
 
 ```text
 Responsável humano
-cria Projeto no ChatGPT
+cria contexto no agente de planejamento
         ↓
 inicia conversa + explica a ideia
         ↓
@@ -140,16 +142,16 @@ cria documentação inicial no GitHub
         ↓
 confirma fundação e planejamento
         ↓
-gera a primeira tarefa do Codex
+gera a primeira tarefa do agente de implementação
         ↓
 Responsável humano
-cria/abre a pasta local no Codex
+cria/abre a pasta local no agente de implementação
         ↓
-Codex executa BOOTSTRAP
+agente de implementação executa BOOTSTRAP
         ↓
 Git local ↔ GitHub sincronizados
         ↓
-ChatGPT + Codex + pasta local + GitHub
+planejamento + implementação + pasta local + repositório
 representam o mesmo projeto
         ↓
 primeira tarefa funcional
@@ -161,11 +163,11 @@ A descrição normativa completa está em [Inicialização de um novo projeto](.
 
 ## 6. Primeira tarefa do agente de implementação
 
-Em projeto novo, a primeira tarefa enviada ao Codex deve ser uma tarefa de **bootstrap local**.
+Em projeto novo, a primeira tarefa enviada ao agente de implementação deve ser uma tarefa de **bootstrap local**.
 
 O responsável humano já terá criado e aberto a pasta destinada ao projeto.
 
-O Codex deve:
+O agente de implementação deve:
 
 1. confirmar a pasta correta;
 2. verificar se Git já existe;
