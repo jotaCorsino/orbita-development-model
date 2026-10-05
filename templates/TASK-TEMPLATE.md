@@ -1,5 +1,11 @@
 # TASK — Título
 
+## Identidade / base
+
+- **Projeto:** [nome canônico]
+- **Repositório:** [owner/repo]
+- **Base esperada:** [branch, tag ou estado homologado]
+
 ## Objetivo
 
 Descreva claramente o resultado esperado.
