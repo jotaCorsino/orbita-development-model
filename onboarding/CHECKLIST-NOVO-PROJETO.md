@@ -25,7 +25,18 @@ Use este checklist como referência ao iniciar um software sob o Método ÓRBITA
 - [ ] Foi informado se o projeto é novo, legado ou evolução de outro sistema
 - [ ] O repositório específico do projeto foi fornecido
 
-## C. Inspeção do repositório
+## C. Identidade e ambientes do projeto
+
+- [ ] Nome canônico do projeto definido
+- [ ] Projeto próprio no ChatGPT identificado/criado
+- [ ] Projeto/workspace próprio no Codex identificado/criado
+- [ ] Pasta local correspondente identificada/criada
+- [ ] Repositório GitHub correspondente identificado/criado
+- [ ] Pasta local está vinculada ao remoto correto
+- [ ] Nomes coincidem sempre que possível
+- [ ] Eventuais diferenças de nome não geram ambiguidade
+
+## D. Inspeção do repositório
 
 - [ ] README lido
 - [ ] AGENTS/regras locais lidos, quando existirem
@@ -36,7 +47,7 @@ Use este checklist como referência ao iniciar um software sob o Método ÓRBITA
 - [ ] Issues/PRs relevantes verificados quando aplicável
 - [ ] Decisões existentes preservadas até revisão explícita
 
-## D. Fundação do projeto
+## E. Fundação do projeto
 
 Para projeto novo:
 
@@ -57,7 +68,7 @@ Para projeto existente:
 - [ ] diferenças entre estado real e documentação registradas
 - [ ] plano de transição aprovado
 
-## E. Antes da primeira implementação
+## F. Antes da primeira implementação
 
 - [ ] tarefa possui ID
 - [ ] objetivo está claro
@@ -68,7 +79,7 @@ Para projeto existente:
 - [ ] tarefa foi autorizada pelo responsável humano
 - [ ] agente de implementação sabe onde deve parar
 
-## F. Segurança
+## G. Segurança
 
 - [ ] nenhum segredo será versionado
 - [ ] dados reais são necessários para o teste?
