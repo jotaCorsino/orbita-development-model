@@ -22,7 +22,8 @@ O objetivo não é maximizar a quantidade de código gerado. É criar um process
 - implementação gere evidências;
 - decisões permaneçam rastreáveis;
 - a aprovação final continue humana;
-- o repositório represente o estado conhecido do projeto.
+- o repositório represente o estado conhecido do projeto;
+- o mesmo projeto mantenha identidade e contexto coerentes entre planejamento, implementação, pasta local e GitHub.
 
 ## Escopo
 
@@ -35,3 +36,20 @@ O ÓRBITA não substitui requisitos de segurança, revisão especializada, compl
 O ÓRBITA não é apresentado como padrão de mercado ou metodologia universal.
 
 Ele é uma **sistematização pública da forma de trabalho de João Corsino**, construída a partir de experiência prática e destinada a continuar evoluindo.
+
+## Organização do ambiente de projeto
+
+O método também trata a organização do ambiente como parte da qualidade do processo.
+
+Na aplicação atual de João Corsino, cada software possui, sempre que possível:
+
+- um **Projeto próprio no ChatGPT** com o nome do projeto;
+- um **Projeto/workspace próprio no Codex** com o mesmo nome;
+- uma **pasta local no computador** com o mesmo nome, contendo a working copy Git;
+- um **repositório GitHub correspondente**, também claramente associado ao projeto.
+
+Essa organização cria uma relação um-para-um entre os contextos usados para pensar, implementar, executar localmente e registrar o projeto.
+
+O GitHub permanece como fonte persistente da verdade. ChatGPT e Codex mantêm contextos de trabalho especializados, enquanto a pasta local materializa a working copy sincronizada com o remoto.
+
+Ver [10 — Identidade e ambiente do projeto](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
