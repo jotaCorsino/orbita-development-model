@@ -27,7 +27,7 @@ Sempre que possível, os quatro usam o mesmo nome.
 
 ## Ferramentas de referência
 
-O método não exige ChatGPT, Codex ou qualquer fornecedor específico. Na configuração pessoal que originou o ÓRBITA, o autor usa **ChatGPT para planejamento** e **Codex para implementação**. Outros usuários podem adotar Claude, Gemini ou ferramentas diferentes, desde que preservem os mesmos papéis e vínculos.
+O método não exige ChatGPT, Codex ou qualquer fornecedor específico. Neste repositório, **ChatGPT para planejamento** e **Codex para implementação** aparecem como configuração de referência. Outros usuários podem adotar Claude, Gemini ou ferramentas diferentes, desde que preservem os mesmos papéis e vínculos.
 
 ## Os quatro espaços
 
