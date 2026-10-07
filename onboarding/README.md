@@ -37,7 +37,7 @@ Git / GitHub
 
 As ferramentas podem mudar. Os papéis e gates continuam válidos.
 
-Na configuração pessoal do autor, **ChatGPT** exerce o papel de planejamento e **Codex** o papel de implementação. Isso é apenas uma preferência pessoal. Claude, Gemini ou outras IAs podem ocupar esses papéis.
+Na configuração de referência deste repositório, **ChatGPT** exerce o papel de planejamento e **Codex** o papel de implementação. Isso é apenas um exemplo de aplicação. Claude, Gemini ou outras IAs podem ocupar esses papéis.
 
 Princípio operacional:
 
