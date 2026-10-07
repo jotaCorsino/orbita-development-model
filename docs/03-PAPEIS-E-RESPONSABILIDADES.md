@@ -80,6 +80,6 @@ O mesmo nome de projeto deve ser usado entre esses ambientes sempre que possíve
 
 Essa separação evita dois erros comuns: imaginar que o chat é o próprio projeto ou imaginar que a pasta local, isoladamente, representa o estado oficial do projeto.
 
-## Configuração pessoal do autor
+## Configuração de referência
 
-Na aplicação que originou o método, o autor prefere **ChatGPT no papel de planejamento** e **Codex no papel de implementação**. Essa escolha serve como exemplo concreto, não como requisito. Outras ferramentas podem substituir qualquer um dos agentes desde que cumpram as responsabilidades definidas pelo ÓRBITA.
+Neste repositório, **ChatGPT** é usado como exemplo de agente de planejamento e **Codex** como exemplo de agente de implementação. Essa combinação serve apenas como referência prática; outras ferramentas podem substituir qualquer um dos agentes desde que cumpram as responsabilidades definidas pelo ÓRBITA.
