@@ -16,12 +16,12 @@ Uma adoção mínima do ÓRBITA pode usar apenas:
 Na configuração de referência, um projeto novo é inicializado nesta ordem:
 
 1. definir o nome canônico;
-2. criar o Projeto de planejamento no ChatGPT;
+2. criar um contexto dedicado no agente de planejamento;
 3. apresentar a ideia e os repositórios do ÓRBITA e do novo projeto;
 4. o agente de planejamento cria a fundação documental no repositório remoto;
-5. o responsável humano cria a pasta local e a abre no Codex;
+5. o responsável humano cria a pasta local e a abre no ambiente do agente de implementação;
 6. o agente de planejamento entrega a primeira tarefa de bootstrap;
-7. o Codex inicializa/valida Git e sincroniza a pasta com o remoto;
+7. o agente de implementação inicializa/valida Git e sincroniza a pasta com o remoto;
 8. somente depois começa a primeira implementação funcional.
 
 Os quatro ambientes devem permanecer associados pelo mesmo nome sempre que possível.
@@ -67,6 +67,35 @@ Uma nova regra deve responder a pelo menos uma pergunta:
 - Qual risco reduz?
 - Qual evidência passa a exigir?
 - O ganho justifica a complexidade adicionada?
+
+## Projeto operacional e case público
+
+Um projeto operacional não precisa ser público para demonstrar competência.
+
+Quando o repositório real contém infraestrutura, dados, configurações internas ou detalhes de manutenção desnecessários ao público, o padrão recomendado é:
+
+```text
+projeto operacional privado
+        ↓
+seleção e sanitização
+        ↓
+case público independente
+```
+
+O case público deve priorizar:
+
+- problema;
+- arquitetura;
+- decisões;
+- processo de desenvolvimento;
+- testes e evidências;
+- segurança;
+- resultados;
+- aprendizados.
+
+Ele não deve depender da exposição de credenciais, dados reais, caminhos internos, IDs operacionais ou detalhes de infraestrutura.
+
+Esse princípio foi incorporado ao método a partir do estudo de caso [Tickets Recorrentes HESK](../examples/01-TICKETS-RECORRENTES-HESK.md).
 
 ## Portfólio
 
