@@ -33,7 +33,7 @@ O ÓRBITA define funções, não produtos específicos.
 - **agente de implementação** — implementação e validação técnica;
 - **repositório Git** — estado persistente e histórico.
 
-Na configuração pessoal do autor, ChatGPT exerce o papel de planejamento e Codex o papel de implementação. Outra pessoa pode usar Claude, Gemini ou qualquer combinação de ferramentas equivalente. O método deve sobreviver à substituição de qualquer IA.
+Na configuração de referência deste repositório, ChatGPT exerce o papel de planejamento e Codex o papel de implementação. Claude, Gemini ou qualquer combinação equivalente também podem cumprir esses papéis. O método deve sobreviver à substituição de qualquer IA.
 
 ## Contextos dedicados por projeto
 
