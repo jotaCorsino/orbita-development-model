@@ -8,7 +8,7 @@ O objetivo não é criar complexidade por antecipação. Cada nova camada deve s
 
 | Versão / Etapa | Objetivo | Status | Critério de saída |
 |---|---|---|---|
-| **v0.1 — Fundação** | Definir identidade, princípios, papéis, fluxo, governança e anti-padrões | AGUARDANDO_HOMOLOGACAO | Documentação fundamental revisada e aprovada pelo autor |
+| **v0.1 — Fundação** | Definir identidade, princípios, papéis, fluxo, governança e anti-padrões | AGUARDANDO_HOMOLOGACAO | Documentação fundamental revisada e homologada |
 | **v0.2 — Aplicação prática** | Registrar estudos de caso e confrontar o modelo com projetos reais | EM_ANDAMENTO | Pelo menos dois estudos de caso com aprendizados registrados |
 | **v0.3 — Kit operacional** | Ampliar templates e regras de adoção | PENDENTE | Templates testados em projetos de perfis diferentes |
 | **v0.4 — Avaliação** | Definir sinais de saúde e critérios para avaliar aplicação do método | PENDENTE | Checklist ou matriz de avaliação validada em projetos reais |
@@ -36,7 +36,7 @@ Inclui:
 
 ### Gate
 
-A versão só pode ser marcada como concluída após **homologação de João Corsino**.
+A versão só pode ser marcada como concluída após **homologação humana**.
 
 ## v0.2 — Aplicação prática
 
@@ -81,4 +81,4 @@ Essas métricas não devem ser adotadas apenas porque são mensuráveis. Precisa
 
 ## v1.0 — Modelo estável
 
-A versão 1.0 deverá representar o ponto em que o Método ÓRBITA deixa de ser apenas uma documentação inicial do processo pessoal e passa a possuir uma especificação pública consistente, exemplos suficientes e um kit de adoção utilizável por terceiros.
+A versão 1.0 deverá representar o ponto em que o Método ÓRBITA deixa de ser apenas uma documentação inicial de um processo prático e passa a possuir uma especificação pública consistente, exemplos suficientes e um kit de adoção utilizável por terceiros.
