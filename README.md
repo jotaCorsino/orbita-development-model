@@ -4,9 +4,8 @@
 
 ### Desenvolvimento de Software Assistido por IA com Governança Humana
 
-**Um modelo pessoal de organização, rastreabilidade e controle do desenvolvimento de software.**
+**Um modelo prático de organização, rastreabilidade e controle do desenvolvimento de software assistido por IA.**
 
-Idealizado e utilizado por **João Corsino**, em formação para atuar como **Analista de Sistemas**.
 
 ![Versão](https://img.shields.io/badge/vers%C3%A3o-v0.1%20candidate-blue)
 ![Status](https://img.shields.io/badge/status-aguardando%20homologa%C3%A7%C3%A3o-orange)
@@ -17,27 +16,27 @@ Idealizado e utilizado por **João Corsino**, em formação para atuar como **An
 
 ---
 
-## Em linguagem simples: como eu trabalho
+## Em linguagem simples: como funciona
 
-O ÓRBITA nasceu porque eu percebi que **usar IA para desenvolver software funciona muito melhor quando cada coisa tem o seu lugar**.
+O ÓRBITA parte de uma ideia simples: **o desenvolvimento assistido por IA funciona melhor quando cada parte do trabalho tem um papel e um lugar definidos**.
 
-Quando começo um projeto, eu não quero que ele exista apenas dentro de uma conversa, nem que a implementação avance mais rápido do que a minha capacidade de entender o que está acontecendo. Quero conseguir abrir o projeto dias ou semanas depois e saber com clareza **o que estamos construindo, por que tomamos determinada decisão, o que já foi feito, o que ainda falta e qual é o próximo passo**.
+O objetivo é evitar que o projeto exista apenas dentro de uma conversa ou que a implementação avance sem contexto suficiente para ser compreendida depois. Um projeto bem organizado deve permitir retomar o trabalho dias ou semanas depois e entender com clareza **o que está sendo construído, por que certas decisões foram tomadas, o que já foi concluído, o que ainda falta e qual é o próximo passo**.
 
-Por isso organizo cada software como um projeto próprio em todos os ambientes que uso. O mesmo projeto possui um espaço para planejamento com IA, um espaço para implementação com IA, uma pasta local de trabalho no computador e um repositório correspondente no GitHub. Sempre que possível, todos usam **o mesmo nome**.
+Por isso, cada software é tratado como um projeto coerente entre os ambientes usados para planejá-lo, implementá-lo e registrá-lo. Sempre que possível, esses ambientes usam **o mesmo nome**.
 
 Na prática:
 
-- **o agente de planejamento** me ajuda a compreender o problema, planejar, revisar e administrar o projeto;
+- **o agente de planejamento** ajuda a compreender o problema, planejar, revisar e administrar o projeto;
 - **o agente de implementação** trabalha na implementação e nas validações técnicas;
-- **a pasta local** é onde a cópia de trabalho do software existe no computador;
+- **a pasta local** contém a working copy do software;
 - **o GitHub** mantém o registro persistente do código, da documentação e da evolução do projeto;
-- **eu continuo responsável pelas decisões, prioridades e homologação**.
+- **o responsável humano** mantém decisões, prioridades e homologação.
 
 Esses espaços não competem entre si. Eles se complementam.
 
-### Ferramentas que eu uso
+### Configuração de referência
 
-Na minha configuração pessoal, prefiro usar **ChatGPT como agente de planejamento** e **Codex como agente de implementação**. Essa é apenas a combinação que escolhi para o meu fluxo atual, não uma exigência do ÓRBITA.
+Na configuração usada como referência neste repositório, **ChatGPT** atua como agente de planejamento e **Codex** como agente de implementação. Essa combinação é apenas um exemplo de aplicação, não uma exigência do ÓRBITA.
 
 Quem adotar o método pode usar **Claude, Gemini ou qualquer outra IA/agente** capaz de cumprir esses papéis. Também é possível trocar as ferramentas ao longo do tempo sem alterar o método, desde que as responsabilidades, a rastreabilidade e os gates permaneçam claros.
 
@@ -47,21 +46,21 @@ A eficiência do modelo não vem de entregar tudo para a IA. Ela vem de **reduzi
 
 ## O que é o Método ÓRBITA?
 
-O **Método ÓRBITA** é a forma particular que desenvolvi para manter projetos de software assistidos por Inteligência Artificial **organizados, rastreáveis e sob governança humana**.
+O **Método ÓRBITA** é uma sistematização prática para manter projetos de software assistidos por Inteligência Artificial **organizados, rastreáveis e sob governança humana**.
 
 Ele nasceu de uma necessidade prática: usar agentes de IA para aumentar capacidade de análise e implementação sem perder clareza sobre **quem decide, quem planeja, quem executa, o que foi alterado e quando uma etapa pode realmente ser considerada concluída**.
 
-O modelo não pretende substituir metodologias consolidadas de engenharia de software. Ele organiza a minha forma de trabalhar com práticas já conhecidas — Git, branches, commits, Pull Requests, testes, documentação e desenvolvimento incremental — combinadas com uma separação explícita de responsabilidades entre humano e agentes de IA.
+O modelo não pretende substituir metodologias consolidadas de engenharia de software nem reivindicar ineditismo sobre práticas já conhecidas. Ele organiza Git, branches, commits, Pull Requests, testes, documentação e desenvolvimento incremental em um fluxo com separação explícita de responsabilidades entre humano e agentes de IA.
 
 > **Princípio central:** Planejar → Executar → Evidenciar → Homologar.
 
-## Por que criei este modelo?
+## Por que este modelo existe?
 
 Ferramentas de IA conseguem produzir código rapidamente. O problema é que velocidade sem processo pode gerar outro tipo de dívida: decisões implícitas, alterações difíceis de rastrear, escopo crescente, documentação desatualizada e perda de compreensão do próprio projeto.
 
 O ÓRBITA foi criado para evitar isso.
 
-No meu fluxo, a IA **não recebe autoridade irrestrita sobre o projeto**. Cada participante possui um papel definido, o trabalho é dividido em unidades controláveis e mudanças importantes dependem de evidências e homologação.
+No ÓRBITA, a IA **não recebe autoridade irrestrita sobre o projeto**. Cada participante possui um papel definido, o trabalho é dividido em unidades controláveis e mudanças importantes dependem de evidências e homologação.
 
 ## Um projeto, quatro espaços, uma identidade
 
@@ -128,7 +127,7 @@ A especificação está em [Inicialização de um novo projeto](docs/11-INICIALI
 | **Agente de implementação** | Altera código, executa testes, builds e produz evidências técnicas |
 | **Git/GitHub** | Mantém o estado canônico, histórico, documentação e rastreabilidade |
 
-Na configuração pessoal do autor, esses papéis correspondem a **responsável humano + ChatGPT + Codex + GitHub**. Essa combinação é apenas um exemplo de implementação; o método é independente das ferramentas específicas.
+Na configuração de referência deste repositório, esses papéis correspondem a **responsável humano + ChatGPT + Codex + GitHub**. Essa combinação é apenas um exemplo de implementação; o método é independente das ferramentas específicas.
 
 ## Segurança como responsabilidade transversal
 
@@ -184,7 +183,7 @@ flowchart LR
 
 ## O que o ÓRBITA evita deliberadamente?
 
-O método foi desenhado para reduzir alguns padrões que considero perigosos no desenvolvimento assistido por IA:
+O método foi desenhado para reduzir alguns padrões que podem comprometer clareza, rastreabilidade e controle no desenvolvimento assistido por IA:
 
 - entregar um problema amplo a um agente e aceitar uma grande alteração sem decomposição;
 - permitir que o mesmo agente defina, implemente e aprove sozinho a solução;
@@ -239,25 +238,23 @@ Também existem [templates](templates/) para tarefas, bootstrap local, prompts d
 
 ## Para quem este repositório existe?
 
-Este projeto cumpre dois objetivos.
+Este repositório cumpre dois objetivos.
 
-O primeiro é **operacional**: registrar e evoluir a forma que utilizo para desenvolver software com apoio de IA.
+O primeiro é **operacional**: registrar e evoluir um processo de desenvolvimento assistido por IA de forma reutilizável.
 
-O segundo é **profissional**: tornar visível, no meu portfólio, não apenas o resultado dos projetos que desenvolvo, mas também **como penso, organizo decisões, controlo mudanças, utilizo ferramentas de IA e mantenho rastreabilidade durante o desenvolvimento**.
+O segundo é **demonstrativo**: tornar visíveis não apenas resultados de software, mas também práticas de planejamento, governança, rastreabilidade, segurança e homologação.
 
 ## Autoria
 
-O Método ÓRBITA foi **idealizado, estruturado e utilizado por João Corsino** a partir da experiência prática em seus próprios projetos de software.
+A sistematização e a documentação do Método ÓRBITA neste repositório foram organizadas por **João Corsino**, a partir de experiência prática em projetos de software assistidos por IA.
 
-Sou profissional em formação na área de tecnologia, com o objetivo de atuar como **Analista de Sistemas**, e este repositório registra uma parte importante da construção da minha forma de trabalhar.
-
-O modelo é evolutivo. Novas práticas podem ser incorporadas conforme projetos reais revelem problemas, limitações e oportunidades de melhoria.
+O modelo é evolutivo e pode incorporar novas práticas conforme seu uso em projetos reais revele problemas, limitações e oportunidades de melhoria.
 
 ---
 
 <div align="center">
 
-**João Corsino · Método ÓRBITA**
+**Método ÓRBITA**
 
 *Organizar o uso da IA para que velocidade não substitua controle.*
 
