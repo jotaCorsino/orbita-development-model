@@ -2,7 +2,7 @@
 
 ## Definição
 
-O **Método ÓRBITA** é um modelo pessoal de organização do desenvolvimento de software assistido por IA com governança humana.
+O **Método ÓRBITA** é um modelo prático de organização do desenvolvimento de software assistido por IA com governança humana.
 
 Foi criado a partir de uma necessidade prática recorrente: aproveitar agentes de IA sem perder compreensão, rastreabilidade e autoridade humana sobre o processo de desenvolvimento.
 
@@ -35,7 +35,7 @@ O ÓRBITA não substitui requisitos de segurança, revisão especializada, compl
 
 O ÓRBITA não é apresentado como padrão de mercado ou metodologia universal.
 
-Ele é uma **sistematização pública de um modelo pessoal de trabalho**, construída a partir de experiência prática e destinada a continuar evoluindo.
+Ele é uma **sistematização pública de um modelo prático de trabalho**, construída a partir de experiência prática e destinada a continuar evoluindo.
 
 ## Organização do ambiente de projeto
 
@@ -43,13 +43,13 @@ O método também trata a organização do ambiente como parte da qualidade do p
 
 Na configuração de referência, cada software possui, sempre que possível:
 
-- um **Projeto próprio no ChatGPT** com o nome do projeto;
-- um **Projeto/workspace próprio no Codex** com o mesmo nome;
+- um **contexto próprio no agente de planejamento** com o nome do projeto;
+- um **contexto próprio no agente de implementação** com o mesmo nome;
 - uma **pasta local no computador** com o mesmo nome, contendo a working copy Git;
 - um **repositório GitHub correspondente**, também claramente associado ao projeto.
 
 Essa organização cria uma relação um-para-um entre os contextos usados para pensar, implementar, executar localmente e registrar o projeto.
 
-O GitHub permanece como fonte persistente da verdade. ChatGPT e Codex mantêm contextos de trabalho especializados, enquanto a pasta local materializa a working copy sincronizada com o remoto.
+O GitHub permanece como fonte persistente da verdade. Os agentes de planejamento e implementação mantêm contextos de trabalho especializados, enquanto a pasta local materializa a working copy sincronizada com o remoto.
 
 Ver [10 — Identidade e ambiente do projeto](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
