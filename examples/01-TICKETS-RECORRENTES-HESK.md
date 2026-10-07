@@ -2,11 +2,34 @@
 
 ## Projeto
 
-**Repositório:** [jotaCorsino/tickets-recorrentes-hesk](https://github.com/jotaCorsino/tickets-recorrentes-hesk)
+**Case público sanitizado:** [jotaCorsino/hesk-recurring-tickets](https://github.com/jotaCorsino/hesk-recurring-tickets)
 
 O projeto desenvolve uma camada externa de automação para criação de chamados recorrentes em uma instalação HESK, com persistência própria, scheduler, segurança contra duplicidade, processamento em lote e painel administrativo.
 
-Este estudo de caso não pretende documentar a arquitetura completa do sistema. Seu objetivo é mostrar **como os princípios do Método ÓRBITA aparecem em um desenvolvimento real**.
+Este estudo de caso não pretende expor o ambiente operacional completo. Seu objetivo é mostrar **como os princípios do Método ÓRBITA aparecem em um desenvolvimento real** por meio de uma representação pública sanitizada.
+
+## Projeto operacional e representação pública
+
+Durante a evolução do projeto ficou claro que um sistema operacional real não precisa permanecer público para servir como evidência de portfólio.
+
+A estratégia adotada passou a separar:
+
+```text
+projeto operacional
+privado
+        ↓
+sanitização
+        ↓
+case público
+        ↓
+arquitetura + decisões + processo + resultados
+```
+
+O case público utiliza dados, caminhos, hosts, identificadores e exemplos genéricos ou fictícios. Detalhes necessários apenas à operação real permanecem fora da representação pública.
+
+### Princípio demonstrado
+
+**Demonstrar competência não exige expor infraestrutura ou dados operacionais desnecessários.**
 
 ## 1. Necessidade antes da implementação
 
@@ -131,13 +154,14 @@ Essa composição corresponde diretamente aos papéis descritos no Método ÓRBI
 
 ## 10. O que este caso ensinou ao método
 
-A experiência reforçou cinco regras:
+A experiência reforçou seis regras:
 
 1. **Homologação real precisa ser distinguida de teste automatizado.**
 2. **Bancos e ambientes isolados reduzem risco durante validações.**
 3. **Registrar limitações aumenta a confiança no processo.**
 4. **Tarefas intermediárias de segurança podem ser necessárias antes de funcionalidades visíveis.**
 5. **Documentação atualizada permite retomar o desenvolvimento sem depender integralmente do histórico das conversas.**
+6. **Projeto operacional e case público podem — e às vezes devem — ser artefatos separados.**
 
 ## Conclusão
 
