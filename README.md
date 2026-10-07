@@ -210,7 +210,11 @@ O objetivo é permitir que um novo agente compreenda **como trabalhar** antes de
 
 O ÓRBITA não nasceu apenas como conceito. Seus princípios vêm sendo aplicados em projetos reais.
 
-O primeiro estudo de caso documentado é o projeto **[Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md)**, no qual o desenvolvimento foi dividido em etapas como prova de conceito, persistência, scheduler, segurança contra duplicidade, processamento em lote e interface administrativa. Cada etapa avançou por implementação, validação, evidências e homologação antes da próxima.
+O primeiro estudo de caso documentado é **[Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md)**. Sua representação pública está no repositório sanitizado **[hesk-recurring-tickets](https://github.com/jotaCorsino/hesk-recurring-tickets)**.
+
+O case mostra a evolução por prova de conceito, persistência, scheduler, segurança contra duplicidade, processamento em lote, interface administrativa, implantação e operação. Cada etapa avançou por implementação, validação, evidências e homologação antes da próxima.
+
+O projeto operacional real permanece separado da representação pública. Essa separação passou a fazer parte do próprio aprendizado do ÓRBITA: **portfólio deve expor decisões, arquitetura, processo e resultados sem exigir a exposição do ambiente operacional completo**.
 
 ## Documentação
 
@@ -226,7 +230,7 @@ O primeiro estudo de caso documentado é o projeto **[Tickets Recorrentes HESK](
 | [Aplicação e evolução](docs/08-APLICACAO-E-EVOLUCAO.md) | Como adotar, adaptar e evoluir o modelo |
 | [Anti-padrões](docs/09-ANTI-PADROES.md) | Comportamentos que o método procura evitar |
 | [Onboarding para novos projetos](onboarding/README.md) | Entrada permanente para novos agentes e novos projetos |
-| [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md) | Organização do mesmo projeto entre ChatGPT, Codex, pasta local e GitHub |
+| [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md) | Organização do mesmo projeto entre agentes, pasta local e GitHub |
 | [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) | Fundação documental remota e primeiro bootstrap local do agente de implementação |
 | [Segurança e integridade](docs/12-SEGURANCA-E-INTEGRIDADE.md) | Baseline transversal de segurança de software, informação e repositório |
 | [Roadmap](ROADMAP.md) | Maturidade e próximas evoluções do próprio método |
