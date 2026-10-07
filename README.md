@@ -7,8 +7,6 @@
 **Um modelo prático de organização, rastreabilidade e controle do desenvolvimento de software assistido por IA.**
 
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-v0.1%20candidate-blue)
-![Status](https://img.shields.io/badge/status-aguardando%20homologa%C3%A7%C3%A3o-orange)
 ![Idioma](https://img.shields.io/badge/idioma-PT--BR-green)
 ![Modelo](https://img.shields.io/badge/modelo-Human--in--the--Loop-purple)
 
