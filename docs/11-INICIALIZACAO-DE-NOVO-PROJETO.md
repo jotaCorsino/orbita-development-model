@@ -20,7 +20,7 @@ O repositório GitHub continua sendo a referência persistente.
 
 ## Independência de ferramenta
 
-A sequência abaixo descreve papéis. Na configuração pessoal do autor, o agente de planejamento é o ChatGPT e o agente de implementação é o Codex. Outras combinações de IA podem ser usadas sem alterar o fluxo.
+A sequência abaixo descreve papéis. Neste repositório, ChatGPT e Codex aparecem como configuração de referência para planejamento e implementação. Outras combinações de IA podem ser usadas sem alterar o fluxo.
 
 ## Sequência padrão
 
