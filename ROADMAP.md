@@ -49,7 +49,7 @@ Objetivos:
 
 Primeiro estudo de caso:
 
-- [Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md).
+- [Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md) — [case público sanitizado](https://github.com/jotaCorsino/hesk-recurring-tickets).
 
 ## v0.3 — Kit operacional
 
