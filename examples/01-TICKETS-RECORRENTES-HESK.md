@@ -145,9 +145,9 @@ Na condução desse projeto:
 
 | Participante | Papel |
 |---|---|
-| **João Corsino** | define necessidade, avalia comportamento, aprova direção e homologa |
-| **ChatGPT** | auxilia análise, planejamento, decomposição, revisão e instruções |
-| **Codex** | trabalha sobre o repositório, implementa, testa e apresenta evidências |
+| **Responsável humano** | define necessidade, avalia comportamento, aprova direção e homologa |
+| **Agente de planejamento** | auxilia análise, planejamento, decomposição, revisão e instruções |
+| **Agente de implementação** | trabalha sobre o repositório, implementa, testa e apresenta evidências |
 | **GitHub** | preserva código, documentação, commits, branches, PRs e estado aprovado |
 
 Essa composição corresponde diretamente aos papéis descritos no Método ÓRBITA.
