@@ -237,14 +237,6 @@ O projeto operacional real permanece separado da representação pública. Essa 
 
 Também existem [templates](templates/) para tarefas, bootstrap local, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
 
-## Estado atual do método
-
-Esta documentação representa a **candidata à versão v0.1**.
-
-A fundação está em **AGUARDANDO_HOMOLOGACAO**. O objetivo desta fase é estabilizar definição, princípios, papéis, fluxo, governança e exemplos antes de ampliar o método com novos templates e estudos de caso.
-
-Consulte o [roadmap](ROADMAP.md) para acompanhar a evolução.
-
 ## Para quem este repositório existe?
 
 Este projeto cumpre dois objetivos.
