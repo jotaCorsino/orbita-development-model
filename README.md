@@ -14,7 +14,7 @@
 
 ---
 
-## Em linguagem simples: como funciona
+## Como funciona
 
 O ÓRBITA parte de uma ideia simples: **o desenvolvimento assistido por IA funciona melhor quando cada parte do trabalho tem um papel e um lugar definidos**.
 
@@ -42,7 +42,7 @@ A eficiência do modelo não vem de entregar tudo para a IA. Ela vem de **reduzi
 
 É isso que o ÓRBITA procura preservar: **usar a velocidade da IA sem perder organização, entendimento e controle humano.**
 
-## O que é o Método ÓRBITA?
+## Visão geral
 
 O **Método ÓRBITA** é uma sistematização prática para manter projetos de software assistidos por Inteligência Artificial **organizados, rastreáveis e sob governança humana**.
 
@@ -52,7 +52,7 @@ O modelo não pretende substituir metodologias consolidadas de engenharia de sof
 
 > **Princípio central:** Planejar → Executar → Evidenciar → Homologar.
 
-## Por que este modelo existe?
+## Motivação
 
 Ferramentas de IA conseguem produzir código rapidamente. O problema é que velocidade sem processo pode gerar outro tipo de dívida: decisões implícitas, alterações difíceis de rastrear, escopo crescente, documentação desatualizada e perda de compreensão do próprio projeto.
 
@@ -60,7 +60,7 @@ O ÓRBITA foi criado para evitar isso.
 
 No ÓRBITA, a IA **não recebe autoridade irrestrita sobre o projeto**. Cada participante possui um papel definido, o trabalho é dividido em unidades controláveis e mudanças importantes dependem de evidências e homologação.
 
-## Um projeto, quatro espaços, uma identidade
+## Identidade do projeto
 
 Na aplicação prática atual do ÓRBITA, cada software recebe uma identidade coerente nos ambientes usados para desenvolvê-lo:
 
@@ -81,7 +81,7 @@ O GitHub continua sendo a fonte persistente da verdade. Os ambientes dos agentes
 
 A especificação completa está em [Identidade e ambiente do projeto](docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
 
-## Como um novo projeto nasce no ÓRBITA
+## Inicialização de um projeto
 
 A organização começa **antes da primeira linha de código**.
 
@@ -116,7 +116,7 @@ Esse detalhe é importante: **o agente de planejamento funda e documenta o proje
 
 A especificação está em [Inicialização de um novo projeto](docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 
-## Os quatro elementos da órbita
+## Papéis
 
 | Elemento | Responsabilidade principal |
 |---|---|
@@ -127,7 +127,7 @@ A especificação está em [Inicialização de um novo projeto](docs/11-INICIALI
 
 Na configuração de referência deste repositório, esses papéis correspondem a **responsável humano + ChatGPT + Codex + GitHub**. Essa combinação é apenas um exemplo de implementação; o método é independente das ferramentas específicas.
 
-## Segurança como responsabilidade transversal
+## Segurança
 
 No ÓRBITA, segurança não é uma revisão deixada para o final. Planejamento, implementação, testes, evidências e homologação devem considerar os riscos proporcionais ao projeto.
 
@@ -137,7 +137,7 @@ Testes continuam sendo parte fundamental do método, mas **testes aprovados não
 
 A referência completa está em [Segurança e integridade do projeto](docs/12-SEGURANCA-E-INTEGRIDADE.md).
 
-## O ciclo ÓRBITA
+## Fluxo
 
 ```mermaid
 flowchart LR
@@ -156,7 +156,7 @@ flowchart LR
     L --> M[Próxima tarefa]
 ```
 
-## O que significa ÓRBITA?
+## Princípios ÓRBITA
 
 | Letra | Princípio |
 |---|---|
@@ -179,7 +179,7 @@ flowchart LR
 8. A `main` deve representar um estado conhecido e aprovado.
 9. Segurança deve ser considerada de forma proporcional ao risco durante todo o ciclo.
 
-## O que o ÓRBITA evita deliberadamente?
+## Anti-padrões
 
 O método foi desenhado para reduzir alguns padrões que podem comprometer clareza, rastreabilidade e controle no desenvolvimento assistido por IA:
 
@@ -193,7 +193,7 @@ O método foi desenhado para reduzir alguns padrões que podem comprometer clare
 
 A discussão completa está em [Anti-padrões](docs/09-ANTI-PADROES.md).
 
-## Iniciar um novo projeto com o ÓRBITA
+## Adoção
 
 Para aplicar o método em um novo software sem precisar reexplicar todo o processo a cada conversa, existe uma área permanente de **onboarding para agentes de IA**:
 
@@ -203,7 +203,7 @@ Ela define a ordem de leitura, o contrato de trabalho esperado, o checklist de i
 
 O objetivo é permitir que um novo agente compreenda **como trabalhar** antes de receber a descrição do software e o repositório específico que será desenvolvido.
 
-## Evidência prática
+## Estudo de caso
 
 O ÓRBITA não nasceu apenas como conceito. Seus princípios vêm sendo aplicados em projetos reais.
 
@@ -234,7 +234,7 @@ O projeto operacional real permanece separado da representação pública. Essa 
 
 Também existem [templates](templates/) para tarefas, bootstrap local, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
 
-## Para quem este repositório existe?
+## Objetivo do repositório
 
 Este repositório cumpre dois objetivos.
 
