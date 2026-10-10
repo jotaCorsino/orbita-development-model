@@ -44,7 +44,7 @@ Não confundir:
 
 Um `chmod` ou `chown` não resolve necessariamente uma montagem `ro`. Não apagar ou desmontar `.git` por tentativa e erro.
 
-## 4. Procedimento de diagnóstico recomendado (lição operacional, ainda não incorporada ao método)
+## 4. Procedimento de diagnóstico recomendado (incorporado na proposta em homologação)
 
 Antes de propor outro diretório ou recriar o projeto:
 
