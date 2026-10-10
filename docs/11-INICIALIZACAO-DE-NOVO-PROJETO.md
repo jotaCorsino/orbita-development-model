@@ -118,6 +118,36 @@ Se a pasta já possuir conteúdo, histórico Git ou remoto diferente, o agente d
 
 Um template específico está em [../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md).
 
+
+### Restrições do ambiente de implementação
+
+Uma falha observada pelo agente ao criar, ler ou atualizar `.git` não deve ser interpretada automaticamente como falha de permissão da pasta real do projeto.
+
+Ambientes de implementação podem aplicar isolamento, montagens temporárias ou políticas de sandbox que alteram a forma como o filesystem é apresentado ao agente. Por isso, quando o bootstrap encontrar `.git` inacessível, somente leitura ou comportamento incompatível com a pasta esperada, o agente deve primeiro identificar **em qual camada está a restrição**:
+
+```text
+pasta real do projeto
+        ↓
+ambiente / sandbox do agente
+        ↓
+visão observada durante a execução
+```
+
+Antes de abandonar, renomear ou substituir a pasta canônica:
+
+1. inspecionar o estado da pasta e de `.git` sem executar ações destrutivas;
+2. distinguir permissões reais do filesystem de restrições impostas pelo ambiente isolado;
+3. quando disponível, verificar permissões e características de montagem do caminho afetado;
+4. preservar a pasta original sempre que ela continuar sendo a working copy pretendida;
+5. se houver mecanismo formal de execução fora do sandbox, utilizá-lo somente mediante autorização humana;
+6. reinspecionar a pasta real antes de inicializar ou clonar qualquer repositório;
+7. considerar uma nova working copy somente depois de demonstrar que a pasta original não pode cumprir seu papel com segurança.
+
+A existência de um bloqueio no sandbox **não autoriza** por si só `sudo`, alterações recursivas de permissão, remoção de `.git`, desmontagens, `reset --hard` ou criação automática de outro workspace.
+
+Se a origem da restrição não puder ser determinada com segurança, o agente deve interromper o bootstrap e reportar o bloqueio.
+
+
 ## Estado ao final do bootstrap
 
 Ao concluir a inicialização:

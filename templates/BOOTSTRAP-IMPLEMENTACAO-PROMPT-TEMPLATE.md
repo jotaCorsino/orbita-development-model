@@ -31,6 +31,23 @@ Esta tarefa é apenas de bootstrap. **Não implemente funcionalidades.**
 11. verifique `git status`, branch atual e remoto;
 12. pare após a validação.
 
+## Falha de escrita em `.git` ou restrição do ambiente
+
+Se Git não conseguir criar, ler ou atualizar `.git`, **não conclua imediatamente que a pasta real do projeto é somente leitura** e não crie outra working copy como primeira solução.
+
+Antes de reorganizar diretórios:
+
+1. inspecione a pasta atual e `.git` sem modificar conteúdo;
+2. confirme se o bloqueio pertence ao filesystem real ou ao ambiente isolado/sandbox do agente;
+3. quando disponível, verifique permissões e características de montagem do caminho afetado;
+4. preserve a pasta original e sua identidade canônica sempre que possível;
+5. se o ambiente oferecer execução fora do sandbox, utilize somente o mecanismo formal disponível e mediante autorização humana;
+6. após qualquer execução autorizada fora do sandbox, inspecione novamente o estado real da pasta antes de inicializar ou clonar;
+7. se o remoto já contém a fundação documental e a pasta real estiver comprovadamente vazia, o repositório pode ser clonado diretamente no diretório atual;
+8. não use `sudo`, `chmod -R`, remoção de `.git`, desmontagens, `reset --hard` ou mudança de workspace como reação automática ao bloqueio.
+
+Se não for possível distinguir com segurança a origem da restrição, **pare e relate o bloqueio**.
+
 ## Situações de conflito
 
 Se encontrar:
@@ -40,6 +57,7 @@ Se encontrar:
 - remoto diferente;
 - branch divergente;
 - necessidade de force/reset destrutivo;
+- `.git` inacessível, somente leitura ou apresentado pelo ambiente como montagem restrita;
 
 **não resolva silenciosamente.** Relate a situação e aguarde orientação.
 
@@ -54,6 +72,7 @@ Informe:
 - commit/HEAD sincronizado;
 - confirmação de que README/documentação estão presentes;
 - resultado de `git status`;
-- qualquer divergência encontrada.
+- qualquer divergência encontrada;
+- quando houver bloqueio de `.git`, diagnóstico da camada afetada (filesystem real ou ambiente/sandbox) e eventual autorização utilizada.
 
 Não inicie a próxima tarefa.

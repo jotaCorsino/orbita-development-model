@@ -3,7 +3,7 @@
 - **Categoria:** bootstrap local / Git / ambiente de implementação.
 - **Primeiro registro documentado aqui:** 09/10/2026.
 - **Estado do problema:** recorrente; solução comprovada em um dos ambientes.
-- **Estado metodológico:** observação registrada. **Nenhuma mudança normativa do Método ÓRBITA aprovada ou aplicada por este registro.**
+- **Estado metodológico:** refinamento normativo **homologado pelo responsável humano** no PR #2. A incorporação na `main` é registrada pelo merge do próprio PR.
 - **Projetos com ocorrência identificada:** `scripts-action1` (08/10/2026) e `technolife-downloads-web` (09/10/2026).
 
 ## 1. Sintoma
@@ -44,7 +44,7 @@ Não confundir:
 
 Um `chmod` ou `chown` não resolve necessariamente uma montagem `ro`. Não apagar ou desmontar `.git` por tentativa e erro.
 
-## 4. Procedimento de diagnóstico recomendado (lição operacional, ainda não incorporada ao método)
+## 4. Procedimento de diagnóstico recomendado (incorporado na proposta em homologação)
 
 Antes de propor outro diretório ou recriar o projeto:
 
@@ -71,16 +71,31 @@ A ocorrência de 09/10 ficou **tecnicamente resolvida** quando o Git foi clonado
 
 Não foi demonstrado que a política do sandbox deixou de impor a montagem somente leitura; resolveu-se o bootstrap por execução autorizada **fora** dele.
 
-## 7. Avaliação futura do Método ÓRBITA — pendente
+## 7. Incorporação metodológica — homologada
 
-Avaliar **em outro momento**, com decisão humana explícita, se o método precisa incorporar:
+O aprendizado deste troubleshooting foi transformado em refinamentos normativos na branch:
 
-- um diagnóstico de montagem e permissões ao [template de bootstrap](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md);
-- uma orientação para distinguir filesystem real e sandbox na [inicialização de novos projetos](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md);
-- um item na [checklist de onboarding](../onboarding/CHECKLIST-NOVO-PROJETO.md) relativo a bloqueios `.git` e à autorização necessária;
-- a preferência pela **pasta original** antes de oferecer outro workspace, preservando a identidade do projeto.
+`docs/TRB-001-bootstrap-sandbox-diagnostico`
 
-**Não alterar agora** esses documentos. Este registro reúne evidências e proposta de investigação, não uma atualização já aprovada do Método ÓRBITA.
+Documentos atualizados:
+
+- [template de bootstrap](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md) — passou a orientar o diagnóstico entre filesystem real e sandbox antes de reorganizar diretórios ou criar outra working copy;
+- [inicialização de novos projetos](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) — passou a registrar formalmente que restrições observadas pelo agente podem pertencer ao ambiente isolado e que a pasta canônica deve ser preservada sempre que possível;
+- [checklist de onboarding](../onboarding/CHECKLIST-NOVO-PROJETO.md) — passou a incluir controles condicionais para bloqueios de `.git`, distinção entre sandbox e permissões reais e priorização da working copy original.
+
+A revisão cruzada confirmou coerência entre os três pontos:
+
+- o **template** contém o procedimento operacional detalhado;
+- o documento de **inicialização** contém a regra metodológica;
+- o **checklist** garante que o diagnóstico não seja esquecido quando o problema ocorrer.
+
+O refinamento preserva o princípio de identidade única do projeto e evita transformar um bloqueio do sandbox em justificativa automática para criar uma nova pasta, remover `.git` ou executar ações destrutivas.
+
+### Estado da decisão
+
+O refinamento foi **homologado pelo responsável humano** após a revisão técnica do conjunto. O PR #2 concentra a alteração aprovada; seu histórico registra a incorporação na `main`.
+
+Este troubleshooting permanece como referência histórica da ocorrência, das evidências que motivaram a mudança e da decisão metodológica resultante.
 
 ## 8. Referências de projeto
 
