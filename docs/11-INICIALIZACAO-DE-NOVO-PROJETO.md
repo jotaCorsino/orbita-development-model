@@ -123,7 +123,7 @@ Um template específico está em [../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TE
 
 Uma falha observada pelo agente ao criar, ler ou atualizar `.git` não deve ser interpretada automaticamente como falha de permissão da pasta real do projeto.
 
-Ambientes de implementação podem aplicar isolamento, mounts temporários ou políticas de sandbox que alteram a forma como o filesystem é apresentado ao agente. Por isso, quando o bootstrap encontrar `.git` inacessível, somente leitura ou comportamento incompatível com a pasta esperada, o agente deve primeiro identificar **em qual camada está a restrição**:
+Ambientes de implementação podem aplicar isolamento, montagens temporárias ou políticas de sandbox que alteram a forma como o filesystem é apresentado ao agente. Por isso, quando o bootstrap encontrar `.git` inacessível, somente leitura ou comportamento incompatível com a pasta esperada, o agente deve primeiro identificar **em qual camada está a restrição**:
 
 ```text
 pasta real do projeto
