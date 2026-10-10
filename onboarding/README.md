@@ -71,6 +71,7 @@ Templates operacionais:
 - [Template de implementação](../templates/IMPLEMENTACAO-PROMPT-TEMPLATE.md)
 - [Template de bootstrap local](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md)
 - [Template de homologação](../templates/HOMOLOGACAO-TEMPLATE.md)
+- [Template de README inicial](../templates/README-INICIAL-TEMPLATE.md)
 
 ---
 
