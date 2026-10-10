@@ -12,11 +12,11 @@
 
 | Ordem | ID | Etapa | Status |
 | --- | --- | --- | --- |
-| 0 | INIT-001 | Fundação documental | ⚪ Não iniciado |
-| 1 | BOOT-001 | Bootstrap local | ⚪ Não iniciado |
-| 2 | [ID] | [Próxima etapa relevante] | ⚪ Não iniciado |
+| 0 | INIT-001 | Fundação documental | ⚪ Planejado |
+| 1 | BOOT-001 | Bootstrap local | ⚪ Planejado |
+| 2 | [ID] | [Próxima etapa relevante] | ⚪ Planejado |
 
-**Legenda:** ⚪ Não iniciado · 🟡 Em implementação · 🔵 Em validação / aguardando homologação · 🟢 Concluído (homologado) · 🟠 Pausado.
+**Legenda:** ⚪ Planejado / autorizado · 🟡 Em implementação · 🔵 Em validação / aguardando homologação · 🟢 Concluído (homologado) · 🟠 Pausado.
 
 > **Importante:** o texto do status preserva o estado real do fluxo. `🔵 Em validação` e `🔵 Aguardando homologação` usam o mesmo indicador visual, mas representam gates diferentes.
 >
@@ -24,7 +24,7 @@
 >
 > `Pausado` representa uma condição excepcional de acompanhamento e não adiciona um novo estado ao fluxo normativo do Método ÓRBITA.
 
-**Detalhamento:** [Roadmap](docs/ROADMAP.md)
+**Detalhamento:** [Roadmap]([CAMINHO_DO_ROADMAP])
 
 ## Problema / contexto
 
@@ -61,8 +61,8 @@
 
 ## Documentação
 
-- [Roadmap](docs/ROADMAP.md)
-- [Arquitetura](docs/ARQUITETURA.md)
+- [Roadmap]([CAMINHO_DO_ROADMAP])
+- [Arquitetura]([CAMINHO_DA_ARQUITETURA])
 - [Outros documentos relevantes]
 
 ## Método ÓRBITA
