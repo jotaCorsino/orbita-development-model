@@ -57,6 +57,30 @@ CONCLUIDA
 
 Quando uma validação falha, a tarefa retorna ao estágio adequado.
 
+
+### Indicadores visuais de acompanhamento
+
+Os estados acima são a referência normativa do fluxo. Projetos podem usar indicadores visuais no README para facilitar a leitura, desde que **o texto do status preserve o estado real**.
+
+| Indicador | Texto recomendado | Estado relacionado |
+| --- | --- | --- |
+| ⚪ | Planejado | `PLANEJADA` |
+| ⚪ | Autorizado | `AUTORIZADA` |
+| 🟡 | Em implementação | `EM_IMPLEMENTACAO` |
+| 🔵 | Em validação | `EM_VALIDACAO` |
+| 🔵 | Aguardando homologação | `AGUARDANDO_HOMOLOGACAO` |
+| 🟢 | Concluído | `CONCLUIDA` |
+
+A cor é apenas uma camada visual. Ela **não substitui o nome do estado, não altera gates e não cria transições novas**.
+
+Regras:
+
+- `🔵 Em validação` e `🔵 Aguardando homologação` usam o mesmo indicador visual, mas continuam sendo estados diferentes;
+- `🟢 Concluído` só pode representar `CONCLUIDA` depois da homologação prevista para o escopo;
+- `🟠 Pausado` pode ser usado no acompanhamento de um projeto para indicar suspensão excepcional, mas não integra a sequência normativa de estados acima;
+- indicadores devem estar acompanhados de texto para não depender exclusivamente de cor.
+
+
 ## Tarefas
 
 Uma boa tarefa deve responder, no mínimo:
