@@ -26,6 +26,10 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 
 - [ ] repositório remoto foi inspecionado
 - [ ] README inicial criado/organizado
+- [ ] quando aplicável, o README apresenta o acompanhamento do desenvolvimento próximo ao início
+- [ ] quando aplicável, a tabela resume fase atual, etapas relevantes e próximo gate sem substituir o roadmap
+- [ ] indicadores visuais estão acompanhados de texto e preservam a distinção entre validação, homologação e conclusão
+- [ ] README e roadmap estão coerentes quanto ao estado atual do projeto
 - [ ] objetivo e contexto registrados
 - [ ] escopo inicial registrado
 - [ ] planejamento/roadmap criado
