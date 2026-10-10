@@ -71,6 +71,7 @@ Templates operacionais:
 - [Template de implementação](../templates/IMPLEMENTACAO-PROMPT-TEMPLATE.md)
 - [Template de bootstrap local](../templates/BOOTSTRAP-IMPLEMENTACAO-PROMPT-TEMPLATE.md)
 - [Template de homologação](../templates/HOMOLOGACAO-TEMPLATE.md)
+- [Template de README inicial](../templates/README-INICIAL-TEMPLATE.md)
 
 ---
 
@@ -108,7 +109,7 @@ Para um projeto novo, o agente de planejamento deve inspecionar o repositório r
 
 Quando possuir acesso autorizado ao repositório, deve criar ou organizar diretamente nele, de forma proporcional ao projeto:
 
-- README no padrão do método;
+- README no padrão do método, com descrição objetiva e, quando o projeto possuir fases ou gates, acompanhamento resumido do estágio atual próximo ao início;
 - objetivo e contexto;
 - escopo inicial;
 - planejamento/roadmap;
@@ -119,6 +120,31 @@ Quando possuir acesso autorizado ao repositório, deve criar ou organizar direta
 - riscos, restrições e decisões iniciais.
 
 O repositório precisa conter contexto suficiente para que outra sessão ou agente consiga compreender o projeto sem depender exclusivamente da conversa original.
+
+
+### README como painel rápido do projeto
+
+Quando o software possuir desenvolvimento por fases, tarefas ou gates, o README deve permitir identificar rapidamente:
+
+- o que o projeto faz;
+- qual é a fase atual;
+- o que já foi homologado;
+- o que está em andamento ou em validação;
+- qual é o próximo passo relevante;
+- onde consultar o roadmap detalhado.
+
+O acompanhamento deve ficar próximo ao início do README, após a descrição objetiva, usando uma tabela resumida e indicadores visuais acompanhados de texto.
+
+O README não substitui roadmap, tarefas, critérios de aceite ou histórico. Ele funciona como **visão rápida do estado atual**, enquanto os documentos próprios mantêm o detalhamento.
+
+Regras de leitura:
+
+- `🟢 Concluído` exige homologação para o escopo definido;
+- estados visualmente semelhantes, como `🔵 Em validação` e `🔵 Aguardando homologação`, devem permanecer textualmente distintos;
+- `🟠 Pausado`, quando usado, é uma condição excepcional de acompanhamento e não um novo estado normativo;
+- projetos simples podem adaptar ou omitir o painel quando ele não agregar valor.
+
+Use [README-INICIAL-TEMPLATE.md](../templates/README-INICIAL-TEMPLATE.md) como referência para novos projetos.
 
 Se o agente não possuir permissão de escrita, deve preparar a fundação para que ela seja persistida antes do avanço.
 

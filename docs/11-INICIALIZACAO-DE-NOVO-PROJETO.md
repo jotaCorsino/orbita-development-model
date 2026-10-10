@@ -53,7 +53,7 @@ Antes de enviar qualquer tarefa de implementação, o agente de planejamento pre
 
 A fundação deve ser proporcional ao projeto, mas normalmente inclui:
 
-- README inicial no padrão ÓRBITA;
+- README inicial no padrão ÓRBITA, com descrição objetiva e, quando o projeto exigir acompanhamento por etapas, painel resumido do desenvolvimento próximo ao início;
 - objetivo e contexto do software;
 - escopo inicial;
 - arquitetura ou visão técnica inicial, quando necessária;
@@ -65,6 +65,34 @@ A fundação deve ser proporcional ao projeto, mas normalmente inclui:
 - estrutura documental necessária para que outra sessão ou agente consiga retomar o projeto.
 
 O planejamento não deve inventar implementação prematura. O objetivo desta etapa é transformar a ideia conversada em uma base persistente e organizada.
+
+
+### Estrutura recomendada do README inicial
+
+O README deve permitir que uma pessoa ou agente compreenda rapidamente **o que o projeto faz e em qual estágio se encontra**.
+
+Para projetos com fases, tarefas ou gates de acompanhamento, a organização recomendada é:
+
+1. nome do projeto;
+2. descrição objetiva de 1 a 3 frases;
+3. acompanhamento do desenvolvimento, com fase atual, tabela resumida e legenda;
+4. problema, contexto ou objetivo;
+5. solução, escopo, arquitetura/tecnologias e demais informações pertinentes;
+6. links para roadmap e documentação detalhada.
+
+A tabela do README deve mostrar apenas macroetapas suficientes para identificar o estado atual, o que já foi homologado e o próximo gate. Ela **não substitui** roadmap, tarefas, critérios de aceite, histórico ou documentação técnica.
+
+Indicadores visuais podem ser usados para facilitar a leitura, mas devem estar sempre acompanhados de texto. A cor não define sozinha o estado. Em particular:
+
+- `🔵 Em validação` e `🔵 Aguardando homologação` podem compartilhar o mesmo indicador visual, mas representam gates diferentes;
+- `🟢 Concluído` só deve ser usado quando a etapa estiver homologada para o escopo definido;
+- `🟠 Pausado`, quando necessário, representa uma condição excepcional de acompanhamento e não cria um novo estado no fluxo normativo.
+
+Quando README e roadmap acompanharem o progresso, ambos devem permanecer coerentes após mudanças de estado. O README funciona como visão rápida; o roadmap preserva o detalhamento.
+
+Projetos muito simples, bibliotecas pequenas ou repositórios sem evolução por fases podem adaptar ou omitir o painel de acompanhamento para evitar burocracia artificial.
+
+O template de referência está em [../templates/README-INICIAL-TEMPLATE.md](../templates/README-INICIAL-TEMPLATE.md).
 
 Se o agente não possuir permissão para escrever no repositório, deve preparar os arquivos para que sejam registrados antes do avanço.
 

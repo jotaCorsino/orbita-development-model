@@ -3,8 +3,8 @@
 - **Tipo:** melhoria futura do Método ÓRBITA / padrão de documentação.
 - **Registrada em:** 09/10/2026.
 - **Origem:** revisão da apresentação do projeto [Technolife — Central de Links](https://github.com/jotaCorsino/technolife-downloads-web).
-- **Estado:** **PENDENTE DE AVALIAÇÃO E APROVAÇÃO HUMANA**.
-- **Escopo deste registro:** descrever a necessidade e o padrão proposto; **não modificar automaticamente as regras vigentes do ÓRBITA**.
+- **Estado:** refinamento metodológico **homologado pelo responsável humano** no PR #3. A incorporação na `main` é registrada pelo merge do próprio PR.
+- **Escopo deste registro:** preservar a origem, a motivação, os critérios e a evolução da proposta. A mudança só passa a integrar o método após homologação humana e merge na `main`.
 
 ## 1. Problema observado
 
@@ -20,15 +20,17 @@ Usar **círculos coloridos acompanhados de texto** (não depender somente das co
 
 | Indicador | Significado | Relação com o fluxo ÓRBITA |
 | --- | --- | --- |
-| ⚪ Não iniciado | Etapa planejada ou autorizada, ainda não executada | PLANEJADA / AUTORIZADA |
-| 🟡 Em andamento | Implementação em execução | EM_IMPLEMENTACAO |
-| 🔵 Em validação | Implementada e em testes, revisão ou aguardando aprovação | EM_VALIDACAO / AGUARDANDO_HOMOLOGACAO |
+| ⚪ Planejado | Etapa planejada, ainda não autorizada para execução | PLANEJADA |
+| ⚪ Autorizado | Etapa autorizada, ainda não iniciada | AUTORIZADA |
+| 🟡 Em implementação | Implementação em execução | EM_IMPLEMENTACAO |
+| 🔵 Em validação | Implementada e em testes ou revisão técnica | EM_VALIDACAO |
+| 🔵 Aguardando homologação | Evidências apresentadas e aguardando decisão humana | AGUARDANDO_HOMOLOGACAO |
 | 🟢 Concluído | Etapa aprovada e homologada para o escopo definido | CONCLUIDA |
-| 🟠 Pausado | Trabalho suspenso com pendência documentada | Pausa excepcional; formalização a decidir |
+| 🟠 Pausado | Trabalho suspenso com pendência documentada | Condição excepcional; fora do fluxo normativo |
 
-**Nota:** rótulos específicos podem complementar a cor: `🔵 Aguardando revisão`, `🔵 Aguardando homologação`, `🟡 Em desenvolvimento`. O **verde exige homologação humana**; execução técnica ou testes aprovados, isoladamente, não bastam.
+**Nota:** a cor é apenas uma camada visual. O texto deve preservar o estado real do fluxo. O **verde exige homologação humana**; execução técnica ou testes aprovados, isoladamente, não bastam.
 
-O estado `PAUSADO` e seu encaixe formal no fluxo ficam para avaliação; não alterar o conjunto normativo de estados apenas em razão deste documento.
+`PAUSADO` pode ser usado como condição excepcional de acompanhamento, mas **não integra o conjunto normativo de estados**.
 
 ## 3. Posição recomendada no README
 
@@ -60,9 +62,9 @@ Descrição breve do que é e do problema resolvido.
 | --- | --- | --- | --- |
 | 0 | INIT-001 | Fundação documental | 🔵 Aguardando revisão |
 | 1 | BOOT-001 | Bootstrap local | 🔵 Aguardando homologação |
-| 2 | FE-001 | Primeira funcionalidade | ⚪ Não iniciado |
+| 2 | FE-001 | Primeira funcionalidade | ⚪ Planejado |
 
-**Legenda:** ⚪ Não iniciado · 🟡 Em andamento · 🔵 Em validação/aguardando homologação · 🟢 Concluído · 🟠 Pausado.
+**Legenda:** ⚪ Planejado / autorizado · 🟡 Em implementação · 🔵 Em validação / aguardando homologação · 🟢 Concluído (homologado) · 🟠 Pausado.
 
 Detalhamento: [Roadmap](docs/ROADMAP.md)
 
@@ -88,16 +90,36 @@ Os nomes dos arquivos, IDs e etapas variam de acordo com o projeto. Evitar copia
 - [Technolife RustDesk](https://github.com/jotaCorsino/technolife-rustdesk) — quadro de fases e entregas com `🟢`, `🟡` e `⚪`.
 - [Technolife Central de Links](https://github.com/jotaCorsino/technolife-downloads-web) — tabela colocada imediatamente após a descrição inicial, com legenda e estados de homologação.
 
-## 7. Pontos do ÓRBITA a avaliar futuramente
+## 7. Incorporação metodológica — homologada
 
-Após decisão do responsável humano, considerar:
+A proposta foi transformada em refinamentos concretos na branch:
 
-- [onboarding/README.md](../onboarding/README.md): explicitar que o README deve funcionar como painel rápido do estágio atual.
-- [onboarding/CHECKLIST-NOVO-PROJETO.md](../onboarding/CHECKLIST-NOVO-PROJETO.md): verificar **presença, posição e clareza** da tabela.
-- [docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md): definir ordem recomendada das seções do README e atualização sincronizada.
-- [docs/04-FLUXO-DE-DESENVOLVIMENTO.md](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md): esclarecer equivalência entre estados textuais e indicadores visuais sem afetar os gates.
-- **Template novo de README inicial:** oferecer estrutura reutilizável com tabela no topo, legenda e link ao roadmap.
-- Avaliar se a regra deve ser **obrigatória ou recomendada** para projetos pequenos, bibliotecas e repositórios de documentação.
+`docs/PROP-001-readme-acompanhamento-visual`
+
+Documentos e artefatos preparados:
+
+- [README-INICIAL-TEMPLATE.md](../templates/README-INICIAL-TEMPLATE.md) — novo template reutilizável com descrição breve, painel de acompanhamento, legenda, vínculo com roadmap e orientações de adaptação;
+- [docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) — passou a definir a estrutura recomendada do README inicial e a relação entre visão rápida e documentação detalhada;
+- [onboarding/README.md](../onboarding/README.md) — passou a orientar o agente de planejamento a usar o README como painel rápido quando houver fases ou gates;
+- [onboarding/CHECKLIST-NOVO-PROJETO.md](../onboarding/CHECKLIST-NOVO-PROJETO.md) — passou a verificar presença, posição, clareza e coerência do acompanhamento visual quando aplicável;
+- [docs/04-FLUXO-DE-DESENVOLVIMENTO.md](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md) — passou a relacionar indicadores visuais aos estados normativos sem alterar o fluxo oficial.
+
+### Decisões adotadas no refinamento
+
+- o padrão é **recomendado e proporcional ao projeto**, não obrigatório em qualquer repositório;
+- o README funciona como **visão rápida**, não substituto de roadmap, tarefas, histórico ou critérios de aceite;
+- indicadores visuais são apenas uma camada de leitura e devem sempre estar acompanhados de texto;
+- `🔵 Em validação` e `🔵 Aguardando homologação` continuam sendo estados diferentes;
+- `🟢 Concluído` exige homologação;
+- `🟠 Pausado` pode ser usado como condição excepcional de acompanhamento, mas não integra a sequência normativa de estados;
+- caminhos e estrutura documental continuam adaptáveis ao porte e à natureza do projeto;
+- percentuais artificiais de conclusão não são recomendados.
+
+### Estado da decisão
+
+O refinamento foi **homologado pelo responsável humano** após a revisão técnica do conjunto. O PR #3 concentra a alteração aprovada; seu histórico registra a incorporação na `main`.
+
+Esta proposta permanece como referência da motivação, dos critérios e das decisões que originaram o refinamento.
 
 ## 8. Critérios para aceitar a melhoria
 
@@ -109,4 +131,4 @@ A proposta poderá ser considerada validada quando:
 4. o modelo for testado em pelo menos dois projetos com perfis distintos;
 5. o conjunto de documentos oficiais for revisado numa alteração específica, com evidências e homologação.
 
-**Próxima ação para o método:** decidir posteriormente se e quando incorporar este padrão. A publicação deste arquivo **não** constitui alteração normativa automática.
+**Próxima ação para o método:** incorporar o conjunto homologado à `main` por meio do PR #3. A publicação deste arquivo, isoladamente, **não** constitui alteração normativa automática.
