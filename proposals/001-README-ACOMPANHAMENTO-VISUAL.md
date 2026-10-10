@@ -3,7 +3,7 @@
 - **Tipo:** melhoria futura do Método ÓRBITA / padrão de documentação.
 - **Registrada em:** 09/10/2026.
 - **Origem:** revisão da apresentação do projeto [Technolife — Central de Links](https://github.com/jotaCorsino/technolife-downloads-web).
-- **Estado:** refinamento metodológico preparado em branch dedicada e **aguardando homologação humana**. Nenhuma mudança foi incorporada à `main` até o momento.
+- **Estado:** refinamento metodológico **homologado pelo responsável humano** no PR #3. A incorporação na `main` é registrada pelo merge do próprio PR.
 - **Escopo deste registro:** preservar a origem, a motivação, os critérios e a evolução da proposta. A mudança só passa a integrar o método após homologação humana e merge na `main`.
 
 ## 1. Problema observado
@@ -90,7 +90,7 @@ Os nomes dos arquivos, IDs e etapas variam de acordo com o projeto. Evitar copia
 - [Technolife RustDesk](https://github.com/jotaCorsino/technolife-rustdesk) — quadro de fases e entregas com `🟢`, `🟡` e `⚪`.
 - [Technolife Central de Links](https://github.com/jotaCorsino/technolife-downloads-web) — tabela colocada imediatamente após a descrição inicial, com legenda e estados de homologação.
 
-## 7. Incorporação metodológica — aguardando homologação
+## 7. Incorporação metodológica — homologada
 
 A proposta foi transformada em refinamentos concretos na branch:
 
@@ -115,11 +115,11 @@ Documentos e artefatos preparados:
 - caminhos e estrutura documental continuam adaptáveis ao porte e à natureza do projeto;
 - percentuais artificiais de conclusão não são recomendados.
 
-### Estado atual
+### Estado da decisão
 
-O refinamento está **implementado na branch de trabalho e revisado de forma cruzada**, mas ainda depende de homologação humana antes de qualquer merge na `main`.
+O refinamento foi **homologado pelo responsável humano** após a revisão técnica do conjunto. O PR #3 concentra a alteração aprovada; seu histórico registra a incorporação na `main`.
 
-Enquanto a homologação não ocorrer, esta proposta permanece como referência da motivação, dos critérios e das decisões que originaram o refinamento.
+Esta proposta permanece como referência da motivação, dos critérios e das decisões que originaram o refinamento.
 
 ## 8. Critérios para aceitar a melhoria
 
@@ -131,4 +131,4 @@ A proposta poderá ser considerada validada quando:
 4. o modelo for testado em pelo menos dois projetos com perfis distintos;
 5. o conjunto de documentos oficiais for revisado numa alteração específica, com evidências e homologação.
 
-**Próxima ação para o método:** realizar a homologação humana do conjunto preparado na branch. A publicação deste arquivo, isoladamente, **não** constitui alteração normativa automática.
+**Próxima ação para o método:** incorporar o conjunto homologado à `main` por meio do PR #3. A publicação deste arquivo, isoladamente, **não** constitui alteração normativa automática.
