@@ -20,15 +20,17 @@ Usar **círculos coloridos acompanhados de texto** (não depender somente das co
 
 | Indicador | Significado | Relação com o fluxo ÓRBITA |
 | --- | --- | --- |
-| ⚪ Não iniciado | Etapa planejada ou autorizada, ainda não executada | PLANEJADA / AUTORIZADA |
-| 🟡 Em andamento | Implementação em execução | EM_IMPLEMENTACAO |
-| 🔵 Em validação | Implementada e em testes, revisão ou aguardando aprovação | EM_VALIDACAO / AGUARDANDO_HOMOLOGACAO |
+| ⚪ Planejado | Etapa planejada, ainda não autorizada para execução | PLANEJADA |
+| ⚪ Autorizado | Etapa autorizada, ainda não iniciada | AUTORIZADA |
+| 🟡 Em implementação | Implementação em execução | EM_IMPLEMENTACAO |
+| 🔵 Em validação | Implementada e em testes ou revisão técnica | EM_VALIDACAO |
+| 🔵 Aguardando homologação | Evidências apresentadas e aguardando decisão humana | AGUARDANDO_HOMOLOGACAO |
 | 🟢 Concluído | Etapa aprovada e homologada para o escopo definido | CONCLUIDA |
-| 🟠 Pausado | Trabalho suspenso com pendência documentada | Pausa excepcional; formalização a decidir |
+| 🟠 Pausado | Trabalho suspenso com pendência documentada | Condição excepcional; fora do fluxo normativo |
 
-**Nota:** rótulos específicos podem complementar a cor: `🔵 Aguardando revisão`, `🔵 Aguardando homologação`, `🟡 Em desenvolvimento`. O **verde exige homologação humana**; execução técnica ou testes aprovados, isoladamente, não bastam.
+**Nota:** a cor é apenas uma camada visual. O texto deve preservar o estado real do fluxo. O **verde exige homologação humana**; execução técnica ou testes aprovados, isoladamente, não bastam.
 
-O estado `PAUSADO` e seu encaixe formal no fluxo ficam para avaliação; não alterar o conjunto normativo de estados apenas em razão deste documento.
+`PAUSADO` pode ser usado como condição excepcional de acompanhamento, mas **não integra o conjunto normativo de estados**.
 
 ## 3. Posição recomendada no README
 
@@ -60,9 +62,9 @@ Descrição breve do que é e do problema resolvido.
 | --- | --- | --- | --- |
 | 0 | INIT-001 | Fundação documental | 🔵 Aguardando revisão |
 | 1 | BOOT-001 | Bootstrap local | 🔵 Aguardando homologação |
-| 2 | FE-001 | Primeira funcionalidade | ⚪ Não iniciado |
+| 2 | FE-001 | Primeira funcionalidade | ⚪ Planejado |
 
-**Legenda:** ⚪ Não iniciado · 🟡 Em andamento · 🔵 Em validação/aguardando homologação · 🟢 Concluído · 🟠 Pausado.
+**Legenda:** ⚪ Planejado / autorizado · 🟡 Em implementação · 🔵 Em validação / aguardando homologação · 🟢 Concluído (homologado) · 🟠 Pausado.
 
 Detalhamento: [Roadmap](docs/ROADMAP.md)
 
