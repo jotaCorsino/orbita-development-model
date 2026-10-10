@@ -41,7 +41,7 @@ Antes de reorganizar diretórios:
 2. confirme se o bloqueio pertence ao filesystem real ou ao ambiente isolado/sandbox do agente;
 3. quando disponível, verifique permissões e características de montagem do caminho afetado;
 4. preserve a pasta original e sua identidade canônica sempre que possível;
-5. se o ambiente oferecer execução fora do sandbox ou elevação equivalente, utilize somente o mecanismo formal disponível e mediante autorização humana;
+5. se o ambiente oferecer execução fora do sandbox, utilize somente o mecanismo formal disponível e mediante autorização humana;
 6. após qualquer execução autorizada fora do sandbox, inspecione novamente o estado real da pasta antes de inicializar ou clonar;
 7. se o remoto já contém a fundação documental e a pasta real estiver comprovadamente vazia, o repositório pode ser clonado diretamente no diretório atual;
 8. não use `sudo`, `chmod -R`, remoção de `.git`, desmontagens, `reset --hard` ou mudança de workspace como reação automática ao bloqueio.
