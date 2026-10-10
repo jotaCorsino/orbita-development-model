@@ -54,6 +54,9 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] branch, HEAD e `git status` foram reportados
 - [ ] nenhuma funcionalidade foi implementada durante o bootstrap
 - [ ] nenhuma ação destrutiva foi executada silenciosamente
+- [ ] bloqueios de escrita ou acesso em `.git` foram diagnosticados antes de alterar o workspace
+- [ ] restrições do sandbox/ambiente foram distinguidas das permissões reais da pasta quando aplicável
+- [ ] a pasta canônica original foi priorizada antes da criação de outra working copy
 
 ## F. Gate para primeira funcionalidade
 
