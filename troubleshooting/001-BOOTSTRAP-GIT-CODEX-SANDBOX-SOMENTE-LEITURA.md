@@ -3,7 +3,7 @@
 - **Categoria:** bootstrap local / Git / ambiente de implementação.
 - **Primeiro registro documentado aqui:** 09/10/2026.
 - **Estado do problema:** recorrente; solução comprovada em um dos ambientes.
-- **Estado metodológico:** refinamento normativo preparado em branch dedicada e aguardando homologação humana. **Nenhuma mudança foi mergeada na `main` até o momento.**
+- **Estado metodológico:** refinamento normativo **homologado pelo responsável humano** no PR #2. A incorporação na `main` é registrada pelo merge do próprio PR.
 - **Projetos com ocorrência identificada:** `scripts-action1` (08/10/2026) e `technolife-downloads-web` (09/10/2026).
 
 ## 1. Sintoma
@@ -71,7 +71,7 @@ A ocorrência de 09/10 ficou **tecnicamente resolvida** quando o Git foi clonado
 
 Não foi demonstrado que a política do sandbox deixou de impor a montagem somente leitura; resolveu-se o bootstrap por execução autorizada **fora** dele.
 
-## 7. Incorporação metodológica — aguardando homologação
+## 7. Incorporação metodológica — homologada
 
 O aprendizado deste troubleshooting foi transformado em refinamentos normativos na branch:
 
@@ -91,11 +91,11 @@ A revisão cruzada confirmou coerência entre os três pontos:
 
 O refinamento preserva o princípio de identidade única do projeto e evita transformar um bloqueio do sandbox em justificativa automática para criar uma nova pasta, remover `.git` ou executar ações destrutivas.
 
-### Estado atual
+### Estado da decisão
 
-O refinamento está **implementado na branch de trabalho**, mas ainda depende de homologação humana antes de qualquer merge na `main`.
+O refinamento foi **homologado pelo responsável humano** após a revisão técnica do conjunto. O PR #2 concentra a alteração aprovada; seu histórico registra a incorporação na `main`.
 
-Enquanto a homologação não ocorrer, este troubleshooting continua sendo a referência histórica da ocorrência e das evidências que motivaram a proposta.
+Este troubleshooting permanece como referência histórica da ocorrência, das evidências que motivaram a mudança e da decisão metodológica resultante.
 
 ## 8. Referências de projeto
 
