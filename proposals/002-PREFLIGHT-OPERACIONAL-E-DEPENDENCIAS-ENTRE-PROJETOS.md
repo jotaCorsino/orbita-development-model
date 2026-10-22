@@ -91,11 +91,21 @@ O [TRB-001](../troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.m
 
 ## 7. Critérios de avaliação e aceite
 
-1. A distinção entre **erro de execução do agente** e **lacuna metodológica real** fica documentada.
-2. A proposta impede recomendação de comandos destrutivos ou divergentes antes de recuperar o procedimento canônico.
-3. Em dois projetos com operações diferentes, o preflight identifica dependências sem atrasar tarefas comuns ou criar relatórios desnecessários.
-4. Os documentos normativos eventualmente alterados não criam conflitos com a regra de repositório canônico, responsabilidades humanas ou `main` homologada.
-5. Uma **homologação humana específica** aprova ou rejeita o texto normativo proposto; até então esta proposta permanece informativa.
+Para homologar este **refinamento mínimo**:
+
+1. a distinção entre **erro de execução do agente** e **lacuna metodológica real** fica documentada;
+2. o texto impede recomendação de comandos divergentes antes de recuperar o procedimento canônico;
+3. os documentos normativos alterados não criam conflitos com a regra de repositório canônico, responsabilidades humanas ou `main` homologada;
+4. o preflight permanece condicional, sem criar etapa, estado, template ou checklist universal;
+5. uma **homologação humana específica** aprova ou rejeita o texto normativo proposto.
+
+### Validação posterior
+
+Como a origem ainda é **uma ocorrência documentada**, a utilidade do refinamento deve continuar sendo observada em outros projetos operacionais.
+
+Um sinal de maturação será confirmar, em pelo menos outro contexto de operação, que o preflight identifica dependências relevantes sem atrasar tarefas comuns ou gerar documentação desnecessária. Essa validação futura pode justificar novo ajuste, simplificação ou até reversão parcial da regra.
+
+Ela **não é apresentada como evidência já cumprida** neste PR.
 
 ## 8. Decisão pendente
 
