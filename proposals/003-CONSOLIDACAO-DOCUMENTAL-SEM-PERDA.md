@@ -3,7 +3,7 @@
 - **Categoria:** melhoria do Método ÓRBITA / preservação do conhecimento / handoff entre agentes.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), especialmente [PR documental #1](https://github.com/jotaCorsino/the-mmo-idea/pull/1).
-- **Estado:** refinamento metodológico **APROVADO pelo responsável humano no PR #11**, aguardando integração à `main`.
+- **Estado:** refinamento metodológico **APROVADO e INCORPORADO à `main` pelo PR #11**.
 - **Distinção:** o erro de consolidação foi uma **falha de execução do agente de planejamento**, apesar de o contrato existente já proibir remoções sem autorização. O que se propõe é adicionar salvaguardas operacionais verificáveis.
 
 ## 1. Ocorrência e impacto
@@ -128,3 +128,10 @@ A homologação confirma o refinamento proporcional:
 - preservação preferida quando houver dúvida sobre perda de conteúdo.
 
 A aprovação não transforma toda revisão textual em consolidação formal e não autoriza exclusões documentais amplas sem evidência ou gate adequado.
+
+
+## 10. Encerramento
+
+O refinamento foi **APROVADO e INCORPORADO** à `main` pelo PR #11.
+
+**PROP-003 encerrada.**
