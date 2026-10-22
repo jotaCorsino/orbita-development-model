@@ -4,8 +4,8 @@
 - **Registro:** 22/10/2026.
 - **Projeto da ocorrência:** [Novo Site Technolife](https://github.com/jotaCorsino/novo-site-technolife-1610).
 - **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
-- **Impacto confirmado:** orientação operacional prematura, retrabalho de diagnóstico e perda de confiança do responsável. **Não houve deploy nem alteração dos arquivos públicos por essas instruções.**
-- **Estado técnico da ocorrência:** diagnóstico parcial realizado e repasse ao agente responsável pelo Modo Revisão; procedimento efetivo de publicação **não executado nem validado** nesta ocorrência.
+- **Impacto confirmado:** orientação operacional prematura, retrabalho de diagnóstico e perda de confiança do responsável. **Não houve deploy nem alteração dos arquivos públicos pelas instruções rejeitadas.**
+- **Estado técnico da ocorrência:** a tentativa inicial foi interrompida sem deploy; em continuação supervisionada, o procedimento manual documentado foi recuperado e o preview atualizado para a revisão `e898876`, com backup, autenticação HTTP `401` e exportação JSON multipágina verificadas. Homologação funcional completa permanece separada.
 - **Estado metodológico:** análise e [proposta de melhoria](../proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md) **pendentes de avaliação e homologação humana**. Este relato, por si só, não muda o ÓRBITA.
 
 ## 1. Contexto e sintoma
@@ -24,7 +24,11 @@ O agente de planejamento, porém, tratou inicialmente a tarefa como se precisass
 4. `git ls-remote` confirmou HEAD remoto `e898876`. Em seguida, **`git fetch origin main` foi executado com sucesso**: `origin/main` e `FETCH_HEAD` passaram a referenciar o mesmo commit, sem alterar a branch de trabalho ou a pasta pública.
 5. O diagnóstico revelou os três HTMLs publicados com scripts e stylesheet do Modo Revisão e atributo `data-revision="a3dd59f"`; os arquivos públicos diferiam do `dist/` da branch antiga. Os recursos mobile novos existiam na `main`, mas não no diretório público.
 6. Apesar dessa evidência de integração específica, foi proposta a geração de staging com injeção genérica das referências de revisão nos HTMLs e um `rsync --dry-run`, **sem recuperar o runbook original**. O responsável considerou a solução inadequada e solicitou um repasse ao agente especializado.
-7. **Resultado conhecido:** foram executadas inspeções e um `git fetch`; não foram executados o staging proposto, a sincronização, o merge, o deploy, a remoção de arquivos ou a publicação em produção.
+7. **Resultado da abordagem rejeitada:** executados apenas inspeções e um `git fetch`; o staging improvisado, a sincronização e a reinjeção propostas **não foram executados**.
+8. **Continuação em 21/10/2026:** a documentação operacional do modelo de presença online foi localizada e lida. Ela distinguia um sincronizador automático **experimental/não homologado no cPanel** do procedimento manual efetivamente validado. O agente inicialmente inferiu, de modo prematuro, que o sincronizador automático já poderia ser usado; corrigiu a orientação após examinar o `README` do script.
+9. Foi confirmada a referência homologada `e898876` em `origin/main`, mantendo o checkout ativo em `a3dd59f`. Usou-se `git archive` para extrair a pasta publicável para staging fora do webroot, seguida de simulação `rsync --dry-run`, backup integral validado e publicação manual sem `--delete`.
+10. **Verificação após publicação:** tags CSS/JS do módulo de revisão instaladas nos três HTMLs com `data-revision="e898876"`, recursos mobile presentes e resposta anônima `HTTP 401` preservada. Um JSON exportado a partir de uma página reuniu três comentários artificiais de teste, um de cada página.
+11. **Limites da evidência:** exportação JSON não prova por si só posicionamento visual dos pins, persistência pós-recarregamento ou funcionamento real de formulários. A auditoria de eventuais arquivos antigos no destino, a decisão de limpar o staging e o rollback entre commits distintos continuaram pendentes. Nenhuma publicação em produção foi executada.
 
 **Fonte das evidências:** saídas do terminal e decisões informadas pelo responsável durante a conversa de operação. Nenhuma credencial, caminho absoluto de conta de hospedagem ou conteúdo privado de configuração é reproduzido aqui.
 
@@ -35,14 +39,20 @@ O agente de planejamento, porém, tratou inicialmente a tarefa como se precisass
 - Havia **dois contextos de trabalho relevantes**: o repositório do novo site e o projeto/módulo de presença e revisão.
 - O preview **não era apenas uma cópia literal de `dist/`**: os HTMLs publicados incluíam recursos de revisão e um identificador de revisão.
 - O repositório do site no servidor já existia e pôde receber a `main` atualizada por `git fetch`; criar outro clone não era necessário para diagnosticar o problema.
-- O agente de planejamento **não consultou o procedimento do Modo Revisão antes de sugerir como publicar**.
+- O agente de planejamento **não consultou o procedimento do Modo Revisão antes de sugerir como publicar**. Na retomada, também foi necessário distinguir explicitamente automação experimental de método manual já validado.
 - O responsável rejeitou a integração manual improvisada e solicitou continuidade com o agente do módulo.
 
-### Ainda não verificado nesta ocorrência
+### Confirmado na continuação
 
-- O mecanismo exato e a versão vigente do deploy/ciclo de revisão: exigem leitura e conferência pelo agente que mantém o módulo operacional.
-- Se a documentação do projeto principal já contém todos os links de dependência necessários, ou se falta um índice de runbooks.
-- Se a falha é recorrente em outros projetos ÓRBITA: este é **um caso**.
+- A integração do Modo Revisão e o deploy **já estavam documentados** no repositório do modelo de presença online. O script automático existia, mas permanecia experimental; o fluxo manual era a referência operacional.
+- O deploy manual de `e898876` foi executado com backup e verificações de segurança. A validação de um aspecto do modo de revisão (exportação consolidada JSON) foi realizada.
+- `git archive` permitiu publicar o commit homologado sem fazer o checkout ativo coincidir com a revisão efetivamente instalada; por isso, `HEAD` isoladamente **não comprova a revisão do preview**.
+
+### Ainda não verificado
+
+- Se há falha sistemática de referências entre projetos, ou se neste caso bastou ao agente deixar de procurar a documentação operacional.
+- Se o problema ocorreu em mais projetos: este relato ainda representa **uma ocorrência**.
+- Auditoria de resíduos, rollback real entre commits distintos e homologação funcional completa do site.
 
 **Interpretação:** a dificuldade é principalmente de **aplicação e recuperação de contexto**. O ÓRBITA já determina análise, rastreabilidade, proteção da `main` e homologação, mas a prática revelou uma lacuna na **checagem de procedimentos operacionais externos ao repositório principal** antes de emitir comandos para um ambiente ativo.
 
@@ -51,7 +61,7 @@ O agente de planejamento, porém, tratou inicialmente a tarefa como se precisass
 - Sobrescrever HTMLs do preview com `dist/` sem considerar o Modo Revisão poderia suprimir sua integração.
 - Reinjetar scripts manualmente, mesmo preservando os arquivos em `_review/`, não garante compatibilidade com o procedimento de publicação, metadados de versão ou futuras revisões.
 - Propor um novo clone, atualização direta do checkout ou alterações públicas sem entender o fluxo anterior geraria divergência operacional e retrabalho.
-- A validação humana impediu uma alteração não fundamentada: **não há dano operacional confirmado**.
+- A validação humana impediu uma alteração não fundamentada: **não há dano operacional confirmado**. A publicação posterior seguiu procedimento distinto e validado, com escopo limitado ao preview.
 
 ## 5. Conduta correta para retomar o caso
 
@@ -61,7 +71,7 @@ O agente de planejamento, porém, tratou inicialmente a tarefa como se precisass
 4. Usar os comandos aprovados pelo **runbook do módulo** e verificar autenticação, revisão visual, páginas, mobile e ausência de regressões após a sincronização.
 5. Registrar no projeto do site o commit implantado e o resultado; atualizar as referências cruzadas ao módulo quando necessário.
 
-**Não interpretar este troubleshooting como autorização para executar comandos de deploy.**
+**Não interpretar este troubleshooting como autorização para executar comandos de deploy.** A continuação bem-sucedida não transforma o sincronizador experimental em mecanismo homologado nem dispensa a revisão de cada runbook.
 
 ## 6. Lição aprendida
 
@@ -73,7 +83,7 @@ A ausência desse contexto não autoriza recriar o processo. A decisão adequada
 
 Ver [Proposta 002 — Preflight operacional e dependências entre projetos](../proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md).
 
-A proposta recomenda uma verificação proporcional de continuidade/dependências em operações sobre ambientes existentes, **sem criar automaticamente uma nova etapa obrigatória para cada tarefa de código**.
+A proposta recomenda uma verificação proporcional de continuidade/dependências em operações sobre ambientes existentes, **sem criar automaticamente uma nova etapa obrigatória para cada tarefa de código**. Inclui distinção entre documentação existente, recursos experimentais e processos homologados.
 
 ## 8. Referências
 
