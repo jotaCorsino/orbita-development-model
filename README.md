@@ -213,17 +213,22 @@ O case mostra a evolução por prova de conceito, persistência, scheduler, segu
 
 O projeto operacional real permanece separado da representação pública. Essa separação passou a fazer parte do próprio aprendizado do ÓRBITA: **portfólio deve expor decisões, arquitetura, processo e resultados sem exigir a exposição do ambiente operacional completo**.
 
-## Problemas recorrentes
+## Troubleshooting e aprendizados observados
 
-Ocorrências técnicas observadas em projetos que utilizam o método são registradas separadamente, sem alterar automaticamente suas regras normativas.
+Ocorrências observadas em projetos que utilizam o método são registradas separadamente para preservar evidências, diagnóstico e aprendizado. Um troubleshooting não altera automaticamente o ÓRBITA; quando gera refinamento metodológico, a incorporação depende de análise, homologação humana e merge na `main`.
 
-- [Bootstrap Git: `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — duas ocorrências documentadas, solução e avaliação metodológica pendente.
+- [TRB-001 — `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — diagnóstico entre sandbox e filesystem real incorporado ao método pelo PR #2.
+- [TRB-002 — Deploy/preview sem recuperação do fluxo operacional](troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md) — preflight operacional e dependências entre projetos incorporados pelo PR #7.
+- [TRB-003 — Interrupção do agente com trabalho material ainda local](troubleshooting/003-INTERRUPCAO-CODEX-TRABALHO-LOCAL.md) — retomada segura e preservação do estado local incorporadas pelo PR #9.
 
 ## Propostas de melhoria do método
 
-Registros de ajustes sugeridos a partir do uso real do ÓRBITA. **Não são regras oficiais até avaliação e homologação humana.**
+As propostas registram evoluções candidatas surgidas do uso real. Enquanto estão em análise, **não são regras oficiais**. Quando homologadas e integradas à `main`, tornam-se parte do método e o arquivo permanece como registro histórico da decisão.
 
-- [Proposta 001 — Tabela de acompanhamento visual no início do README](proposals/001-README-ACOMPANHAMENTO-VISUAL.md) — círculos coloridos, ordem das seções, sincronização com roadmap e estados de homologação.
+- [PROP-001 — Painel visual de acompanhamento no README](proposals/001-README-ACOMPANHAMENTO-VISUAL.md) — acompanhamento proporcional e estados visuais incorporados pelo PR #3.
+- [PROP-002 — Preflight operacional e dependências entre projetos](proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md) — verificação condicional antes de operações em ambientes existentes incorporada pelo PR #7.
+- [PROP-003 — Consolidação documental sem perda semântica](proposals/003-CONSOLIDACAO-DOCUMENTAL-SEM-PERDA.md) — preservação de conhecimento e distinção entre `main` e trabalho ativo incorporadas pelo PR #11.
+- [PROP-004 — Gates de fidelidade visual e qualidade artística para entregas 3D](proposals/004-GATES-FIDELIDADE-VISUAL-3D.md) — princípio geral de aceite multidimensional incorporado pelo PR #13, mantendo protocolos 3D específicos fora do núcleo.
 
 ## Documentação
 
