@@ -4,7 +4,7 @@
 - **Registrado em:** 22/10/2026.
 - **Ocorrência documentada:** [the-mmo-idea — PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10), durante VIS-001.1.
 - **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
-- **Estado:** interrupção confirmada por relato do responsável; **persistência do trabalho local não verificada diretamente**. Refinamento metodológico preparado na branch `docs/TRB-003-retomada-segura`, ainda aguardando homologação humana.
+- **Estado:** interrupção confirmada por relato do responsável; **persistência do trabalho local não verificada diretamente**. Refinamento metodológico **APROVADO pelo responsável humano no PR #9**, aguardando integração à `main`.
 - **Escopo:** diagnóstico de continuidade e retomada segura, não alteração normativa automática.
 
 ## 1. Sintoma
@@ -114,3 +114,18 @@ O refinamento trata o risco observado sem transformar essa incerteza em fato. Su
 
 - [ÓRBITA — contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md).
 - [the-mmo-idea — VIS-001, PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10).
+
+
+## 8. Decisão de homologação
+
+**APROVADO** pelo responsável humano no PR #9 em 22/10/2026.
+
+Foi aprovada a incorporação da retomada segura como refinamento **condicional e proporcional**, preservando os seguintes limites:
+
+- `Pausado` permanece condição excepcional, não novo estado normativo;
+- checkpoints são usados por marco útil, não por frequência rígida;
+- checkpoint não equivale a homologação;
+- tarefas curtas não ganham burocracia adicional;
+- a ocorrência original continua sendo uma única evidência documentada.
+
+A aprovação deste refinamento não altera gates humanos existentes nem autoriza operações destrutivas durante retomadas.
