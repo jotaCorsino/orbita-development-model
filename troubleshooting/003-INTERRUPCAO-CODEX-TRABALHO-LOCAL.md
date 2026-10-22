@@ -4,7 +4,7 @@
 - **Registrado em:** 22/10/2026.
 - **Ocorrência documentada:** [the-mmo-idea — PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10), durante VIS-001.1.
 - **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
-- **Estado:** interrupção confirmada por relato do responsável; **persistência do trabalho local não verificada diretamente**. Refinamento metodológico **APROVADO pelo responsável humano no PR #9**, aguardando integração à `main`.
+- **Estado:** interrupção confirmada por relato do responsável; **persistência do trabalho local não verificada diretamente**. Refinamento metodológico **APROVADO e INCORPORADO à `main` pelo PR #9**.
 - **Escopo:** diagnóstico de continuidade e retomada segura, não alteração normativa automática.
 
 ## 1. Sintoma
@@ -129,3 +129,10 @@ Foi aprovada a incorporação da retomada segura como refinamento **condicional 
 - a ocorrência original continua sendo uma única evidência documentada.
 
 A aprovação deste refinamento não altera gates humanos existentes nem autoriza operações destrutivas durante retomadas.
+
+
+## 9. Encerramento
+
+O refinamento foi **APROVADO e INCORPORADO** à `main` pelo PR #9.
+
+**TRB-003 encerrado.**
