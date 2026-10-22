@@ -86,6 +86,32 @@ Dependendo da tarefa, evidências podem incluir:
 - limitações ou pontos não validados;
 - riscos de segurança relevantes e verificações executadas, quando aplicável.
 
+## Dimensões de aceite além da validação técnica
+
+Validação técnica e atendimento ao objetivo não são necessariamente a mesma coisa.
+
+Quando uma tarefa possuir critérios relevantes que não sejam puramente técnicos — por exemplo, **fidelidade visual, qualidade artística, experiência de uso, clareza de conteúdo, identidade visual ou outra dimensão explicitamente exigida** — o gate deve avaliar também essa dimensão.
+
+Nesses casos:
+
+- build, testes, exportação, importação ou execução sem erros continuam sendo evidências necessárias quando aplicáveis;
+- essas evidências **não demonstram, sozinhas, que o resultado atende ao objetivo não técnico**;
+- os critérios de aceite devem indicar quais dimensões precisam ser avaliadas;
+- a evidência apresentada deve permitir comparar o resultado real com a referência, requisito ou intenção aprovada;
+- o responsável humano pode impedir o avanço para uma etapa dependente mesmo quando a implementação estiver tecnicamente funcional.
+
+Exemplo conceitual:
+
+```text
+pipeline técnico validado
+        ≠
+qualidade visual homologada
+        ≠
+autorização automática para a próxima dependência
+```
+
+O método não cria estados normativos separados para cada dimensão. A distinção existe nos **critérios, evidências e gates** aplicáveis à tarefa.
+
 ## Homologação
 
 **Homologar não significa apenas confirmar que o código compila.**
