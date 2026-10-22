@@ -56,6 +56,35 @@ Se essas informações não puderem ser recuperadas com segurança, a tarefa per
 
 A homologação do artefato de origem e a autorização para operar o ambiente são responsabilidades distintas, mas podem estar cobertas pelo mesmo gate quando a tarefa e o procedimento já autorizarem explicitamente a implantação. O ciclo continua o mesmo; apenas os critérios do gate se tornam mais específicos quando existe risco operacional.
 
+## Verificação final de consistência
+
+O ciclo padrão não ganha um novo estado. Porém, antes de considerar uma mudança completamente encerrada, deve existir uma **verificação final proporcional** quando o trabalho alterar informações reproduzidas em mais de um lugar — por exemplo status, IDs, nomes, referências, índices, roadmap, README, documentação agregadora ou registros de evolução.
+
+A verificação ocorre em duas passagens:
+
+### Antes da integração
+
+1. identificar o registro ou artefato canônico da mudança;
+2. identificar quais superfícies derivadas podem repetir ou resumir a mesma informação;
+3. comparar a branch com a `main` atual e confirmar que o diff permanece no escopo;
+4. conferir IDs, nomes, links, títulos e estados relacionados;
+5. procurar referências claramente obsoletas relacionadas à mudança.
+
+### Depois do merge
+
+1. confirmar o PR efetivamente mergeado e o commit resultante;
+2. verificar os arquivos relevantes diretamente na `main`;
+3. conferir os resumos, índices e painéis derivados aplicáveis;
+4. repetir a busca por status ou referências antigas relacionadas à alteração;
+5. validar links e caminhos principais afetados;
+6. corrigir resíduos documentais antes de considerar o encerramento completo.
+
+Essa verificação não exige varredura integral do repositório para mudanças pequenas. O escopo deve acompanhar o risco e a quantidade de lugares que reproduzem a informação alterada.
+
+Se a correção pós-merge for apenas de status ou fechamento documental, ela pode ocorrer em PR curto e isolado. Se modificar significado, regra ou escopo homologado, retorna ao fluxo normal de revisão e homologação.
+
+O checklist reutilizável está em [../templates/VERIFICACAO-FINAL-TEMPLATE.md](../templates/VERIFICACAO-FINAL-TEMPLATE.md).
+
 ## Estados sugeridos
 
 ```text

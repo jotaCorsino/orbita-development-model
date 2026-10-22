@@ -279,9 +279,28 @@ Quando houver valor de portfólio, prefira um case sanitizado separado em vez de
 
 Testes de segurança, análise de dependências, verificação de segredos e revisão especializada devem ser utilizados quando o risco justificar. Testes aprovados não equivalem a prova de ausência de vulnerabilidades.
 
+## 11. Verificação final e encerramento
+
+Quando uma tarefa alterar informação que também aparece em README, roadmap, índices, tabelas de acompanhamento, registros de evolução ou outra documentação derivada, o agente responsável pela revisão/coordenação deve executar uma verificação final proporcional.
+
+Antes do merge, deve conferir o impacto documental esperado e procurar referências antigas relacionadas à mudança.
+
+Depois do merge, deve verificar o resultado diretamente na `main` e confirmar que os pontos derivados relevantes descrevem o estado realmente integrado.
+
+O agente não deve concluir que o repositório está totalmente encerrado apenas porque o PR foi mergeado. Deve confirmar, quando aplicável, que:
+
+- o estado canônico está correto na `main`;
+- resumos e índices relevantes não ficaram desatualizados;
+- links e caminhos afetados continuam válidos;
+- termos de estado antigos relacionados à mudança não permanecem contradizendo o resultado atual.
+
+A verificação deve ser proporcional. Não é necessário revisar todo o repositório quando a mudança não possui superfícies derivadas relevantes.
+
+O procedimento de referência está em [Verificação final](../templates/VERIFICACAO-FINAL-TEMPLATE.md).
+
 ---
 
-## 11. Regra de parada
+## 12. Regra de parada
 
 Ao atingir o limite da tarefa autorizada:
 
