@@ -79,7 +79,7 @@ Quando uma validação falha, a tarefa retorna ao estágio adequado.
 
 Uma interrupção inesperada, pausa longa ou troca de agente **não cria um novo estado normativo** no fluxo.
 
-Nesses casos, o acompanhamento pode usar uma condição excepcional como **Pausado** ou **Interrompido** para comunicar que a execução foi suspensa, mantendo registrado qual era o último estado normativo conhecido da tarefa.
+Nesses casos, o acompanhamento pode usar a condição excepcional **Pausado** para comunicar que a execução foi suspensa, mantendo registrado qual era o último estado normativo conhecido da tarefa.
 
 Exemplo:
 
@@ -96,7 +96,7 @@ Ao retomar:
 4. retornar a tarefa ao estágio adequado do fluxo com base nas evidências encontradas;
 5. manter o gate humano original quando ainda estiver pendente.
 
-A condição excepcional desaparece quando a tarefa é retomada com estado novamente conhecido. Ela serve apenas para comunicar suspensão e incerteza operacional; **não substitui os estados oficiais nem altera a sequência normativa**.
+A condição excepcional `Pausado` desaparece quando a tarefa é retomada com estado novamente conhecido. Ela serve apenas para comunicar suspensão e incerteza operacional; **não substitui os estados oficiais nem altera a sequência normativa**.
 
 
 
