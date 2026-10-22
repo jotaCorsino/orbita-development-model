@@ -21,6 +21,26 @@ Quando a implementação depender da base mais recente, a working copy deve ser 
 
 Ver também [Identidade e ambiente do projeto](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
 
+## Retomada após interrupção
+
+Quando uma tarefa for interrompida inesperadamente, pausada por longo período ou transferida para outro agente com alterações materiais possivelmente ainda locais, a retomada deve começar pela **preservação do estado existente**, não pela reconstrução.
+
+Antes de sincronizar, limpar ou refazer trabalho, o agente deve, de forma proporcional:
+
+1. confirmar pasta, branch e `HEAD` local;
+2. comparar o estado local com o remoto;
+3. identificar commits locais ainda não publicados;
+4. inventariar alterações rastreadas, arquivos não rastreados e artefatos ignorados relevantes;
+5. verificar, quando aplicável, Git LFS e arquivos-fonte editáveis;
+6. preservar ou criar backup dos artefatos materiais antes de qualquer operação potencialmente destrutiva;
+7. registrar o último passo comprovadamente concluído e o ponto em que a execução foi interrompida.
+
+A ausência de alterações no PR ou no remoto **não prova ausência de trabalho local**.
+
+Durante a retomada, comandos como `reset --hard`, `clean -fdx`, force push ou descarte de mudanças não devem ser usados como reação automática. Se houver dúvida sobre a integridade ou o valor do estado local, preserve primeiro e decida depois.
+
+Somente após distinguir claramente **estado local**, **estado remoto** e **trabalho ainda não persistido** a tarefa deve retornar ao estágio adequado do fluxo.
+
 ## `main`
 
 A branch principal deve representar um estado conhecido e deliberadamente aceito.
