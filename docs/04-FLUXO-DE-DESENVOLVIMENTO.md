@@ -39,6 +39,23 @@ A especificação completa está em [11 — Inicialização de um novo projeto](
 13. **Documentação/Release** — registros são atualizados quando necessário.
 14. **Próxima tarefa** — somente então o ciclo recomeça.
 
+## Preflight condicional para operações em ambientes existentes
+
+O ciclo padrão não ganha uma nova etapa obrigatória. Porém, quando a tarefa envolver **deploy, migração, atualização de preview, servidor, CMS, integração ou infraestrutura compartilhada**, a fase de análise deve incluir uma verificação operacional antes de qualquer comando de escrita.
+
+Essa verificação deve confirmar, de forma proporcional ao risco:
+
+1. qual é a origem e a revisão/artefato aprovado;
+2. qual é o destino real e o estado já existente;
+3. qual procedimento ou runbook mantém esse ambiente e se ele está homologado ou ainda é experimental;
+4. quais módulos, repositórios auxiliares, integrações ou responsáveis participam da operação;
+5. quais ações podem ser executadas somente em leitura e quais dependem de autorização, backup, rollback ou outro gate;
+6. quais evidências pós-operação demonstrarão a versão realmente implantada e a preservação das integrações.
+
+Se essas informações não puderem ser recuperadas com segurança, a tarefa permanece em **análise/diagnóstico**. A ausência de contexto operacional não autoriza avançar para execução nem substituir o fluxo existente por um procedimento criado ad hoc.
+
+A homologação do artefato de origem e a autorização para operar o ambiente são decisões distintas. O ciclo continua o mesmo; apenas os critérios do gate se tornam mais específicos quando existe risco operacional.
+
 ## Estados sugeridos
 
 ```text
