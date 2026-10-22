@@ -3,7 +3,7 @@
 - **Categoria:** encerramento / consistência documental / rastreabilidade.
 - **Registrado em:** 22/10/2026.
 - **Origem:** evolução do próprio repositório do Método ÓRBITA após a incorporação de TRB-001 a TRB-003 e PROP-001 a PROP-004.
-- **Estado:** ocorrência confirmada; refinamento metodológico em preparação.
+- **Estado:** ocorrência confirmada; refinamento metodológico preparado na branch `docs/TRB-004-verificacao-final-consistencia`, aguardando homologação humana.
 - **Impacto:** documentação resumida permaneceu desatualizada apesar de os registros canônicos já estarem homologados e incorporados.
 
 ## 1. Ocorrência
@@ -78,8 +78,37 @@ Evitar que uma mudança tecnicamente e metodologicamente correta termine com o r
 
 O encerramento deve confirmar não apenas que o artefato foi integrado, mas que a documentação relevante **descreve corretamente o estado que agora existe na `main`**.
 
-## 6. Estado da avaliação
+## 6. Refinamento preparado
+
+Foram preparados ajustes proporcionais em:
+
+- [Fluxo de desenvolvimento](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md) — adiciona verificação final em duas passagens, sem criar novo estado;
+- [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md) — impede considerar o repositório totalmente encerrado sem conferir, quando aplicável, o estado integrado e suas superfícies derivadas;
+- [Checklist de verificação final](../templates/VERIFICACAO-FINAL-TEMPLATE.md) — procedimento reutilizável de pré-integração e pós-merge.
+
+### Decisões de proporcionalidade
+
+O refinamento **não** exige:
+
+- varredura integral do repositório para qualquer tarefa;
+- novo estado normativo;
+- novo gate universal independente;
+- PR de encerramento em toda mudança;
+- atualização de documentos que não reproduzem ou dependem da informação alterada.
+
+### Critérios para homologação
+
+O refinamento pode ser homologado se:
+
+1. detectar o tipo de inconsistência que deixou o README desatualizado;
+2. diferenciar claramente verificação antes e depois do merge;
+3. exigir leitura do estado final diretamente na `main`;
+4. permitir correção documental curta sem reabrir a mudança normativa;
+5. obrigar retorno ao fluxo normal quando a inconsistência alterar significado, regra ou escopo;
+6. manter custo proporcional para tarefas simples.
+
+## 7. Estado da avaliação
 
 Este registro documenta uma ocorrência real no repositório do próprio Método ÓRBITA.
 
-O refinamento ainda depende de revisão e homologação humana antes de se tornar regra oficial.
+O refinamento permanece em **AGUARDANDO_HOMOLOGACAO** até aprovação explícita do responsável humano.
