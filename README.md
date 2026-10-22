@@ -213,12 +213,12 @@ O case mostra a evolução por prova de conceito, persistência, scheduler, segu
 
 O projeto operacional real permanece separado da representação pública. Essa separação passou a fazer parte do próprio aprendizado do ÓRBITA: **portfólio deve expor decisões, arquitetura, processo e resultados sem exigir a exposição do ambiente operacional completo**.
 
-## Problemas recorrentes
+## Problemas e ocorrências observadas
 
 Ocorrências técnicas observadas em projetos que utilizam o método são registradas separadamente, sem alterar automaticamente suas regras normativas.
 
 - [Bootstrap Git: `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — duas ocorrências documentadas, solução e avaliação metodológica pendente.
-- [Problema 002 — Deploy de preview sem recuperar o procedimento operacional](troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md) — ocorrência real no Novo Site Technolife; sem deploy realizado, aprendizado em avaliação.
+- [Problema 002 — Deploy de preview sem recuperar o procedimento operacional](troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md) — orientação inicial interrompida antes de alterar o preview; publicação posterior pelo runbook manual, com aprendizado metodológico em avaliação.
 
 ## Propostas de melhoria do método
 
