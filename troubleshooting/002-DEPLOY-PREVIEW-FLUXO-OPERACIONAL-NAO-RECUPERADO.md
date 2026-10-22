@@ -6,7 +6,7 @@
 - **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
 - **Impacto confirmado:** orientação operacional prematura, retrabalho de diagnóstico e perda de confiança do responsável. **Não houve deploy nem alteração dos arquivos públicos pelas instruções rejeitadas.**
 - **Estado técnico da ocorrência:** a tentativa inicial foi interrompida sem deploy; em continuação supervisionada, o procedimento manual documentado foi recuperado e o preview atualizado para a revisão `e898876`, com backup, autenticação HTTP `401` e exportação JSON multipágina verificadas. Homologação funcional completa permanece separada.
-- **Estado metodológico:** análise concluída e refinamento metodológico preparado na branch `docs/TRB-002-preflight-operacional`, ainda **aguardando homologação humana**. Este relato, por si só, não muda o ÓRBITA.
+- **Estado metodológico:** **refinamento metodológico homologado pelo responsável humano no PR #7**, aguardando apenas integração à `main`.
 
 ## 1. Contexto e sintoma
 
@@ -111,7 +111,7 @@ Documentos normativos preparados:
 - [docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md);
 - [onboarding/CONTRATO-DE-TRABALHO.md](../onboarding/CONTRATO-DE-TRABALHO.md).
 
-**Estado atual:** refinamento preparado e revisado de forma cruzada, ainda sem homologação humana e sem merge na `main`.
+**Estado atual:** refinamento **APROVADO** pelo responsável humano no PR #7. A integração à `main` é o passo final de encerramento.
 
 ## 8. Referências
 
