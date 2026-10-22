@@ -3,7 +3,7 @@
 - **Tipo:** refinamento futuro / continuidade de contexto / governança de operação.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [TRB-002 — Deploy do preview sem recuperação do fluxo existente](../troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md), observado no Novo Site Technolife.
-- **Estado:** **APROVADA pelo responsável humano no PR #7**, aguardando apenas integração à `main`.
+- **Estado:** **APROVADA e INCORPORADA à `main` pelo PR #7**.
 - **Prioridade sugerida:** avaliar como refinamento pequeno e **condicional**, não como nova burocracia transversal.
 
 ## 1. Problema que motiva a proposta
