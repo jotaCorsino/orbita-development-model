@@ -173,6 +173,35 @@ Quando o software já possui repositório e histórico:
 4. evitar criar um novo projeto apenas para reorganizar aparência;
 5. documentar qualquer transição necessária.
 
+## Dependências entre projetos e fluxos auxiliares
+
+A regra de identidade única não significa que um software precise conter, no mesmo repositório, todos os módulos, automações e procedimentos usados para operá-lo.
+
+Um projeto pode depender legitimamente de outros componentes, por exemplo:
+
+```text
+Projeto principal
+      │
+      ├── módulo auxiliar
+      ├── ferramenta de integração
+      ├── runbook operacional
+      └── serviço ou infraestrutura compartilhada
+```
+
+Cada software ou módulo continua com seu próprio repositório canônico. O projeto consumidor deve apenas manter uma referência suficiente para que outro humano ou agente consiga identificar:
+
+- qual dependência participa do fluxo;
+- qual responsabilidade ela possui;
+- onde está o procedimento oficial de integração ou operação;
+- quais restrições relevantes precisam ser preservadas;
+- qual versão, revisão ou artefato foi efetivamente utilizado quando isso for importante para rastreabilidade.
+
+Essa referência deve apontar para a fonte canônica sempre que possível, evitando copiar procedimentos extensos que possam divergir com o tempo.
+
+A existência de uma dependência externa **não autoriza mesclar repositórios, duplicar credenciais, copiar configuração sensível ou assumir autoridade sobre o projeto auxiliar**.
+
+Quando uma tarefa operacional depender de contexto mantido em outro projeto e esse contexto não puder ser recuperado com segurança, o agente deve tratar isso como uma dependência não resolvida e permanecer em diagnóstico até que o responsável adequado seja identificado.
+
 ## Sincronização antes de trabalhar
 
 Antes de planejamento ou implementação relevante:

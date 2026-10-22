@@ -24,6 +24,31 @@ Exemplos:
 - validação funcional antes da release;
 - riscos de segurança relevantes tratados, aceitos conscientemente ou registrados antes do avanço.
 
+## Homologação do artefato e autorização operacional
+
+A aprovação de código, documentação ou artefato **não autoriza automaticamente sua implantação em um ambiente operacional**.
+
+São decisões relacionadas, mas distintas:
+
+- **homologação do artefato** — confirma que a mudança atende ao objetivo e pode integrar o estado aprovado do projeto;
+- **autorização operacional** — permite aplicar essa mudança em um ambiente real, seguindo o procedimento, dependências e controles daquele ambiente.
+
+A distinção é de responsabilidade e evidência, não uma exigência de duas aprovações formais em todos os casos. Quando a tarefa, o runbook e o gate já autorizarem explicitamente a implantação, a homologação e a autorização operacional podem ser registradas no mesmo fluxo de decisão.
+
+Quando houver deploy, migração, atualização de preview, servidor, CMS, integração ou infraestrutura compartilhada, o gate operacional deve considerar, de forma proporcional:
+
+- procedimento ou runbook vigente;
+- destino real e estado existente;
+- integrações e módulos que precisam ser preservados;
+- dependências entre projetos ou responsáveis;
+- backup, rollback ou dry-run quando aplicáveis;
+- evidência da versão ou artefato efetivamente implantado;
+- verificações pós-operação e limitações ainda não comprovadas.
+
+Um commit homologado na origem não demonstra, isoladamente, qual versão está instalada no destino. A evidência operacional deve registrar a revisão ou artefato efetivamente aplicado.
+
+Se o procedimento canônico do ambiente não estiver disponível ou seu status não puder ser confirmado, a ausência de contexto **não deve ser tratada como autorização para inventar um novo fluxo de implantação**.
+
 ## Segurança no gate
 
 Uma tarefa não deve ser homologada apenas porque compilou ou porque os testes funcionais passaram.

@@ -100,6 +100,24 @@ Antes de uma modificação relevante:
 
 Não presuma que o estado descrito em uma conversa antiga ainda corresponde ao repositório.
 
+
+### Operações em ambientes existentes
+
+Quando a tarefa puder modificar um ambiente operacional preexistente — por exemplo, deploy, preview, migração, servidor, CMS, integração ou infraestrutura compartilhada — a inspeção anterior à mudança deve incluir também o **fluxo de operação vigente**.
+
+Antes de fornecer comandos de escrita ou executar a operação, o agente deve, de forma proporcional ao risco:
+
+1. identificar a origem e a versão aprovada do artefato;
+2. inspecionar o destino real e o estado já existente;
+3. localizar o runbook ou procedimento canônico, quando houver, e distinguir fluxo homologado de recurso experimental;
+4. identificar módulos, repositórios auxiliares, integrações e responsáveis que participem da operação;
+5. separar diagnóstico não destrutivo de ações que exigem autorização, backup, rollback ou outro gate operacional.
+
+Se o procedimento canônico ou uma dependência relevante não puder ser recuperado com segurança, o agente deve limitar-se ao diagnóstico não destrutivo, registrar o bloqueio e encaminhar a decisão ao responsável adequado.
+
+O agente **não deve substituir silenciosamente um fluxo já implantado por um procedimento improvisado na conversa**, mesmo que a versão do código de origem esteja correta e homologada.
+
+
 ---
 
 ## 5. Durante a implementação
