@@ -115,6 +115,23 @@ Conteúdo incompleto, provisório ou ainda não homologado **não deve ser remov
 
 Quando houver dúvida sobre perda semântica, a ação correta é **preservar e sinalizar a dúvida**, não resumir de forma irreversível.
 
+
+### Evidência proporcional de cobertura
+
+Em consolidações documentais extensas, a revisão deve conseguir demonstrar **onde o conhecimento relevante permaneceu**.
+
+A forma dessa evidência não é fixa. Conforme o tamanho e o risco da mudança, ela pode ser:
+
+- uma lista curta de documentos unidos e respectivos destinos;
+- referências de origem → destino;
+- uma tabela ou matriz de cobertura por arquivo ou seção;
+- indicação da decisão que substituiu conteúdo removido;
+- diff revisado com justificativas para exclusões relevantes.
+
+Uma matriz completa não é obrigatória em toda consolidação. Ela se torna útil quando o volume, a fragmentação ou o risco de perda tornam difícil comprovar preservação apenas pelo diff.
+
+O método **não exige um template específico neste momento**. O responsável e o agente devem escolher a evidência mínima suficiente para tornar a consolidação auditável sem criar documentação paralela desnecessária.
+
 ## Limites
 
 IA pode errar, interpretar requisitos incorretamente, criar código inseguro ou declarar sucesso com validação insuficiente.
