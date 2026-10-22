@@ -6,7 +6,7 @@
 - **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
 - **Impacto confirmado:** orientação operacional prematura, retrabalho de diagnóstico e perda de confiança do responsável. **Não houve deploy nem alteração dos arquivos públicos pelas instruções rejeitadas.**
 - **Estado técnico da ocorrência:** a tentativa inicial foi interrompida sem deploy; em continuação supervisionada, o procedimento manual documentado foi recuperado e o preview atualizado para a revisão `e898876`, com backup, autenticação HTTP `401` e exportação JSON multipágina verificadas. Homologação funcional completa permanece separada.
-- **Estado metodológico:** análise e [proposta de melhoria](../proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md) **pendentes de avaliação e homologação humana**. Este relato, por si só, não muda o ÓRBITA.
+- **Estado metodológico:** análise concluída e refinamento metodológico preparado na branch `docs/TRB-002-preflight-operacional`, ainda **aguardando homologação humana**. Este relato, por si só, não muda o ÓRBITA.
 
 ## 1. Contexto e sintoma
 
@@ -79,11 +79,39 @@ O agente de planejamento, porém, tratou inicialmente a tarefa como se precisass
 
 A ausência desse contexto não autoriza recriar o processo. A decisão adequada é **parar, inspecionar e encaminhar ao responsável pelo fluxo**. Isso preserva a orquestração humana e evita uma falsa sensação de segurança baseada apenas na versão aprovada do código.
 
-## 7. Proposta de avaliação metodológica
+## 7. Resultado da avaliação metodológica
 
 Ver [Proposta 002 — Preflight operacional e dependências entre projetos](../proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md).
 
-A proposta recomenda uma verificação proporcional de continuidade/dependências em operações sobre ambientes existentes, **sem criar automaticamente uma nova etapa obrigatória para cada tarefa de código**. Inclui distinção entre documentação existente, recursos experimentais e processos homologados.
+A análise concluiu que a ocorrência combina **falha de aplicação do agente** com uma **lacuna operacional pequena e real** no método.
+
+O ÓRBITA já exigia inspeção do estado atual, identificação de riscos e dependências, rastreabilidade e homologação. O agente falhou ao não aplicar adequadamente essas regras. Porém, o método não tornava suficientemente explícito que, em ambientes operacionais existentes, o agente deve recuperar também o **fluxo de operação vigente**, inclusive quando esse conhecimento estiver em outro projeto, módulo ou runbook.
+
+O refinamento preparado na branch `docs/TRB-002-preflight-operacional` propõe:
+
+- preflight operacional **condicional**, integrado à análise e sem criar nova etapa universal;
+- distinção entre homologação do artefato e autorização para operar o ambiente;
+- possibilidade de ambas estarem no mesmo gate quando a tarefa e o runbook já autorizarem explicitamente a implantação;
+- registro da revisão ou artefato efetivamente implantado, sem inferi-lo apenas pelo `HEAD` da working copy;
+- reconhecimento de dependências entre projetos sem romper a regra de um repositório canônico por software;
+- parada em diagnóstico quando runbook, dependência ou autoridade relevante não puderem ser recuperados com segurança.
+
+Foram conscientemente **descartados neste refinamento**:
+
+- novo estado no fluxo;
+- nova etapa obrigatória para todo projeto;
+- checklist operacional universal;
+- novo template de tarefa;
+- exigência de duas aprovações humanas separadas em todo deploy.
+
+Documentos normativos preparados:
+
+- [docs/04-FLUXO-DE-DESENVOLVIMENTO.md](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md);
+- [docs/05-GOVERNANCA-E-HOMOLOGACAO.md](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md);
+- [docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md);
+- [onboarding/CONTRATO-DE-TRABALHO.md](../onboarding/CONTRATO-DE-TRABALHO.md).
+
+**Estado atual:** refinamento preparado e revisado de forma cruzada, ainda sem homologação humana e sem merge na `main`.
 
 ## 8. Referências
 
