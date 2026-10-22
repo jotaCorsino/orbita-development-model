@@ -33,6 +33,8 @@ São decisões relacionadas, mas distintas:
 - **homologação do artefato** — confirma que a mudança atende ao objetivo e pode integrar o estado aprovado do projeto;
 - **autorização operacional** — permite aplicar essa mudança em um ambiente real, seguindo o procedimento, dependências e controles daquele ambiente.
 
+A distinção é de responsabilidade e evidência, não uma exigência de duas aprovações formais em todos os casos. Quando a tarefa, o runbook e o gate já autorizarem explicitamente a implantação, a homologação e a autorização operacional podem ser registradas no mesmo fluxo de decisão.
+
 Quando houver deploy, migração, atualização de preview, servidor, CMS, integração ou infraestrutura compartilhada, o gate operacional deve considerar, de forma proporcional:
 
 - procedimento ou runbook vigente;
