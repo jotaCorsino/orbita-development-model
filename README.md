@@ -218,15 +218,15 @@ O projeto operacional real permanece separado da representação pública. Essa 
 Ocorrências técnicas observadas em projetos que utilizam o método são registradas separadamente, sem alterar automaticamente suas regras normativas.
 
 - [Bootstrap Git: `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — duas ocorrências documentadas, solução e avaliação metodológica pendente.
-- [Interrupção de agente com trabalho 3D ainda local](troubleshooting/002-INTERRUPCAO-CODEX-TRABALHO-LOCAL.md) — ocorrência observada no MMO, inspeção e retomada segura propostas.
+- [Interrupção de agente com trabalho 3D ainda local](troubleshooting/003-INTERRUPCAO-CODEX-TRABALHO-LOCAL.md) — ocorrência observada no MMO, inspeção e retomada segura propostas.
 
 ## Propostas de melhoria do método
 
 Registros de ajustes sugeridos a partir do uso real do ÓRBITA. **Não são regras oficiais até avaliação e homologação humana.**
 
 - [Proposta 001 — Tabela de acompanhamento visual no início do README](proposals/001-README-ACOMPANHAMENTO-VISUAL.md) — círculos coloridos, ordem das seções, sincronização com roadmap e estados de homologação.
-- [Proposta 002 — Consolidação documental sem perda](proposals/002-CONSOLIDACAO-DOCUMENTAL-SEM-PERDA.md) — auditoria semântica antes de fundir/remover conteúdo vigente e clareza entre `main` e PRs Draft.
-- [Proposta 003 — Gates de fidelidade visual 3D](proposals/003-GATES-FIDELIDADE-VISUAL-3D.md) — distinguir pipeline técnico, blockout e aprovação estética com evidências reais.
+- [Proposta 003 — Consolidação documental sem perda](proposals/003-CONSOLIDACAO-DOCUMENTAL-SEM-PERDA.md) — auditoria semântica antes de fundir/remover conteúdo vigente e clareza entre `main` e PRs Draft.
+- [Proposta 004 — Gates de fidelidade visual 3D](proposals/004-GATES-FIDELIDADE-VISUAL-3D.md) — distinguir pipeline técnico, blockout e aprovação estética com evidências reais.
 
 ## Documentação
 
