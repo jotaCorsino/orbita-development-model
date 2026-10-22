@@ -67,6 +67,22 @@ O contexto de um agente é temporário. Por isso, decisões importantes não dev
 
 Documentação no repositório reduz dependência de memória conversacional e permite que outro humano ou agente retome o projeto com menor perda de contexto.
 
+## Estado integrado e trabalho ativo em revisão
+
+A `main` representa o estado **integrado e deliberadamente aceito** do projeto, mas não deve ser interpretada automaticamente como inventário completo de todo trabalho atualmente relevante.
+
+Projetos podem manter documentação, planejamento ou implementação ainda em revisão em branches e Pull Requests ativos. Nesses casos, antes de concluir que uma decisão, especificação ou conteúdo “não existe”, o agente deve identificar qual conjunto de documentos rege a tarefa atual.
+
+A distinção esperada é:
+
+- **`main`** — estado integrado/homologado;
+- **branch ou PR ativo** — trabalho em elaboração ou revisão, ainda não integrado;
+- **documentação vigente para a tarefa** — conjunto explicitamente indicado pelo planejamento ou pelas dependências da tarefa, podendo incluir conteúdo ainda em revisão.
+
+Conteúdo de branch ou PR ativo **não se torna canônico apenas por existir**. Sua autoridade depende do escopo, da relação com a tarefa e dos gates definidos pelo projeto.
+
+Quando uma tarefa depender de trabalho ainda não integrado, o agente deve registrar de forma inequívoca a referência relevante — branch, PR, commit ou base — e evitar assumir que a ausência desse conteúdo na `main` significa perda, descarte ou inexistência.
+
 ## Limites
 
 IA pode errar, interpretar requisitos incorretamente, criar código inseguro ou declarar sucesso com validação insuficiente.
