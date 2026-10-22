@@ -3,7 +3,7 @@
 - **Categoria:** melhoria do Método ÓRBITA / preservação do conhecimento / handoff entre agentes.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), especialmente [PR documental #1](https://github.com/jotaCorsino/the-mmo-idea/pull/1).
-- **Estado:** refinamento metodológico preparado na branch `docs/PROP-003-consolidacao-documental`, ainda aguardando homologação humana.
+- **Estado:** refinamento metodológico **APROVADO pelo responsável humano no PR #11**, aguardando integração à `main`.
 - **Distinção:** o erro de consolidação foi uma **falha de execução do agente de planejamento**, apesar de o contrato existente já proibir remoções sem autorização. O que se propõe é adicionar salvaguardas operacionais verificáveis.
 
 ## 1. Ocorrência e impacto
@@ -111,4 +111,20 @@ Foram preparados ajustes em:
 - [IA no método](../docs/07-IA-NO-METODO.md);
 - [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md).
 
-A proposta permanece em **AGUARDANDO_HOMOLOGACAO** até aprovação explícita do responsável humano.
+A proposta foi **APROVADA** pelo responsável humano no PR #11 em 22/10/2026 e está liberada para integração à `main`.
+
+
+## 9. Decisão de homologação
+
+**APROVADA** pelo responsável humano no PR #11 em 22/10/2026.
+
+A homologação confirma o refinamento proporcional:
+
+- preservação semântica em consolidações relevantes;
+- distinção entre `main` integrada e trabalho ativo em revisão;
+- ausência de template obrigatório;
+- matriz de cobertura apenas quando útil;
+- nenhuma burocracia adicional para pequenas correções;
+- preservação preferida quando houver dúvida sobre perda de conteúdo.
+
+A aprovação não transforma toda revisão textual em consolidação formal e não autoriza exclusões documentais amplas sem evidência ou gate adequado.
