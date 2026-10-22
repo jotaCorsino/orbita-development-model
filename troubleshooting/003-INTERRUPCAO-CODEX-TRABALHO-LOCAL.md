@@ -4,7 +4,7 @@
 - **Registrado em:** 22/10/2026.
 - **Ocorrência documentada:** [the-mmo-idea — PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10), durante VIS-001.1.
 - **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
-- **Estado:** interrupção confirmada por relato do responsável; **persistência do trabalho local não verificada diretamente**. Problema ainda sem procedimento homologado.
+- **Estado:** interrupção confirmada por relato do responsável; **persistência do trabalho local não verificada diretamente**. Refinamento metodológico preparado na branch `docs/TRB-003-retomada-segura`, ainda aguardando homologação humana.
 - **Escopo:** diagnóstico de continuidade e retomada segura, não alteração normativa automática.
 
 ## 1. Sintoma
@@ -24,51 +24,91 @@ Na consulta remota feita na mesma sequência, o [PR #10](https://github.com/jota
 
 Este evento não prova falha do Git, do Unity ou do Blender; o gatilho relatado foi limite de uso do agente.
 
-## 3. Protocolo de retomada sugerido
+## 3. Resultado da avaliação metodológica
 
-**Antes de continuar uma tarefa interrompida:**
+A análise concluiu que a ocorrência representa uma **lacuna pequena e real de retomada/resiliência**, sem demonstrar falha conceitual ampla do método.
 
-1. Registrar o motivo e marcar a tarefa **INTERROMPIDA/PAUSADA**, sem declará-la “concluída”.
-2. Inspecionar, sem sobrescrever, `pwd`, branch, HEAD, `git status`, `git diff --stat` e `git lfs status` quando tecnicamente possível; registrar as restrições de sandbox sem contorná-las.
-3. Inventariar arquivos **rastreados, não rastreados e ignorados** relevantes, incluindo `.blend`, `.blend1`, `.fbx`, cenas, texturas, scripts de geração e evidências locais.
-4. Verificar que arquivos importantes **abrem** em Blender/Unity e identificar seu último estado conhecido; preservar backup antes de novas gerações ou reconstruções.
-5. Diferenciar `HEAD local`, `origin/branch`, commits não publicados e mudanças sem commit; nunca usar `reset --hard`, `clean -fdx`, force push ou descartar alterações como reflexo automático.
-6. Preparar um **checkpoint seguro autorizado** contendo fontes editáveis, scripts e relatório de estado, com Git LFS e verificação de segredos/licenças quando aplicável. Se a sessão/sandbox não permitir escrever `.git`, relatar bloqueio e solicitar via legítima; não forçar.
-7. Somente então retomar **a menor subtarefa aprovada**, evitando expansão automática de escopo.
+O ÓRBITA já estabelecia que:
 
-**Durante tarefas longas**, registrar checkpoints pequenos após etapas verificáveis, sem transformar qualquer estado parcial em homologação. Ex.: composição → malha hero → material → integração Unity → evidência. Se não houver autorização para publicar a cada checkpoint, ao menos salvar localmente de forma segura e relatar o estado.
+- a working copy local pode conter trabalho ainda não publicado;
+- remoto, PR e `main` não representam automaticamente todo o estado local;
+- operações destrutivas de Git não devem ser usadas sem autorização;
+- agentes devem inspecionar estado atual, produzir evidências e respeitar gates.
 
-## 4. Pacote mínimo de handoff sugerido
+O ponto não suficientemente explícito era **o que fazer primeiro após uma interrupção inesperada**.
 
-```text
-Tarefa: VIS-001.1
-Branch/HEAD local:
-Origin/HEAD remoto:
-Arquivos novos/modificados/ignorados relevantes:
-Arquivos que abriram com sucesso:
-Evidências locais disponíveis:
-Último passo comprovadamente concluído:
-Passo interrompido:
-Riscos de sobreposição e dependências:
-Próxima ação segura:
-Gate humano pendente:
-```
+O refinamento preparado estabelece a ordem:
 
-Não exigir esse protocolo em toda tarefa curta. Aplicá-lo quando houver **interrupção inesperada, pausa longa ou mudança de agente** com alterações materiais não confirmadas no remoto.
+> **inspecionar → preservar → distinguir local/remoto → retomar**
+
+Foram preparados ajustes em:
+
+- [docs/06-GIT-E-GITHUB.md](../docs/06-GIT-E-GITHUB.md): protocolo de retomada segura e checkpoints de resiliência proporcionais;
+- [docs/04-FLUXO-DE-DESENVOLVIMENTO.md](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md): `Pausado` como condição excepcional, sem novo estado normativo;
+- [onboarding/CONTRATO-DE-TRABALHO.md](../onboarding/CONTRATO-DE-TRABALHO.md): obrigação comportamental de preservar antes de reconstruir.
+
+Foram conscientemente **descartados**:
+
+- criar `INTERROMPIDA` como novo estado oficial;
+- manter dois rótulos concorrentes para a mesma condição;
+- exigir pacote de handoff completo em toda tarefa;
+- exigir commit ou push a cada microetapa;
+- tratar checkpoint como homologação;
+- tornar o protocolo específico de Blender, Unity ou trabalho 3D.
+
+### Protocolo operacional resultante
+
+Ao retomar uma tarefa interrompida com possível trabalho material ainda local:
+
+1. registrar a condição excepcional como `Pausado`, preservando o último estado normativo conhecido;
+2. inspecionar o estado local antes de sincronizar, limpar ou reconstruir;
+3. distinguir `HEAD` local, remoto, commits não publicados, mudanças sem commit e arquivos relevantes não rastreados/ignorados;
+4. preservar artefatos materiais antes de qualquer ação potencialmente destrutiva;
+5. identificar o último passo comprovado e o ponto da interrupção;
+6. retornar a tarefa ao estágio correto com base nas evidências;
+7. retomar somente a menor subtarefa ainda autorizada.
+
+Em tarefas longas ou caras de reconstruir, checkpoints podem ser usados **por marco verificável**, sem frequência fixa e sem significar aprovação ou conclusão.
+
+## 4. Handoff proporcional
+
+Não foi criado um template obrigatório de handoff.
+
+Quando a interrupção, pausa longa ou troca de agente justificar registro adicional, o handoff deve conter apenas o necessário para permitir retomada segura, como:
+
+- tarefa e último estado normativo conhecido;
+- branch/`HEAD` local e referência remota;
+- mudanças e artefatos materiais ainda não persistidos;
+- último passo comprovadamente concluído;
+- ponto da interrupção;
+- próxima ação segura;
+- gate humano ainda pendente.
+
+Tarefas curtas, sem estado material relevante ou fáceis de reconstruir não precisam gerar documentação adicional apenas para cumprir o método.
 
 ## 5. Relação com problema já documentado
 
 Ver [troubleshooting 001 — `.git` somente leitura no sandbox](001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md). Bloqueios de escrita do sandbox e limite de uso são causas **diferentes** e não devem ser confundidas. O protocolo de retomada não autoriza burlar nenhuma proteção.
 
-## 6. Critérios para considerar a ocorrência resolvida
+## 6. Critérios para homologar o refinamento
 
-- Inventário local reproduzível, com confirmação do que foi salvo, testado e publicado;
-- arquivos Blender e cena Unity abertos com sucesso após a interrupção;
-- checkpoint persistido sem perda ou sobrescrita;
-- estado de PR, branch, arquivos e gate condizente com as evidências;
-- avanço à próxima etapa somente por autorização/homologação humana apropriada.
+Para homologar este refinamento mínimo:
 
-**Até essas verificações, o estado correto é “trabalho parcial observado; persistência local a confirmar”.**
+- a retomada começa por inspeção e preservação, não por reconstrução;
+- `Pausado` permanece condição excepcional, sem novo estado normativo;
+- remoto desatualizado não é tratado como prova de ausência de trabalho local;
+- checkpoints permanecem proporcionais e opcionais conforme custo de reconstrução;
+- nenhuma operação destrutiva é autorizada automaticamente;
+- o texto continua genérico e aplicável além do caso 3D que originou a ocorrência;
+- uma homologação humana específica aprova ou rejeita a incorporação.
+
+### Limite da evidência
+
+A origem continua sendo **uma ocorrência documentada**. Não foi comprovado que o trabalho 3D local tenha sido perdido, preservado ou recuperado posteriormente.
+
+O refinamento trata o risco observado sem transformar essa incerteza em fato. Sua utilidade deve continuar sendo observada em futuras interrupções reais.
+
+**No caso original, até inspeção local suficiente, a formulação correta continua sendo: “trabalho parcial observado; persistência local a confirmar”.**
 
 ## 7. Referências
 
