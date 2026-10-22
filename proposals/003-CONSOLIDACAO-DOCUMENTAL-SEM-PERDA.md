@@ -3,7 +3,7 @@
 - **Categoria:** melhoria do Método ÓRBITA / preservação do conhecimento / handoff entre agentes.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), especialmente [PR documental #1](https://github.com/jotaCorsino/the-mmo-idea/pull/1).
-- **Estado:** proposta em avaliação; **não é regra homologada**.
+- **Estado:** refinamento metodológico preparado na branch `docs/PROP-003-consolidacao-documental`, ainda aguardando homologação humana.
 - **Distinção:** o erro de consolidação foi uma **falha de execução do agente de planejamento**, apesar de o contrato existente já proibir remoções sem autorização. O que se propõe é adicionar salvaguardas operacionais verificáveis.
 
 ## 1. Ocorrência e impacto
@@ -24,49 +24,77 @@ O conteúdo pôde ser recuperado por commits antigos e reorganizado no PR #1, se
 - A estrutura de PRs Draft encadeados e a `main` minimalista não foram suficientemente explicitadas durante o bootstrap do Codex, gerando alarme compreensível sobre o desaparecimento do trabalho.
 - O agente deveria ter interrompido a limpeza quando não conseguisse demonstrar que uma ideia fora **expressamente substituída**.
 
-## 3. Protocolo proposto — consolidação sem perda
+## 3. Resultado da avaliação metodológica
 
-Antes de remover ou condensar documentação não trivial:
+A análise concluiu que houve uma **falha de execução do agente**, acompanhada de duas lacunas práticas que valem explicitar no método:
 
-1. **Fixar fonte e snapshot:** registrar branch, commit SHA, inventário de arquivos e objetivo da consolidação; preservar versão recuperável por Git.
-2. **Classificar sem inventar estados:** `VIGENTE` (inclusive ideias em elaboração), `SUBSTITUÍDO COM EVIDÊNCIA`, `DUPLICADO SEM CONTEÚDO ÚNICO`, `DÚVIDA`. Itens em dúvida são preservados até resolução, sem impor nova homologação para cada frase.
-3. **Matriz de cobertura:** para cada seção de origem, indicar destino exato (arquivo/âncora ou decisão substituta), ou justificar remoção com referência à decisão que a tornou obsoleta.
-4. **Critério semântico:** conferir fatos, restrições, nomes próprios, mecânicas, relações, detalhes de lore e decisões únicas; a contagem de arquivos não substitui esse teste.
-5. **Revisão do diff:** exclusões e reescritas volumosas devem acionar revisão reforçada; nunca vender “33 → 6” como melhoria por si só.
-6. **Gate documental:** apresentar ao responsável resumo do que foi mantido, unido e proposto para remoção antes de incorporar à branch principal; não fazer merge silencioso.
+1. a `main` representa o estado integrado/homologado, mas não necessariamente todo o trabalho ainda relevante que vive em branches ou PRs ativos;
+2. consolidações documentais extensas precisam demonstrar preservação **semântica**, não apenas redução de arquivos, links válidos ou reorganização estrutural.
 
-**Regra sugerida:** **não há remoção por falta de acabamento ou homologação final; só por substituição comprovada ou duplicação sem informação exclusiva.**
+O refinamento preparado incorpora estas regras:
 
-## 4. Estado canônico em múltiplos PRs
+- antes de concluir que algo “não existe”, identificar qual documentação efetivamente rege a tarefa atual;
+- conteúdo em branch/PR ativo não se torna canônico apenas por existir;
+- pedidos de organizar, consolidar, resumir ou deduplicar não autorizam exclusão ampla por interpretação;
+- conteúdo incompleto ou ainda em elaboração continua preservado enquanto não houver substituição explícita, duplicação sem conteúdo exclusivo ou autorização humana;
+- consolidações extensas devem apresentar evidência proporcional de cobertura;
+- na dúvida sobre perda semântica, **preservar e sinalizar** em vez de resumir de forma irreversível.
 
-Para projetos em que a fundação documental vive em um PR Draft e a implementação deriva de outros PRs Draft:
+Foram conscientemente **descartados ou simplificados**:
 
-- deixar explícitos **`main` (integrada)**, **documentação vigente em revisão** e **branches de implementação dependentes**;
-- mostrar relação `PR → branch base → commit → gate`;
-- em relatórios de bootstrap, nunca afirmar que o projeto está vazio apenas porque `main` ainda não contém os PRs;
-- antes de orientar o Codex, identificar o conjunto de documentação que efetivamente rege a tarefa e como acessá-lo sem merge prematuro;
-- evitar que uma mesma decisão apareça com estados contraditórios em READMEs, roadmaps e PRs.
+- criar novos estados normativos como `VIGENTE`, `SUBSTITUÍDO` ou `DÚVIDA`;
+- tornar matriz de cobertura obrigatória em toda consolidação;
+- criar agora um template oficial exclusivo de auditoria documental;
+- exigir nova homologação para cada frase ou documento reorganizado;
+- tratar redução do número de arquivos como objetivo do método.
 
-Um índice temático pode melhorar a navegação, mas **não substitui o conteúdo íntegro**.
+A regra resultante é:
 
-## 5. Artefato operacional sugerido
+> **organizar não autoriza perder conteúdo; consolidar exige preservar o significado ainda vigente.**
 
-Adicionar ao kit do ÓRBITA um checklist/template curto de **auditoria de consolidação**:
+## 4. Estado integrado e trabalho ativo em revisão
 
-| Origem (arquivo / seção) | Conteúdo único | Estado | Destino / substituto | Evidência | Conferido? |
-| --- | --- | --- | --- | --- | --- |
-| ex.: lore, era 2 | Sim | Vigente | docs/lore.md#era-2 | conteúdo preservado | Sim/Não |
-| ex.: proposta de classe A | Não | Substituída | decisão CMB-xxx | link para decisão | Sim/Não |
+O refinamento diferencia explicitamente:
 
-O template deve ser **proporcional**: exigido especialmente em migrações de documentação extensa, renomeações massivas e fusões destrutivas, não em pequenas correções gramaticais.
+- **`main`** — estado integrado e deliberadamente aceito;
+- **branch ou PR ativo** — trabalho em elaboração ou revisão, ainda não integrado;
+- **documentação vigente para a tarefa** — conjunto explicitamente indicado pelo planejamento ou pelas dependências daquela tarefa.
 
-## 6. Critérios de aceite para eventual incorporação
+Essa distinção evita tanto considerar um projeto “vazio” apenas porque certo conteúdo ainda não entrou na `main`, quanto tratar qualquer branch ativa como cânone definitivo.
 
-- Testar em ao menos uma consolidação documental real sem perda de conteúdo vigente.
-- Demonstrar rastreabilidade de seções da origem aos destinos e recuperação por Git.
-- Tornar visível o estado de PRs dependentes sem exigir merge antecipado.
-- Não criar duplicação permanente nem tornar toda revisão de texto burocrática.
-- Submeter template e alterações normativas ao responsável humano em PR próprio; **nenhuma incorporação automática**.
+Quando uma tarefa depender de trabalho ainda não integrado, a referência relevante deve ser identificada de forma inequívoca por branch, PR, commit ou base.
+
+## 5. Evidência proporcional de cobertura
+
+A matriz de cobertura foi mantida como **ferramenta possível**, não como template obrigatório do ÓRBITA.
+
+Conforme volume e risco, a evidência pode ser:
+
+- lista de documentos unidos e seus destinos;
+- referências origem → destino;
+- tabela ou matriz de cobertura;
+- indicação da decisão que substituiu conteúdo removido;
+- diff revisado com justificativas para exclusões relevantes.
+
+A exigência é tornar a consolidação auditável com a **menor evidência suficiente**, sem criar documentação paralela desnecessária.
+
+## 6. Critérios para homologar o refinamento
+
+Para homologar este refinamento mínimo:
+
+- `main` e trabalho ativo em revisão permanecem conceitualmente distintos;
+- consolidação extensa exige evidência de preservação semântica proporcional ao risco;
+- conteúdo incompleto não é removido apenas por ainda não estar finalizado;
+- dúvidas de cobertura favorecem preservação, não exclusão;
+- não é criado template obrigatório neste momento;
+- pequenas correções e reorganizações simples não ganham burocracia adicional;
+- a incorporação depende de homologação humana explícita.
+
+### Limite da evidência
+
+A proposta nasce de **uma ocorrência documentada** no projeto MMO.
+
+O refinamento não afirma que toda consolidação documental exige matriz formal nem que o problema seja recorrente em todos os projetos. Ele introduz uma proteção proporcional contra um risco já demonstrado e deve continuar sendo observado em usos futuros.
 
 ## 7. Referências
 
@@ -74,3 +102,13 @@ O template deve ser **proporcional**: exigido especialmente em migrações de do
 - [Governança e homologação](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md).
 - [Fluxo de desenvolvimento](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md).
 - [the-mmo-idea — PR #1](https://github.com/jotaCorsino/the-mmo-idea/pull/1): documentação conceitual e recuperação do acervo.
+
+
+## 8. Estado de incorporação
+
+Foram preparados ajustes em:
+
+- [IA no método](../docs/07-IA-NO-METODO.md);
+- [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md).
+
+A proposta permanece em **AGUARDANDO_HOMOLOGACAO** até aprovação explícita do responsável humano.
