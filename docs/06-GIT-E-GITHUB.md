@@ -21,6 +21,26 @@ Quando a implementação depender da base mais recente, a working copy deve ser 
 
 Ver também [Identidade e ambiente do projeto](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
 
+## Retomada após interrupção
+
+Quando uma tarefa for interrompida inesperadamente, pausada por longo período ou transferida para outro agente com alterações materiais possivelmente ainda locais, a retomada deve começar pela **preservação do estado existente**, não pela reconstrução.
+
+Antes de sincronizar, limpar ou refazer trabalho, o agente deve, de forma proporcional:
+
+1. confirmar pasta, branch e `HEAD` local;
+2. comparar o estado local com o remoto;
+3. identificar commits locais ainda não publicados;
+4. inventariar alterações rastreadas, arquivos não rastreados e artefatos ignorados relevantes;
+5. verificar, quando aplicável, Git LFS e arquivos-fonte editáveis;
+6. preservar ou criar backup dos artefatos materiais antes de qualquer operação potencialmente destrutiva;
+7. registrar o último passo comprovadamente concluído e o ponto em que a execução foi interrompida.
+
+A ausência de alterações no PR ou no remoto **não prova ausência de trabalho local**.
+
+Durante a retomada, comandos como `reset --hard`, `clean -fdx`, force push ou descarte de mudanças não devem ser usados como reação automática. Se houver dúvida sobre a integridade ou o valor do estado local, preserve primeiro e decida depois.
+
+Somente após distinguir claramente **estado local**, **estado remoto** e **trabalho ainda não persistido** a tarefa deve retornar ao estágio adequado do fluxo.
+
 ## `main`
 
 A branch principal deve representar um estado conhecido e deliberadamente aceito.
@@ -54,6 +74,33 @@ fix: corrige validação do serviço
 docs: documenta processo de homologação
 chore: inicializa estrutura do projeto
 ```
+
+## Checkpoints de resiliência
+
+Em tarefas longas ou com artefatos difíceis de reconstruir, o agente deve considerar **checkpoints de resiliência** após marcos verificáveis.
+
+Eles são recomendados quando houver, por exemplo:
+
+- geração ou edição de arquivos pesados ou trabalhosos;
+- várias etapas dependentes entre si;
+- operações longas sujeitas a interrupção de sessão ou limite de uso;
+- troca provável de agente ou ambiente;
+- custo relevante para reconstruir o último estado válido.
+
+Um checkpoint deve preservar material suficiente para que o trabalho possa ser retomado sem depender da memória da sessão. Conforme o projeto e a autorização existente, ele pode consistir em:
+
+- salvar corretamente os arquivos-fonte editáveis;
+- manter backup seguro de artefatos materiais;
+- registrar o último marco comprovado;
+- criar commit local rastreável;
+- publicar commit/branch quando o fluxo já autorizar essa persistência remota;
+- registrar limitações, arquivos ainda não validados e próxima ação segura.
+
+O checkpoint deve acontecer **por marco útil**, não por intervalo rígido de tempo nem após cada microalteração.
+
+Um checkpoint parcial **não equivale a conclusão, aprovação ou homologação**. Ele apenas reduz o custo e o risco de uma eventual retomada.
+
+Projetos curtos, baratos de reproduzir ou sem estado material relevante não precisam introduzir checkpoints adicionais apenas para cumprir o método.
 
 ## Pull Requests
 

@@ -118,6 +118,16 @@ Se o procedimento canônico ou uma dependência relevante não puder ser recuper
 O agente **não deve substituir silenciosamente um fluxo já implantado por um procedimento improvisado na conversa**, mesmo que a versão do código de origem esteja correta e homologada.
 
 
+### Retomada após interrupção
+
+Quando um agente retomar uma tarefa interrompida inesperadamente, pausada por longo período ou transferida de outro agente, ele deve assumir que pode existir **trabalho material ainda somente na working copy local**.
+
+Antes de reconstruir, sincronizar, limpar ou descartar qualquer coisa, o agente deve **inspecionar e preservar o estado existente**, distinguir trabalho local de estado remoto, registrar o último passo comprovado e retomar somente a menor subtarefa ainda autorizada.
+
+O agente não deve interpretar PR, branch remota ou `main` desatualizados como prova de que o trabalho local não existe.
+
+**Preservar vem antes de reconstruir.** O procedimento detalhado de retomada está em [Git e GitHub](../docs/06-GIT-E-GITHUB.md).
+
 ---
 
 ## 5. Durante a implementação
