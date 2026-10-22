@@ -3,7 +3,7 @@
 - **Tipo:** refinamento futuro / continuidade de contexto / governança de operação.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [TRB-002 — Deploy do preview sem recuperação do fluxo existente](../troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md), observado no Novo Site Technolife.
-- **Estado:** refinamento metodológico preparado na branch `docs/TRB-002-preflight-operacional` e **aguardando homologação humana**. Nenhuma alteração normativa foi incorporada à `main` até o momento.
+- **Estado:** **APROVADA pelo responsável humano no PR #7**, aguardando apenas integração à `main`.
 - **Prioridade sugerida:** avaliar como refinamento pequeno e **condicional**, não como nova burocracia transversal.
 
 ## 1. Problema que motiva a proposta
@@ -107,12 +107,12 @@ Um sinal de maturação será confirmar, em pelo menos outro contexto de operaç
 
 Ela **não é apresentada como evidência já cumprida** neste PR.
 
-## 8. Decisão pendente
+## 8. Decisão de homologação
 
-O refinamento foi **preparado e revisado**, mas ainda depende de homologação humana antes de qualquer merge na `main`.
+**APROVADO** pelo responsável humano no PR #7 em 22/10/2026.
 
-A proposta final é incorporar o preflight como regra **condicional e proporcional**, sem transformar operações comuns em um processo adicional.
+Foi aprovada a incorporação do preflight como regra **condicional e proporcional**, sem transformar operações comuns em um processo adicional.
 
-A evidência atual vem de uma ocorrência documentada. Por isso, a mudança foi deliberadamente mantida pequena, baseada em princípios já existentes e sem criar estrutura operacional extensa que ainda não foi validada em outros projetos.
+A evidência atual continua vindo de uma ocorrência documentada. A validação em outros contextos operacionais permanece como acompanhamento futuro do método e poderá motivar ajuste, simplificação ou reversão parcial caso a prática demonstre necessidade.
 
-A inclusão deste registro em `proposals/` **não concede permissão de deploy ou modificação dos procedimentos existentes**.
+A aprovação desta proposta **não concede permissão de deploy ou modificação de ambientes por si só**; cada operação continua sujeita ao procedimento e aos gates do projeto correspondente.
