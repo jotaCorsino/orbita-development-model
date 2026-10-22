@@ -83,6 +83,38 @@ Conteúdo de branch ou PR ativo **não se torna canônico apenas por existir**. 
 
 Quando uma tarefa depender de trabalho ainda não integrado, o agente deve registrar de forma inequívoca a referência relevante — branch, PR, commit ou base — e evitar assumir que a ausência desse conteúdo na `main` significa perda, descarte ou inexistência.
 
+## Consolidação documental sem perda semântica
+
+Organizar documentação não significa reduzir conteúdo a qualquer custo.
+
+Quando uma tarefa envolver **fusão, condensação, reorganização ou remoção de documentação não trivial**, o agente deve preservar o significado das informações ainda vigentes.
+
+Uma consolidação não pode ser considerada bem-sucedida apenas porque:
+
+- o número de arquivos diminuiu;
+- links continuam válidos;
+- títulos foram reorganizados;
+- textos ficaram menores;
+- documentos aparentemente duplicados foram unidos.
+
+A validação deve considerar também se foram preservados, quando ainda vigentes:
+
+- fatos e decisões;
+- restrições e exceções;
+- nomes próprios e relações;
+- regras de negócio ou mecânicas;
+- contexto necessário para interpretar decisões;
+- detalhes únicos que não existam em outro lugar;
+- conteúdo ainda em elaboração que não tenha sido explicitamente descartado.
+
+Conteúdo incompleto, provisório ou ainda não homologado **não deve ser removido apenas por não estar finalizado**. Para remover informação material, o agente deve conseguir demonstrar ao menos uma destas condições:
+
+1. ela foi explicitamente substituída por conteúdo identificável;
+2. ela é duplicada e não contém informação exclusiva;
+3. sua remoção foi autorizada pelo responsável humano.
+
+Quando houver dúvida sobre perda semântica, a ação correta é **preservar e sinalizar a dúvida**, não resumir de forma irreversível.
+
 ## Limites
 
 IA pode errar, interpretar requisitos incorretamente, criar código inseguro ou declarar sucesso com validação insuficiente.
