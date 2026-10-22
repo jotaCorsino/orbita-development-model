@@ -3,7 +3,7 @@
 - **Tipo:** refinamento futuro / continuidade de contexto / governança de operação.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [TRB-002 — Deploy do preview sem recuperação do fluxo existente](../troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md), observado no Novo Site Technolife.
-- **Estado:** **PROPOSTA — NÃO HOMOLOGADA**. Este documento não altera o contrato, o ciclo, templates ou gates oficiais do Método ÓRBITA.
+- **Estado:** refinamento metodológico preparado na branch `docs/TRB-002-preflight-operacional` e **aguardando homologação humana**. Nenhuma alteração normativa foi incorporada à `main` até o momento.
 - **Prioridade sugerida:** avaliar como refinamento pequeno e **condicional**, não como nova burocracia transversal.
 
 ## 1. Problema que motiva a proposta
@@ -68,16 +68,26 @@ A proposta **não** exige mesclar repositórios, expor caminhos internos, copiar
 
 > Origem, destino e runbook validados; a operação segue o procedimento documentado e autorizado, com validações de pós-execução e rollback definidos.
 
-## 6. Onde avaliar eventual incorporação
+## 6. Incorporação metodológica preparada
 
-**Somente após aprovação humana** e confirmação de utilidade em aplicação real, avaliar alterações pequenas e coerentes em:
+A avaliação foi realizada e resultou em um refinamento menor do que a proposta inicial, preservando a proporcionalidade do método.
 
-- [docs/04-FLUXO-DE-DESENVOLVIMENTO.md](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md): ressalva condicional na análise/etapa documentação-release;
-- [docs/05-GOVERNANCA-E-HOMOLOGACAO.md](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md): autorização separada para operação em ambiente ativo e preservação das integrações preexistentes;
-- [docs/08-APLICACAO-E-EVOLUCAO.md](../docs/08-APLICACAO-E-EVOLUCAO.md): tratamento proporcional a risco, sem checklist universal;
-- templates operacionais **apenas se** houver lacuna demonstrada, evitando conteúdo duplicado em todas as tarefas.
+Foram preparados ajustes em:
 
-O [TRB-001](../troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) já estabelece diagnóstico do ambiente antes de reorganizar working copy durante bootstrap. Essa proposta é uma **extensão para operação/deploy**, não uma substituição daquele aprendizado.
+- [docs/04-FLUXO-DE-DESENVOLVIMENTO.md](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md): preflight condicional incorporado à fase de análise para tarefas operacionais, sem nova etapa universal;
+- [docs/05-GOVERNANCA-E-HOMOLOGACAO.md](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md): separação entre homologação do artefato e autorização operacional, permitindo que ambas sejam cobertas pelo mesmo gate quando explicitamente autorizado;
+- [docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md): dependências entre projetos, módulos e runbooks sem romper a identidade canônica de cada software;
+- [onboarding/CONTRATO-DE-TRABALHO.md](../onboarding/CONTRATO-DE-TRABALHO.md): obrigação de recuperar o fluxo operacional vigente antes de fornecer comandos de escrita em ambientes existentes.
+
+Após revisão cruzada, **não** foram considerados necessários neste momento:
+
+- alteração de [docs/08-APLICACAO-E-EVOLUCAO.md](../docs/08-APLICACAO-E-EVOLUCAO.md) especificamente para este caso;
+- novo template operacional;
+- novo estado;
+- checklist obrigatório para tarefas comuns;
+- duas aprovações humanas formais para qualquer implantação.
+
+O [TRB-001](../troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) continua tratando restrições de ambiente durante bootstrap. Esta proposta trata uma situação diferente: **continuidade e governança antes de operar um ambiente já existente**.
 
 ## 7. Critérios de avaliação e aceite
 
@@ -89,10 +99,10 @@ O [TRB-001](../troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.m
 
 ## 8. Decisão pendente
 
-**Não aprovada nem incorporada.** Solicitar avaliação humana sobre:
+O refinamento foi **preparado e revisado**, mas ainda depende de homologação humana antes de qualquer merge na `main`.
 
-- incluir explicitamente o preflight em tarefas operacionais;
-- manter a proposta apenas como lição de uso, caso os princípios atuais já sejam suficientes;
-- testar em outro projeto antes de promover para norma.
+A proposta final é incorporar o preflight como regra **condicional e proporcional**, sem transformar operações comuns em um processo adicional.
+
+A evidência atual vem de uma ocorrência documentada. Por isso, a mudança foi deliberadamente mantida pequena, baseada em princípios já existentes e sem criar estrutura operacional extensa que ainda não foi validada em outros projetos.
 
 A inclusão deste registro em `proposals/` **não concede permissão de deploy ou modificação dos procedimentos existentes**.
