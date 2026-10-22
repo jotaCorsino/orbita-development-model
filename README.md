@@ -218,12 +218,14 @@ O projeto operacional real permanece separado da representação pública. Essa 
 Ocorrências técnicas observadas em projetos que utilizam o método são registradas separadamente, sem alterar automaticamente suas regras normativas.
 
 - [Bootstrap Git: `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — duas ocorrências documentadas, solução e avaliação metodológica pendente.
+- [Problema 002 — Deploy de preview sem recuperar o procedimento operacional](troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md) — ocorrência real no Novo Site Technolife; sem deploy realizado, aprendizado em avaliação.
 
 ## Propostas de melhoria do método
 
 Registros de ajustes sugeridos a partir do uso real do ÓRBITA. **Não são regras oficiais até avaliação e homologação humana.**
 
 - [Proposta 001 — Tabela de acompanhamento visual no início do README](proposals/001-README-ACOMPANHAMENTO-VISUAL.md) — círculos coloridos, ordem das seções, sincronização com roadmap e estados de homologação.
+- [Proposta 002 — Preflight operacional e dependências entre projetos](proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md) — verificar runbook e módulos auxiliares antes de fornecer comandos de deploy; **não homologada**.
 
 ## Documentação
 
