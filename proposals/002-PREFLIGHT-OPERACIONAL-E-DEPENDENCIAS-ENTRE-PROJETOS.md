@@ -14,6 +14,12 @@ Na ocorrência do Novo Site Technolife, o agente de planejamento consultou corre
 
 Essa observação **não comprova que o método ÓRBITA esteja conceitualmente errado**. O método já exige análise, delimitação de escopo, evidência e homologação. O que pode ser aperfeiçoado é um **gatilho explícito para recuperação de runbooks e dependências** antes de tocar um ambiente ativo.
 
+### Desfecho que esclareceu a necessidade
+
+Na continuação da operação, a equipe encontrou dois caminhos documentados: um sincronizador **experimental e não homologado no servidor** e o fluxo manual já testado. A identificação de arquivo/script sem ler seu status causou uma segunda orientação prematura, corrigida antes da execução. O fluxo manual publicou o commit `e898876` com backup, verificação HTTP `401` e exportação de comentários multipágina.
+
+A versão instalada foi extraída por `git archive` sem mover o `HEAD` do checkout ativo. Portanto, além de recuperar o runbook, o preflight deve distinguir **referência de origem**, **commit realmente publicado** e **estado do checkout**. O encerramento deve separar **publicação técnica**, **verificações funcionais parciais** e **homologação completa**, incluindo pendências de resíduos e rollback.
+
 ## 2. Regra mínima candidata
 
 > **Em tarefas que modificam um ambiente operacional preexistente**, antes de fornecer comandos de execução, o agente identifica qual procedimento canônico mantém esse ambiente, quais projetos/módulos externos participam do processo, o estado real observado e quem autoriza a operação. Na falta dessas informações, realiza somente diagnóstico não destrutivo e encaminha ao responsável adequado. Não substitui silenciosamente um fluxo já implantado por outro criado na conversa.
