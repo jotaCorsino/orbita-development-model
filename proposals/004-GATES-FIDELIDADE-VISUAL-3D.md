@@ -51,7 +51,37 @@ Quando a estética for condição de viabilidade do projeto:
 
 Trata-se de um **template opcional e contextual**, não de uma exigência para qualquer bugfix ou projeto sem direção visual crítica.
 
-## 5. Critérios de aceite para o método
+## 5. Separação entre núcleo e protocolo especializado
+
+A avaliação concluiu que apenas o **princípio geral de aceite multidimensional** deve entrar no núcleo do ÓRBITA.
+
+### Pertence ao núcleo
+
+- validação técnica não prova, sozinha, atendimento a critérios não técnicos;
+- critérios visuais, artísticos, UX, conteúdo ou equivalentes devem aparecer no aceite quando fizerem parte do objetivo;
+- a evidência deve ser compatível com a dimensão avaliada;
+- o agente deve distinguir claramente o que foi validado tecnicamente do que ainda depende de avaliação não técnica;
+- etapas dependentes não avançam automaticamente quando o gate correspondente continua pendente;
+- o template geral de homologação pode registrar dimensões não técnicas de forma opcional.
+
+### Permanece especializado/contextual
+
+Os seguintes controles podem ser úteis em produção visual/3D, mas são específicos demais para o núcleo:
+
+- hashes e versionamento de referências visuais;
+- regras fixas de câmera, FOV, escala, iluminação e materiais;
+- número obrigatório de vistas ou vídeo orbital;
+- exigência genérica de malha, cena ou arquivo editável 3D;
+- comparação pixel a pixel ou protocolo visual rígido;
+- validação obrigatória de asset hero antes de toda expansão;
+- regras particulares de Blender, Unity ou outra ferramenta;
+- critérios específicos de licenciamento e orçamento de assets que já sejam tratados pelo projeto.
+
+Essas práticas podem ser documentadas **no próprio projeto** quando necessárias.
+
+Neste momento, o ÓRBITA **não cria um perfil ou template oficial separado de produção visual/3D**. Uma extensão especializada só deve ser considerada futuramente se aplicações reais adicionais demonstrarem recorrência, estabilidade e ganho suficiente para justificar manutenção própria.
+
+## 6. Critérios de aceite para o método
 
 - Um agente não poderá relatar “fidelidade aprovada” com base apenas em funcionamento técnico.
 - Entregas de demonstração terão prova inequívoca de que são 3D reais e do software-alvo.
@@ -59,7 +89,7 @@ Trata-se de um **template opcional e contextual**, não de uma exigência para q
 - O custo burocrático permanecerá proporcional à criticidade visual.
 - Homologação e incorporação normativa ocorrerão somente após revisão humana de proposta específica.
 
-## 6. Referências
+## 7. Referências
 
 - [Governança e homologação](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md).
 - [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md).
