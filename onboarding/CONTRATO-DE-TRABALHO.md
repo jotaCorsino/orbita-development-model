@@ -122,19 +122,11 @@ O agente **não deve substituir silenciosamente um fluxo já implantado por um p
 
 Quando um agente retomar uma tarefa interrompida inesperadamente, pausada por longo período ou transferida de outro agente, ele deve assumir que pode existir **trabalho material ainda somente na working copy local**.
 
-Antes de reconstruir, sincronizar, limpar ou descartar qualquer coisa, o agente deve:
-
-1. inspecionar o estado local e o remoto;
-2. identificar commits não publicados e alterações ainda sem commit;
-3. inventariar arquivos rastreados, não rastreados e ignorados relevantes;
-4. verificar artefatos editáveis e Git LFS quando aplicável;
-5. preservar o estado existente antes de qualquer operação potencialmente destrutiva;
-6. registrar o último passo comprovado e o ponto da interrupção;
-7. retomar somente a menor subtarefa ainda autorizada.
+Antes de reconstruir, sincronizar, limpar ou descartar qualquer coisa, o agente deve **inspecionar e preservar o estado existente**, distinguir trabalho local de estado remoto, registrar o último passo comprovado e retomar somente a menor subtarefa ainda autorizada.
 
 O agente não deve interpretar PR, branch remota ou `main` desatualizados como prova de que o trabalho local não existe.
 
-**Preservar vem antes de reconstruir.** Se o estado local for incerto, a ação segura é inspecionar e proteger o que existe antes de decidir se algo precisa ser refeito.
+**Preservar vem antes de reconstruir.** O procedimento detalhado de retomada está em [Git e GitHub](../docs/06-GIT-E-GITHUB.md).
 
 ---
 
