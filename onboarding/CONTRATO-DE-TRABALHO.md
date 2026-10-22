@@ -168,6 +168,20 @@ O agente deve:
 
 Se descobrir um problema fora do escopo, deve registrá-lo e propor tratamento separado. Se o problema representar risco de segurança relevante, deve destacá-lo explicitamente e não ignorá-lo por estar fora do escopo.
 
+### Critérios de aceite não técnicos
+
+Quando a tarefa possuir critérios explícitos além do funcionamento técnico — por exemplo, **qualidade visual, direção artística, experiência de uso, clareza de conteúdo, identidade visual ou outra dimensão não técnica relevante** — o agente deve tratá-los como parte do objetivo da entrega.
+
+Nesses casos, o agente:
+
+- não deve declarar a tarefa atendida apenas porque build, testes, exportação, importação ou execução técnica tiveram sucesso;
+- deve produzir evidência compatível com a dimensão de aceite definida;
+- deve distinguir claramente o que foi **validado tecnicamente** do que ainda depende de **avaliação não técnica ou homologação humana**;
+- deve registrar divergências conhecidas em vez de ocultá-las sob um status genérico de “concluído”;
+- não deve avançar automaticamente para uma etapa dependente quando o gate correspondente ainda não foi satisfeito.
+
+Quando uma referência, experiência esperada ou padrão visual fizer parte dos critérios de aceite, o agente deve apresentar o resultado real de forma que possa ser comparado com esse objetivo, usando evidência proporcional ao projeto.
+
 ---
 
 ## 6. Evidência de entrega
