@@ -3,7 +3,7 @@
 - **Categoria:** extensão proporcional de evidências e homologação para projetos com requisito visual.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), [PR #7 — CHAR-001](https://github.com/jotaCorsino/the-mmo-idea/pull/7) e [PR #10 — VIS-001](https://github.com/jotaCorsino/the-mmo-idea/pull/10).
-- **Estado:** refinamento metodológico preparado na branch `docs/PROP-004-validacao-nao-tecnica`, ainda aguardando homologação humana.
+- **Estado:** refinamento metodológico **APROVADO pelo responsável humano no PR #13**, aguardando integração à `main`.
 - **Escopo:** jogos 3D, interfaces, identidades visuais e outros produtos cuja adequação estética faça parte explícita do objetivo.
 
 ## 1. Ocorrência
@@ -125,4 +125,20 @@ A proposta deriva de ocorrências documentadas no projeto MMO, especialmente CHA
 
 O refinamento está preparado na branch `docs/PROP-004-validacao-nao-tecnica`.
 
-Permanece em **AGUARDANDO_HOMOLOGACAO** até aprovação explícita do responsável humano.
+A proposta foi **APROVADA** pelo responsável humano no PR #13 em 22/10/2026 e está liberada para integração à `main`.
+
+
+## 9. Decisão de homologação
+
+**APROVADA** pelo responsável humano no PR #13 em 22/10/2026.
+
+A homologação confirma:
+
+- separação entre validação técnica e critérios não técnicos quando estes fizerem parte do objetivo;
+- evidência proporcional à dimensão avaliada;
+- ausência de novos estados normativos;
+- ausência de gate visual universal;
+- manutenção de protocolos 3D específicos no contexto do projeto, e não no núcleo do ÓRBITA;
+- uso opcional de campos de aceite não técnico no template de homologação.
+
+A aprovação não transforma tarefas puramente técnicas em processos visuais nem cria protocolo obrigatório de arte/3D.
