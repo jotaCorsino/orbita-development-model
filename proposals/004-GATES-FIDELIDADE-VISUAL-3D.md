@@ -3,7 +3,7 @@
 - **Categoria:** extensão proporcional de evidências e homologação para projetos com requisito visual.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), [PR #7 — CHAR-001](https://github.com/jotaCorsino/the-mmo-idea/pull/7) e [PR #10 — VIS-001](https://github.com/jotaCorsino/the-mmo-idea/pull/10).
-- **Estado:** proposta em avaliação; **não é regra oficial**.
+- **Estado:** refinamento metodológico preparado na branch `docs/PROP-004-validacao-nao-tecnica`, ainda aguardando homologação humana.
 - **Escopo:** jogos 3D, interfaces, identidades visuais e outros produtos cuja adequação estética faça parte explícita do objetivo.
 
 ## 1. Ocorrência
@@ -14,16 +14,16 @@ Prosseguir diretamente para rigging/animações teria aumentado retrabalho. A eq
 
 O erro não foi a ausência de testes de software: foi tomar uma **validação técnica necessária, mas insuficiente**, como evidência de que uma necessidade artística poderia estar satisfeita.
 
-## 2. Distinções necessárias
+## 2. Distinções observadas no caso 3D
 
-Para tarefas criativas, diferenciar:
+No projeto que originou a proposta, foi útil distinguir diferentes **marcos de validação**, sem tratá-los como novos estados normativos do ÓRBITA:
 
-- **Pipeline validado:** arquivo abre, exporta, importa, executa e não quebra funções existentes.
-- **Blockout validado:** escala, composição, silhueta geral e distribuição espacial são reconhecíveis.
-- **Fidelidade visual validada:** formas, materiais, iluminação, densidade e estilo se aproximam suficientemente da referência aprovada.
-- **Asset aprovado para próxima dependência:** o humano aceitou a qualidade exigida para a finalidade (ex.: rigging, publicação, produção em escala).
+- **pipeline técnico validado:** arquivo abre, exporta, importa, executa e não quebra funções existentes;
+- **blockout avaliado:** escala, composição, silhueta geral e distribuição espacial podem ser avaliadas;
+- **fidelidade visual avaliada:** formas, materiais, iluminação, densidade e estilo são comparados à referência aprovada;
+- **asset aceito para próxima dependência:** o responsável autorizou avanço para a finalidade seguinte, como rigging, publicação ou produção em escala.
 
-Esses estados **não devem ser comprimidos em “concluído”**. “Sucesso técnico” não implica “aprovação artística”.
+Esses marcos pertencem ao contexto visual/3D do projeto. O aprendizado geral é que **sucesso técnico não implica aprovação artística nem autorização automática para avançar**.
 
 ## 3. Protocolo proposto
 
@@ -49,7 +49,7 @@ Quando a estética for condição de viabilidade do projeto:
 | Operação | Versão da ferramenta/engine, logs e limites conhecidos |
 | Homologação | Parecer técnico separado do parecer artístico, com decisão humana |
 
-Trata-se de um **template opcional e contextual**, não de uma exigência para qualquer bugfix ou projeto sem direção visual crítica.
+Essas evidências representam apenas um **exemplo contextual do projeto 3D que originou a proposta**. Não constituem template oficial do ÓRBITA e não são exigidas para projetos que não dependam desse tipo de avaliação.
 
 ## 5. Separação entre núcleo e protocolo especializado
 
@@ -81,13 +81,37 @@ Essas práticas podem ser documentadas **no próprio projeto** quando necessári
 
 Neste momento, o ÓRBITA **não cria um perfil ou template oficial separado de produção visual/3D**. Uma extensão especializada só deve ser considerada futuramente se aplicações reais adicionais demonstrarem recorrência, estabilidade e ganho suficiente para justificar manutenção própria.
 
-## 6. Critérios de aceite para o método
+## 6. Resultado da avaliação metodológica
 
-- Um agente não poderá relatar “fidelidade aprovada” com base apenas em funcionamento técnico.
-- Entregas de demonstração terão prova inequívoca de que são 3D reais e do software-alvo.
-- A revisão poderá interromper expansão de escopo sem descartar assets já produzidos.
-- O custo burocrático permanecerá proporcional à criticidade visual.
-- Homologação e incorporação normativa ocorrerão somente após revisão humana de proposta específica.
+A proposta foi reduzida a um princípio geral de **aceite multidimensional**.
+
+Foram preparados ajustes em:
+
+- [Governança e homologação](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md): critérios não técnicos também participam do gate quando fazem parte do objetivo;
+- [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md): o agente não pode declarar atendimento com base apenas em sucesso técnico quando restarem dimensões não técnicas a avaliar;
+- [Template de homologação](../templates/HOMOLOGACAO-TEMPLATE.md): campos opcionais permitem registrar dimensões não técnicas aplicáveis.
+
+Foram conscientemente **mantidos fora do núcleo**:
+
+- estados ou gates exclusivos de pipeline/blockout/fidelidade;
+- protocolo obrigatório de câmera, FOV, iluminação ou número de vistas;
+- exigência universal de arquivos 3D editáveis;
+- template separado de produção visual/3D;
+- regras específicas de Blender, Unity ou qualquer ferramenta;
+- critérios universais de asset hero, licenciamento ou orçamento.
+
+### Critérios para homologar o refinamento
+
+- validação técnica e aceite não técnico permanecem conceitualmente distintos;
+- a dimensão não técnica só é exigida quando fizer parte dos critérios da tarefa;
+- a evidência deve ser proporcional à dimensão avaliada;
+- nenhuma nova sequência de estados é criada;
+- tarefas puramente técnicas não recebem burocracia visual artificial;
+- a incorporação depende de homologação humana explícita.
+
+### Limite da evidência
+
+A proposta deriva de ocorrências documentadas no projeto MMO, especialmente CHAR-001 e VIS-001. O método incorpora o princípio geral demonstrado por esses casos, mas **não transforma o protocolo específico daquele projeto em padrão universal**.
 
 ## 7. Referências
 
@@ -95,3 +119,10 @@ Neste momento, o ÓRBITA **não cria um perfil ou template oficial separado de p
 - [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md).
 - [CHAR-001 — PR #7](https://github.com/jotaCorsino/the-mmo-idea/pull/7).
 - [VIS-001 — PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10), especialmente `VisualProof/ANALISE-TECNICA-VIS-001.0.md`.
+
+
+## 8. Estado de incorporação
+
+O refinamento está preparado na branch `docs/PROP-004-validacao-nao-tecnica`.
+
+Permanece em **AGUARDANDO_HOMOLOGACAO** até aprovação explícita do responsável humano.
