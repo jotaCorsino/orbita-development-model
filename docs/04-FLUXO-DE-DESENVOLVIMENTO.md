@@ -54,7 +54,7 @@ Essa verificação deve confirmar, de forma proporcional ao risco:
 
 Se essas informações não puderem ser recuperadas com segurança, a tarefa permanece em **análise/diagnóstico**. A ausência de contexto operacional não autoriza avançar para execução nem substituir o fluxo existente por um procedimento criado ad hoc.
 
-A homologação do artefato de origem e a autorização para operar o ambiente são decisões distintas. O ciclo continua o mesmo; apenas os critérios do gate se tornam mais específicos quando existe risco operacional.
+A homologação do artefato de origem e a autorização para operar o ambiente são responsabilidades distintas, mas podem estar cobertas pelo mesmo gate quando a tarefa e o procedimento já autorizarem explicitamente a implantação. O ciclo continua o mesmo; apenas os critérios do gate se tornam mais específicos quando existe risco operacional.
 
 ## Estados sugeridos
 
