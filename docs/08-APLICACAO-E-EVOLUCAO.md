@@ -68,6 +68,39 @@ Uma nova regra deve responder a pelo menos uma pergunta:
 - Qual evidência passa a exigir?
 - O ganho justifica a complexidade adicionada?
 
+## Registros de aprendizado e evolução
+
+Ocorrências e propostas surgidas durante a aplicação do método devem ser registradas antes de se tornarem regras normativas.
+
+As áreas `troubleshooting/` e `proposals/` preservam, respectivamente:
+
+- problemas e ocorrências observadas em uso real;
+- melhorias candidatas ainda sujeitas a análise, teste e homologação.
+
+### Numeração em trabalho paralelo
+
+IDs numéricos como `TRB-002` ou `PROP-003` são **canônicos somente depois de atribuídos contra o estado atual da `main`**.
+
+Branches paralelas não devem presumir que o próximo número visto na sua base continua disponível. Enquanto um registro estiver sendo elaborado fora da linha principal, prefira um identificador temporário inequívoco, por exemplo:
+
+```text
+TRB-DRAFT-20261022-deploy-preview
+PROP-DRAFT-20261022-consolidacao-documental
+```
+
+No gate de integração:
+
+1. consultar a `main` atual;
+2. identificar o último número canônico de cada coleção;
+3. atribuir o próximo número livre;
+4. atualizar nome do arquivo, título e referências internas;
+5. verificar colisões com outros PRs/branches ainda ativos;
+6. somente então homologar e integrar.
+
+A ordem de numeração não define prioridade metodológica. Quando dois registros concorrentes precisarem ser saneados, a ordem de criação comprovável pode ser usada como critério neutro de desempate.
+
+As convenções locais estão documentadas em [../troubleshooting/README.md](../troubleshooting/README.md) e [../proposals/README.md](../proposals/README.md).
+
 ## Projeto operacional e case público
 
 Um projeto operacional não precisa ser público para demonstrar competência.
