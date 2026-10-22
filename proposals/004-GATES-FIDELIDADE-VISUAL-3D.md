@@ -3,7 +3,7 @@
 - **Categoria:** extensão proporcional de evidências e homologação para projetos com requisito visual.
 - **Registrada em:** 22/10/2026.
 - **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), [PR #7 — CHAR-001](https://github.com/jotaCorsino/the-mmo-idea/pull/7) e [PR #10 — VIS-001](https://github.com/jotaCorsino/the-mmo-idea/pull/10).
-- **Estado:** refinamento metodológico **APROVADO pelo responsável humano no PR #13**, aguardando integração à `main`.
+- **Estado:** refinamento metodológico **APROVADO e INCORPORADO à `main` pelo PR #13**.
 - **Escopo:** jogos 3D, interfaces, identidades visuais e outros produtos cuja adequação estética faça parte explícita do objetivo.
 
 ## 1. Ocorrência
@@ -125,7 +125,7 @@ A proposta deriva de ocorrências documentadas no projeto MMO, especialmente CHA
 
 O refinamento está preparado na branch `docs/PROP-004-validacao-nao-tecnica`.
 
-A proposta foi **APROVADA** pelo responsável humano no PR #13 em 22/10/2026 e está liberada para integração à `main`.
+A proposta foi **APROVADA** pelo responsável humano no PR #13 em 22/10/2026 e **INCORPORADA à `main`**.
 
 
 ## 9. Decisão de homologação
@@ -142,3 +142,10 @@ A homologação confirma:
 - uso opcional de campos de aceite não técnico no template de homologação.
 
 A aprovação não transforma tarefas puramente técnicas em processos visuais nem cria protocolo obrigatório de arte/3D.
+
+
+## 10. Encerramento
+
+O refinamento foi **APROVADO e INCORPORADO** à `main` pelo PR #13.
+
+**PROP-004 encerrada.**
