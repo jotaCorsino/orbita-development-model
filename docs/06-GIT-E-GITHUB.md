@@ -75,6 +75,33 @@ docs: documenta processo de homologação
 chore: inicializa estrutura do projeto
 ```
 
+## Checkpoints de resiliência
+
+Em tarefas longas ou com artefatos difíceis de reconstruir, o agente deve considerar **checkpoints de resiliência** após marcos verificáveis.
+
+Eles são recomendados quando houver, por exemplo:
+
+- geração ou edição de arquivos pesados ou trabalhosos;
+- várias etapas dependentes entre si;
+- operações longas sujeitas a interrupção de sessão ou limite de uso;
+- troca provável de agente ou ambiente;
+- custo relevante para reconstruir o último estado válido.
+
+Um checkpoint deve preservar material suficiente para que o trabalho possa ser retomado sem depender da memória da sessão. Conforme o projeto e a autorização existente, ele pode consistir em:
+
+- salvar corretamente os arquivos-fonte editáveis;
+- manter backup seguro de artefatos materiais;
+- registrar o último marco comprovado;
+- criar commit local rastreável;
+- publicar commit/branch quando o fluxo já autorizar essa persistência remota;
+- registrar limitações, arquivos ainda não validados e próxima ação segura.
+
+O checkpoint deve acontecer **por marco útil**, não por intervalo rígido de tempo nem após cada microalteração.
+
+Um checkpoint parcial **não equivale a conclusão, aprovação ou homologação**. Ele apenas reduz o custo e o risco de uma eventual retomada.
+
+Projetos curtos, baratos de reproduzir ou sem estado material relevante não precisam introduzir checkpoints adicionais apenas para cumprir o método.
+
 ## Pull Requests
 
 O PR funciona como ponto de convergência entre:
