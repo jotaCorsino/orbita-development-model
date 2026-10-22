@@ -6,7 +6,7 @@
 - **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
 - **Impacto confirmado:** orientação operacional prematura, retrabalho de diagnóstico e perda de confiança do responsável. **Não houve deploy nem alteração dos arquivos públicos pelas instruções rejeitadas.**
 - **Estado técnico da ocorrência:** a tentativa inicial foi interrompida sem deploy; em continuação supervisionada, o procedimento manual documentado foi recuperado e o preview atualizado para a revisão `e898876`, com backup, autenticação HTTP `401` e exportação JSON multipágina verificadas. Homologação funcional completa permanece separada.
-- **Estado metodológico:** **refinamento metodológico homologado pelo responsável humano no PR #7**, aguardando apenas integração à `main`.
+- **Estado metodológico:** **refinamento metodológico homologado e incorporado à `main` pelo PR #7**.
 
 ## 1. Contexto e sintoma
 
@@ -111,7 +111,7 @@ Documentos normativos preparados:
 - [docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md);
 - [onboarding/CONTRATO-DE-TRABALHO.md](../onboarding/CONTRATO-DE-TRABALHO.md).
 
-**Estado atual:** refinamento **APROVADO** pelo responsável humano no PR #7. A integração à `main` é o passo final de encerramento.
+**Estado atual:** refinamento **APROVADO e INCORPORADO** à `main` pelo PR #7. TRB-002 encerrado.
 
 ## 8. Referências
 
