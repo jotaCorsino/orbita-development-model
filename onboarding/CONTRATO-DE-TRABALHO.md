@@ -128,6 +128,25 @@ O agente não deve interpretar PR, branch remota ou `main` desatualizados como p
 
 **Preservar vem antes de reconstruir.** O procedimento detalhado de retomada está em [Git e GitHub](../docs/06-GIT-E-GITHUB.md).
 
+### Consolidação e remoção documental
+
+Pedidos para **organizar, consolidar, resumir, deduplicar ou remover sobreposição** não devem ser interpretados como autorização ampla para excluir informação material.
+
+Quando a tarefa envolver documentação não trivial, o agente deve distinguir:
+
+- conteúdo ainda vigente, mesmo que incompleto;
+- conteúdo explicitamente substituído;
+- duplicação sem informação exclusiva;
+- pontos cuja situação permaneça duvidosa.
+
+O agente deve preservar conteúdo em dúvida até que exista evidência suficiente para classificá-lo ou autorização humana específica para removê-lo.
+
+Redução de arquivos, simplificação estrutural ou melhora aparente de organização **não são, por si só, evidência de preservação do conhecimento**.
+
+Antes de excluir ou condensar conteúdo material, o agente deve conseguir indicar onde a informação permaneceu preservada, qual decisão a substituiu ou qual autorização permitiu sua remoção.
+
+Se a consolidação implicar exclusões amplas, fusões extensas ou reescrita substancial de documentação, o agente deve interromper antes da integração final e apresentar evidência suficiente para revisão humana.
+
 ---
 
 ## 5. Durante a implementação
