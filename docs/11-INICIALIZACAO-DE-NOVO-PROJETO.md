@@ -58,6 +58,7 @@ A fundação deve ser proporcional ao projeto, mas normalmente inclui:
 - escopo inicial;
 - arquitetura ou visão técnica inicial, quando necessária;
 - roadmap ou planejamento por etapas;
+- backlog de evolução no README, inicialmente vazio quando ainda não houver necessidades futuras registradas;
 - regras locais do projeto;
 - estados de acompanhamento;
 - critérios de homologação;
@@ -78,7 +79,8 @@ Para projetos com fases, tarefas ou gates de acompanhamento, a organização rec
 3. acompanhamento do desenvolvimento, com fase atual, tabela resumida e legenda;
 4. problema, contexto ou objetivo;
 5. solução, escopo, arquitetura/tecnologias e demais informações pertinentes;
-6. links para roadmap e documentação detalhada.
+6. backlog de evolução;
+7. links para roadmap e documentação detalhada.
 
 A tabela do README deve mostrar apenas macroetapas suficientes para identificar o estado atual, o que já foi homologado e o próximo gate. Ela **não substitui** roadmap, tarefas, critérios de aceite, histórico ou documentação técnica.
 
@@ -91,6 +93,22 @@ Indicadores visuais podem ser usados para facilitar a leitura, mas devem estar s
 Quando README e roadmap acompanharem o progresso, ambos devem permanecer coerentes após mudanças de estado. O README funciona como visão rápida; o roadmap preserva o detalhamento.
 
 Projetos muito simples, bibliotecas pequenas ou repositórios sem evolução por fases podem adaptar ou omitir o painel de acompanhamento para evitar burocracia artificial.
+
+### Backlog no README inicial
+
+O README deve conter, por padrão, uma seção **Backlog**.
+
+Ela existe para preservar necessidades futuras sem transformá-las automaticamente em escopo autorizado. Se nenhuma necessidade tiver sido identificada durante a fundação, a seção pode permanecer vazia.
+
+A inclusão de um item no backlog:
+
+- não autoriza implementação;
+- não altera o escopo atual;
+- não substitui roadmap;
+- não substitui tarefa, issue, branch ou PR;
+- não exige especificação completa no momento do registro.
+
+Quando um item for selecionado para desenvolvimento, ele deve passar por análise e entrar no fluxo normal do ÓRBITA.
 
 O template de referência está em [../templates/README-INICIAL-TEMPLATE.md](../templates/README-INICIAL-TEMPLATE.md).
 
