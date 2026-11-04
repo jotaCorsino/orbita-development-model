@@ -3,7 +3,7 @@
 - **Categoria:** evolução contínua / gestão de escopo / rastreabilidade.
 - **Registrada em:** 04/11/2026.
 - **Origem:** necessidade observada na evolução contínua de projetos que utilizam o Método ÓRBITA.
-- **Estado:** **AGUARDANDO_HOMOLOGACAO**.
+- **Estado:** **APROVADA pelo responsável humano em 04/11/2026; incorporação normativa preparada, aguardando integração**.
 - **Escopo:** projetos mantidos pelo Método ÓRBITA, independentemente da tecnologia utilizada.
 
 ## 1. Problema observado
@@ -324,6 +324,17 @@ Fluxo ÓRBITA
 
 ## 14. Estado da avaliação
 
-Esta proposta permanece em **AGUARDANDO_HOMOLOGACAO**.
+A proposta foi **APROVADA pelo responsável humano em 04/11/2026**.
 
-Até sua aprovação e integração à `main`, o backlog não constitui regra normativa do Método ÓRBITA.
+A homologação confirma:
+
+- backlog no `README.md` por padrão;
+- separação entre backlog, roadmap e tarefa;
+- ausência de autorização implícita de implementação;
+- estados mínimos e sem duplicação do fluxo operacional;
+- captura de necessidades futuras antes do encerramento quando aplicável;
+- adoção proporcional, sem transformar o README em ferramenta pesada de gestão.
+
+A incorporação normativa foi preparada nesta mesma branch nos documentos de aplicação, inicialização e template de README.
+
+A proposta só será considerada **INCORPORADA** depois do merge na `main` e da reconciliação com as mudanças documentais pendentes dos PRs #15 e #16.
