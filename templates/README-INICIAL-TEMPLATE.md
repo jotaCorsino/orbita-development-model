@@ -59,6 +59,20 @@
 - [riscos, dados sensíveis, autenticação/autorização, exposição pública, dependências ou outras restrições relevantes];
 - [indicar explicitamente quando não houver superfície sensível conhecida nesta fase].
 
+## Backlog
+
+Necessidades identificadas para evolução futura do projeto.
+
+> A inclusão de um item neste backlog **não autoriza sua implementação**. O backlog registra evolução potencial; roadmap e tarefas controlam planejamento e execução.
+
+| ID | Tipo | Item | Prioridade | Origem | Status |
+| --- | --- | --- | --- | --- | --- |
+| BL-001 | [Feature / Melhoria / Upgrade / Correção / Refatoração / Segurança / Infra / Débito técnico] | [descrição curta] | [Alta / Média / Baixa] | [origem] | Backlog |
+
+**Estados sugeridos:** Backlog · Selecionado · Concluído · Descartado.
+
+> Remova a linha de exemplo se ainda não houver itens. Mantenha a seção para que novas necessidades possam ser registradas sem expandir silenciosamente o escopo corrente.
+
 ## Documentação
 
 - [Roadmap]([CAMINHO_DO_ROADMAP])
@@ -88,4 +102,5 @@ Ao utilizá-lo:
 5. use os indicadores visuais sempre acompanhados de texto;
 6. não use percentual artificial de conclusão quando não existir uma métrica objetiva;
 7. adapte nomes de arquivos, IDs e seções ao porte e à natureza do projeto;
-8. remova exemplos e placeholders antes de publicar o README real.
+8. mantenha a seção **Backlog** como área padrão de captura de necessidades futuras, mesmo quando inicialmente vazia;
+9. remova exemplos e placeholders antes de publicar o README real.
