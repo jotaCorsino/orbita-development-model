@@ -34,7 +34,9 @@ Ele não cria novo estado no fluxo do ÓRBITA e não exige varredura integral do
 - [ ] README/roadmap/índices/painéis relevantes conferidos quando aplicável;
 - [ ] busca por estados ou referências antigas repetida quando aplicável;
 - [ ] links/caminhos principais afetados continuam válidos;
-- [ ] nenhum resumo contradiz o estado integrado.
+- [ ] nenhum resumo contradiz o estado integrado;
+- [ ] necessidades futuras relevantes descobertas durante o ciclo foram registradas no backlog quando aplicável;
+- [ ] nenhum item de backlog foi tratado como autorização implícita para nova implementação.
 
 ## Resultado do encerramento
 
