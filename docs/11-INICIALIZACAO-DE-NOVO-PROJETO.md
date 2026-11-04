@@ -59,6 +59,7 @@ A fundação deve ser proporcional ao projeto, mas normalmente inclui:
 - arquitetura ou visão técnica inicial, quando necessária;
 - roadmap ou planejamento por etapas;
 - backlog de evolução no README, inicialmente vazio quando ainda não houver necessidades futuras registradas;
+- base `knowledge/` com índice inicial para conhecimento operacional reutilizável;
 - regras locais do projeto;
 - estados de acompanhamento;
 - critérios de homologação;
@@ -80,7 +81,8 @@ Para projetos com fases, tarefas ou gates de acompanhamento, a organização rec
 4. problema, contexto ou objetivo;
 5. solução, escopo, arquitetura/tecnologias e demais informações pertinentes;
 6. backlog de evolução;
-7. links para roadmap e documentação detalhada.
+7. acesso à base Knowledge;
+8. links para roadmap e documentação detalhada.
 
 A tabela do README deve mostrar apenas macroetapas suficientes para identificar o estado atual, o que já foi homologado e o próximo gate. Ela **não substitui** roadmap, tarefas, critérios de aceite, histórico ou documentação técnica.
 
@@ -109,6 +111,25 @@ A inclusão de um item no backlog:
 - não exige especificação completa no momento do registro.
 
 Quando um item for selecionado para desenvolvimento, ele deve passar por análise e entrar no fluxo normal do ÓRBITA.
+
+### Knowledge na fundação inicial
+
+Todo projeto deve iniciar com `knowledge/README.md` como índice da base de conhecimento operacional, mesmo que ainda não existam entradas `KN-xxx`.
+
+A existência do índice desde a fundação permite que agentes futuros saibam onde procurar conhecimento acumulado sem depender de convenções locais descobertas depois.
+
+A base começa vazia. **Não devem ser inventadas entradas apenas para preencher a estrutura.**
+
+Quando houver conhecimento real:
+
+- registrar somente conclusão comprovada e reutilizável;
+- apontar origem/evidência;
+- declarar escopo de aplicação;
+- indicar quando deve ser revalidado;
+- não armazenar segredos ou dados sensíveis;
+- não duplicar política ou documentação canônica.
+
+Os templates estão em [README de Knowledge](../templates/KNOWLEDGE-README-TEMPLATE.md) e [Entrada de Knowledge](../templates/KNOWLEDGE-ENTRY-TEMPLATE.md).
 
 O template de referência está em [../templates/README-INICIAL-TEMPLATE.md](../templates/README-INICIAL-TEMPLATE.md).
 
