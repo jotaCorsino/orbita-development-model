@@ -77,9 +77,12 @@ A verificação ocorre em duas passagens:
 3. conferir os resumos, índices e painéis derivados aplicáveis;
 4. repetir a busca por status ou referências antigas relacionadas à alteração;
 5. validar links e caminhos principais afetados;
-6. corrigir resíduos documentais antes de considerar o encerramento completo.
+6. verificar se a execução revelou necessidades futuras relevantes fora do escopo corrente e, quando houver, registrá-las no backlog do README;
+7. corrigir resíduos documentais antes de considerar o encerramento completo.
 
 Essa verificação não exige varredura integral do repositório para mudanças pequenas. O escopo deve acompanhar o risco e a quantidade de lugares que reproduzem a informação alterada.
+
+Registrar uma necessidade no backlog não autoriza sua implementação. O backlog apenas preserva evolução potencial; qualquer item selecionado retorna ao fluxo normal de análise, planejamento, tarefa e homologação.
 
 Se a correção pós-merge for apenas de status ou fechamento documental, ela pode ocorrer em PR curto e isolado. Se modificar significado, regra ou escopo homologado, retorna ao fluxo normal de revisão e homologação.
 
