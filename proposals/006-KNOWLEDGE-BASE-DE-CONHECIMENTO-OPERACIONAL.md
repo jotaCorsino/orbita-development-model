@@ -3,7 +3,7 @@
 - **Categoria:** continuidade operacional / memória externa / eficiência de agentes / prevenção de reincidência.
 - **Registrada em:** 04/11/2026.
 - **Origem:** necessidade de preservar descobertas reutilizáveis feitas por agentes durante análise, diagnóstico, implementação, homologação e troubleshooting.
-- **Estado:** **APROVADA pelo responsável humano em 04/11/2026; incorporação normativa preparada, aguardando integração**.
+- **Estado:** **APROVADA e INCORPORADA à `main` pelo PR #21 em 04/11/2026**.
 - **Escopo:** projetos conduzidos pelo Método ÓRBITA.
 
 ## 1. Problema observado
@@ -419,4 +419,6 @@ A homologação confirma:
 - revalidação de conhecimento volátil;
 - proibição de segredos e dados sensíveis.
 
-A incorporação normativa foi preparada nesta branch e só será considerada **INCORPORADA** após merge na `main` e verificação pós-merge.
+A incorporação normativa foi concluída na `main` pelo PR #21 em 04/11/2026. A verificação pós-merge confirmou a presença da base `knowledge/`, dos templates, da consulta pré-tarefa e da captura pós-aprendizado.
+
+**PROP-006 encerrada.**
