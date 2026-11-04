@@ -36,7 +36,9 @@ Ele não cria novo estado no fluxo do ÓRBITA e não exige varredura integral do
 - [ ] links/caminhos principais afetados continuam válidos;
 - [ ] nenhum resumo contradiz o estado integrado;
 - [ ] necessidades futuras relevantes descobertas durante o ciclo foram registradas no backlog quando aplicável;
-- [ ] nenhum item de backlog foi tratado como autorização implícita para nova implementação.
+- [ ] nenhum item de backlog foi tratado como autorização implícita para nova implementação;
+- [ ] conclusões comprovadas, reutilizáveis e operacionalmente relevantes descobertas no ciclo foram registradas ou atualizadas em `knowledge/` quando aplicável;
+- [ ] nenhuma hipótese não confirmada foi promovida a Knowledge Vigente.
 
 ## Resultado do encerramento
 
