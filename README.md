@@ -220,7 +220,7 @@ Ocorrências observadas em projetos que utilizam o método são registradas sepa
 - [TRB-001 — `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — diagnóstico entre sandbox e filesystem real incorporado ao método pelo PR #2.
 - [TRB-002 — Deploy/preview sem recuperação do fluxo operacional](troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md) — preflight operacional e dependências entre projetos incorporados pelo PR #7.
 - [TRB-003 — Interrupção do agente com trabalho material ainda local](troubleshooting/003-INTERRUPCAO-CODEX-TRABALHO-LOCAL.md) — retomada segura e preservação do estado local incorporadas pelo PR #9.
-- [TRB-004 — Encerramento sem sincronização documental final](troubleshooting/004-ENCERRAMENTO-SEM-SINCRONIZACAO-DOCUMENTAL.md) — verificação final proporcional de consistência homologada e preparada nesta integração.
+- [TRB-004 — Encerramento sem sincronização documental final](troubleshooting/004-ENCERRAMENTO-SEM-SINCRONIZACAO-DOCUMENTAL.md) — verificação final proporcional de consistência incorporada pelo PR #19.
 
 ## Propostas de melhoria do método
 
@@ -230,7 +230,7 @@ As propostas registram evoluções candidatas surgidas do uso real. Enquanto est
 - [PROP-002 — Preflight operacional e dependências entre projetos](proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md) — verificação condicional antes de operações em ambientes existentes incorporada pelo PR #7.
 - [PROP-003 — Consolidação documental sem perda semântica](proposals/003-CONSOLIDACAO-DOCUMENTAL-SEM-PERDA.md) — preservação de conhecimento e distinção entre `main` e trabalho ativo incorporadas pelo PR #11.
 - [PROP-004 — Gates de fidelidade visual e qualidade artística para entregas 3D](proposals/004-GATES-FIDELIDADE-VISUAL-3D.md) — princípio geral de aceite multidimensional incorporado pelo PR #13, mantendo protocolos 3D específicos fora do núcleo.
-- [PROP-005 — Backlog de evolução do projeto](proposals/005-BACKLOG-DE-EVOLUCAO.md) — backlog padrão no README para capturar necessidades futuras sem autorizar implementação.
+- [PROP-005 — Backlog de evolução do projeto](proposals/005-BACKLOG-DE-EVOLUCAO.md) — backlog padrão no README para capturar necessidades futuras sem autorizar implementação, incorporado pelo PR #19.
 
 ## Backlog
 
