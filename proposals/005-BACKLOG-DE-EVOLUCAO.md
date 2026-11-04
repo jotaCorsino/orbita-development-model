@@ -3,7 +3,7 @@
 - **Categoria:** evolução contínua / gestão de escopo / rastreabilidade.
 - **Registrada em:** 04/11/2026.
 - **Origem:** necessidade observada na evolução contínua de projetos que utilizam o Método ÓRBITA.
-- **Estado:** **APROVADA pelo responsável humano em 04/11/2026; incorporação normativa preparada, aguardando integração**.
+- **Estado:** **APROVADA e INCORPORADA à `main` pelo PR #19 em 04/11/2026**.
 - **Escopo:** projetos mantidos pelo Método ÓRBITA, independentemente da tecnologia utilizada.
 
 ## 1. Problema observado
@@ -335,6 +335,6 @@ A homologação confirma:
 - captura de necessidades futuras antes do encerramento quando aplicável;
 - adoção proporcional, sem transformar o README em ferramenta pesada de gestão.
 
-A incorporação normativa foi preparada nesta mesma branch nos documentos de aplicação, inicialização e template de README.
+A incorporação normativa foi concluída na `main` pelo PR #19 em 04/11/2026, junto da consolidação do TRB-004 e do saneamento documental do README.
 
-A proposta só será considerada **INCORPORADA** depois do merge na `main` e da reconciliação com as mudanças documentais pendentes dos PRs #15 e #16.
+**PROP-005 encerrada.**
