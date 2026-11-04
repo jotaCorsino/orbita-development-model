@@ -3,7 +3,7 @@
 - **Categoria:** continuidade operacional / memória externa / eficiência de agentes / prevenção de reincidência.
 - **Registrada em:** 04/11/2026.
 - **Origem:** necessidade de preservar descobertas reutilizáveis feitas por agentes durante análise, diagnóstico, implementação, homologação e troubleshooting.
-- **Estado:** **AGUARDANDO_HOMOLOGACAO**.
+- **Estado:** **APROVADA pelo responsável humano em 04/11/2026; incorporação normativa preparada, aguardando integração**.
 - **Escopo:** projetos conduzidos pelo Método ÓRBITA.
 
 ## 1. Problema observado
@@ -404,6 +404,19 @@ O efeito desejado é transformar experiência operacional acumulada em contexto 
 
 ## 19. Estado da avaliação
 
-Esta proposta permanece em **AGUARDANDO_HOMOLOGACAO**.
+A proposta foi **APROVADA pelo responsável humano em 04/11/2026**.
 
-Até aprovação humana e integração à `main`, `knowledge/` não constitui requisito normativo do Método ÓRBITA.
+A homologação confirma:
+
+- `knowledge/` como base padrão de conhecimento operacional reutilizável;
+- `knowledge/README.md` como índice rápido;
+- entradas `KN-xxx` criadas somente quando houver conhecimento real;
+- consulta proporcional antes de tarefas relevantes;
+- captura posterior de conclusões comprovadas e reutilizáveis;
+- estados de validade `Vigente`, `Revalidar` e `Obsoleto`;
+- separação entre Knowledge, backlog, troubleshooting e documentação canônica;
+- proibição de promover hipótese a Knowledge Vigente;
+- revalidação de conhecimento volátil;
+- proibição de segredos e dados sensíveis.
+
+A incorporação normativa foi preparada nesta branch e só será considerada **INCORPORADA** após merge na `main` e verificação pós-merge.
