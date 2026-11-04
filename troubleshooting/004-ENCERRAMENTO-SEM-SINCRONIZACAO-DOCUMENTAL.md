@@ -3,7 +3,7 @@
 - **Categoria:** encerramento / consistência documental / rastreabilidade.
 - **Registrado em:** 22/10/2026.
 - **Origem:** evolução do próprio repositório do Método ÓRBITA após a incorporação de TRB-001 a TRB-003 e PROP-001 a PROP-004.
-- **Estado:** ocorrência confirmada; refinamento metodológico preparado na branch `docs/TRB-004-verificacao-final-consistencia`, aguardando homologação humana.
+- **Estado:** ocorrência confirmada; refinamento metodológico **APROVADO e INCORPORADO à `main` pelo PR #19 em 04/11/2026**.
 - **Impacto:** documentação resumida permaneceu desatualizada apesar de os registros canônicos já estarem homologados e incorporados.
 
 ## 1. Ocorrência
@@ -111,4 +111,6 @@ O refinamento pode ser homologado se:
 
 Este registro documenta uma ocorrência real no repositório do próprio Método ÓRBITA.
 
-O refinamento permanece em **AGUARDANDO_HOMOLOGACAO** até aprovação explícita do responsável humano.
+O refinamento foi **APROVADO pelo responsável humano e INCORPORADO à `main` pelo PR #19 em 04/11/2026**.
+
+**TRB-004 encerrado.**
