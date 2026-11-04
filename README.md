@@ -215,15 +215,20 @@ O projeto operacional real permanece separado da representação pública. Essa 
 
 ## Problemas recorrentes
 
-Ocorrências técnicas observadas em projetos que utilizam o método são registradas separadamente, sem alterar automaticamente suas regras normativas.
+Ocorrências técnicas observadas em projetos que utilizam o método são registradas separadamente. Um registro de troubleshooting documenta evidência e aprendizado; mudanças metodológicas só entram no método após avaliação, homologação humana e integração à `main`.
 
-- [Bootstrap Git: `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — duas ocorrências documentadas, solução e avaliação metodológica pendente.
+- [TRB-001 — Bootstrap Git: `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — ocorrência recorrente; refinamento metodológico homologado.
+- [TRB-002 — Deploy de preview com fluxo operacional não recuperado](troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md) — refinamento metodológico homologado e incorporado.
+- [TRB-003 — Interrupção do Codex com trabalho local](troubleshooting/003-INTERRUPCAO-CODEX-TRABALHO-LOCAL.md) — refinamento metodológico homologado e incorporado.
 
 ## Propostas de melhoria do método
 
-Registros de ajustes sugeridos a partir do uso real do ÓRBITA. **Não são regras oficiais até avaliação e homologação humana.**
+Registros de ajustes derivados do uso real do ÓRBITA. A proposta permanece apenas candidata enquanto não for homologada e integrada à `main`; os registros abaixo já tiveram seus refinamentos metodológicos aprovados e incorporados.
 
-- [Proposta 001 — Tabela de acompanhamento visual no início do README](proposals/001-README-ACOMPANHAMENTO-VISUAL.md) — círculos coloridos, ordem das seções, sincronização com roadmap e estados de homologação.
+- [PROP-001 — Tabela de acompanhamento visual no início do README](proposals/001-README-ACOMPANHAMENTO-VISUAL.md) — acompanhamento visual e sincronização com roadmap.
+- [PROP-002 — Preflight operacional e dependências entre projetos](proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md) — recuperação de runbooks, dependências e estado operacional antes de intervenções.
+- [PROP-003 — Consolidação documental sem perda](proposals/003-CONSOLIDACAO-DOCUMENTAL-SEM-PERDA.md) — distinção entre estado integrado na `main` e trabalho ativo em branches/PRs.
+- [PROP-004 — Gates de fidelidade visual 3D](proposals/004-GATES-FIDELIDADE-VISUAL-3D.md) — aceite multidimensional proporcional para requisitos não estritamente técnicos.
 
 ## Documentação
 
