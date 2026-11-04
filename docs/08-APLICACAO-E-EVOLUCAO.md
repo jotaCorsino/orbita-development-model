@@ -101,6 +101,48 @@ A ordem de numeração não define prioridade metodológica. Quando dois registr
 
 As convenções locais estão documentadas em [../troubleshooting/README.md](../troubleshooting/README.md) e [../proposals/README.md](../proposals/README.md).
 
+## Backlog de evolução do projeto
+
+Todo projeto ÓRBITA deve possuir, por padrão, uma seção **Backlog** no `README.md` para registrar necessidades futuras sem expandir silenciosamente o escopo atual.
+
+O backlog é uma área de **captura de evolução potencial**. Ele não substitui roadmap, tarefas, issues ou critérios de aceite.
+
+Princípio:
+
+> **Registrar no backlog não significa autorizar implementação.**
+
+Modelo mínimo:
+
+```md
+## Backlog
+
+Necessidades identificadas para evolução futura do projeto.
+A inclusão de um item neste backlog não autoriza sua implementação.
+
+| ID | Tipo | Item | Prioridade | Origem | Status |
+| --- | --- | --- | --- | --- | --- |
+| BL-001 | Feature | [descrição curta] | Média | Homologação | Backlog |
+```
+
+Os estados recomendados são:
+
+- **Backlog** — necessidade registrada;
+- **Selecionado** — item escolhido para análise e planejamento;
+- **Concluído** — necessidade atendida;
+- **Descartado** — item deliberadamente não seguirá para execução.
+
+O backlog não replica estados de execução como `Em implementação`, `Em validação` ou `Aguardando homologação`. Quando um item é selecionado, a execução passa a ser controlada pelo fluxo normal do ÓRBITA.
+
+A distinção é:
+
+```text
+Backlog = captura
+Roadmap = planejamento
+Tarefa = execução autorizada
+```
+
+Antes do encerramento de uma tarefa, deve-se verificar proporcionalmente se surgiram necessidades futuras relevantes fora do escopo corrente. Quando houver, elas devem ser registradas no backlog em vez de serem incorporadas silenciosamente à entrega atual.
+
 ## Projeto operacional e case público
 
 Um projeto operacional não precisa ser público para demonstrar competência.
