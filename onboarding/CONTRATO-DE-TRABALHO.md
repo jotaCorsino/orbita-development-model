@@ -292,7 +292,10 @@ O agente não deve concluir que o repositório está totalmente encerrado apenas
 - o estado canônico está correto na `main`;
 - resumos e índices relevantes não ficaram desatualizados;
 - links e caminhos afetados continuam válidos;
-- termos de estado antigos relacionados à mudança não permanecem contradizendo o resultado atual.
+- termos de estado antigos relacionados à mudança não permanecem contradizendo o resultado atual;
+- necessidades futuras relevantes descobertas durante o trabalho foram registradas no backlog do README quando estiverem fora do escopo corrente.
+
+Registrar uma necessidade no backlog não autoriza sua implementação nem amplia o escopo da tarefa encerrada.
 
 A verificação deve ser proporcional. Não é necessário revisar todo o repositório quando a mudança não possui superfícies derivadas relevantes.
 
