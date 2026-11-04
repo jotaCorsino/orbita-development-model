@@ -33,6 +33,8 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] objetivo e contexto registrados
 - [ ] escopo inicial registrado
 - [ ] planejamento/roadmap criado
+- [ ] backlog de evolução criado no README
+- [ ] `knowledge/README.md` criado como índice inicial, mesmo sem entradas
 - [ ] arquitetura inicial registrada quando necessária
 - [ ] regras locais do projeto registradas
 - [ ] estados de acompanhamento definidos
@@ -66,6 +68,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 
 - [ ] agente de planejamento, agente de implementação, pasta local e repositório representam inequivocamente o mesmo projeto
 - [ ] documentação inicial existe no repositório
+- [ ] base `knowledge/` existe e pode ser consultada por agentes
 - [ ] working copy local está vinculada ao remoto
 - [ ] primeira tarefa funcional possui ID
 - [ ] objetivo está claro

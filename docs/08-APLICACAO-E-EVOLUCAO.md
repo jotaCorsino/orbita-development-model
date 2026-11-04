@@ -143,6 +143,47 @@ Tarefa = execução autorizada
 
 Antes do encerramento de uma tarefa, deve-se verificar proporcionalmente se surgiram necessidades futuras relevantes fora do escopo corrente. Quando houver, elas devem ser registradas no backlog em vez de serem incorporadas silenciosamente à entrega atual.
 
+## Knowledge — conhecimento operacional reutilizável
+
+Projetos ÓRBITA devem manter uma base `knowledge/` para preservar conclusões operacionais comprovadas que possam evitar redescoberta, reincidência de erros ou decisões inadequadas em sessões futuras.
+
+Estrutura mínima:
+
+```text
+knowledge/
+├── README.md
+└── KN-xxx-descricao-curta.md
+```
+
+O `knowledge/README.md` funciona como índice rápido. Antes de uma tarefa relevante, o agente consulta esse índice e abre apenas as entradas potencialmente aplicáveis.
+
+Princípio:
+
+> **Descobrir uma vez, validar, registrar e reutilizar quando aplicável.**
+
+Knowledge não substitui documentação canônica, troubleshooting, backlog ou inspeção do estado atual.
+
+A distinção operacional é:
+
+```text
+README / docs = o que o projeto é e como funciona
+Backlog       = o que talvez faremos
+Troubleshooting = o que aconteceu e como foi investigado
+Knowledge     = o que aprendemos e devemos reutilizar
+```
+
+Uma entrada Knowledge deve ser reutilizável, operacionalmente relevante, não trivial e suficientemente comprovada. Hipóteses, logs brutos, transcrições, tarefas futuras, segredos e cópias de documentação canônica não pertencem à base.
+
+Estados de validade:
+
+- **Vigente** — conhecimento validado e aplicável ao escopo declarado;
+- **Revalidar** — deve ser confirmado antes de uso porque alguma condição pode ter mudado;
+- **Obsoleto** — deixou de representar a realidade atual ou foi substituído.
+
+Conhecimento anterior orienta a investigação, mas **evidência atual confirma a decisão** quando o estado puder ter mudado.
+
+Ao final de uma tarefa relevante, deve-se verificar proporcionalmente se surgiu alguma conclusão comprovada e reutilizável que uma sessão futura provavelmente precisaria redescobrir. Quando houver, a entrada existente deve ser atualizada ou uma nova `KN-xxx` criada.
+
 ## Projeto operacional e case público
 
 Um projeto operacional não precisa ser público para demonstrar competência.

@@ -231,6 +231,7 @@ As propostas registram evoluções candidatas surgidas do uso real. Enquanto est
 - [PROP-003 — Consolidação documental sem perda semântica](proposals/003-CONSOLIDACAO-DOCUMENTAL-SEM-PERDA.md) — preservação de conhecimento e distinção entre `main` e trabalho ativo incorporadas pelo PR #11.
 - [PROP-004 — Gates de fidelidade visual e qualidade artística para entregas 3D](proposals/004-GATES-FIDELIDADE-VISUAL-3D.md) — princípio geral de aceite multidimensional incorporado pelo PR #13, mantendo protocolos 3D específicos fora do núcleo.
 - [PROP-005 — Backlog de evolução do projeto](proposals/005-BACKLOG-DE-EVOLUCAO.md) — backlog padrão no README para capturar necessidades futuras sem autorizar implementação, incorporado pelo PR #19.
+- [PROP-006 — Knowledge: base de conhecimento operacional do projeto](proposals/006-KNOWLEDGE-BASE-DE-CONHECIMENTO-OPERACIONAL.md) — memória operacional externa e reutilizável, homologada e preparada para integração.
 
 ## Backlog
 
@@ -241,6 +242,14 @@ Necessidades identificadas para evolução futura deste repositório.
 | ID | Tipo | Item | Prioridade | Origem | Status |
 | --- | --- | --- | --- | --- | --- |
 | — | — | Nenhum item ativo registrado | — | — | — |
+
+## Knowledge
+
+Este repositório também utiliza a base [`knowledge/`](knowledge/) para preservar conhecimento operacional reutilizável.
+
+O índice deve ser consultado antes de tarefas relevantes; entradas `KN-xxx` são criadas apenas quando existir uma conclusão comprovada que possa evitar redescoberta ou reincidência de erro.
+
+> **Knowledge registra o que já aprendemos e devemos reutilizar.**
 
 ## Documentação
 
@@ -261,7 +270,7 @@ Necessidades identificadas para evolução futura deste repositório.
 | [Segurança e integridade](docs/12-SEGURANCA-E-INTEGRIDADE.md) | Baseline transversal de segurança de software, informação e repositório |
 | [Roadmap](ROADMAP.md) | Maturidade e próximas evoluções do próprio método |
 
-Também existem [templates](templates/) para tarefas, bootstrap local, prompts de implementação e homologação e uma área de [exemplos](examples/) com aplicações reais.
+Também existem [templates](templates/) para tarefas, bootstrap local, prompts de implementação, homologação e Knowledge, além de uma área de [exemplos](examples/) com aplicações reais.
 
 ## Objetivo do repositório
 

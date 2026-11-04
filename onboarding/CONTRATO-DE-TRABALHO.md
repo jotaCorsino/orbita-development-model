@@ -96,10 +96,29 @@ Antes de uma modificação relevante:
 4. localizar regras específicas do projeto;
 5. entender critérios de aceite;
 6. identificar riscos e dependências;
-7. confirmar que não está entrando em escopo não autorizado.
+7. confirmar que não está entrando em escopo não autorizado;
+8. consultar proporcionalmente `knowledge/README.md`, quando existir, e abrir somente as entradas relevantes para a tarefa.
 
 Não presuma que o estado descrito em uma conversa antiga ainda corresponde ao repositório.
 
+
+### Consulta ao Knowledge
+
+Antes de uma tarefa relevante, o agente deve consultar o índice `knowledge/README.md` quando a base existir.
+
+A consulta deve ser proporcional:
+
+1. ler o índice;
+2. identificar entradas potencialmente relacionadas à tarefa;
+3. abrir somente as entradas relevantes;
+4. verificar estado, escopo e condição de revalidação;
+5. confirmar novamente fatos voláteis quando a decisão depender deles.
+
+Knowledge é contexto acumulado, não substituto da realidade observada.
+
+> **Conhecimento anterior orienta a investigação; evidência atual confirma a decisão.**
+
+Uma entrada marcada como `Revalidar`, contradita pelo estado atual ou fora do escopo não deve ser seguida automaticamente.
 
 ### Operações em ambientes existentes
 
@@ -183,6 +202,22 @@ Nesses casos, o agente:
 Quando uma referência, experiência esperada ou padrão visual fizer parte dos critérios de aceite, o agente deve apresentar o resultado real de forma que possa ser comparado com esse objetivo, usando evidência proporcional ao projeto.
 
 ---
+
+### Captura de conhecimento reutilizável
+
+Durante ou ao final da implementação, o agente deve avaliar se descobriu uma conclusão:
+
+- comprovada;
+- reutilizável;
+- operacionalmente relevante;
+- não trivial;
+- provável de evitar redescoberta ou erro futuro.
+
+Se sim, deve procurar primeiro uma entrada Knowledge equivalente. Atualiza a existente quando representar o mesmo conhecimento; cria nova `KN-xxx` somente quando a conclusão for distinta.
+
+Hipóteses não verificadas não podem ser registradas como Knowledge Vigente. Logs brutos, transcrições, segredos e tarefas futuras também não pertencem à base.
+
+A atualização de Knowledge deve seguir o mesmo fluxo Git/revisão da tarefa quando fizer parte do seu encerramento.
 
 ## 6. Evidência de entrega
 
@@ -293,7 +328,8 @@ O agente não deve concluir que o repositório está totalmente encerrado apenas
 - resumos e índices relevantes não ficaram desatualizados;
 - links e caminhos afetados continuam válidos;
 - termos de estado antigos relacionados à mudança não permanecem contradizendo o resultado atual;
-- necessidades futuras relevantes descobertas durante o trabalho foram registradas no backlog do README quando estiverem fora do escopo corrente.
+- necessidades futuras relevantes descobertas durante o trabalho foram registradas no backlog do README quando estiverem fora do escopo corrente;
+- conclusões comprovadas e reutilizáveis descobertas durante o trabalho foram registradas ou atualizadas em `knowledge/` quando aplicável.
 
 Registrar uma necessidade no backlog não autoriza sua implementação nem amplia o escopo da tarefa encerrada.
 

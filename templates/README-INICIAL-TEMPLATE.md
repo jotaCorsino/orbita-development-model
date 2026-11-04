@@ -73,6 +73,12 @@ Necessidades identificadas para evolução futura do projeto.
 
 > Remova a linha de exemplo se ainda não houver itens. Mantenha a seção para que novas necessidades possam ser registradas sem expandir silenciosamente o escopo corrente.
 
+## Knowledge
+
+Conhecimento operacional reutilizável do projeto: [`knowledge/README.md`](knowledge/README.md).
+
+> Consulte o índice antes de tarefas relevantes. Knowledge preserva conclusões comprovadas; não substitui documentação canônica nem inspeção do estado atual.
+
 ## Documentação
 
 - [Roadmap]([CAMINHO_DO_ROADMAP])
@@ -103,4 +109,5 @@ Ao utilizá-lo:
 6. não use percentual artificial de conclusão quando não existir uma métrica objetiva;
 7. adapte nomes de arquivos, IDs e seções ao porte e à natureza do projeto;
 8. mantenha a seção **Backlog** como área padrão de captura de necessidades futuras, mesmo quando inicialmente vazia;
-9. remova exemplos e placeholders antes de publicar o README real.
+9. mantenha o link para **Knowledge** e crie `knowledge/README.md` mesmo quando a base ainda estiver vazia;
+10. remova exemplos e placeholders antes de publicar o README real.
