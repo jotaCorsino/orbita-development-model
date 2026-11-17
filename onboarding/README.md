@@ -75,6 +75,12 @@ Templates operacionais:
 
 ---
 
+### Preferência visual do mantenedor (somente projetos aplicáveis)
+
+Para **sites e sistemas com interface desenvolvidos sob direção do mantenedor**, consultar o [perfil de iconografia ICON-001](PERFIL-MANTENEDOR-ICONOGRAFIA.md): Iconify como catálogo preferencial, Tabler como coleção inicial, consistência visual e SVG local/build para produção. Registrar a adoção no repositório do projeto. **Isso não é exigência universal do ÓRBITA para outros usuários** e não autoriza alteração de interfaces existentes sem tarefa própria.
+
+---
+
 ## 3. Ao receber o Método ÓRBITA em um novo chat
 
 O agente de planejamento deve primeiro compreender o método.
