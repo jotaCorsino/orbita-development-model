@@ -193,6 +193,10 @@ O método foi desenhado para reduzir alguns padrões que podem comprometer clare
 
 A discussão completa está em [Anti-padrões](docs/09-ANTI-PADROES.md).
 
+## Preferência de validação do mantenedor — QA local-first
+
+Para projetos dirigidos por este mantenedor, consultar [perfil QA local-first](onboarding/PERFIL-MANTENEDOR-VALIDACAO-LOCAL.md): **testes locais reproduzíveis como padrão**, GitHub Actions excepcional e manual. Isso não reduz testes ou aceites obrigatórios, e não constitui exigência universal para outros usuários do ÓRBITA.
+
 ## Perfil de iconografia para projetos do mantenedor
 
 Quando um **site ou sistema com interface** for desenvolvido sob a direção do mantenedor deste repositório, consultar o [perfil ICON-001 — Iconify](onboarding/PERFIL-MANTENEDOR-ICONOGRAFIA.md) e registrar sua adoção no repositório específico. A preferência privilegia coleções licenciadas e coerentes (Tabler como padrão inicial), em vez de ícones criados por IA. **É uma preferência de projeto, não uma regra universal do Método ÓRBITA.**
