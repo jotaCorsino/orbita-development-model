@@ -75,6 +75,12 @@ Templates operacionais:
 
 ---
 
+### Preferência de validação do mantenedor (somente projetos aplicáveis)
+
+Antes de propor CI, consultar o [perfil de QA local-first](PERFIL-MANTENEDOR-VALIDACAO-LOCAL.md): executar testes em ambiente isolado com evidências e hashes; GitHub Actions apenas por exceção aprovada e sem gastos implícitos. O método ÓRBITA continua exigindo testes aplicáveis, revisão e homologação.
+
+---
+
 ### Preferência visual do mantenedor (somente projetos aplicáveis)
 
 Para **sites e sistemas com interface desenvolvidos sob direção do mantenedor**, consultar o [perfil de iconografia ICON-001](PERFIL-MANTENEDOR-ICONOGRAFIA.md): Iconify como catálogo preferencial, Tabler como coleção inicial, consistência visual e SVG local/build para produção. Registrar a adoção no repositório do projeto. **Isso não é exigência universal do ÓRBITA para outros usuários** e não autoriza alteração de interfaces existentes sem tarefa própria.
