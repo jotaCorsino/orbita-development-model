@@ -66,3 +66,5 @@ Ao final, apresente:
 7. branch/commit/PR, quando aplicável.
 
 Não declare a tarefa homologada. A homologação pertence ao responsável humano.
+
+**COM-001 — Último bloco da resposta:** se você precisar que o responsável **aprove, teste, execute, envie ou decida algo**, termine com `**AÇÃO SUA**` e um resumo direto da ação, alvo e retorno esperado. Se não houver tarefa humana, **omita o bloco**. Não coloque texto depois dele. Fonte: [Contrato de Trabalho para Agentes](../onboarding/CONTRATO-DE-TRABALHO.md).
