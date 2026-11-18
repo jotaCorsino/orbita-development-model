@@ -50,3 +50,7 @@ Escolha um:
 ## Observações
 
 [registrar conclusões, ressalvas ou correções necessárias]
+
+## COM-001 — Comunicação da decisão
+
+Ao apresentar o resultado desta homologação em chat, **se o responsável precisar aprovar, testar, decidir ou executar algo**, terminar a resposta com **`AÇÃO SUA`**, resumindo a providência e qual retorno é esperado. Sem tarefa humana, omitir o bloco. Isto **não** substitui o próprio gate de homologação.

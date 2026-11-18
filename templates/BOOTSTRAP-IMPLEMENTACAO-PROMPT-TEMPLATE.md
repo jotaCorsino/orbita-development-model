@@ -76,3 +76,5 @@ Informe:
 - quando houver bloqueio de `.git`, diagnóstico da camada afetada (filesystem real ou ambiente/sandbox) e eventual autorização utilizada.
 
 Não inicie a próxima tarefa.
+
+**COM-001 — Encerramento da resposta:** se existir qualquer passo que só o responsável humano possa executar para desbloquear o bootstrap (abrir pasta, fornecer autorização, corrigir acesso, escolher resolução de conflito), inclua por **último** um único bloco `**AÇÃO SUA**`, resumindo o que ele deve fazer e qual resultado devolver. Se o bootstrap estiver concluído sem pendência humana, **não inclua `AÇÃO SUA`**. Não inicie outro trabalho.

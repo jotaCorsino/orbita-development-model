@@ -10,6 +10,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] identidade e ambientes do projeto compreendidos
 - [ ] processo de inicialização compreendido
 - [ ] contrato de trabalho para agentes lido
+- [ ] regra COM-001 de fechamento **AÇÃO SUA** compreendida pelos agentes de planejamento e implementação
 - [ ] baseline de segurança e integridade lido
 
 ## B. Contexto e identidade inicial
@@ -37,6 +38,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] `knowledge/README.md` criado como índice inicial, mesmo sem entradas
 - [ ] arquitetura inicial registrada quando necessária
 - [ ] regras locais do projeto registradas
+- [ ] `AGENTS.md` criado a partir do [template oficial](../templates/AGENTS-TEMPLATE.md) ou equivalente e contém COM-001 (fechamento `AÇÃO SUA` quando houver tarefa humana)
 - [ ] estados de acompanhamento definidos
 - [ ] critérios de aceite/homologação definidos
 - [ ] riscos de segurança/publicação avaliados

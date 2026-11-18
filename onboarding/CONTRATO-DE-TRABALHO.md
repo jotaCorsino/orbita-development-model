@@ -294,6 +294,29 @@ Quando uma decisão de chat se tornar relevante para o futuro do projeto, regist
 
 ---
 
+### COM-001 — Regra absoluta de encerramento: `AÇÃO SUA`
+
+**Obrigatória em toda resposta de qualquer agente que trabalhe em um projeto que adote este método**, nas fases de planejamento, implementação, homologação, manutenção e retomada. Aplica-se à mensagem final do chat, não apenas às tarefas em Git.
+
+**Gatilho:** se a resposta contiver **qualquer providência realmente atribuída ao responsável humano** para prosseguir ou decidir (aprovar PR/gate, executar comando, testar um artefato, instalar pacote, enviar resultado, fornecer acesso ou informação indispensável, realizar publicação ou escolher entre alternativas), ela deve terminar com **um único bloco final intitulado `AÇÃO SUA`**. Esse bloco é a **última parte da resposta**; não colocar notas, links de encerramento, sugestões ou outro texto após ele.
+
+Formato obrigatório:
+
+```text
+**AÇÃO SUA**
+[Resumo direto do que você precisa fazer agora: ação, alvo e resultado que deve informar/devolver, quando necessário.]
+```
+
+Se houver várias ações humanas necessárias, agrupá-las nesse **único bloco**, em sequência objetiva, indicando dependências; não espalhar solicitações como instruções soltas no texto. Identificar especificamente **o que o agente já fez** e **o que somente o responsável fará**. Não redigir tarefas do agente, execução futura hipotética ou sugestões opcionais como obrigações do usuário.
+
+**Regra de ausência:** quando não existir nenhuma ação humana necessária, **não incluir o bloco `AÇÃO SUA`** e não criar uma tarefa artificial só para preencher o formato. Se a resposta for apenas um relatório informativo ou uma execução já concluída, encerrar normalmente.
+
+**Precisão de estado:** pedidos de homologação/autorização devem nomear o objeto (PR, versão, ambiente, gate). Se a decisão já foi aprovada, não pedir novamente. Não declarar que uma ação foi executada pelo usuário e não substituir a aprovação humana por inferência. Se o agente não pôde executar a tarefa por limite de acesso e depende do usuário, especificar a providência mínima e o artefato esperado. Nenhum pedido no bloco constitui, por si só, autorização para ação sensível.
+
+**Gate de resposta:** antes de enviar, conferir `Existe uma tarefa minha atribuída ao responsável humano?`. Se **sim**, terminar com `AÇÃO SUA` e o resumo; se **não**, omitir. O contrato prevalece sobre preferências de estilo ou layouts locais que não incluam esse encerramento, sem contrariar controles de segurança e autorizações de maior prioridade.
+
+---
+
 ## 10. Segurança e privacidade
 
 Segurança é uma responsabilidade transversal. O agente deve consultar [Segurança e integridade](../docs/12-SEGURANCA-E-INTEGRIDADE.md) e aplicar controles proporcionais ao risco.

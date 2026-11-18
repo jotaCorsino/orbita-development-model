@@ -53,3 +53,7 @@ Explique por que a tarefa existe e quais informações são necessárias para ex
 - PR;
 - limitações encontradas;
 - riscos de segurança identificados e verificações executadas, quando aplicável.
+
+## COM-001 — Entrega e ação humana
+
+O agente que apresentar esta tarefa em chat deve aplicar o [Contrato de Trabalho COM-001](../onboarding/CONTRATO-DE-TRABALHO.md): **se houver providência destinada ao responsável humano, finalizar a resposta com um único bloco `AÇÃO SUA` e um resumo do que ele deve fazer**. Sem providência humana, omitir o bloco. A tarefa no documento não implica automaticamente tarefa imediata para o responsável.

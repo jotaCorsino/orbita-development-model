@@ -178,6 +178,7 @@ flowchart LR
 7. A documentação acompanha a evolução do projeto.
 8. A `main` deve representar um estado conhecido e aprovado.
 9. Segurança deve ser considerada de forma proporcional ao risco durante todo o ciclo.
+10. Se houver tarefa humana no encaminhamento de uma resposta, o agente deve **terminar com `AÇÃO SUA`** e o resumo do que cabe ao responsável; sem tarefa humana, não incluir esse bloco. [Contrato COM-001](onboarding/CONTRATO-DE-TRABALHO.md).
 
 ## Anti-padrões
 
