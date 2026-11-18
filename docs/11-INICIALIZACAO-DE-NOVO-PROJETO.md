@@ -61,6 +61,7 @@ A fundação deve ser proporcional ao projeto, mas normalmente inclui:
 - backlog de evolução no README, inicialmente vazio quando ainda não houver necessidades futuras registradas;
 - base `knowledge/` com índice inicial para conhecimento operacional reutilizável;
 - regras locais do projeto;
+- arquivo `AGENTS.md` da raiz (gerado a partir do [template oficial](../templates/AGENTS-TEMPLATE.md) ou equivalente), contendo obrigatoriamente a regra de resposta **COM-001 — `AÇÃO SUA`** e as restrições próprias deste projeto;
 - estados de acompanhamento;
 - critérios de homologação;
 - riscos e restrições conhecidos;
