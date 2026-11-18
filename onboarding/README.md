@@ -75,6 +75,12 @@ Templates operacionais:
 
 ---
 
+### COM-001 — Encerramento com responsabilidade humana (obrigatório)
+
+Toda conversa de agente que adote o método deve aplicar a [regra canônica de comunicação no Contrato de Trabalho](CONTRATO-DE-TRABALHO.md#com-001--regra-absoluta-de-encerramento-ação-sua): **se houver alguma tarefa para o responsável executar, o último trecho da resposta será `AÇÃO SUA` com o resumo objetivo; se não houver, não incluir o bloco**. Esse contrato também deve constar no `AGENTS.md` criado para cada novo projeto, via [template de agentes](../templates/AGENTS-TEMPLATE.md). A regra vale igualmente para planejamento e implementação, independentemente de qual IA esteja atuando.
+
+---
+
 ### Preferência de validação do mantenedor (somente projetos aplicáveis)
 
 Antes de propor CI, consultar o [perfil de QA local-first](PERFIL-MANTENEDOR-VALIDACAO-LOCAL.md): executar testes em ambiente isolado com evidências e hashes; GitHub Actions apenas por exceção aprovada e sem gastos implícitos. O método ÓRBITA continua exigindo testes aplicáveis, revisão e homologação.
