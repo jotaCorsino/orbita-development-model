@@ -40,6 +40,12 @@ Ele não cria novo estado no fluxo do ÓRBITA e não exige varredura integral do
 - [ ] conclusões comprovadas, reutilizáveis e operacionalmente relevantes descobertas no ciclo foram registradas ou atualizadas em `knowledge/` quando aplicável;
 - [ ] nenhuma hipótese não confirmada foi promovida a Knowledge Vigente.
 
+## Verificação de comunicação — COM-001
+
+- [ ] se a resposta final atribui uma ação ao responsável humano, existe **um único bloco terminal `AÇÃO SUA`** com ação e retorno claros;
+- [ ] se a resposta não requer providência humana, o bloco foi omitido;
+- [ ] as autorizações previamente dadas não foram solicitadas novamente; nenhuma ação sensível foi apresentada como executada sem evidência.
+
 ## Resultado do encerramento
 
 Escolha um:
