@@ -38,6 +38,17 @@ Preencher somente quando fizerem parte dos critérios da tarefa.
 - **Riscos aceitos conscientemente:** [nenhum / descrever]
 - **Pendências de segurança:** [nenhuma / descrever]
 
+## Autorização operacional (quando aplicável)
+
+- **Artefato/origem e revisão aprovada:**
+- **Destino real e estado anterior / runbook:**
+- **Dependências, riscos, recuperação e critérios pós-operação:**
+- **Autorização:** [concedida no mesmo gate / separada / pendente / N/A; responsável e escopo]
+- **Versão efetivamente aplicada e evidência:** [comprovada / ainda não aplicada / desconhecida]
+- **Ressalvas e condição de avanço:** [responsável, prazo/condição e gate, quando pertinente]
+
+Registrar dimensões separadas; homologação do artefato não comprova implantação. Distinguir evidências executadas, reutilizadas, lacunas e N/A justificado.
+
 ## Resultado
 
 Escolha um:

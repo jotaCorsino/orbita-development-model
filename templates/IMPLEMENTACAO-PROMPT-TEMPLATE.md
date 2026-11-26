@@ -6,7 +6,10 @@ Você está atuando como **agente de implementação** deste projeto.
 
 - **Projeto:** [nome canônico]
 - **Repositório:** [owner/repo ou URL]
-- **Branch base:** [branch homologada de origem]
+- **Branch base:** [branch homologada de origem e revisão]
+- **AGENTS / método adotado:** [referência e revisão]
+- **Autorização e gate:** [objeto/escopo/referência]
+- **Fontes, runbook e dependências pertinentes:** [incluindo Skill/Tool escolhida quando aplicável]
 
 Antes de trabalhar, confirme que o repositório, o remoto e a working copy correspondem a este projeto.
 
@@ -18,10 +21,15 @@ Antes de trabalhar, confirme que o repositório, o remoto e a working copy corre
 
 [resultado esperado]
 
+## Critérios de aceite
+
+[critérios verificáveis e dimensões técnicas, funcionais, não técnicas e operacionais quando aplicáveis]
+
 ## Antes de alterar código
 
 1. confirme que está no projeto e repositório corretos;
-2. sincronize/inspecione o estado atual da base conforme o fluxo definido;
+2. inspecione e preserve trabalho local não publicado antes de sincronizar; recupere ref ativa, último gate e Knowledge pertinente;
+   confirme runbook, origem aprovada e destino real antes de operação;
 3. confirme quais arquivos e componentes são relevantes;
 4. identifique riscos ou conflitos com a tarefa;
 5. identifique superfícies sensíveis: dados, autenticação, autorização, entradas, permissões, dependências e exposição.
@@ -59,7 +67,7 @@ Ao final, apresente:
 
 1. resumo do que foi implementado;
 2. arquivos alterados;
-3. testes e build executados;
+3. testes e build executados, evidências reutilizadas com origem/validade, lacunas e N/A justificado;
 4. resultados;
 5. limitações ou pontos pendentes;
 6. riscos de segurança identificados e verificações executadas;

@@ -21,6 +21,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] usuários/contexto identificados
 - [ ] restrições conhecidas registradas
 - [ ] repositório remoto específico do projeto criado/fornecido
+- [ ] revisão adotada do ÓRBITA, fontes e domínios aplicáveis registrados
 - [ ] agente de planejamento confirmou entendimento do método e do projeto
 
 ## C. Fundação documental remota
@@ -72,7 +73,8 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] documentação inicial existe no repositório
 - [ ] base `knowledge/` existe e pode ser consultada por agentes
 - [ ] working copy local está vinculada ao remoto
-- [ ] primeira tarefa funcional possui ID
+- [ ] primeira tarefa funcional possui ID e título humano
+- [ ] abordagem metodológica escolhida pelo humano quando houver alternativas pertinentes e decisão não registrada; Tool e versão/autorizações quando aplicáveis
 - [ ] objetivo está claro
 - [ ] escopo incluído e excluído estão claros
 - [ ] critérios de aceite estão definidos
