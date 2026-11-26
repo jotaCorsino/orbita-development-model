@@ -1,6 +1,6 @@
 # ORB-EVO-001 — 10: Integração metodológica
 
-**Data:** 26/11/2026. **Estado:** especificação consolidada candidata em revisão documental, não publicada como release. **Baseline:** `f6e7132e9e418d046fef6c4f9a03e1cc87b1aca6`. Etapas 01–09B encerradas; PRs #47/#48 integradas. Autorização exclusiva da etapa 10, no mesmo chat. [Plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
+**Data:** 26/11/2026. **Estado:** especificação consolidada candidata homologada documentalmente, integrada pela PR #49 e verificada na main; não publicada como release. **Baseline:** `f6e7132e9e418d046fef6c4f9a03e1cc87b1aca6`. Etapas 01–09B encerradas; PRs #47/#48 integradas. Autorização exclusiva da etapa 10, no mesmo chat. [Plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
 
 ## 1. Decisões de materialização
 
@@ -61,4 +61,11 @@ Alterações limitadas a documentação do núcleo, onboarding, templates, índi
 
 ## 5. Gate e continuidade
 
-11/14 etapas homologadas até aceite da integração. Homologação humana da revisão candidata, integração autorizada, reconciliação e conferência pós-merge. Etapa 11 — validação prática: selecionar pilotos autorizados de perfis distintos, baseline conforme 09 §7, critérios técnicos/não técnicos, recuperação/autoridade/Skills/Tools, evidência, falhas e correções proporcionais. Não implantar Tool restrita, usar dados reais ou modificar consumidores sem autorização específica. Etapa 12: auditoria, licença, decisão de publicação e critérios vigentes de maturidade. Não iniciar 11 nesta etapa.
+12/14 etapas homologadas após aceite da integração. Homologação humana e integração comprovadas; reconciliação e conferência pós-merge registradas no encerramento. Etapa 11 — validação prática: selecionar pilotos autorizados de perfis distintos, baseline conforme 09 §7, critérios técnicos/não técnicos, recuperação/autoridade/Skills/Tools, evidência, falhas e correções proporcionais. Não implantar Tool restrita, usar dados reais ou modificar consumidores sem autorização específica. Etapa 12: auditoria, licença, decisão de publicação e critérios vigentes de maturidade. Não iniciar 11 nesta etapa.
+
+## 6. Encerramento da etapa 10
+
+- Homologação humana registrada na [PR #49](https://github.com/jotaCorsino/orbita-development-model/pull/49#issuecomment-7196903635): “aprovado, pode continuar”, em resposta direta ao pedido de homologação e integração. Aceite documental da especificação candidata, restrito à integração e ao encerramento de 10.
+- Entrega aprovada: `ea8039498ec4489ef1dd35b1f82f46a3e7bee5cb`; merge squash confirmado: `b7fa46c686b938608d6381b87817b0517cc7b1de`. Árvore Git `3c462ef5d0513b759e4312d86b605c0f64999795` idêntica à entrega aprovada; comparação integral das árvores recursivas confirma os 68 arquivos e seus blobs, incluindo os 34 arquivos da alteração. Preservados matriz D-01–D-28, 14 etapas, seis estados e Pausado, COM-001, seleção metodológica humana, fichas Skills e restrições Tools.
+- Fechamento editorial isolado: README, ROADMAP, PROP-007 e este relatório reconciliam o estado após o merge. Nenhuma alteração de regra aprovada, licença, proteção de branch, consumidor, ambiente, ferramenta ou publicação; nenhum teste empírico. PRs #4/#5 e branches documentais preservadas intencionalmente. Sem temporários locais criados.
+- Etapa 10 encerrada no escopo documental. Etapa 11 não iniciada; continuar neste mesmo chat após autorização específica. Conferir pós-merge da alteração editorial na respectiva PR, sem criar outro ciclo apenas para registrar seu SHA.
