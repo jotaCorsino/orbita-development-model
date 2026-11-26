@@ -4,7 +4,7 @@
 
 ## 1. Fundamento e decisão
 
-A [auditoria integral](007-01-AUDITORIA-INTEGRAL.md) identificou D-03 (bootstrap contextual), D-10 (onboarding derivado), D-12 (aplicação dos refinamentos), D-21 (distribuição/versionamento), D-22 (autorreferência). D-01/D-11/D-13/D-15/D-26/D-27 complementam autoridade, critérios, conhecimento, eficiência e segurança. A [auditoria HUB](007-02-AUDITORIA-HUB-E-PROJETOS.md) apresenta E-01/E-02/E-04/E-07/E-08/E-10/E-15/E-19/E-20/E-22: contratos modulares, referências fixadas, instruções ativas desatualizadas, perda de procedimento homologado, possibilidade de reaproveitar prova e fronteiras de acesso. Esses registros não demonstram redução quantitativa de contexto nem que a configuração de IA seja a causa única dos desvios.
+A [matriz metodológica](007-01-AUDITORIA-INTEGRAL.md) e a [síntese independente de requisitos e riscos](007-02-AUDITORIA-HUB-E-PROJETOS.md) orientam este refinamento. Os identificadores lógicos D e E preservam a rastreabilidade do método; não representam fontes externas, projetos ou provas empíricas.
 
 Preservar [papéis](../docs/03-PAPEIS-E-RESPONSABILIDADES.md), [IA no método](../docs/07-IA-NO-METODO.md), [aplicação e Knowledge](../docs/08-APLICACAO-E-EVOLUCAO.md), [identidade](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md), [inicialização](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md), [segurança](../docs/12-SEGURANCA-E-INTEGRIDADE.md), [contrato](../onboarding/CONTRATO-DE-TRABALHO.md), [arquitetura 03](007-03-ARQUITETURA-METODOLOGICA.md) e [continuidade 05](007-05-CHATS-E-CONTINUIDADE.md). A etapa 06 define a composição de configuração e seu uso, não reescreve essas normas.
 

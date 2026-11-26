@@ -4,7 +4,7 @@
 
 ## 1. Fundamento e decisão
 
-D-25 da [auditoria integral](007-01-AUDITORIA-INTEGRAL.md) aponta a ausência planejada de catálogo de ferramentas; D-01/D-04/D-05/D-08/D-13/D-19/D-21/D-23/D-26/D-27 delimitam autoridade, estado, proporcionalidade, limpeza, operação, versões, nomenclatura, avaliação e privacidade. A [auditoria HUB](007-02-AUDITORIA-HUB-E-PROJETOS.md) documenta E-01/E-02/E-04/E-15/E-16/E-17/E-22: fontes independentes, pins e evidências de integração, desvio de runbook, ferramenta de revisão e checker especializado. Não inferir uso ou eficácia universal.
+A [matriz metodológica](007-01-AUDITORIA-INTEGRAL.md) e a [síntese independente de requisitos e riscos](007-02-AUDITORIA-HUB-E-PROJETOS.md) orientam este refinamento. Os identificadores lógicos D e E preservam a rastreabilidade do método; não representam fontes externas, projetos ou provas empíricas.
 
 Preservar [arquitetura 03](007-03-ARQUITETURA-METODOLOGICA.md), [limpeza 04](007-04-LIMPEZA-OPERACIONAL.md), [continuidade 05](007-05-CHATS-E-CONTINUIDADE.md), [configuração 06](007-06-CONFIGURACAO-DE-PROJETOS-IA.md), [Knowledge 07](007-07-EVOLUCAO-DO-KNOWLEDGE.md), [NOM-001/08](007-08-DOCUMENTACAO-E-NOMENCLATURA.md), [autonomia 09](007-09-EFICIENCIA-E-AUTONOMIA.md), [Skills 09A](007-09A-ORBITA-SKILLS.md), [dependências entre projetos](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md), [governança](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md), [segurança](../docs/12-SEGURANCA-E-INTEGRIDADE.md) e [PROP-002](002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md). A árvore da baseline não contém diretório tools/. Nenhuma ferramenta se torna obrigação metodológica por estar registrada.
 
@@ -26,7 +26,7 @@ O primeiro piloto será **documental**, em [tools/README.md](../tools/README.md)
 | Tools | Qual instrumento pode executar ou apoiar a atividade autorizada? |
 | Projeto | Qual requisito, ambiente, decisão e evidência são próprios do produto? |
 
-Uma Tool pode ser software, script, biblioteca auxiliar, plugin, checker, CLI ou serviço externo com uso governado. O catálogo não é inventário de toda dependência transitiva nem marketplace. Ferramenta especializada pode ficar no método/HUB/projeto competente; só promover ao núcleo quando houver utilidade transversal, direitos e segurança. Ferramenta comercial pode ser referenciada mediante permissão aplicável; referência não concede licença. Tool não é agente, papel, Skill, conhecimento local ou gate.
+Uma Tool pode ser software, script, biblioteca auxiliar, plugin, checker, CLI ou serviço externo com uso governado. O catálogo não é inventário de toda dependência transitiva nem marketplace. Ferramenta especializada pode ficar no método/HUB/projeto competente; o núcleo só avalia referências profissionais independentes e ferramentas de terceiros legitimamente disponibilizadas; nenhuma ferramenta particular será incorporada, mesmo sob alias. Ferramenta comercial pode ser referenciada mediante permissão aplicável; referência não concede licença. Tool não é agente, papel, Skill, conhecimento local ou gate.
 
 Categorias candidatas por finalidade: revisão visual/UX; QA e validação; diagnóstico; documentação; automação de engenharia; segurança; infraestrutura/operações; dados/análise. Acrescentar apenas quando houver ficha útil. Usar nome humano e slug estável, identidade e versão na fonte; sem IDs artificiais ou pastas vazias. Separar catálogo público de registros privados; um índice organizacional restrito pode apontar para fonte real sem divulgar nomes, SHAs, contratos privados ou dados de clientes no núcleo público.
 
@@ -146,7 +146,7 @@ Comparar revisão direta, ferramenta pública legitimamente disponível ou desen
 | C16 — vulnerabilidade | Dependência pinada recebe alerta relevante | Comunicar, avaliar impacto e correção autorizada (§3) |
 | C17 — descontinuação | Tool sem manutenção, consumidores ativos | Planejar saída e preservar dados/refs; sem exclusão automática (§3) |
 | C18 — produto independente | Projeto comercial referencia módulo homologado | Direitos e QA próprios; não presumir migração (§6) |
-| C19 — registro público | Fonte privada com detalhes operacionais | Sanitizar e manter referência restrita competente (§2) |
+| C19 — registro público | Fonte privada com detalhes operacionais | Manter fonte e evidência no contexto próprio; não referenciar no núcleo (§2) |
 | C20 — falta de necessidade | Tarefa simples sem benefício demonstrável de ferramenta | Usar abordagem direta, não instalar por catálogo (§4) |
 
 20 cenários confrontados analiticamente; nenhum teste de execução ou medição de ganho.

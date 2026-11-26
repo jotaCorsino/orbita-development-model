@@ -4,7 +4,7 @@
 
 ## 1. Fundamento e decisão
 
-D-08 e D-19 da [auditoria integral](007-01-AUDITORIA-INTEGRAL.md), corroborados pela [auditoria HUB](007-02-AUDITORIA-HUB-E-PROJETOS.md), são a origem deste protocolo. E-03/E-12 demonstram inventário e exclusões nominais autorizadas; E-13 mostra a necessidade de preservar trabalho e distinguir pós-check estrutural de QA autenticado; E-14 evidencia que backup declarado/legível não é recuperação demonstrada. E-05/E-08 reforçam que Git não recupera necessariamente dados, artefatos históricos ou trabalho ativo. Não reabrir essas auditorias. O número de backups em um projeto e a existência de PRs antigas não são regras de retenção universal.
+A [matriz metodológica](007-01-AUDITORIA-INTEGRAL.md) e a [síntese independente de requisitos e riscos](007-02-AUDITORIA-HUB-E-PROJETOS.md) orientam este refinamento. Os identificadores lógicos D e E preservam a rastreabilidade do método; não representam fontes externas, projetos ou provas empíricas.
 
 Preservar [Git e GitHub](../docs/06-GIT-E-GITHUB.md), [governança](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md), [segurança](../docs/12-SEGURANCA-E-INTEGRIDADE.md), [contrato](../onboarding/CONTRATO-DE-TRABALHO.md), [TRB-004](../troubleshooting/004-ENCERRAMENTO-SEM-SINCRONIZACAO-DOCUMENTAL.md) e [arquitetura homologada candidata](007-03-ARQUITETURA-METODOLOGICA.md). A proposta estende o alcance operacional da verificação final já existente, não cria estado de tarefa, aprovação paralela ou sistema de limpeza universal.
 

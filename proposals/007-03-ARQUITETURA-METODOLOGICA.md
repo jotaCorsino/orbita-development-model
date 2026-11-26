@@ -6,7 +6,7 @@ A aprovação desta arquitetura estabelece uma direção de desenho para as etap
 
 ## 1. Problema e decisão de arquitetura
 
-A [auditoria 01](007-01-AUDITORIA-INTEGRAL.md) demonstrou lacunas de composição, precedência e distribuição (D-01/D-21), tensão de escopo (D-06), distinção de estados (D-04) e exposição contextual (D-27). A [auditoria 02](007-02-AUDITORIA-HUB-E-PROJETOS.md) corroborou esses fenômenos em fontes governadas, principalmente E-01/E-02/E-04/E-05/E-06/E-08/E-09/E-15/E-17/E-19/E-22. O modelo abaixo é síntese candidata dessas evidências, não auditoria repetida nem demonstração de eficácia quantitativa.
+A [matriz metodológica](007-01-AUDITORIA-INTEGRAL.md) e a [síntese independente de requisitos e riscos](007-02-AUDITORIA-HUB-E-PROJETOS.md) orientam este refinamento. Os identificadores lógicos D e E preservam a rastreabilidade do método; não representam fontes externas, projetos ou provas empíricas.
 
 | Alternativa | Benefício | Limitação | Decisão proposta |
 | --- | --- | --- | --- |
@@ -84,7 +84,7 @@ Distinguir três perguntas: **quem tem direito de decidir**, **qual contrato apl
 - **Invariantes:** princípios universais e restrições de segurança/autoridade; não podem ser desativados por instrução local do agente. Se houver necessidade de mudar o próprio núcleo, abrir processo de evolução pelo responsável do núcleo, sem alterar retroativamente o que já foi aceito.
 - **Restrições aplicáveis:** políticas obrigatórias do HUB, do método e do ambiente acumulam-se quando compatíveis; maior rigor não implica nova aprovação humana para cada teste. Não importa política de organização não vinculada.
 - **Decisões delegadas:** quando a fonte superior expressamente permite escolha (executor de QA, stack, formalidade, organização interna), o projeto escolhe e documenta conforme risco. A opção específica completa a genérica, não é conflito.
-- **Preferências e defaults:** aplicam-se no escopo declarado se não houver decisão competente em sentido contrário. Perfis QA local-first e iconografia do mantenedor não são requisitos universais. Regra profissional recomendada também não é mandato.
+- **Preferências e defaults:** aplicam-se no escopo declarado se não houver decisão competente em sentido contrário. Preferências de QA e iconografia pertencem ao projeto que as escolhe. Regra profissional recomendada também não é mandato.
 - **Informação factual:** não se herda como verdade eterna. Copiar status de release ou contagem de arquivos não torna o fato atual. Verificar no responsável pela fonte e no ambiente quando pertinente.
 - **Vigência e exceção:** proposta, draft, histórico, recomendação e regra vigente são categorias distintas. Uma exceção só é válida quando permitida pelo contrato, decidida pelo responsável competente e delimitada ao requisito/ambiente/risco. Exceção local não muda o método global.
 
@@ -126,7 +126,7 @@ Ciclo candidato de adoção: identificar fonte e versão aplicável → comparar
 
 Compatibilidade deve ser descrita pelo mantenedor quando existir um contrato versionado (requisitos, mudanças incompatíveis, limites e migração); consumidor confirma no seu contexto. Em ausência de declaração ou prova, manter compatibilidade não verificada. Um índice de dependências pode localizar impactos diretos e indiretos, mas não substitui a avaliação em cada consumidor nem autoriza alteração transitiva.
 
-Publicação do próprio ÓRBITA: árvore pública não equivale à release estável, licença explícita, garantia de compatibilidade ou autorização de redistribuição. Etapa 12 deverá verificar titularidade, condições de licenciamento, critérios de maturidade, versão e distribuição; nenhuma licença é escolhida aqui. Não publicar detalhes privados para tornar pin verificável externamente: sínteses públicas sanitizadas, fonte primária e mapeamento restrito no contexto autorizado.
+Publicação do próprio ÓRBITA: árvore pública não equivale à release estável, licença explícita, garantia de compatibilidade ou autorização de redistribuição. Etapa 12 deverá verificar titularidade, condições de licenciamento, critérios de maturidade, versão e distribuição; nenhuma licença é escolhida aqui. Não publicar detalhes privados para tornar pin verificável externamente: sínteses metodológicas independentes, sem mapeamento de projetos autorizado.
 
 ## 6. Resolução de conflitos e exceções
 
@@ -171,7 +171,7 @@ Knowledge, Skills e Tools são complementares e podem existir em escopo de proje
 
 Exemplos conceituais: uma técnica de descoberta de UX é Skill; a evidência de que um procedimento local de revisão funciona sob determinada versão é Knowledge; o módulo de revisão que gera comentários é Tool; o fluxo de desenvolvimento e publicação de sites é método especializado. Um mesmo produto pode oferecer funções de várias capacidades, mas não misturar fonte intelectual, autoridade normativa, artefato e evidência.
 
-Aprendizado sobe por promoção controlada, não por herança reversa automática. Projeto registra ocorrência e conclusão comprovada → responsável avalia utilidade em outros contextos → método/HUB mantém o que for de sua competência → proposta ao núcleo somente se generalizável, proporcional, sanitizada e homologada. Não copiar logs, clientes, segredos, prompts internos ou código proprietário. Knowledge não precisa virar regra; ferramenta não precisa virar produto do ÓRBITA; técnica não precisa virar fase obrigatória. Etapas 07, 09A e 09B detalharão as respectivas estruturas, seleção e gates, sem implementação antecipada.
+Aprendizados de projeto permanecem em seu próprio contexto. Uma melhoria universal pode ser formulada de maneira autônoma e validada independentemente, sem transferir entrada, conteúdo, evidência, identidade ou referência particular ao núcleo. Aplicar ISO-001; Knowledge não vira regra automaticamente.
 
 ## 9. Walkthrough de consistência documental
 

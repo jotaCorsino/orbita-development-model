@@ -6,7 +6,7 @@
 
 Formalizar NOM-001 (ID candidato) conforme diretriz humana já aprovada: todo nome criado por agente deve ser legível, simples, descritivo e consistente, preservando identidade, numeração e rastreabilidade quando necessárias. Não reabrir essa decisão.
 
-A [auditoria integral](007-01-AUDITORIA-INTEGRAL.md) identificou D-02/D-09 (redundância e derivadas), D-10/D-11/D-12 (onboarding e templates), D-14 (clareza COM-001), D-16 (backlog), D-17/D-18 (status atual e histórico), D-19 (refs antigas), D-22 (autorreferência), D-23 (nomes), D-28 (links). A [auditoria HUB](007-02-AUDITORIA-HUB-E-PROJETOS.md) registra E-06/E-07/E-08/E-13/E-19/E-20/E-21: divergências em painéis e instruções, cadeias de PRs, modelos A/B e necessidade de preservar referências. Não atribuir toda falha a nomenclatura nem afirmar ganho de eficiência não medido.
+A [matriz metodológica](007-01-AUDITORIA-INTEGRAL.md) e a [síntese independente de requisitos e riscos](007-02-AUDITORIA-HUB-E-PROJETOS.md) orientam este refinamento. Os identificadores lógicos D e E preservam a rastreabilidade do método; não representam fontes externas, projetos ou provas empíricas.
 
 Preservar [PROP-001](001-README-ACOMPANHAMENTO-VISUAL.md), [PROP-003](003-CONSOLIDACAO-DOCUMENTAL-SEM-PERDA.md), [PROP-005](005-BACKLOG-DE-EVOLUCAO.md), [PROP-006](006-KNOWLEDGE-BASE-DE-CONHECIMENTO-OPERACIONAL.md), [TRB-004](../troubleshooting/004-ENCERRAMENTO-SEM-SINCRONIZACAO-DOCUMENTAL.md), [Git e GitHub](../docs/06-GIT-E-GITHUB.md), [IA no método](../docs/07-IA-NO-METODO.md), [aplicação e evolução](../docs/08-APLICACAO-E-EVOLUCAO.md), [identidade](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md), [inicialização](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) e [contrato](../onboarding/CONTRATO-DE-TRABALHO.md). Usar arquitetura 03, limpeza 04, continuidade 05, configuração 06 e Knowledge 07 já homologados como candidatos; não torná-los normas antecipadamente.
 
@@ -92,7 +92,7 @@ A fonte é a já competente no projeto, não obrigatoriamente um arquivo novo pa
 
 ## 4. README A/B e organização proporcional
 
-Os modelos A/B observados em E-20 são perfis de apresentação, não novos estados, fases, arquivos obrigatórios ou regras organizacionais universais. A PROP-001 já recomenda painel próximo ao início quando há fases/gates, com status textual e sem progresso artificial. Preservar essa decisão.
+Os modelos ilustrativos A/B são perfis de apresentação, não novos estados, fases, arquivos obrigatórios ou regras organizacionais universais. A PROP-001 já recomenda painel próximo ao início quando há fases/gates, com status textual e sem progresso artificial. Preservar essa decisão.
 
 | Perfil | Quando usar | Visão rápida recomendada |
 | --- | --- | --- |
@@ -219,7 +219,7 @@ Quando divergência pós-merge for puramente editorial e estiver coberta pelo es
 
 Também detalhar [homologação](../templates/HOMOLOGACAO-TEMPLATE.md) por dimensão, com origem/versão/destino e autorização operacional somente quando aplicáveis (D-13, 03/06/09). Fonte normativa de NOM-001 deverá ser localizada na estrutura existente de docs 06/08/10 ou seção própria aprovada na integração, evitando três regras concorrentes. A decisão de localização exata fica para 10. Não alterar arquivos normativos nesta etapa.
 
-Consulta focal desta etapa: a baseline continha os templates README/TASK/HOMOLOGACAO/VERIFICACAO-FINAL, docs 06/08/10, contrato, PROP-001/003/005, índices de propostas e troubleshooting. A leitura confirmou que TASK não explicita ID no título, README já orienta remoção de placeholders, docs 08 resolve colisões PROP/TRB, e PROP-003 protege cobertura semântica. E-20 é evidência documental dos modelos A/B, não leitura nova dos arquivos privados. Uma busca por nome presumido de PROP-001 retornou 404; a árvore canônica identificou o caminho correto, lido em seguida. Não era arquivo ausente nem link quebrado do projeto. Não reauditar a totalidade dos consumidores ou validar links externos nesta etapa.
+Consulta focal desta etapa: a baseline continha os templates README/TASK/HOMOLOGACAO/VERIFICACAO-FINAL, docs 06/08/10, contrato, PROP-001/003/005, índices de propostas e troubleshooting. A leitura confirmou que TASK não explicita ID no título, README já orienta remoção de placeholders, docs 08 resolve colisões PROP/TRB, e PROP-003 protege cobertura semântica. Os modelos A/B são ilustrativos, sem dados particulares. Uma busca por nome presumido de PROP-001 retornou 404; a árvore canônica identificou o caminho correto, lido em seguida. Não era arquivo ausente nem link quebrado do projeto. Não reauditar a totalidade dos consumidores ou validar links externos nesta etapa.
 
 ## 8. Walkthroughs documentais
 
