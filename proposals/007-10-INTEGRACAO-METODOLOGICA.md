@@ -26,7 +26,7 @@ Integrar normas nas fontes existentes e referências nos templates, preservar hi
 | D-14 | contrato §9: cada resposta; COM-001 íntegra | Sem tarefa artificial |
 | D-15 | docs 08, templates/índice Knowledge: critérios, prova, promoção, validade | Índice vazio mantido; uso real 11 |
 | D-16 | docs 08 e README: backlog separado da execução, referência a mecanismo aprovado | Sem duplicar backlog |
-| D-17 | PROP-001 §8: PR #3 mergeada verificada; situação histórica explicitada | Critérios de dois projetos não declarados atingidos |
+| D-17 | PROP-001 §8: PR #3 mergeada verificada; situação histórica explicitada e link de roadmap corrigido | Critérios de dois projetos não declarados atingidos |
 | D-18 | docs 07/08: distinção de história e status atual | PROP-003/004 preservadas |
 | D-19 | docs 06: proteção de refs e conteúdo; PRs #4/#5 preservadas | Sem exclusão/fechamento |
 | D-20 | ROADMAP: requisitos de maturidade preservados | Pilotos/cases em 11, avaliação 12 |
@@ -57,7 +57,7 @@ As propostas são registros das decisões e exemplos detalhados; as normas da ca
 
 ## 4. Escopo e verificações
 
-Alterações limitadas a documentação do núcleo, onboarding, templates, índices, PROP-001, plano e AGENTS raiz. 34 arquivos previstos incluindo este relatório. Nenhuma exclusão ou renomeação. Verificação estática por comparação de baseline, diff, blobs, links relativos novos/afetados (template de README gerado é exceção contextual), 14 etapas, matriz de 28 diagnósticos, seis estados, COM-001, fichas/relatórios anteriores e índice vazio. Registro de resultados concretos na PR; não confundir revisão estrutural com prova de execução por agentes. Não prometer auditoria exaustiva de semântica automatizada, links externos ou teste de ambiente.
+Alterações limitadas a documentação do núcleo, onboarding, templates, índices, PROP-001, plano e AGENTS raiz. 34 arquivos previstos incluindo este relatório. Nenhuma exclusão ou renomeação. Verificação estática por comparação de baseline, diff, blobs, links relativos novos/afetados (template de README gerado é exceção contextual), 14 etapas, matriz de 28 diagnósticos, seis estados, COM-001, fichas/relatórios anteriores e índice vazio. Na primeira execução do verificador, três links de diretório foram classificados incorretamente por barra final; corrigida normalização. Na segunda, um link relativo preexistente de PROP-001 apontava para caminho inexistente e foi corrigido para o ROADMAP da raiz; o link de Knowledge do README-template foi preservado no contexto gerado. A preparação inicial excedeu o limite de chamadas do conector sem alterar a main; a entrega foi dividida em commits na mesma branch. Registro de resultados concretos na PR; não confundir revisão estrutural com prova de execução por agentes. Não prometer auditoria exaustiva de semântica automatizada, links externos ou teste de ambiente.
 
 ## 5. Gate e continuidade
 

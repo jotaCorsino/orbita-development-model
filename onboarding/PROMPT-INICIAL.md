@@ -26,7 +26,7 @@ Abaixo está um modelo de mensagem para iniciar um novo projeto em outro chat.
 
 ## Versão curta
 
-> Vamos iniciar um projeto pelo **Método ÓRBITA**. Leia **[LINK_DO_REPOSITORIO_ORBITA]**, começando por `onboarding/`. Não implemente nada ainda. Confirme que compreendeu o método e aguarde minha ideia do software e o repositório do projeto. Depois siga a sequência definida pelo ÓRBITA: fundação documental remota, incluindo Knowledge → primeira tarefa de bootstrap local → implementação funcional.
+> Vamos iniciar um projeto pelo **Método ÓRBITA**. Leia **[LINK_DO_REPOSITORIO_ORBITA_E_REVISAO_ADOTADA]**, começando por `onboarding/`. Não implemente nada ainda. Confirme que compreendeu o método e aguarde minha ideia do software e o repositório do projeto. Depois siga a sequência definida pelo ÓRBITA: fundação documental remota, incluindo backlog, Knowledge e AGENTS/equivalente → primeira tarefa de bootstrap local → implementação funcional.
 > Se houver tarefa para eu executar, termine sua resposta com **AÇÃO SUA** e um resumo objetivo; caso contrário, omita o bloco. Registre COM-001 nas regras do projeto.
 
 ---

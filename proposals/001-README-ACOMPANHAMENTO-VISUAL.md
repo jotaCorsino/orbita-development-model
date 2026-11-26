@@ -66,7 +66,7 @@ Descrição breve do que é e do problema resolvido.
 
 **Legenda:** ⚪ Planejado / autorizado · 🟡 Em implementação · 🔵 Em validação / aguardando homologação · 🟢 Concluído (homologado) · 🟠 Pausado.
 
-Detalhamento: [Roadmap](docs/ROADMAP.md)
+Detalhamento: [Roadmap](../ROADMAP.md)
 
 ## Problema e solução
 ...

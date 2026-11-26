@@ -66,7 +66,7 @@ A verificação ocorre em duas passagens:
 
 1. identificar o registro ou artefato canônico da mudança;
 2. identificar quais superfícies derivadas podem repetir ou resumir a mesma informação;
-3. comparar a branch com a `main` atual e confirmar que o diff permanece no escopo;
+3. comparar a branch com a `main` atual quando houver integração Git e confirmar que a alteração permanece no escopo; sem PR, conferir origem, autorização e alteração prevista;
 4. conferir IDs, nomes, links, títulos e estados relacionados;
 5. procurar referências claramente obsoletas relacionadas à mudança.
 
