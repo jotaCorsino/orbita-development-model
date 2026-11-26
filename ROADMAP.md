@@ -16,7 +16,7 @@ O objetivo não é criar complexidade por antecipação. Cada nova camada deve s
 
 ## Iniciativa transversal ORB-EVO-001
 
-[Plano de evolução (PROP-007)](proposals/007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md): 14 etapas previstas, 0 homologadas; próximo passo 01 — auditoria integral somente leitura. Abrange governança modular, limpeza, chats, configuração de agentes, Knowledge, documentação, eficiência, Skills e Tools. Contribui para v0.2–v0.4 e avaliação da V1.0, sem substituir os critérios existentes nem declarar nova versão.
+[Plano de evolução (PROP-007)](proposals/007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md): 14 etapas previstas, 0 homologadas; [etapa 01 — auditoria integral](proposals/007-01-AUDITORIA-INTEGRAL.md) entregue para homologação. Etapa 02 não iniciada; depende de fechamento comprovado e autorização. Abrange governança modular, limpeza, chats, configuração de agentes, Knowledge, documentação, eficiência, Skills e Tools. Contribui para v0.2–v0.4 e avaliação da V1.0, sem substituir os critérios existentes nem declarar nova versão.
 
 ## v0.1 — Fundação
 
