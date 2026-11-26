@@ -70,7 +70,7 @@ Uma nova regra deve responder a pelo menos uma pergunta:
 
 ## Registros de aprendizado e evolução
 
-Ocorrências e propostas surgidas durante a aplicação do método devem ser registradas antes de se tornarem regras normativas.
+Ocorrências devem ser registradas no próprio projeto. Propostas de melhoria do núcleo são formuladas como regras independentes e validadas sem importar registros particulares, conforme ISO-001.
 
 As áreas `troubleshooting/` e `proposals/` preservam, respectivamente:
 

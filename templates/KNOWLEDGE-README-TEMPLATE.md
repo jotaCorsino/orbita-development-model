@@ -27,7 +27,7 @@ Consulte este índice antes de tarefas relevantes e abra somente as entradas pot
 - revalidar quando a decisão depender de informação volátil.
 
 - manter data de evidência, escopo/condições e fonte; transições de estado justificadas, sem expiração arbitrária;
-- conflito exige fonte competente e prova atual; promoção entre bases exige direitos, sanitização, aplicabilidade, evidência e aceite do destino; referenciar antes de copiar.
+- conflito exige fonte competente e prova atual; entradas permanecem na base que as produziu; o núcleo não recebe conteúdo de consumidores. Aplicar ISO-001.
 
 ## Isolamento
 

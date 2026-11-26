@@ -77,3 +77,5 @@ Novo chat: `01 — ORB-EVO-001 — Auditoria do ÓRBITA`. Consultar a main vigen
 ## Decisão posterior — neutralidade e isolamento (ISO-001)
 
 Antes de prosseguir com a etapa 11, o responsável determinou que o ÓRBITA não deve conter nem usar como referência seus projetos ou os de outros adotantes. A regra inclui informações anonimizadas, perfis particulares, Tools, casos, registros e contexto herdado. O núcleo deve ser adotável do zero. Preservar as 14 etapas, a seleção humana de Skills e os critérios de maturidade. Pilotos futuros independentes, sintéticos e claramente identificados; nenhum projeto real selecionado. A validação de campo não está concluída. A limpeza da árvore atual não elimina o histórico; distribuição com histórico independente requer gate específico.
+
+[Correção de neutralidade e isolamento](007-11-NEUTRALIDADE-E-ISOLAMENTO.md): preparação dentro da etapa 11, sem nova etapa no denominador. A revisão candidata não está homologada nesta correção; validação de campo anterior foi substituída por proposta de pilotos fictícios independentes. Histórico e distribuição limpa aguardam decisão específica.

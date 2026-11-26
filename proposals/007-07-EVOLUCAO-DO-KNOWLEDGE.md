@@ -14,7 +14,7 @@ Na baseline da etapa 07, a árvore Git não truncada contém apenas knowledge/RE
 | --- | --- |
 | Manter a base sem detalhar evidência, escopo e promoção | Preserva simplicidade, mas deixa margem para reutilização fora da condição comprovada |
 | Criar banco vetorial, memória global automática e ingestão de logs | Complexidade, custo, risco de exposição e propagação de erros sem benefício demonstrado |
-| Evoluir o índice e a ficha existentes com critérios operacionais, revalidação por evento e promoção controlada | Recomendada; amplia confiabilidade sem exigir infraestrutura, nova taxonomia rígida ou novo gate universal |
+| Evoluir o índice e a ficha existentes com critérios operacionais, revalidação por evento e isolamento | Recomendada; amplia confiabilidade sem exigir infraestrutura, nova taxonomia rígida ou novo gate universal |
 
 **Princípio:** descobrir uma vez, comprovar, registrar, recuperar seletivamente e revalidar quando necessário. A base deve reduzir redescoberta, não substituir julgamento, autorização ou inspeção do estado real.
 
@@ -27,7 +27,7 @@ Segundo a [arquitetura candidata](007-03-ARQUITETURA-METODOLOGICA.md), Knowledge
 | Projeto | Particularidades comprovadas do produto, ambiente, dependências, diagnóstico, limitações | Não generalizar ambiente local nem expor dados |
 | Método especializado | Aprendizados comprovados no domínio e condições de aplicação | Não transformar experiência de um consumidor em regra universal |
 | HUB opcional | Conhecimento compartilhável entre projetos vinculados, no alcance da organização | Não presumir acesso cruzado, titularidade ou autorização |
-| Núcleo ÓRBITA | Aprendizados metodológicos generalizáveis, sanitizados e aprovados | Não incorporar configuração, caso privado, regra local ou procedimento específico como universal |
+| Núcleo ÓRBITA | Aprendizados comprovados sobre o próprio método, independentes de consumidores | Não incorporar configuração, caso privado, regra local ou procedimento específico como universal |
 
 | Fonte | Pergunta respondida |
 | --- | --- |
@@ -166,7 +166,7 @@ Knowledge de cada projeto permanece no contexto de origem. Não importar entrada
 | Procedimento de instalação homologado (E-04) | Consultar runbook canônico vigente antes da operação | Copiar o procedimento para KN e executá-lo sem gate |
 | Discussão de técnica profissional | Evidência de uso local comprovado pode gerar lição condicional | Registrar técnica de mercado não aplicada como aprendizado observado |
 
-Esses exemplos remetem a evidências sanitizadas das auditorias ou situações ilustrativas; não foram reexecutados nem constituem novas fichas. Conclusões que apenas repetem regras já homologadas devem permanecer nas fontes normativas. Não criar KN artificial para mostrar atividade.
+Esses exemplos são situações ilustrativas independentes; não constituem evidência empírica nem novas fichas. Conclusões que apenas repetem regras já homologadas devem permanecer nas fontes normativas. Não criar KN artificial para mostrar atividade.
 
 ## 9. Walkthroughs documentais
 
@@ -197,7 +197,7 @@ Os 16 cenários têm tratamento conceitual. Nenhuma entrada real foi criada, atu
 
 | Fonte vigente | Refinamento candidato na etapa 10 |
 | --- | --- |
-| [Docs 08 — aplicação](../docs/08-APLICACAO-E-EVOLUCAO.md) | Fonte normativa de admissão, evidência, escopo, validade, revalidação e promoção |
+| [Docs 08 — aplicação](../docs/08-APLICACAO-E-EVOLUCAO.md) | Fonte normativa de admissão, evidência, escopo, validade, revalidação e isolamento |
 | [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md) | Consulta/captura proporcional, conflito com fonte atual e fronteira de acesso |
 | [Docs 11 — inicialização](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) | Preservar fundação com índice vazio permitido |
 | [Template de entrada](../templates/KNOWLEDGE-ENTRY-TEMPLATE.md) | Explicitar condições, limites, evidência recuperável e relações condicionais |

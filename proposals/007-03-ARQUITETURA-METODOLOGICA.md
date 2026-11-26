@@ -175,7 +175,7 @@ Aprendizados de projeto permanecem em seu próprio contexto. Uma melhoria univer
 
 ## 9. Walkthrough de consistência documental
 
-Os 12 cenários abaixo são exercícios analíticos da arquitetura (resultado esperado e confronto com sua cláusula), inspirados em evidências sanitizadas ou casos sintéticos explicitados. Não são testes executados em projetos, não comprovam compatibilidade real ou ganhos de eficiência.
+Os 12 cenários abaixo são exercícios analíticos da arquitetura (resultado esperado e confronto com sua cláusula), formulados como situações sintéticas independentes. Não são testes executados em projetos, não comprovam compatibilidade real ou ganhos de eficiência.
 
 | Caso | Situação | Resultado esperado / confronto |
 | --- | --- | --- |
@@ -202,7 +202,7 @@ Conferência analítica: cada caso tem caminho de resolução no modelo sem nece
 | D-04 | Dimensões de estado sem enumeração nova | 05, 08, 10–11 |
 | D-06 | Adaptação delegada, exceções e limite inseparável | 09, 10–11 |
 | D-21 | Referência adotada, lock/artefato/destino, ciclo de atualização, licença ainda aberta | 06, 09B, 10–12 |
-| D-27 | Fronteira pública/privada, acesso autorizado e promoção sanitizada | 07, 10–12 |
+| D-27 | Fronteira pública/privada, acesso autorizado e isolamento | 07, 10–12 |
 | D-03/D-12/D-15/D-24/D-25 | Contratos de contexto e capacidades, sem duplicação | 06, 07, 09A, 09B |
 
 Etapas 04–09B refinam protocolos específicos sem antecipar sua implementação global. Etapa 10 confronta o conjunto final com os documentos normativos, remove contradições sem perda semântica e prepara versão candidata. Etapas 11/12 validam e homologam/publicam conforme autorização. Nenhuma mudança de licença, estrutura física, proteção de branch, adoção, operação, migração ou transferência de ferramenta nesta etapa. A arquitetura proposta não cria novos repositórios, serviços, automação, permissões ou obrigação de usar uma plataforma específica.
