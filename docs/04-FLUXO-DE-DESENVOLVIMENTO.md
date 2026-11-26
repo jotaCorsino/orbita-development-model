@@ -22,6 +22,18 @@ A primeira tarefa do agente de implementação em projeto novo, portanto, **não
 
 A especificação completa está em [11 — Inicialização de um novo projeto](11-INICIALIZACAO-DE-NOVO-PROJETO.md).
 
+## Planejamento progressivo e entrega incremental
+
+Manter uma visão de começo, desenvolvimento e encerramento do projeto, com objetivo, resultado esperado, limites, macroetapas, frentes pertinentes, dependências, riscos relevantes e critérios de sucesso. A visão global orienta o percurso e não exige decidir todos os detalhes antecipadamente. Distinguir decisão tomada, hipótese, opção futura e pendência; roadmap não é autorização de execução.
+
+Detalhar a etapa atual e as próximas dependências suficientemente próximas para decidir com segurança; manter as etapas distantes em nível de objetivo, resultados e condições de entrada/saída. Antecipar investigação de risco, arquitetura, segurança, contratos, dados, interfaces e restrições irreversíveis quando puderem invalidar escolhas próximas. Não adiar requisito essencial sob pretexto de agilidade, nem desenhar o produto inteiro por especulação. Revisar o plano diante de evidência nova, preservando decisões ainda válidas.
+
+Decompor cada etapa em problemas, frentes, fatias e tarefas com resultado verificável. Fatia é unidade de valor, redução de risco ou aprendizado verificável, não necessariamente uma tela, arquivo ou camada isolada. Preferir pequenos incrementos coerentes que integrem as frentes necessárias, inclusive ponta a ponta quando isso demonstrar valor e reduzir risco; uma investigação, protótipo ou decisão de arquitetura pode ser fatia quando resolve incerteza real. Evitar tanto tarefas amplas demais para testar e homologar quanto fragmentação em operações triviais.
+
+Para selecionar o próximo trabalho, recuperar estado e dependências comprovados, identificar o problema pendente de maior relevância e competência necessária, consultar Skills conforme a lacuna, propor alternativas e recomendar quando houver escolha metodológica ainda não decidida/delegada. Definir escopo, insumos, resultado, critérios, responsável funcional, restrições e interfaces necessárias no registro existente. Executar dentro da autorização, integrar evidências, obter o gate aplicável e avançar a partir do resultado. A autorização de uma etapa não implica autorização automática das seguintes; um gate pode cobrir conjunto coerente explicitamente autorizado.
+
+Frentes podem avançar em paralelo ou alternar quando as dependências, autoridade, recursos, interfaces e critérios permitirem; não exigir cascata rígida nem concorrência artificial. Mudança material em um contrato ou decisão deve ser reconciliada com frentes afetadas antes de executar o trabalho dependente. Não criar novas sessões, cerimônias, aprovações ou entregas documentais por fragmentação do trabalho. Um chat de coordenação por iniciativa continua sendo o padrão enquanto suficiente.
+
 ## Ciclo padrão
 
 1. **Necessidade** — surge um problema, melhoria ou funcionalidade.
