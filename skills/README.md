@@ -1,6 +1,6 @@
 # ÓRBITA Skills — biblioteca profissional
 
-**Estado:** catálogo piloto candidato da etapa 09A, homologado documentalmente e integrado pela PR #45; incluído na especificação candidata consolidada da etapa 10; a adoção efetiva e publicação dependem dos gates aplicáveis. As sete fichas continuam candidatas à adoção normativa, sem validação empírica. Consulte [proposta e contrato de seleção](../proposals/007-09A-ORBITA-SKILLS.md).
+**Estado:** biblioteca e contrato de seleção homologados e integrados ao método pela ORB-EVO-001 (PRs #45, #49 e #51; fechamento #55/#56). As sete fichas piloto estão disponíveis para consulta e comparação como referências candidatas; não foram admitidas individualmente como Skills vigentes ou obrigatórias. A avaliação heurística teve aplicação focal em cenário fictício; não há comprovação de eficácia em projetos reais. A adoção de abordagem em cada projeto exige a decisão aplicável, não admissão universal da ficha. Consulte [regra vigente](../docs/08-APLICACAO-E-EVOLUCAO.md), [contrato de seleção](../proposals/007-09A-ORBITA-SKILLS.md) e [ensaio limitado](../examples/piloto-orbita/avaliacao-heuristica/README.md).
 
 Selecione pelo problema, não pelo prestígio da metodologia. Leia apenas fichas pertinentes, compare opções viáveis e apresente recomendação fundamentada ao responsável. A escolha de metodologia entre alternativas pertence ao humano; técnicas internas já delegadas não demandam nova decisão, salvo mudança material.
 
@@ -26,7 +26,7 @@ Produto e requisitos; arquitetura; engenharia; segurança; qualidade e testes; d
 
 ## Curadoria
 
-Cada ficha identifica autoria, fonte, versão/data, condições, contraindicações, alternativas, esforço, insumos, execução, entregáveis, evidência, gate e direitos. Reavaliar por mudança de fonte/condições. Preservar IDs e referências existentes; nomes humanos conforme NOM-001. Não duplicar Knowledge, métodos ou Tools, não copiar material protegido, não criar metodologia universal por preferência. Admissão documental não comprova uso ou eficácia; piloto empírico na etapa 11.
+Cada ficha identifica autoria, fonte, versão/data, condições, contraindicações, alternativas, esforço, insumos, execução, entregáveis, evidência, gate e direitos. Reavaliar por mudança de fonte/condições. Preservar IDs e referências existentes; nomes humanos conforme NOM-001. Não duplicar Knowledge, métodos ou Tools, não copiar material protegido, não criar metodologia universal por preferência. A homologação do catálogo não é admissão individual nem comprova eficácia. A etapa 11 encerrou ensaios limitados, incluindo avaliação heurística focal em cenário fictício; preserve seus limites. Outras validações e admissões individuais dependem de necessidade e decisão própria.
 
 ISO-001: fichas profissionais independentes são referências de métodos e técnicas, não registros de projetos. Não incorporar dados, exemplos particulares, preferências ou decisões de consumidores; escolha metodológica continua humana.
 

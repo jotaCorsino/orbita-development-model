@@ -72,10 +72,7 @@ Uma nova regra deve responder a pelo menos uma pergunta:
 
 Ocorrências devem ser registradas no próprio projeto. Propostas de melhoria do núcleo são formuladas como regras independentes e validadas sem importar registros particulares, conforme ISO-001.
 
-As áreas `troubleshooting/` e `proposals/` preservam, respectivamente:
-
-- problemas e ocorrências observadas em uso real;
-- melhorias candidatas ainda sujeitas a análise, teste e homologação.
+No contexto de cada projeto, `troubleshooting/` preserva seus problemas e ocorrências observados em uso real. No núcleo do ÓRBITA, `troubleshooting/` contém apenas diagnósticos independentes e ocorrências do próprio método. `proposals/` registra melhorias candidatas e decisões históricas do respectivo contexto; propostas do núcleo são autônomas, sujeitas a análise, teste e homologação. Não transferir registros particulares ao núcleo.
 
 ### Numeração em trabalho paralelo
 

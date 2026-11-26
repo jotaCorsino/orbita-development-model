@@ -9,7 +9,7 @@ O objetivo não é criar complexidade por antecipação. Cada nova camada deve s
 | Versão / Etapa | Objetivo | Status | Critério de saída |
 |---|---|---|---|
 | **v0.1 — Fundação** | Definir identidade, princípios, papéis, fluxo, governança e anti-padrões | CONCLUÍDA | Documentação fundamental revisada e homologada |
-| **v0.2 — Aplicação prática** | Registrar estudos de caso e confrontar o modelo com projetos reais | EM_ANDAMENTO | Pelo menos dois estudos de caso com aprendizados registrados |
+| **v0.2 — Aplicação prática** | Avaliar a aplicação em projetos reais, mantendo estudos de caso nos respectivos contextos (ISO-001) | EM_ANDAMENTO | Pelo menos dois estudos de caso com aprendizados registrados nos contextos de origem |
 | **v0.3 — Kit operacional** | Ampliar templates e regras de adoção | PENDENTE | Templates testados em projetos de perfis diferentes |
 | **v0.4 — Avaliação** | Definir sinais de saúde e critérios para avaliar aplicação do método | PENDENTE | Checklist ou matriz de avaliação validada em projetos reais |
 | **v1.0 — Modelo estável** | Consolidar uma especificação pública estável | PENDENTE | Conceitos, exemplos e ferramentas suficientemente maduros para adoção externa |
@@ -40,13 +40,13 @@ Inclui:
 
 ### Gate
 
-A fundação v0.1 foi **homologada** e está pronta para publicação.
+A fundação v0.1 foi **homologada**. A revisão metodológica resultante da ORB-EVO-001 já está disponível na main pública; isso não equivale a release formal ou maturidade V1.0.
 
 ## v0.2 — Aplicação prática
 
 Objetivos:
 
-- documentar aplicações reais;
+- documentar aplicações reais exclusivamente em seus contextos de origem;
 - comparar teoria e prática;
 - registrar onde o método precisou ser adaptado;
 - identificar regras que realmente agregam valor e regras que geram burocracia desnecessária.
@@ -57,17 +57,11 @@ Material ilustrativo: [exemplo fictício de adoção](examples/01-APLICACAO-FICT
 
 O onboarding mínimo já existe desde a fundação. Esta etapa deverá ampliar o kit com artefatos operacionais mais especializados.
 
-Itens candidatos:
+**Recursos já existentes e integrados:** [template de tarefa](templates/TASK-TEMPLATE.md), [prompt de implementação](templates/IMPLEMENTACAO-PROMPT-TEMPLATE.md), [template de homologação](templates/HOMOLOGACAO-TEMPLATE.md), [checklist de início de projeto](onboarding/CHECKLIST-NOVO-PROJETO.md) e [verificação final de entrega](templates/VERIFICACAO-FINAL-TEMPLATE.md), além dos templates de bootstrap, README, AGENTS e Knowledge. A disponibilidade documental não demonstra o critério de saída de v0.3.
 
-- template de planejamento;
-- template de decisão técnica;
-- template de Pull Request;
-- checklist de início de tarefa;
-- checklist de entrega do agente;
-- checklist de homologação;
-- exemplo completo de prompt de implementação.
+**Itens ainda candidatos, somente se necessários:** modelos dedicados de planejamento, decisão técnica e Pull Request, checklist específico de início de tarefa ou de entrega e exemplo integral preenchido de prompt de implementação. Os controles já cobertos pelos templates existentes não devem ser duplicados. O gate de teste em projetos de perfis diferentes permanece pendente.
 
-## Avaliação da versão candidata ORB-EVO-001
+## Avaliação da revisão homologada ORB-EVO-001
 
 O [protocolo de eficiência](proposals/007-09-EFICIENCIA-E-AUTONOMIA.md) §7 define baseline, comparação, indicadores, dados ausentes e condições de qualidade para pilotos autorizados na etapa 11. Nenhuma melhoria quantitativa, maturidade v0.2–v0.4 ou V1.0 é inferida da integração documental. A etapa 12 homologou e integrou a revisão de portfólio; a iniciativa ORB-EVO-001 está concluída. Release formal, licença padronizada e distribuição separada não são requisitos dessa finalidade.
 

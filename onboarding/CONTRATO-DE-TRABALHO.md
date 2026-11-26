@@ -356,7 +356,7 @@ Nunca versionar deliberadamente:
 
 Projetos operacionais devem avaliar exposição antes de serem tornados públicos.
 
-Quando houver valor de portfólio, prefira um case sanitizado separado em vez de publicar o ambiente operacional completo.
+Quando houver valor de portfólio, prefira um case sanitizado separado no próprio contexto autorizado do projeto em vez de publicar o ambiente operacional completo. Não transferir esse case para o núcleo do ÓRBITA, nem mesmo sanitizado (ISO-001).
 
 Testes de segurança, análise de dependências, verificação de segredos e revisão especializada devem ser utilizados quando o risco justificar. Testes aprovados não equivalem a prova de ausência de vulnerabilidades.
 
