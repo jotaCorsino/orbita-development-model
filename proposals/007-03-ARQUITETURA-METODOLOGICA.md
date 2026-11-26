@@ -1,8 +1,8 @@
 # ORB-EVO-001 — 03: Arquitetura metodológica
 
-**Data:** 26/11/2026. **Estado:** proposta de arquitetura candidata, entregue para homologação documental; não integrada nem vigente como norma. **Baseline:** `c613f970a6b08e0d1c4376682850c9ef659c0e2d`. PRs #27–#30 integradas; etapas 01 e 02 encerradas e main confirmada. **Autorização:** etapa 03 exclusivamente. [Plano aprovado](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
+**Data:** 26/11/2026. **Estado:** arquitetura candidata homologada, integrada pela PR #31 e verificada na main; ainda não vigente como norma. **Baseline:** `c613f970a6b08e0d1c4376682850c9ef659c0e2d`. PRs #27–#30 integradas; etapas 01 e 02 encerradas e main confirmada. **Autorização:** etapa 03 exclusivamente. [Plano aprovado](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
 
-A aprovação desta arquitetura estabelecerá uma direção de desenho para as etapas seguintes, não alterará o contrato de trabalho vigente nem autorizará adoção/migração de consumidores. Integração normativa, pilotos e publicação continuam nas etapas 10, 11 e 12, com gates próprios. Nenhuma versão nova, licença, ferramenta ou método especializado é publicado por este documento.
+A aprovação desta arquitetura estabelece uma direção de desenho para as etapas seguintes, não alterará o contrato de trabalho vigente nem autorizará adoção/migração de consumidores. Integração normativa, pilotos e publicação continuam nas etapas 10, 11 e 12, com gates próprios. Nenhuma versão nova, licença, ferramenta ou método especializado é publicado por este documento.
 
 ## 1. Problema e decisão de arquitetura
 
@@ -213,11 +213,18 @@ Etapas 04–09B refinam protocolos específicos sem antecipar sua implementaçã
 
 - Baseline confirmada, fontes normativas pertinentes e diagnósticos anteriores consultados seletivamente, sem repetição da auditoria.
 - Entrega candidata contempla camadas, composição, responsabilidades, precedência por assunto, herança, referências, versões, resolução de conflito, ressalvas e capacidades transversais; 12 walkthroughs documentais, sem teste operacional.
-- Documento de proposta e referências no README, ROADMAP e PROP-007 constituem o único delta pretendido. 2/14 etapas homologadas até a aprovação e integração da etapa 03; não alterar maturidade v0.x, contrato, templates, consumidores ou registros históricos.
+- Documento de proposta e referências no README, ROADMAP e PROP-007 constituem o único delta pretendido. 3/14 etapas homologadas após aprovação e integração da etapa 03; não alterar maturidade v0.x, contrato, templates, consumidores ou registros históricos.
 - Decisões analíticas: escolha de composição modular, tabela de precedência por assunto, dimensões de evidência e esquema mínimo de referência como proposta; não formato de arquivo obrigatório. Sem certificação de segredos/compatibilidade/licença; fontes públicas e aliases das auditorias, nenhuma informação operacional privada adicional.
 - Nenhum clone local, backup, script de servidor ou artefato de ambiente foi criado. PRs antigas #4/#5 observadas e preservadas; nenhuma exclusão. A branch e PR desta entrega são rastros intencionais. Não criar Knowledge duplicado, pois o desenho é candidato, nem backlog duplicado das etapas planejadas.
-- Gate: homologação humana da proposta de arquitetura, integração autorizada, conferência pós-merge e reconciliação documental; não declarar nova regra vigente. Próxima etapa 04 somente mediante autorização específica.
+- Gate: homologação humana e integração comprovadas, conferência pós-merge e reconciliação documental registradas no encerramento abaixo; nenhuma nova regra vigente. Próxima etapa 04 somente mediante autorização específica.
 
 ## 12. Continuidade condicional — etapa 04
 
 Permanecer no chat da iniciativa enquanto houver contexto suficiente. Após fechamento comprovado de 03, recuperar main, plano, auditorias 01/02 e arquitetura candidata; etapa 04 deverá desenvolver **protocolo proporcional de limpeza operacional**, usando D-08/D-19 e E-03/E-12/E-13/E-14 como insumos, preservando fonte, backups oficiais, evidências e trabalho ativo. Não executar deleções, alterar consumidores ou aplicar protocolo antes do gate correspondente. Não iniciar etapa 04 até autorização específica. Se a sessão for interrompida, registrar último gate, refs, pendências e escopo autorizado antes de retomar.
+
+## 13. Encerramento da etapa 03
+
+- Homologação humana registrada na [PR #31](https://github.com/jotaCorsino/orbita-development-model/pull/31#issuecomment-7192796191): “aprovado, pode continuar”. Autorização restrita à integração e encerramento documental da arquitetura candidata; não autoriza execução de 04 ou vigência normativa.
+- Entrega aprovada: `94bc007625d228e54cab9724f24273ceee5899e8`; merge squash confirmado: `49b0899b495b13ec12364abf97eb3e60fc4496f7`. Árvore Git `3a68831972b743ac2545fad362458dad26b8631a` idêntica à entrega aprovada; quatro arquivos relidos diretamente na main. Preservados os 12 walkthroughs analíticos, as 14 etapas e a decisão de continuidade no mesmo chat.
+- Fechamento editorial isolado conforme TRB-004. Sem alteração de contrato vigente, templates, consumidores, licença, ferramentas ou maturidade. Nenhum teste operacional adicional, piloto, verificação de compatibilidade empírica ou publicação formal; limitações da proposta mantidas. Nenhuma exclusão ou limpeza destrutiva; PRs #4/#5 e branches documentais preservadas como referências intencionais.
+- Etapa 03 encerrada no escopo documental. Etapa 04 não iniciada; prosseguir neste mesmo chat somente após autorização específica. Conferir o pós-merge da alteração editorial na respectiva PR, sem abrir novo ciclo apenas para registrar seu próprio SHA.
