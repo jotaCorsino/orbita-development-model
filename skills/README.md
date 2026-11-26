@@ -1,6 +1,6 @@
 # ÓRBITA Skills — biblioteca profissional
 
-**Estado:** catálogo piloto candidato da etapa 09A; ainda não integra as regras vigentes. Consulte [proposta e contrato de seleção](../proposals/007-09A-ORBITA-SKILLS.md).
+**Estado:** catálogo piloto candidato da etapa 09A, homologado documentalmente e integrado pela PR #45; ainda não integra as regras vigentes. As sete fichas continuam candidatas à adoção normativa, sem validação empírica. Consulte [proposta e contrato de seleção](../proposals/007-09A-ORBITA-SKILLS.md).
 
 Selecione pelo problema, não pelo prestígio da metodologia. Leia apenas fichas pertinentes, compare opções viáveis e apresente recomendação fundamentada ao responsável. A escolha de metodologia entre alternativas pertence ao humano; técnicas internas já delegadas não demandam nova decisão, salvo mudança material.
 
