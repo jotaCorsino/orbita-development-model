@@ -1,10 +1,10 @@
 # ORB-EVO-001 — 12: Auditoria final e publicação
 
-**Estado:** em andamento — auditoria da baseline e proposta de distribuição para homologação. **Data:** 26/11/2026. **Baseline:** `8c20cddcde82d334ab75bce6667dd504816cc165`, árvore `fe88066dc556208da91c4495b8b2d719f70f2b29`. PRs #51/#54 integradas. A etapa 12 foi autorizada, mas licenciamento, mudança de visibilidade, criação de destino e publicação são decisões próprias. [Plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
+**Estado:** em andamento — auditoria da baseline e revisão de portfólio para homologação. **Data:** 26/11/2026. **Baseline:** `8c20cddcde82d334ab75bce6667dd504816cc165`, árvore `fe88066dc556208da91c4495b8b2d719f70f2b29`. PRs #51/#54 integradas. A etapa 12 foi autorizada. A finalidade foi esclarecida pelo responsável: uso próprio, portfólio público e possibilidade de terceiros aplicarem o método, sem licença formal. Mudanças de visibilidade e distribuição independente não são autorizadas. [Plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
 
 ## Em termos práticos
 
-O método está documentado e foi validado em exercícios limitados. A versão atual está adequada para preparar uma edição experimental, não para declarar maturidade V1.0. O repositório existente é público e contém histórico de desenvolvimento; a distribuição deve ter histórico independente e não encaminhar usuários para o histórico anterior. Não há licença registrada. O titular precisa decidir os direitos que concederá e autorizar o destino antes da publicação.
+O método está documentado e foi validado em exercícios limitados. O objetivo é disponibilizar a revisão homologada no portfólio existente e continuar usando o método nos projetos do responsável, sem transformar a iniciativa em produto de distribuição. Terceiros podem conhecer e aplicar o método. Não declarar maturidade V1.0. O histórico do repositório atual continua acessível; a neutralidade da árvore corrente não equivale a limpeza histórica.
 
 ## 1. Auditoria da revisão
 
@@ -30,34 +30,18 @@ A varredura não é auditoria integral de segredos, titularidade, âncoras, link
 | v0.2 Aplicação prática | Ensaios fictícios; não há dois estudos de caso reais admissíveis como evidência | Em andamento |
 | v0.3 Kit operacional | Templates e onboarding ampliados; comparação estrutural e ensaios limitados, não teste em projetos reais de perfis distintos | Manter pendente |
 | v0.4 Avaliação | Protocolo e indicadores definidos; não matriz validada em projetos reais, sem baseline causal de eficiência | Manter pendente |
-| v1.0 Modelo estável | Especificação candidata consolidada; falta avaliação suficiente de adoção externa, kit, eficácia e direitos de distribuição | Manter pendente |
+| v1.0 Modelo estável | Especificação candidata consolidada; falta avaliação suficiente de adoção externa, kit e eficácia | Manter pendente |
 
-Não alterar os critérios ou usar 13/14 etapas como porcentagem de maturidade. A política ISO-001 proíbe importar casos reais ao núcleo, inclusive anonimizados. Uma avaliação futura pode ocorrer no próprio contexto do adotante, com comprovação independente de critério do método sem transferência de dados ou referências; nenhum critério é considerado atingido por essa possibilidade. Recomenda-se rótulo de pré-lançamento **v0.2.0-preview.1**, se aprovado: indica trabalho em direção à v0.2, não conclusão de seu gate. Alternativa: não publicar até v1.0. Não atribuir tag agora.
+Não alterar os critérios ou usar 13/14 etapas como porcentagem de maturidade. A política ISO-001 proíbe importar casos reais ao núcleo, inclusive anonimizados. Uma avaliação futura pode ocorrer no próprio contexto do adotante, com comprovação independente de critério do método sem transferência de dados ou referências; nenhum critério é considerado atingido por essa possibilidade. Não impor rótulo de versão, tag ou release formal para a finalidade de portfólio; a revisão Git identificará a entrega homologada. A proposta anterior de pré-lançamento não foi homologada.
 
-## 3. Licenciamento — decisão do titular
+## 3. Decisão do responsável — finalidade e uso
 
-Fontes oficiais consultadas em 26/11/2026: [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.pt-br), [BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br), [FAQ Creative Commons](https://creativecommons.org/faq/), [MIT — Open Source Initiative](https://opensource.org/license/mit), [GitHub — licenciamento](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
+O ÓRBITA é um método desenvolvido para uso próprio e apresentado no portfólio público do autor. O responsável permite que outras pessoas conheçam e apliquem o método. Não criar licença padronizada, pacote comercial ou novo requisito de licenciamento. Não inferir autorização ampla de redistribuição de materiais protegidos, nem conceder direitos de terceiros. Preservar autoria e referências profissionais; os controles de direitos de uso de Skills e Tools já aprovados permanecem aplicáveis.
 
-| Opção documental | Direitos principais | Trade-off |
-| --- | --- | --- |
-| CC BY 4.0 | Compartilhar/adaptar inclusive comercialmente, crédito, licença e indicação de mudanças | Adoção ampla; não obriga derivação distribuída a manter licença |
-| CC BY-SA 4.0 | Direitos semelhantes e licença igual/compatível para adaptações compartilhadas | Reciprocidade; maior restrição para redistribuição de adaptações |
-| Reservar direitos / licença específica | Permissões dependem de autorização e termos definidos pelo titular | Menor abertura; não declarar open source ou livre reutilização |
+## 4. Publicação proporcional
 
-Recomendação condicional à intenção de adoção ampla, inclusive em projetos comerciais: **CC BY 4.0 para textos, fichas próprias e templates; MIT para código próprio efetivamente distribuído, com delimitação explícita dos arquivos e trechos**, preservando avisos e atribuições. CC não é recomendada para software; MIT permite uso, modificação e distribuição com manutenção do aviso de licença. Licença pública não revogável para quem cumpre termos; não publicar sem confirmar titularidade e intenção. Não aplicar a marcas/logos, materiais de terceiros, dependências, direitos não controlados ou projetos criados usando o método. O método não exige que produtos independentes adotem a mesma licença; reprodução de materiais protegidos continua sujeita aos termos aplicáveis. Administração GitHub não prova titularidade. Direitos e atribuições nas fichas devem ser conferidos na preparação do pacote; síntese própria e referência não equivalem a permissão de republicar materiais externos. Sem licença não presumir permissões gerais; repositório público admite visualização/fork conforme termos da plataforma. Nenhum LICENSE criado ou direito concedido. Não é parecer jurídico.
+Manter como proposta de encaminhamento a integração da revisão homologada na main do repositório público atual, sem exigir outro repositório, pacote, tag, release formal ou alteração de visibilidade. O [inventário de distribuição](007-12-INVENTARIO-DE-DISTRIBUICAO.md) fica preservado como estudo opcional, não como tarefa ou requisito desta entrega. Não reescrever ou excluir histórico. A existência de histórico anterior e referências administrativas não é resolvida pela atualização da árvore; não afirmar anonimato, remoção de cópias ou distribuição de histórico independente. Caso haja necessidade de tratar a exposição anterior, exigir decisão específica do responsável sobre o escopo. ISO-001 permanece integralmente aplicável ao núcleo, aos exemplos e ao contexto de adoção.
 
-## 4. Estratégia de distribuição
+## 5. Gate e verificação final
 
-| Alternativa | Avaliação |
-| --- | --- |
-| Publicar release diretamente no repositório atual | Rejeitada: histórico e PRs antigos continuam acessíveis |
-| Reescrever histórico | Não recomendada: risco de romper refs, cópias, diffs e evidências; não garante remoção de exposição |
-| Repositório novo, independente, com origem vazia | Recomendada: preservar desenvolvimento e iniciar distribuição somente com conteúdo revisado e sem ancestralidade antiga |
-
-Proposta: manter repositório de desenvolvimento existente como fonte de manutenção, restringir sua visibilidade mediante autorização específica, criar repositório público independente de nome sugerido **orbita** (disponibilidade não verificada), inicialmente vazio/privado para preparação e homologação. Não fork, clone com .git, espelhamento ou importação de histórico. A mudança de visibilidade não retira cópias já obtidas. GitHub [documentação de visibilidade](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility). O conector disponível não oferece ações de criar repositório, alterar visibilidade ou publicar release/tag; preparar conteúdo via Git quando destino autorizado e acessível, e executar as operações restantes por fluxo explícito do titular, sem contornar permissões.
-
-[Inventário de distribuição](007-12-INVENTARIO-DE-DISTRIBUICAO.md) delimita a exportação. Preservar conteúdo normativo e orientações complementares, retirar status administrativo, links a histórico, refs antigas e relatórios de execução do kit público. Não simplesmente copiar toda main. Materializar fontes de apoio em guias independentes, conferir cobertura e redirecionar links. Não usar dados de consumidor, nem mesmo anonimizados. Base Knowledge vazia, catálogo Tools sem ferramentas admitidas. Manter Skills profissionais com autoria, fonte e limites. A autoria do método já aparece no README; confirmar titularidade e crédito para licenciamento; não incluir identificadores de projetos, registros de conversas ou contas de terceiros.
-
-## 5. Gate e verificação final da publicação
-
-Após aprovação: (1) confirmar direitos e destinação, nome/visibilidade e permissões; (2) materializar pacote independente a partir de inventário com alterações documentadas e revisão de guias/links/atribuições; (3) verificar conteúdo, manifesto, integridade, ausência de vínculos antigos, referências transitivas, templates gerados e árvore inicial sem pai histórico; (4) apresentar árvore/pacote e licença exatos para homologação; (5) publicar somente revisão homologada e confirmar destino, visibilidade, conteúdo, versão/release e licença; (6) reconciliar roadmap, manter histórico de manutenção autorizado e não declarar maturidade não demonstrada. Nenhuma exclusão de refs, alteração de visibilidade, mudança de consumidor, licença ou release nesta rodada. 13/14 etapas homologadas. Etapa 12 continua aberta.
+Conferir o delta da PR #55, preservar as normas e as evidências homologadas, validar links e coerência de README, ROADMAP e planejamento, verificar resíduos e apresentar a revisão exata ao responsável. A integração na main somente após homologação e autorização aplicável; após o merge, confirmar a árvore e reconciliar o acompanhamento. Nenhuma mudança de consumidor, visibilidade, histórico ou licença. 13/14 etapas homologadas; etapa 12 aberta até aceite e verificação de integração.

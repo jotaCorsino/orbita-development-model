@@ -1,6 +1,6 @@
 # Inventário de distribuição independente — etapa 12
 
-**Natureza:** lista de origem para preparar o pacote, não pacote produzido ou publicado. Baseline `8c20cddcde82d334ab75bce6667dd504816cc165`. A lista fixa os arquivos e blobs Git da revisão auditada; as reconciliações documentais da etapa 12 e ajustes de distribuição serão verificados contra a revisão de origem efetivamente aprovada. Não transportar histórico, autoria de commits, PRs, logs, hashes históricos ou links para repositório de manutenção no pacote. Não usar este inventário administrativo como conteúdo da distribuição.
+**Natureza:** estudo de distribuição independente preservado para eventual necessidade futura; não é pacote produzido, publicado ou requisito da etapa 12. A finalidade esclarecida pelo responsável é uso próprio e portfólio público, sem licença formal. Não materializar este inventário sem autorização específica. Baseline `8c20cddcde82d334ab75bce6667dd504816cc165`. A lista fixa os arquivos e blobs Git da revisão auditada; as reconciliações documentais da etapa 12 e ajustes de distribuição serão verificados contra a revisão de origem efetivamente aprovada. Não transportar histórico, autoria de commits, PRs, logs, hashes históricos ou links para repositório de manutenção no pacote. Não usar este inventário administrativo como conteúdo da distribuição.
 
 ## Seleção de origem
 
@@ -65,7 +65,7 @@ Omitir a pasta proposals administrativa do pacote; não eliminar seu conteúdo n
 - preflight e outras referências pertinentes de troubleshooting: recuperar as regras aprovadas sem origem particular;
 - índice de evolução público: explicar como propor melhorias futuras, sem importar o registro administrativo anterior.
 
-Reconciliar README, ROADMAP, AGENTS, índices Skills/Tools, docs e troubleshooting com as fontes finais. Exemplos e guias devem funcionar sem repositório de manutenção, histórico ou dados de consumidor. Não converter referências profissionais em materiais licenciados pelo ÓRBITA. Criar avisos de licença e crédito somente após decisão do titular; distinguir documentação, código, terceiros e marca. A lista final do pacote pode divergir da seleção de origem porque guias e licenças precisam ser materializados e homologados.
+Reconciliar README, ROADMAP, AGENTS, índices Skills/Tools, docs e troubleshooting com as fontes finais. Exemplos e guias devem funcionar sem repositório de manutenção, histórico ou dados de consumidor. Não converter referências profissionais em materiais licenciados pelo ÓRBITA. Preservar autoria e direitos de terceiros. Não criar licença formal para o portfólio; qualquer futura distribuição distinta exigirá decisão própria. A lista final de um eventual pacote poderá divergir da seleção de origem, conforme guias e conteúdo efetivamente autorizados.
 
 ## Mantidos exclusivamente na manutenção
 
@@ -116,5 +116,5 @@ Não incluir logs, PRs, histórico Git, tags ou branches de origem. O laboratór
 - Conteúdo selecionado e mapeamento origem→destino com cobertura das regras e referências; nenhum requisito dependente perdido.
 - Varredura textual de identificadores, segredos, dados e URLs históricas; conferência manual de sentido; links relativos/âncoras/contexto gerado; nenhuma referência necessária ao repositório de origem.
 - Sete fichas profissionais com autoria, fontes, limites e direitos revistos; Knowledge inicial vazio; catálogo Tools vazio; ISO-001, COM-001/002, NOM-001, Satélites e gates preservados.
-- Licença e titularidade aprovadas; versão experimental e limites explícitos; árvore inicial independente (sem ancestralidade anterior); manifesto e hashes do pacote final.
+- Para eventual distribuição separada: direitos de uso e limites explícitos; árvore inicial independente (sem ancestralidade anterior); manifesto e hashes do pacote final. Não exigir licença padronizada.
 - Verificação após publicação no destino real; não declarar limpeza histórica de cópias preexistentes.
