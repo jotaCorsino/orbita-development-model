@@ -51,9 +51,7 @@ Objetivos:
 - registrar onde o método precisou ser adaptado;
 - identificar regras que realmente agregam valor e regras que geram burocracia desnecessária.
 
-Primeiro estudo de caso:
-
-- [Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md) — [case público sanitizado](https://github.com/jotaCorsino/hesk-recurring-tickets).
+Material ilustrativo: [exemplo fictício de adoção](examples/01-APLICACAO-FICTICIA.md). Não constitui estudo de caso real nem altera os critérios de maturidade; aplicações de campo podem ser avaliadas no contexto de seus responsáveis, sem que o núcleo incorpore dados ou referências de projetos.
 
 ## v0.3 — Kit operacional
 

@@ -20,6 +20,10 @@
 
 O núcleo pode ser adotado diretamente ou combinado com HUB organizacional e métodos especializados explicitamente aplicáveis. [Knowledge](docs/08-APLICACAO-E-EVOLUCAO.md) preserva aprendizados; [Skills](skills/README.md) apoia seleção humana de abordagens; [Tools](tools/README.md) orienta consumo governado de ferramentas. Essas capacidades não são camadas obrigatórias nem conferem autoridade. Consulte [papéis e composição](docs/03-PAPEIS-E-RESPONSABILIDADES.md).
 
+## Neutralidade e isolamento de contexto — ISO-001
+
+O ÓRBITA fornece método, instruções genéricas, templates e referências profissionais independentes. Não fornece contexto de projetos de terceiros ou do mantenedor, ainda que anonimizado, nem exige acesso a repositórios externos de projetos. Novo projeto começa com identidade, requisitos, decisões, backlog e Knowledge próprios; Knowledge inicial vazio. HUB, métodos, perfis, ferramentas e fontes externas só são incorporados por escolha explícita do responsável daquele projeto, no escopo definido. Não consultar memória, chats, arquivos, integrações ou repositórios de outros projetos para fundamentar decisões sem autorização própria. Não importar contexto por associação de conta, titular, organização ou semelhança. [Regra de isolamento](docs/12-SEGURANCA-E-INTEGRIDADE.md).
+
 ## Como funciona
 
 O ÓRBITA parte de uma ideia simples: **o desenvolvimento assistido por IA funciona melhor quando cada parte do trabalho tem um papel e um lugar definidos**.
@@ -200,13 +204,11 @@ O método foi desenhado para reduzir alguns padrões que podem comprometer clare
 
 A discussão completa está em [Anti-padrões](docs/09-ANTI-PADROES.md).
 
-## Preferência de validação do mantenedor — QA local-first
+## Validação proporcional
 
-Para projetos dirigidos por este mantenedor, consultar [perfil QA local-first](onboarding/PERFIL-MANTENEDOR-VALIDACAO-LOCAL.md): **testes locais reproduzíveis como padrão**, GitHub Actions excepcional e manual. Isso não reduz testes ou aceites obrigatórios, e não constitui exigência universal para outros usuários do ÓRBITA.
+Escolher execução local, CI ou ambiente isolado conforme risco, recursos, independência e requisitos do projeto. Nenhuma plataforma, coleção visual ou preferência pessoal é padrão obrigatório. Aplicar [governança](docs/05-GOVERNANCA-E-HOMOLOGACAO.md) e [segurança](docs/12-SEGURANCA-E-INTEGRIDADE.md).
 
-## Perfil de iconografia para projetos do mantenedor
 
-Quando um **site ou sistema com interface** for desenvolvido sob a direção do mantenedor deste repositório, consultar o [perfil ICON-001 — Iconify](onboarding/PERFIL-MANTENEDOR-ICONOGRAFIA.md) e registrar sua adoção no repositório específico. A preferência privilegia coleções licenciadas e coerentes (Tabler como padrão inicial), em vez de ícones criados por IA. **É uma preferência de projeto, não uma regra universal do Método ÓRBITA.**
 
 ## Adoção
 
@@ -218,15 +220,9 @@ Ela define a ordem de leitura, o contrato de trabalho esperado, o checklist de i
 
 O objetivo é permitir que um novo agente compreenda **como trabalhar** antes de receber a descrição do software e o repositório específico que será desenvolvido.
 
-## Estudo de caso
+## Exemplos independentes
 
-O ÓRBITA não nasceu apenas como conceito. Seus princípios vêm sendo aplicados em projetos reais.
-
-O primeiro estudo de caso documentado é **[Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md)**. Sua representação pública está no repositório sanitizado **[hesk-recurring-tickets](https://github.com/jotaCorsino/hesk-recurring-tickets)**.
-
-O case mostra a evolução por prova de conceito, persistência, scheduler, segurança contra duplicidade, processamento em lote, interface administrativa, implantação e operação. Cada etapa avançou por implementação, validação, evidências e homologação antes da próxima.
-
-O projeto operacional real permanece separado da representação pública. Essa separação passou a fazer parte do próprio aprendizado do ÓRBITA: **portfólio deve expor decisões, arquitetura, processo e resultados sem exigir a exposição do ambiente operacional completo**.
+O método é autônomo e aplicável desde o início de um projeto. Os exemplos são fictícios, construídos para explicar conceitos ou testar controles; não carregam informações, código, arquitetura, identidade, decisões ou dados de outros projetos. [Exemplo de adoção](examples/01-APLICACAO-FICTICIA.md).
 
 ## Troubleshooting e aprendizados observados
 

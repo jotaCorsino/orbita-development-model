@@ -188,7 +188,7 @@ Ao final de uma tarefa relevante, deve-se verificar proporcionalmente se surgiu 
 
 Identificar tipo de evidência (inspeção estática, teste isolado, operação datada, documentação de fornecedor ou relato), origem, data da comprovação, versão/ambiente/condições e limites. Relato não equivale a observação direta; hipótese nunca Vigente; prova parcial sustenta somente conclusão parcial. Distinguir data de edição da data de verificação. Estados Vigente/Revalidar/Obsoleto mantidos; transição justificada por mudança de condição, conflito, substituição ou nova prova, sem validade arbitrária, reativação só com evidência. Revalidar não é depósito de hipóteses. Consultar índice local seletivamente; fontes externas só pertinentes/autorizadas. Conflitos não se resolvem pelo registro mais recente; consultar fonte competente e estado atual. Atualizar índice e entrada equivalente, preservar história e ID. Base vazia é válida.
 
-Knowledge pode existir no projeto, método, HUB ou núcleo sem hierarquia obrigatória. Referenciar antes de copiar; promoção requer conclusão generalizável demonstrada, direitos, privacidade, sanitização, prova e aceite do destino competente. Preservar origem. Não compartilhar automaticamente, ingerir logs brutos ou criar repositório adicional obrigatório. [Templates Knowledge](../templates/KNOWLEDGE-ENTRY-TEMPLATE.md).
+Knowledge de projeto pertence ao contexto que o produziu. HUB ou método especializado podem manter bases próprias explicitamente escolhidas pelo responsável, sem herança automática. O Knowledge do núcleo só pode registrar conclusões comprovadas sobre o próprio método, usando evidência independente e sem referências, aliases ou dados oriundos de outros projetos. Não promover entradas de projeto ao núcleo, mesmo sanitizadas. Uma nova regra universal pode ser proposta sem transferir a entrada, seu conteúdo particular ou sua origem e validada em cenário independente. Não copiar entre projetos sem autorização específica do responsável e finalidade legítima; um novo projeto inicia com base vazia.
 
 ## NOM-001 — Nomenclatura humanizada
 
@@ -206,34 +206,9 @@ Catálogo por problema/competência, não prompt de papel ou obrigação de fram
 
 **Seleção:** recuperar objetivo, restrições, incerteza, acesso e critérios. Quando houver alternativas metodológicas viáveis, apresentar opções pertinentes e condicionais (inclusive abordagem direta/manter método vigente quando cabível), comparar adequação, esforço/custo, riscos, limites, entregáveis e provas; explicitar recomendação contextual e justificar. O humano escolhe antes da execução dependente, salvo escolha anterior ou delegação expressa registrada. Não fabricar alternativa se só uma for admissível; explicar exclusões. Passos internos já delegados não exigem microgate. Registrar escolha, revisão, adaptação e evidência no plano/tarefa existente; mudança material reabre apenas a decisão afetada. Não confundir escolha com autorização de contato, dados, custo, deploy ou homologação. [Contrato detalhado e piloto](../proposals/007-09A-ORBITA-SKILLS.md).
 
-## Projeto operacional e case público
+## Exemplos, conhecimento e evolução sem transferência de contexto
 
-Um projeto operacional não precisa ser público para demonstrar competência.
-
-Quando o repositório real contém infraestrutura, dados, configurações internas ou detalhes de manutenção desnecessários ao público, o padrão recomendado é:
-
-```text
-projeto operacional privado
-        ↓
-seleção e sanitização
-        ↓
-case público independente
-```
-
-O case público deve priorizar:
-
-- problema;
-- arquitetura;
-- decisões;
-- processo de desenvolvimento;
-- testes e evidências;
-- segurança;
-- resultados;
-- aprendizados.
-
-Ele não deve depender da exposição de credenciais, dados reais, caminhos internos, IDs operacionais ou detalhes de infraestrutura.
-
-Esse princípio foi incorporado ao método a partir do estudo de caso [Tickets Recorrentes HESK](../examples/01-TICKETS-RECORRENTES-HESK.md).
+O núcleo descreve princípios, protocolos e exemplos independentes, fictícios e identificados como tais. Um projeto pode manter suas próprias evidências e materiais de portfólio fora do núcleo, sob responsabilidade e autorização próprias. Não importar casos, registros, aliases, decisões, dados ou referências de projetos reais para documentação, treinamento, exemplos, pilotos ou bases do ÓRBITA. A evolução pode ser motivada por experiência, mas a mudança incorporada ao núcleo deve ser formulada como regra autônoma, com validação independente por fixtures genéricas. Não apresentar cenário fictício como evidência real.
 
 ## Portfólio
 
