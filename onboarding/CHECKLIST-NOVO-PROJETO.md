@@ -43,6 +43,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] estados de acompanhamento definidos
 - [ ] critérios de aceite/homologação definidos
 - [ ] riscos de segurança/publicação avaliados
+- [ ] composição inicial de Satélites, responsabilidades e interfaces pertinentes homologadas no planejamento, registradas nas fontes canônicas; mudanças materiais sujeitas ao gate pertinente
 - [ ] fundação documental confirmada ao responsável humano
 
 ## D. Preparação local e agente de implementação

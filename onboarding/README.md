@@ -163,6 +163,8 @@ Se o agente não possuir permissão de escrita, deve preparar a fundação para 
 
 ---
 
+Identificar e propor os [Satélites](../docs/03-PAPEIS-E-RESPONSABILIDADES.md#satélites) necessários, responsabilidades e interfaces. Homologar a composição com o responsável no planejamento/fundação existente, sem gate separado por Satélite; detalhar as necessidades futuras conforme o projeto avança.
+
 ## 5. Cadeia padrão de inicialização
 
 O fluxo esperado de um projeto novo é:

@@ -67,7 +67,7 @@ Um mesmo produto de IA pode tecnicamente exercer mais de um papel, mas os papéi
 
 ## Satélites
 
-O ÓRBITA organiza o trabalho como uma estrutura profissional de desenvolvimento a serviço do responsável humano. Um Satélite é uma unidade profissional lógica, com responsabilidade por resultados e aspectos do produto, não departamentos obrigatórios, novos níveis de autoridade, instâncias de IA ou repositórios. Um mesmo agente pode assumir sucessivamente competências distintas; agentes separados são opcionais quando disponíveis, autorizados e úteis. Preservar a separação entre planejar, executar, revisar e homologar, mesmo que um agente desempenhe mais de um papel. Atribuição de papel não comprova qualificação, independência de avaliação, acesso ou execução de trabalho por outra pessoa.
+O ÓRBITA organiza o trabalho como uma estrutura profissional de desenvolvimento a serviço do responsável humano. Um Satélite é uma unidade profissional lógica, com responsabilidade por resultados e aspectos do produto, não um departamento obrigatório, um novo nível de autoridade, uma instância de IA ou um repositório. Um mesmo agente pode assumir sucessivamente competências distintas; agentes separados são opcionais quando disponíveis, autorizados e úteis. Preservar a separação entre planejar, executar, revisar e homologar, mesmo que um agente desempenhe mais de um papel. Atribuição de papel não comprova qualificação, independência de avaliação, acesso ou execução de trabalho por outra pessoa.
 
 | Satélite ilustrativo | Responsabilidade predominante | Entregável ou interface com outros Satélites |
 | --- | --- | --- |
