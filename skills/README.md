@@ -30,4 +30,4 @@ Cada ficha identifica autoria, fonte, versão/data, condições, contraindicaç�
 
 ISO-001: fichas profissionais independentes são referências de métodos e técnicas, não registros de projetos. Não incorporar dados, exemplos particulares, preferências ou decisões de consumidores; escolha metodológica continua humana.
 
-Pesquisar por necessidade da frente e da fatia atual: mapear abordagens globais de forma suficiente, aprofundar técnicas especializadas quando necessárias e antecipar somente dependências/riscos relevantes. Não decidir todo o repertório metodológico no início do projeto. Ver docs 03/04; manter decisões e evidências nas fontes canônicas locais.
+Pesquisar por necessidade do Satélite e da fatia atual: mapear abordagens globais de forma suficiente, aprofundar técnicas especializadas quando necessárias e antecipar somente dependências/riscos relevantes. Não decidir todo o repertório metodológico no início do projeto. Ver docs 03/04; manter decisões e evidências nas fontes canônicas locais.

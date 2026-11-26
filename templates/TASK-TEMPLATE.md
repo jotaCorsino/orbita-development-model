@@ -7,7 +7,7 @@
 - **Base esperada:** [branch, tag, commit ou estado homologado]
 - **Autorização / gate:** [decisão, escopo e referência]
 - **Fontes / dependências:** [requisitos, AGENTS/revisão, runbook e Skill/Tool selecionada quando pertinente]
-- **Etapa / frente / interfaces (quando pertinente):** [fatia atual, competência responsável, entradas e entregas compartilhadas; dependências que precisam estar resolvidas]
+- **Etapa / Satélite / interfaces (quando pertinente):** [fatia atual, competência responsável, entradas e entregas compartilhadas; dependências que precisam estar resolvidas]
 
 ## Objetivo
 
