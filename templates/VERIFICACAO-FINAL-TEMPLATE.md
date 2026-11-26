@@ -50,6 +50,8 @@ Ele não cria novo estado no fluxo do ÓRBITA e não exige varredura integral do
 
 ## Verificação de comunicação — COM-001 e COM-002
 
+- [ ] COM-002: explicação humana identificável do retorno, significado e consequências/limitações pertinentes, sem duplicação desnecessária; COM-001 preservado por último se houver ação humana.
+
 - [ ] se a resposta final atribui uma ação ao responsável humano, existe **um único bloco terminal `AÇÃO SUA`** com ação e retorno claros;
 - [ ] se a resposta não requer providência humana, o bloco foi omitido;
 - [ ] as autorizações previamente dadas não foram solicitadas novamente; nenhuma ação sensível foi apresentada como executada sem evidência.
@@ -69,5 +71,3 @@ Pergunta de controle:
 > **Que outros lugares podem continuar contando a versão anterior desta mesma informação?**
 
 A resposta define o alcance proporcional da verificação.
-
-- [ ] COM-002: explicação humana identificável do retorno, significado e consequências/limitações pertinentes, sem duplicação desnecessária; COM-001 preservado por último se houver ação humana.
