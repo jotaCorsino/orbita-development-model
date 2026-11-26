@@ -2,9 +2,9 @@
 
 - **Tipo:** melhoria futura do Método ÓRBITA / padrão de documentação.
 - **Registrada em:** 09/10/2026.
-- **Origem:** revisão da apresentação do projeto [Technolife — Central de Links](https://github.com/jotaCorsino/technolife-downloads-web).
+- **Natureza:** motivação metodológica autônoma; exemplos fictícios, sem referências particulares.
 - **Estado:** refinamento metodológico **homologado pelo responsável humano** no PR #3. A incorporação na `main` é registrada pelo merge do próprio PR.
-- **Escopo deste registro:** preservar a origem, a motivação, os critérios e a evolução da proposta. A mudança só passa a integrar o método após homologação humana e merge na `main`.
+- **Escopo deste registro:** preservar a motivação, os critérios e a evolução da proposta. A mudança só passa a integrar o método após homologação humana e merge na `main`.
 
 ## 1. Problema observado
 
@@ -84,11 +84,9 @@ Os nomes dos arquivos, IDs e etapas variam de acordo com o projeto. Evitar copia
 - Não usar percentuais artificiais de conclusão: estado e critério de saída são mais verificáveis.
 - O README deve permitir identificar rapidamente o **que foi finalizado, o que está em andamento e o que vem depois**.
 
-## 6. Exemplos observados
+## 6. Exemplo ilustrativo
 
-- [Project Backlog](https://github.com/jotaCorsino/project-backlog) — legenda `⚪ Não iniciado`, `🟡 Iniciado`, `🔵 Em testes`, `🟢 Concluído`, `🟠 Pausado`.
-- [Technolife RustDesk](https://github.com/jotaCorsino/technolife-rustdesk) — quadro de fases e entregas com `🟢`, `🟡` e `⚪`.
-- [Technolife Central de Links](https://github.com/jotaCorsino/technolife-downloads-web) — tabela colocada imediatamente após a descrição inicial, com legenda e estados de homologação.
+Em um projeto fictício, o README apresenta uma tabela logo após a descrição inicial, com estados textuais acompanhados de indicadores, próxima etapa e vínculo com o roadmap. Não é evidência empírica.
 
 ## 7. Incorporação metodológica — homologada
 

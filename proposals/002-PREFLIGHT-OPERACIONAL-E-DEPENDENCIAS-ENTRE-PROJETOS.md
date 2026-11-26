@@ -2,23 +2,13 @@
 
 - **Tipo:** refinamento futuro / continuidade de contexto / governança de operação.
 - **Registrada em:** 22/10/2026.
-- **Origem:** [TRB-002 — Deploy do preview sem recuperação do fluxo existente](../troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md), observado no Novo Site Technolife.
+- **Natureza:** motivação metodológica autônoma; exemplos fictícios, sem referências particulares.
 - **Estado:** **APROVADA e INCORPORADA à `main` pelo PR #7**.
 - **Prioridade sugerida:** avaliar como refinamento pequeno e **condicional**, não como nova burocracia transversal.
 
 ## 1. Problema que motiva a proposta
 
-A `main` do projeto pode estar atualizada e homologada, mas isso **não demonstra que o agente conhece como publicar o resultado** num ambiente já configurado.
-
-Na ocorrência do Novo Site Technolife, o agente de planejamento consultou corretamente o repositório principal, mas inicialmente ignorou a dependência operacional com o **Modo Revisão** mantido em outro contexto. Sugeriu comandos de deploy sem consultar o runbook original; mesmo depois de identificar scripts injetados nos HTMLs publicados, propôs recriar o mecanismo manualmente. O responsável bloqueou a abordagem.
-
-Essa observação **não comprova que o método ÓRBITA esteja conceitualmente errado**. O método já exige análise, delimitação de escopo, evidência e homologação. O que pode ser aperfeiçoado é um **gatilho explícito para recuperação de runbooks e dependências** antes de tocar um ambiente ativo.
-
-### Desfecho que esclareceu a necessidade
-
-Na continuação da operação, a equipe encontrou dois caminhos documentados: um sincronizador **experimental e não homologado no servidor** e o fluxo manual já testado. A identificação de arquivo/script sem ler seu status causou uma segunda orientação prematura, corrigida antes da execução. O fluxo manual publicou o commit `e898876` com backup, verificação HTTP `401` e exportação de comentários multipágina.
-
-A versão instalada foi extraída por `git archive` sem mover o `HEAD` do checkout ativo. Portanto, além de recuperar o runbook, o preflight deve distinguir **referência de origem**, **commit realmente publicado** e **estado do checkout**. O encerramento deve separar **publicação técnica**, **verificações funcionais parciais** e **homologação completa**, incluindo pendências de resíduos e rollback.
+A main atualizada não demonstra que o agente conhece o procedimento de publicação. Cenário fictício: um ambiente de prévia contém integração auxiliar de revisão, autenticação e arquivos próprios. Copiar artefatos diretamente pode remover a integração. Antes de propor operação, recuperar runbook, dependências, destino, origem aprovada e autorização. Um script experimental não substitui procedimento homologado. Distinguir revisão do checkout, artefato obtido, conteúdo aplicado, verificações técnicas e homologação funcional; não presumir que backup, merge ou cópia provem funcionamento.
 
 ## 2. Regra mínima candidata
 
@@ -58,7 +48,7 @@ A proposta **não** exige mesclar repositórios, expor caminhos internos, copiar
 
 ### Fluxo já conhecido
 
-> O preview depende do Modo Revisão, com runbook próprio. O repositório oficial está atualizado, mas o HTML publicado inclui recursos adicionais. Vou consultar o procedimento existente e apresentar primeiro o plano/dry-run previsto por ele. Não farei `rsync` direto nem reinjetarei scripts por conta própria.
+> O preview depende do ferramenta de revisão, com runbook próprio. O repositório oficial está atualizado, mas o HTML publicado inclui recursos adicionais. Vou consultar o procedimento existente e apresentar primeiro o plano/dry-run previsto por ele. Não farei `rsync` direto nem reinjetarei scripts por conta própria.
 
 ### Fluxo indisponível ao agente
 
