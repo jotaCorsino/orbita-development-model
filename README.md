@@ -242,7 +242,7 @@ As propostas registram evoluções candidatas surgidas do uso real. Enquanto est
 - [PROP-005 — Backlog de evolução do projeto](proposals/005-BACKLOG-DE-EVOLUCAO.md) — backlog padrão no README para capturar necessidades futuras sem autorizar implementação, incorporado pelo PR #19.
 - [PROP-006 — Knowledge: base de conhecimento operacional do projeto](proposals/006-KNOWLEDGE-BASE-DE-CONHECIMENTO-OPERACIONAL.md) — memória operacional externa e reutilizável incorporada pelo PR #21.
 
-- [PROP-007 — ORB-EVO-001: refinamento e evolução metodológica](proposals/007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md) — planejamento aprovado com ampliação Skills/Tools; [etapa 01 — auditoria integral](proposals/007-01-AUDITORIA-INTEGRAL.md) homologada e integrada pela PR #27; etapa 02 aguarda autorização; regras candidatas ainda não vigentes.
+- [PROP-007 — ORB-EVO-001: refinamento e evolução metodológica](proposals/007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md) — planejamento aprovado com ampliação Skills/Tools; [etapa 01 — auditoria integral](proposals/007-01-AUDITORIA-INTEGRAL.md) homologada e integrada pela PR #27; [etapa 02 — auditoria HUB e projetos governados](proposals/007-02-AUDITORIA-HUB-E-PROJETOS.md) entregue para homologação, ainda não integrada; regras candidatas ainda não vigentes.
 
 ## Backlog
 
