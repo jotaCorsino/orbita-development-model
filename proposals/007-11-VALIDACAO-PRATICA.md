@@ -1,6 +1,6 @@
 # ORB-EVO-001 — 11: Validação prática
 
-**Data:** 26/11/2026. **Estado:** etapa em andamento; ensaio exploratório independente executado; validação complementar em andamento após homologação de ISO-001. **Baseline anterior à integração normativa:** `f6e7132e9e418d046fef6c4f9a03e1cc87b1aca6`. **Candidata consolidada:** `a74990d73dca199120141c64c03893e3922bada3`. PRs #49/#50 integradas. Autorização exclusiva da etapa 11, no mesmo chat, sem alteração de consumidores, produção, licença ou release. [Plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md); [protocolo de avaliação §7](007-09-EFICIENCIA-E-AUTONOMIA.md); [integração](007-10-INTEGRACAO-METODOLOGICA.md).
+**Data:** 26/11/2026. **Estado:** etapa em andamento; ensaio exploratório independente executado; ensaio complementar ISO-001 executado; escolha metodológica humana pendente. **Baseline anterior à integração normativa:** `f6e7132e9e418d046fef6c4f9a03e1cc87b1aca6`. **Candidata consolidada:** `a74990d73dca199120141c64c03893e3922bada3`. PRs #49/#50 integradas. Autorização exclusiva da etapa 11, no mesmo chat, sem alteração de consumidores, produção, licença ou release. [Plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md); [protocolo de avaliação §7](007-09-EFICIENCIA-E-AUTONOMIA.md); [integração](007-10-INTEGRACAO-METODOLOGICA.md).
 
 ## 1. Delimitação e protocolo
 
@@ -67,3 +67,28 @@ Com ISO-001 homologada e integrada, preparar cenários fictícios independentes 
 ## 7. Acompanhamento
 
 12/14 etapas homologadas. Rodada inicial de 11 executada; PR de acompanhamento em revisão, não pedido de homologação final. Nenhum consumidor modificado, operação real, publicação, admissão Tool, release ou licença. Nenhuma nova entrada Knowledge. PRs #4/#5 preservadas. Script e resultados não incluem fonte privada. Decisões de desenho: fixtures sintéticas, mesmos critérios, mesma execução consciente em sequência, fixtures exclusivamente independentes. Limites: sem executor independente, sem avaliação de campo em projetos reais, sem baseline de tempo/consumo comparável, sem teste empírico completo de Skills/Knowledge/Tools. Não declarar etapa 11 concluída antes de resolver escopo dos ensaios complementares e gate.
+
+## 8. Rodada complementar — ISO-001
+
+Revisão integrada de referência: `2f82be11e7b9dbe007469aa9f6cf59a1c18796bc`, PRs #52/#53. [Script executado](../examples/piloto-orbita/ensaio-isolamento.py) e [resultado bruto](../examples/piloto-orbita/resultado-isolamento.json). Python 3.13.5, execução local sem rede, dois diretórios temporários distintos com identidades, objetivos, fontes, backlog, AGENTS e Knowledge iniciais independentes. Fundação representativa de fixture, não bootstrap integral de um consumidor real. O mesmo agente programou as ações e os checks; não há avaliação cega, agentes independentes nem teste do controle de memória de uma plataforma de IA.
+
+| Dimensão | Verificações realizadas | Resultado |
+| --- | --- | --- |
+| Fundação e identidade | Cinco arquivos por fixture, bases vazias e identidades distintas | 4/4 |
+| Isolamento | Decisão programada de rejeitar contexto externo fictício; marcador ausente do projeto destino; prova de outra identidade recusada; base alheia inalterada | 4/4 |
+| Knowledge e evidência | Teste funcional de cinco asserções; prova local válida; hash falso, caminho externo e mudança de fonte rejeitados; integridade restaurada | 6/6 |
+| Continuidade e autorização | Checkpoint recuperado por processo Python novo; sem implantação | 2/2 |
+
+16/16 checks PASS, mais cinco asserções funcionais internas (não somar como checks independentes), diretório temporário removido. Hash SHA-256 script `56b75cc756f4b22d83afc5fafad1e3c0c1299270a8f99067bb90b9c5196d9060`, resultado `0ba5725f5c78de398c2e8c93d70b7288467d29a4379407706309f12d37a2f7d4`. A decisão de rejeição é deliberadamente programada, não resposta espontânea de um LLM. O verificador não é sandbox, mecanismo de autenticação, política de acesso ou componente do método; cobre somente entradas ensaiadas. A nova execução do processo testa leitura do checkpoint, não transferência de chat real. Nenhuma entrada foi adicionada à base Knowledge do núcleo; conteúdo de fixture eliminado com o temporário. Uso de Python local e biblioteca padrão foi escolha técnica delegada, sem instalação, Tool admitida, recurso externo ou custo adicional. Não inferir que isolamento por norma garanta isolamento técnico de qualquer plataforma.
+
+## 9. Gate de seleção Skills — exercício independente
+
+Cenário fictício: revisão de um protótipo simples de catálogo de livros, tarefa de localizar um título e distinguir ausência de resultado. Objetivo: identificar obstáculos de navegação, feedback e compreensão, com evidência concreta. Sem participantes, dados reais, plataforma externa, deploy ou orçamento. Comparar abordagens viáveis:
+
+| Abordagem | Adequação | Limites | Entrega |
+| --- | --- | --- | --- |
+| [Avaliação heurística](../skills/ui-ux/avaliacao-heuristica.md) | Alta para inspeção focal de protótipo | Um avaliador, sem comprovação do comportamento de usuários | Achados por critério, localização, impacto, evidência e correção |
+| Inspeção direta orientada a tarefas | Alta para verificar passos e feedback esperado | Não é teste de usabilidade com participantes nem inspeção heurística completa | Roteiro, observações e lacunas |
+| [Acessibilidade web](../skills/ui-ux/avaliacao-de-acessibilidade.md) | Alta para critérios específicos aplicáveis ao fluxo; complementar à revisão UX | Não cobre toda a usabilidade; não alegar conformidade integral | Critérios focalizados, achados e limitações |
+
+Recomendação: avaliação heurística focal (um avaliador), porque problema e fluxo estão definidos, há artefato fictício a preparar e não há participantes. Acessibilidade pode complementar conforme escopo, sem alegar conformidade. Double Diamond completo não é proporcional; teste moderado requer participantes reais e consentimento, indisponíveis. A escolha humana ainda não foi registrada; execução dependente aguarda escolha. Não confundir seleção com homologação. O agente não irá inventar pesquisa de usuários ou resultados. A etapa permanece aberta; 12/14 homologadas. 
