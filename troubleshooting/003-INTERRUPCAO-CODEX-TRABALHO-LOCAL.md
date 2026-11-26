@@ -2,27 +2,17 @@
 
 - **Categoria:** continuidade de execução / limite de uso / estado Git / preservação de artefatos.
 - **Registrado em:** 22/10/2026.
-- **Ocorrência documentada:** [the-mmo-idea — PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10), durante VIS-001.1.
-- **Natureza:** **uma ocorrência identificada**, ainda não demonstrada como problema recorrente do método.
-- **Estado:** interrupção confirmada por relato do responsável; **persistência do trabalho local não verificada diretamente**. Refinamento metodológico **APROVADO e INCORPORADO à `main` pelo PR #9**.
+- **Natureza do exemplo:** fictício, sem referência externa.
+- **Estado metodológico:** refinamento homologado e incorporado ao ÓRBITA; nenhuma execução real afirmada neste exemplo.
 - **Escopo:** diagnóstico de continuidade e retomada segura, não alteração normativa automática.
 
-## 1. Sintoma
+## 1. Sintoma ilustrativo
 
-Uma execução longa do Codex, usando Blender e Unity para construir o campo de treino 3D, foi interrompida pelo **limite de uso do agente**. O responsável apresentou uma captura do cenário parcial: terreno, duas árvores, cerca, muro, alvo e costa, mas ainda longe da referência artística.
-
-Na consulta remota feita na mesma sequência, o [PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10) ainda mostrava somente **cinco arquivos** de documentação/referências, sem os assets 3D demonstrados na captura. O HEAD remoto registrado era `900f38e`.
-
-**Conclusão sustentada:** a captura não estava acompanhada de publicação remota do trabalho 3D. **Não foi demonstrado** se os arquivos locais haviam sido salvos, commitados localmente, modificados sem commit ou apenas gerados temporariamente. Não afirmar perda de trabalho ou integridade local sem inspeção.
+Uma execução fictícia é interrompida antes de publicar alterações. A PR remota não contém o material exibido em uma captura local. Não presumir perda nem integridade: arquivos podem estar salvos, não rastreados, commitados apenas localmente ou temporários. Inspecionar antes de sincronizar, recriar ou descartar.
 
 ## 2. Impacto e risco
 
-- Se a sessão for reiniciada sem inspecionar a working copy, pode haver recriação ou sobrescrita desnecessária de assets.
-- O planejamento pode confundir **“PR atualizado”** com **“trabalho preservado”** quando a execução ocorreu só no disco local.
-- Limites de uso podem interromper operações antes de captura de evidência, gravação do `.blend` ou validação de exportação.
-- A recuperação depende de saber com clareza **qual foi a última operação comprovada**, não de supor que o agente concluiria sozinho.
-
-Este evento não prova falha do Git, do Unity ou do Blender; o gatilho relatado foi limite de uso do agente.
+Retomada sem inspecionar a working copy pode sobrescrever ou recriar trabalho. Checkpoint remoto não prova estado local; interrupção pode anteceder gravação, teste ou evidência. Recuperar a última operação comprovada, preservar material e executar somente a ação pendente autorizada.
 
 ## 3. Resultado da avaliação metodológica
 
@@ -104,16 +94,12 @@ Para homologar este refinamento mínimo:
 
 ### Limite da evidência
 
-A origem continua sendo **uma ocorrência documentada**. Não foi comprovado que o trabalho 3D local tenha sido perdido, preservado ou recuperado posteriormente.
-
-O refinamento trata o risco observado sem transformar essa incerteza em fato. Sua utilidade deve continuar sendo observada em futuras interrupções reais.
-
-**No caso original, até inspeção local suficiente, a formulação correta continua sendo: “trabalho parcial observado; persistência local a confirmar”.**
+Exemplos deste documento são ilustrativos, sem comprovação empírica de eficácia.
 
 ## 7. Referências
 
 - [ÓRBITA — contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md).
-- [the-mmo-idea — VIS-001, PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10).
+
 
 
 ## 8. Decisão de homologação

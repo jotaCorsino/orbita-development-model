@@ -2,19 +2,13 @@
 
 - **Categoria:** melhoria do Método ÓRBITA / preservação do conhecimento / handoff entre agentes.
 - **Registrada em:** 22/10/2026.
-- **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), especialmente [PR documental #1](https://github.com/jotaCorsino/the-mmo-idea/pull/1).
+- **Natureza:** motivação metodológica autônoma; exemplos fictícios, sem referências particulares.
 - **Estado:** refinamento metodológico **APROVADO e INCORPORADO à `main` pelo PR #11**.
 - **Distinção:** o erro de consolidação foi uma **falha de execução do agente de planejamento**, apesar de o contrato existente já proibir remoções sem autorização. O que se propõe é adicionar salvaguardas operacionais verificáveis.
 
-## 1. Ocorrência e impacto
+## 1. Ocorrência ilustrativa e impacto
 
-Durante a organização do desenvolvimento conceitual do MMO, o agente interpretou “remover ideias substituídas e versões sobrepostas” como autorização para reduzir uma documentação extensa a um resumo: o conjunto ativo foi reduzido de cerca de **33 arquivos para 6**.
-
-O projeto ainda estava em **concepção**, portanto lore, eras, reinos, sistemas de combate, economia e experimentos não descartados explicitamente continuavam vigentes, mesmo quando incompletos. A simplificação retirou material detalhado e gerou a impressão de perda do progresso.
-
-O conteúdo pôde ser recuperado por commits antigos e reorganizado no PR #1, sem merge na `main`. O custo foi retrabalho, perda de confiança e risco de orientar a implementação por documentos incompletos.
-
-**Não confundir:** ausência do conteúdo na `main` (PR ainda Draft) é distinta da exclusão de conteúdo na branch de trabalho. Ambos ocorreram na comunicação do projeto, mas pedem controles diferentes.
+Cenário fictício: um agente interpreta pedido de eliminar duplicações como autorização para substituir especificações detalhadas por um resumo. Decisões não revogadas desaparecem da revisão ativa e deixam de orientar implementação. Recuperar conteúdo e demonstrar cobertura semântica antes de integrar. Distinguir ausência na main de exclusão na branch ativa. Uma ideia incompleta pode continuar vigente; não considerar descartada sem decisão explícita.
 
 ## 2. Causa observada e lacuna prática
 
@@ -92,16 +86,14 @@ Para homologar este refinamento mínimo:
 
 ### Limite da evidência
 
-A proposta nasce de **uma ocorrência documentada** no projeto MMO.
-
-O refinamento não afirma que toda consolidação documental exige matriz formal nem que o problema seja recorrente em todos os projetos. Ele introduz uma proteção proporcional contra um risco já demonstrado e deve continuar sendo observado em usos futuros.
+Exemplos deste documento são ilustrativos, sem comprovação empírica de eficácia.
 
 ## 7. Referências
 
 - [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md): autorização, preservação, evidências e regra de parada.
 - [Governança e homologação](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md).
 - [Fluxo de desenvolvimento](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md).
-- [the-mmo-idea — PR #1](https://github.com/jotaCorsino/the-mmo-idea/pull/1): documentação conceitual e recuperação do acervo.
+
 
 
 ## 8. Estado de incorporação

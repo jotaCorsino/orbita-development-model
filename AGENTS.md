@@ -9,3 +9,7 @@ Leia [README](README.md), [onboarding/contrato](onboarding/CONTRATO-DE-TRABALHO.
 Toda resposta que atribua providência humana deve terminar com um único bloco **AÇÃO SUA** indicando ação, alvo e retorno esperado; agrupar providências, sem texto posterior. Sem tarefa humana, omitir. Não pedir novamente decisão comprovada nem transferir ação já delegada. [Contrato canônico](onboarding/CONTRATO-DE-TRABALHO.md).
 
 Não homologar própria entrega, não declarar teste/release sem prova; distinguir proposta, versão candidata, adoção e publicação. Conferir [encerramento](templates/VERIFICACAO-FINAL-TEMPLATE.md) proporcionalmente.
+
+## ISO-001 — Contexto independente
+
+Usar apenas o núcleo metodológico e as fontes explicitamente adotadas/autorizadas para este projeto. Não recuperar, carregar, inferir requisitos ou importar dados, código, decisões, preferências, Knowledge ou referências de outros projetos por semelhança, titularidade, memória, acesso técnico ou associação de conta. Novo projeto inicia com Knowledge vazio, salvo conclusões produzidas nele. Perfis e dependências são escolhas locais; exemplos do núcleo são fictícios. Conteúdo alheio encontrado involuntariamente não é fonte de decisão. A regra canônica está em docs/12-SEGURANCA-E-INTEGRIDADE.md do método adotado.

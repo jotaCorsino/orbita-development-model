@@ -6,7 +6,7 @@
 
 A [PROP-006](006-KNOWLEDGE-BASE-DE-CONHECIMENTO-OPERACIONAL.md) foi homologada e incorporada pela PR #21 em 04/11/2026. Preservar integralmente seu fundamento: memória operacional externa e versionada, índice rápido, registro de conclusões comprovadas e reutilizáveis, consulta proporcional, três estados de validade, revalidação de fatos voláteis e distinção de fontes. Knowledge melhora o contexto recuperável; não treina o modelo nem autoriza ações.
 
-A [auditoria integral](007-01-AUDITORIA-INTEGRAL.md) identificou D-15 (maturidade, não ausência), D-03/D-12 (recuperação e aplicação), D-16 (fronteira com backlog), D-27 (exposição) e D-26 (ausência de métrica). A [auditoria HUB](007-02-AUDITORIA-HUB-E-PROJETOS.md) traz E-04/E-10/E-12/E-14/E-19/E-22: perda de procedimento vigente, reutilização de evidência anterior, distinção entre fatos históricos e atuais, backup ausente apesar de registro antigo e limites de compartilhamento. São evidências documentadas de problemas e práticas pertinentes, não demonstração de adoção da estrutura KN em todos os consumidores ou de economia mensurada.
+A [matriz metodológica](007-01-AUDITORIA-INTEGRAL.md) e a [síntese independente de requisitos e riscos](007-02-AUDITORIA-HUB-E-PROJETOS.md) orientam este refinamento. Os identificadores lógicos D e E preservam a rastreabilidade do método; não representam fontes externas, projetos ou provas empíricas.
 
 Na baseline da etapa 07, a árvore Git não truncada contém apenas knowledge/README.md sob knowledge/; seu blob é idêntico ao template de índice. Zero entradas não é defeito por si só. Nenhum consumidor foi reinspecionado nesta etapa. Não inventar aprendizados para preencher a base.
 
@@ -14,7 +14,7 @@ Na baseline da etapa 07, a árvore Git não truncada contém apenas knowledge/RE
 | --- | --- |
 | Manter a base sem detalhar evidência, escopo e promoção | Preserva simplicidade, mas deixa margem para reutilização fora da condição comprovada |
 | Criar banco vetorial, memória global automática e ingestão de logs | Complexidade, custo, risco de exposição e propagação de erros sem benefício demonstrado |
-| Evoluir o índice e a ficha existentes com critérios operacionais, revalidação por evento e promoção controlada | Recomendada; amplia confiabilidade sem exigir infraestrutura, nova taxonomia rígida ou novo gate universal |
+| Evoluir o índice e a ficha existentes com critérios operacionais, revalidação por evento e isolamento | Recomendada; amplia confiabilidade sem exigir infraestrutura, nova taxonomia rígida ou novo gate universal |
 
 **Princípio:** descobrir uma vez, comprovar, registrar, recuperar seletivamente e revalidar quando necessário. A base deve reduzir redescoberta, não substituir julgamento, autorização ou inspeção do estado real.
 
@@ -27,7 +27,7 @@ Segundo a [arquitetura candidata](007-03-ARQUITETURA-METODOLOGICA.md), Knowledge
 | Projeto | Particularidades comprovadas do produto, ambiente, dependências, diagnóstico, limitações | Não generalizar ambiente local nem expor dados |
 | Método especializado | Aprendizados comprovados no domínio e condições de aplicação | Não transformar experiência de um consumidor em regra universal |
 | HUB opcional | Conhecimento compartilhável entre projetos vinculados, no alcance da organização | Não presumir acesso cruzado, titularidade ou autorização |
-| Núcleo ÓRBITA | Aprendizados metodológicos generalizáveis, sanitizados e aprovados | Não incorporar configuração, caso privado, regra local ou procedimento específico como universal |
+| Núcleo ÓRBITA | Aprendizados comprovados sobre o próprio método, independentes de consumidores | Não incorporar configuração, caso privado, regra local ou procedimento específico como universal |
 
 | Fonte | Pergunta respondida |
 | --- | --- |
@@ -152,22 +152,9 @@ Uma prova estável fixada a revisão imutável não exige repetição integral a
 
 Se a entrada contradisser fato atual ou fonte canônica, interromper sua aplicação automática, confirmar condição e classificar a discrepância. Não resolver por “mais recente vence” sem verificar assunto, alcance e prova. Corrigir/inativar no escopo autorizado ou encaminhar ao responsável; preservar fonte histórica. Quando duas entradas forem equivalentes, manter a referência estável, indicar substituição e verificar links antes de retirar duplicata do índice ativo. Não apagar histórico ou informação material sem autorização conforme [limpeza 04](007-04-LIMPEZA-OPERACIONAL.md).
 
-## 7. Promoção controlada entre escopos
+## 7. Isolamento e evolução independente
 
-A promoção é extração e validação de aprendizado transferível, não replicação automática da base de um projeto. O fluxo não exige subir por todas as camadas intermediárias; escolher o destino competente, conforme arquitetura 03.
-
-| Passagem | Critério |
-| --- | --- |
-| Descoberta no projeto | Evidência suficiente no escopo de origem |
-| Seleção de aprendizado transferível | Utilidade fora do caso, condições explicitadas, sem generalização indevida |
-| Revisão de segurança e direitos | Autoridade de acesso, divulgação, titularidade/licença e sanitização |
-| Validação no destino | Responsável do método/HUB/núcleo avalia relevância, prova e limites; testar condições adicionais quando necessárias |
-| Aceite e persistência | Registrar conclusão no destino, escopo, origem permitida e referência/revisão; preservar registro original |
-| Manutenção | Mudança/refutação comunicada a destinos relevantes conforme fluxo autorizado; não atualizar automaticamente consumidores |
-
-Um único caso pode sustentar aprendizado condicional, não frequência universal ou garantia de resultado. Generalizar somente o que a evidência permite. Não exigir replicação do incidente em produção quando uma prova analítica ou ensaio seguro é suficiente para a afirmação. Se a prova necessária só existe em fonte restrita, manter aprendizado no escopo permitido ou produzir evidência independente sanitizada e verificável; não publicar detalhe restrito para satisfazer rastreabilidade. Identificadores sanitizados podem apontar para mapeamento privado autorizado; não inventar verificabilidade pública.
-
-Ao consumir conhecimento compartilhado, verificar vínculo, origem, versão, validade, escopo e diferenças locais. Preferir referência ao registro mantido pelo responsável em vez de cópia; se adaptação local for necessária, registrar somente conclusão/condição local distinta e relação com a origem. Revogação ou obsolescência da fonte compartilhada exige avaliação da aplicabilidade, não propagação cega. Knowledge não é distribuição de credenciais, dados, comandos executáveis ou autorização entre agentes.
+Knowledge de cada projeto permanece no contexto de origem. Não importar entradas, evidências, aliases, dados, referências ou decisões ao núcleo, mesmo sanitizados. Cada projeto novo inicia vazio. HUB e métodos opcionais possuem bases próprias, selecionadas explicitamente; nenhuma herança por associação de conta. Uma regra metodológica universal pode ser proposta como texto autônomo e validada em cenário independente, sem transferir material de origem. Referências privadas permanecem exclusivamente no contexto autorizado. A decisão posterior ISO-001 prevalece sobre o desenho anterior de promoção de entradas entre escopos.
 
 ## 8. Exemplos de aplicação (ilustrativos, não entradas reais)
 
@@ -179,7 +166,7 @@ Ao consumir conhecimento compartilhado, verificar vínculo, origem, versão, val
 | Procedimento de instalação homologado (E-04) | Consultar runbook canônico vigente antes da operação | Copiar o procedimento para KN e executá-lo sem gate |
 | Discussão de técnica profissional | Evidência de uso local comprovado pode gerar lição condicional | Registrar técnica de mercado não aplicada como aprendizado observado |
 
-Esses exemplos remetem a evidências sanitizadas das auditorias ou situações ilustrativas; não foram reexecutados nem constituem novas fichas. Conclusões que apenas repetem regras já homologadas devem permanecer nas fontes normativas. Não criar KN artificial para mostrar atividade.
+Esses exemplos são situações ilustrativas independentes; não constituem evidência empírica nem novas fichas. Conclusões que apenas repetem regras já homologadas devem permanecer nas fontes normativas. Não criar KN artificial para mostrar atividade.
 
 ## 9. Walkthroughs documentais
 
@@ -197,7 +184,7 @@ Confronto analítico do desenho, sem teste em agentes/consumidores.
 | C08 — versão diferente | Dependência mudou e pressuposto não está demonstrado | Revalidar entrada afetada, sem repetir toda a base (§5) |
 | C09 — revisão imutável | Prova estática continua válida na mesma revisão | Reutilizar sem reexecutar por reflexo (§5) |
 | C10 — fonte inacessível | Evidência necessária não pode ser consultada | Declarar limite e revalidar/bloquear ação dependente conforme risco (§5) |
-| C11 — promoção | Lição local tem potencial uso em outros projetos | Avaliar alcance, direitos, sanitização e aceite no destino (§7) |
+| C11 — promoção | Possível melhoria universal derivada de aprendizado local | Manter entrada local; propor regra independente, sem transferir contexto (§7) |
 | C12 — informação privada | Entrada contém detalhes de cliente ou segredo | Não publicar; recuperar fonte restrita somente se autorizado (§§3,7) |
 | C13 — conflito | Nova prova contradiz conclusão vigente | Suspender uso automático, investigar, atualizar estado e índice (§§5–6) |
 | C14 — base cresce | Índice começa a dificultar recuperação | Ajustar organização proporcionalmente, preservar ponto de entrada (§4) |
@@ -210,7 +197,7 @@ Os 16 cenários têm tratamento conceitual. Nenhuma entrada real foi criada, atu
 
 | Fonte vigente | Refinamento candidato na etapa 10 |
 | --- | --- |
-| [Docs 08 — aplicação](../docs/08-APLICACAO-E-EVOLUCAO.md) | Fonte normativa de admissão, evidência, escopo, validade, revalidação e promoção |
+| [Docs 08 — aplicação](../docs/08-APLICACAO-E-EVOLUCAO.md) | Fonte normativa de admissão, evidência, escopo, validade, revalidação e isolamento |
 | [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md) | Consulta/captura proporcional, conflito com fonte atual e fronteira de acesso |
 | [Docs 11 — inicialização](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md) | Preservar fundação com índice vazio permitido |
 | [Template de entrada](../templates/KNOWLEDGE-ENTRY-TEMPLATE.md) | Explicitar condições, limites, evidência recuperável e relações condicionais |

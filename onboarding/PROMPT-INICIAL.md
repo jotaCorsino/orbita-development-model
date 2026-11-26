@@ -40,3 +40,7 @@ A documentação do ÓRBITA define o comportamento esperado e evita que essas in
 ## Entrada compacta e continuidade
 
 Para projeto existente, identificar papel, projeto, AGENTS/equivalente na revisão aplicável, tarefa/checkpoint e último gate; recuperar seletivamente, não refazer fundação ou onboarding comprovado. Consultar Knowledge, Skills, Tools e runbook quando pertinentes. Preservar COM-001, autorização, segurança e escolha humana de metodologia. Ver [docs 07](../docs/07-IA-NO-METODO.md).
+
+## ISO-001 — Contexto independente
+
+Usar apenas o núcleo metodológico e as fontes explicitamente adotadas/autorizadas para este projeto. Não recuperar, carregar, inferir requisitos ou importar dados, código, decisões, preferências, Knowledge ou referências de outros projetos por semelhança, titularidade, memória, acesso técnico ou associação de conta. Novo projeto inicia com Knowledge vazio, salvo conclusões produzidas nele. Perfis e dependências são escolhas locais; exemplos do núcleo são fictícios. Conteúdo alheio encontrado involuntariamente não é fonte de decisão. A regra canônica está em docs/12-SEGURANCA-E-INTEGRIDADE.md do método adotado.

@@ -1,4 +1,4 @@
-# Troubleshooting — registros de ocorrências
+# Troubleshooting — diagnóstico metodológico independente
 
 Esta pasta preserva problemas, limitações e falhas observadas durante a aplicação prática do Método ÓRBITA.
 
@@ -47,3 +47,7 @@ Uma ocorrência pode resultar em:
 - mudança normativa homologada.
 
 A decisão pertence ao responsável humano.
+
+## ISO-001
+
+O índice do núcleo contém padrões genéricos de diagnóstico e ocorrências do próprio método, não ocorrências de outros projetos. Registros de ambiente, logs, nomes, refs e evidências ficam na base do projeto que os produziu. Exemplo fictício não é teste real; uma proposta universal é formulada e validada independentemente.

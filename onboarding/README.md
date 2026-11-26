@@ -83,17 +83,9 @@ Toda conversa de agente que adote o método deve aplicar a [regra canônica de c
 
 ---
 
-### Preferência de validação do mantenedor (somente projetos aplicáveis)
 
-Antes de propor CI, consultar o [perfil de QA local-first](PERFIL-MANTENEDOR-VALIDACAO-LOCAL.md): executar testes em ambiente isolado com evidências e hashes; GitHub Actions apenas por exceção aprovada e sem gastos implícitos. O método ÓRBITA continua exigindo testes aplicáveis, revisão e homologação.
 
----
 
-### Preferência visual do mantenedor (somente projetos aplicáveis)
-
-Para **sites e sistemas com interface desenvolvidos sob direção do mantenedor**, consultar o [perfil de iconografia ICON-001](PERFIL-MANTENEDOR-ICONOGRAFIA.md): Iconify como catálogo preferencial, Tabler como coleção inicial, consistência visual e SVG local/build para produção. Registrar a adoção no repositório do projeto. **Isso não é exigência universal do ÓRBITA para outros usuários** e não autoriza alteração de interfaces existentes sem tarefa própria.
-
----
 
 ## 3. Ao receber o Método ÓRBITA em um novo chat
 
@@ -367,3 +359,7 @@ Somente depois começa a implementação funcional.
 Um prompt reutilizável para iniciar esse processo está em [PROMPT-INICIAL.md](PROMPT-INICIAL.md).
 
 Consulte [Skills](../skills/README.md) e [Tools](../tools/README.md) apenas quando pertinentes, sem instalar ou assumir autoridade. Preserve escolha metodológica humana, recomendações fundamentadas e autonomia delegada. A sequência normativa de fundação/bootstrap é [docs 11](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md).
+
+## ISO-001 — Contexto independente
+
+Usar apenas o núcleo metodológico e as fontes explicitamente adotadas/autorizadas para este projeto. Não recuperar, carregar, inferir requisitos ou importar dados, código, decisões, preferências, Knowledge ou referências de outros projetos por semelhança, titularidade, memória, acesso técnico ou associação de conta. Novo projeto inicia com Knowledge vazio. Perfis e dependências são escolhas locais; exemplos do núcleo são fictícios. A regra canônica está em [ISO-001](../docs/12-SEGURANCA-E-INTEGRIDADE.md).
