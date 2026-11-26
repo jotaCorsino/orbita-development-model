@@ -1,6 +1,6 @@
 # ÓRBITA Tools — ferramentas governadas
 
-**Estado:** catálogo piloto candidato da etapa 09B; não vigente como norma geral. [Proposta e contrato de admissão/consumo](../proposals/007-09B-ORBITA-TOOLS.md).
+**Estado:** catálogo piloto candidato da etapa 09B, homologado documentalmente e integrado pela PR #47; ainda não vigente como norma geral. A ferramenta avaliada permanece candidata restrita, sem admissão universal. [Proposta e contrato de admissão/consumo](../proposals/007-09B-ORBITA-TOOLS.md).
 
 Tools aponta para instrumentos de trabalho úteis, não distribui automaticamente código, licença, acesso ou autoridade. Fonte canônica e manutenção permanecem com o responsável da ferramenta. Consultar procedimentos do projeto e versão adotada antes de agir; aplicar gates e evidências proporcionais.
 
