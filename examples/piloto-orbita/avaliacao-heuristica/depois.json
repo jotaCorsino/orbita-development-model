@@ -1,0 +1,45 @@
+{
+  "browser": "144.0.7559.96",
+  "results": [
+    {
+      "checks": {
+        "absent_title": true,
+        "action_label": true,
+        "empty_feedback": true,
+        "existing_title": true,
+        "explicit_reset": true,
+        "found_feedback": true,
+        "initial_three_titles": true,
+        "no_network_request": true,
+        "no_page_error": true
+      },
+      "observations": {
+        "absent": [],
+        "empty_status": "Nenhum livro encontrado. Altere a busca ou limpe o filtro.",
+        "explicit_reset": true,
+        "external_requests": [],
+        "found": [
+          "A Ilha de Vidro"
+        ],
+        "found_status": "1 livro encontrado",
+        "initial": [
+          "A Ilha de Vidro",
+          "O Jardim de Papel",
+          "Mapas do Céu"
+        ],
+        "page_errors": [],
+        "reset": [
+          "A Ilha de Vidro",
+          "O Jardim de Papel",
+          "Mapas do Céu"
+        ],
+        "reset_query": "",
+        "search_label": "Buscar"
+      },
+      "passed": 9,
+      "revision": "depois",
+      "sha256": "67db7a10c440bbb8fde085b47e2b48a8f828772b0574dcc33f1cc4cf99988d61",
+      "total": 9
+    }
+  ]
+}

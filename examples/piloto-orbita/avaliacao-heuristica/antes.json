@@ -1,0 +1,45 @@
+{
+  "browser": "144.0.7559.96",
+  "results": [
+    {
+      "checks": {
+        "absent_title": true,
+        "action_label": false,
+        "empty_feedback": false,
+        "existing_title": true,
+        "explicit_reset": false,
+        "found_feedback": false,
+        "initial_three_titles": true,
+        "no_network_request": true,
+        "no_page_error": true
+      },
+      "observations": {
+        "absent": [],
+        "empty_status": "",
+        "explicit_reset": false,
+        "external_requests": [],
+        "found": [
+          "A Ilha de Vidro"
+        ],
+        "found_status": "",
+        "initial": [
+          "A Ilha de Vidro",
+          "O Jardim de Papel",
+          "Mapas do Céu"
+        ],
+        "page_errors": [],
+        "reset": [
+          "A Ilha de Vidro",
+          "O Jardim de Papel",
+          "Mapas do Céu"
+        ],
+        "reset_query": "",
+        "search_label": "OK"
+      },
+      "passed": 5,
+      "revision": "antes",
+      "sha256": "901521b6a7141dd8261ef9004cdb75692c63b7922d61616c302c05a3c53f5a04",
+      "total": 9
+    }
+  ]
+}

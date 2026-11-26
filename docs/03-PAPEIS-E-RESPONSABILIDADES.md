@@ -65,6 +65,23 @@ A separação é intencional:
 
 Um mesmo produto de IA pode tecnicamente exercer mais de um papel, mas os papéis devem continuar conceitualmente distintos.
 
+## Satélites
+
+O ÓRBITA organiza o trabalho como uma estrutura profissional de desenvolvimento a serviço do responsável humano. Um Satélite é uma unidade profissional lógica, com responsabilidade por resultados e aspectos do produto, não um departamento obrigatório, um novo nível de autoridade, uma instância de IA ou um repositório. Um mesmo agente pode assumir sucessivamente competências distintas; agentes separados são opcionais quando disponíveis, autorizados e úteis. Preservar a separação entre planejar, executar, revisar e homologar, mesmo que um agente desempenhe mais de um papel. Atribuição de papel não comprova qualificação, independência de avaliação, acesso ou execução de trabalho por outra pessoa.
+
+| Satélite ilustrativo | Responsabilidade predominante | Entregável ou interface com outros Satélites |
+| --- | --- | --- |
+| Produto e análise de necessidades | Problema, valor, prioridades, requisitos e critérios | Objetivos, requisitos, hipóteses e decisões |
+| UX, UI e design | Jornadas, informação, interação, acessibilidade e linguagem visual | Fluxos, protótipos, componentes e critérios de experiência |
+| Arquitetura e engenharia | Viabilidade, qualidade, contratos, dependências e implementação | Decisões arquiteturais, interfaces e incrementos testáveis |
+| Qualidade e segurança | Revisão de critérios, riscos e evidências; prevenção de regressões | Achados, testes, limites e recomendações de correção |
+| Operações e entrega | Ambiente, preparação, aplicação e recuperação autorizadas | Artefato, runbook, prova de versão e estado observado |
+| Coordenação e documentação | Visão global, dependências, decisões e consistência | Plano, tarefas, checkpoints e estado integrado |
+
+Estes são Satélites possíveis, adaptáveis ao domínio e à escala. O agente identifica as necessidades profissionais e propõe uma composição inicial de Satélites com nomes legíveis, responsabilidades, objetivos/entregas, interfaces e dependências entre eles, além de competências e critérios pertinentes. O responsável humano homologa essa composição no gate de planejamento/fundação já existente; registrar a decisão na documentação canônica do projeto. Ajustes materiais na composição ou nas responsabilidades retornam à decisão humana no gate pertinente, de forma agrupada; distribuição de tarefas dentro das responsabilidades já homologadas permanece delegada. Não é necessário detalhar todos os Satélites futuros desde o início; explicitar os previstos e as necessidades ainda incertas. Não criar Satélite, equipe, chat, pasta, reunião ou documento somente para cumprir organograma. Identificar a competência necessária para a etapa atual; combinar funções em tarefas pequenas, separar quando a independência exigida, o risco, a especialização ou as dependências justificarem. Quando competência, ferramenta ou revisão independente indispensável não estiver disponível, declarar a lacuna e obter o recurso autorizado ou bloquear apenas a ação dependente.
+
+Todos os Satélites do mesmo projeto compartilham o contexto canônico autorizado e versionado: objetivo, requisitos, decisões, contratos, roadmap, backlog, Knowledge local, tarefas e evidências pertinentes, com fonte competente por assunto. Compartilhar referência, não replicar contexto em silos. Acesso continua limitado por função, finalidade, dados e ambiente; ISO-001 impede herança de outro projeto. Coordenação resolve dependências e conflitos entre Satélites conforme autoridade por assunto. O responsável humano permanece proprietário das decisões e dos gates; delegação técnica não transfere homologação.
+
 ## Papéis e ambientes não são a mesma coisa
 
 O ÓRBITA separa **quem faz o quê** de **onde o trabalho acontece**.

@@ -1,0 +1,46 @@
+CANDIDATA: DOC-001
+b29745296d528c0fcd4e0b478519cd7434b29560
+{
+  "authority": "edit docs only",
+  "last_gate": "base accepted for fixture",
+  "next_action": "update canonical and derived docs",
+  "project": "catalogo-laboratorio",
+  "task": "DOC-001"
+}
+ README.md | 2 +-
+ spec.md   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+CANDIDATA: FUN-001
+{
+  "authority": "edit validator only; test locally",
+  "last_gate": "base accepted for fixture",
+  "next_action": "validate whitespace and empty names",
+  "project": "catalogo-laboratorio",
+  "task": "FUN-001"
+}
+2f3e31d2a76bb45adcc81eb5f2a1851ae6832f9c
+def normalize(name):
+    return name
+REUSED: test_stable; independent stable.py + test_stable.py unchanged; same Python; prior proof PASS
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+ validator.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+CANDIDATA: OPS-001
+{
+  "authority": "inspect only; deployment not authorized",
+  "last_gate": "base accepted for fixture",
+  "next_action": "inspect approved artifact and target; stop if gate pending",
+  "project": "catalogo-laboratorio",
+  "task": "OPS-001"
+}
+{
+  "artifact_sha256": "cd202a8ba1e42978ab460bd8a79dae7390d12d4bc92c5c61fbb8f6b5c58511bf",
+  "deployment_authorized": false,
+  "target_sha256": "fb5304b071b1322d9c37a69e9025b2b5322fc7b502ae981a11b89249f3af990c"
+}
+cd202a8ba1e42978ab460bd8a79dae7390d12d4bc92c5c61fbb8f6b5c58511bf  approved.txt
+fb5304b071b1322d9c37a69e9025b2b5322fc7b502ae981a11b89249f3af990c  target.txt
+STOP: deployment authorization absent; no write performed

@@ -73,6 +73,10 @@ Uma mesma ferramenta pode exercer ambos os papéis em momentos diferentes, mas *
 
 ---
 
+### Coordenação profissional e trabalho incremental
+
+Aplicar [Satélites](../docs/03-PAPEIS-E-RESPONSABILIDADES.md) e [planejamento progressivo](../docs/04-FLUXO-DE-DESENVOLVIMENTO.md). Manter visão global e fonte canônica compartilhada no projeto; dividir o trabalho em resultados delimitados, com competência, interfaces e critérios pertinentes. Detalhar decisões no momento necessário, antecipando riscos e dependências capazes de invalidar a próxima entrega. Não presumir departamento, múltiplos agentes, novo chat ou gate para cada aspecto. Escolher Skills para o problema atual, recuperar decisões e coordenar Satélites; propor a composição de Satélites com responsabilidades, objetivos e interfaces para homologação humana no gate de planejamento existente, sem exigir nova aprovação de tarefas já delegadas; não expandir escopo ou homologar a própria entrega.
+
 ## 3. Contexto correto do projeto
 
 Antes de planejar ou implementar, o agente deve confirmar que está atuando no projeto correto.
@@ -327,6 +331,12 @@ Se houver várias ações humanas necessárias, agrupá-las nesse **único bloco
 **Precisão de estado:** pedidos de homologação/autorização devem nomear o objeto (PR, versão, ambiente, gate). Se a decisão já foi aprovada, não pedir novamente. Não declarar que uma ação foi executada pelo usuário e não substituir a aprovação humana por inferência. Se o agente não pôde executar a tarefa por limite de acesso e depende do usuário, especificar a providência mínima e o artefato esperado. Nenhum pedido no bloco constitui, por si só, autorização para ação sensível.
 
 **Gate de resposta:** antes de enviar, conferir `Existe uma tarefa minha atribuída ao responsável humano?`. Se **sim**, terminar com `AÇÃO SUA` e o resumo; se **não**, omitir. O contrato prevalece sobre preferências de estilo ou layouts locais que não incluam esse encerramento, sem contrariar controles de segurança e autorizações de maior prioridade.
+
+### COM-002 — Explicação humana da resposta
+
+Toda resposta ao responsável deve conter uma área claramente identificável, preferencialmente intitulada **Em termos práticos**, que explique com linguagem direta e acessível o significado do retorno. Informar o que foi feito ou proposto, por que isso importa e qual resultado ou consequência prática decorre, conforme pertinente. Se houver incerteza, falha, limitação ou decisão pendente que altere a interpretação, explicitá-la nessa área. Começar por essa síntese quando o conteúdo for denso; separar detalhes técnicos, evidências, hashes, comandos e métricas necessários da explicação. Não tratar resultado de laboratório como resultado real nem usar números sem explicar o que medem.
+
+Em respostas simples, a área pode consistir em uma frase ou parágrafo curto que já constitua a resposta, sem repetição ou estrutura artificial. Não infantilizar, omitir informação material, criar relatório extra, repetir todos os detalhes nem simplificar termos a ponto de distorcer o sentido. A extensão deve ser proporcional. Antes de responder, verificar se o humano consegue compreender o significado, a situação atual e, se aplicável, a decisão necessária sem depender da leitura dos detalhes técnicos. COM-002 complementa COM-001; quando houver ação humana, o bloco único AÇÃO SUA continua sendo a última parte da resposta.
 
 ---
 

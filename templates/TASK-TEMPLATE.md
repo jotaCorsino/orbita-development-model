@@ -7,10 +7,11 @@
 - **Base esperada:** [branch, tag, commit ou estado homologado]
 - **Autorização / gate:** [decisão, escopo e referência]
 - **Fontes / dependências:** [requisitos, AGENTS/revisão, runbook e Skill/Tool selecionada quando pertinente]
+- **Etapa / Satélite / interfaces (quando pertinente):** [fatia atual, competência responsável, entradas e entregas compartilhadas; dependências que precisam estar resolvidas]
 
 ## Objetivo
 
-Descreva claramente o resultado esperado.
+Descreva claramente o resultado verificável da fatia atual, sem antecipar implementação ou decisões de etapas não autorizadas.
 
 ## Contexto
 

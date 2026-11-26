@@ -18,7 +18,7 @@ Abaixo está um modelo de mensagem para iniciar um novo projeto em outro chat.
 >
 > Depois eu vou apresentar a ideia do software e fornecer o repositório remoto específico do projeto.
 >
-> Quando isso acontecer, siga o bootstrap definido pelo ÓRBITA: analise o projeto, crie/organize primeiro a fundação documental no repositório remoto — incluindo backlog, `knowledge/README.md` e AGENTS.md/equivalente com fontes adotadas —, confirme o planejamento criado e então gere a primeira tarefa para o agente de implementação. Essa primeira tarefa deve apenas vincular e sincronizar com segurança a pasta local já criada com o repositório remoto. A implementação funcional só começa depois desse bootstrap.
+> Quando isso acontecer, siga o bootstrap definido pelo ÓRBITA: analise o projeto, crie/organize primeiro a fundação documental no repositório remoto — incluindo backlog, `knowledge/README.md` e AGENTS.md/equivalente com fontes adotadas —, confirme o planejamento e a composição dos Satélites (responsabilidades, objetivos e interfaces) com o responsável, e então gere a primeira tarefa para o agente de implementação. Essa primeira tarefa deve apenas vincular e sincronizar com segurança a pasta local já criada com o repositório remoto. A implementação funcional só começa depois desse bootstrap.
 > 
 > Em qualquer resposta futura deste projeto, aplique COM-001: caso eu precise realizar alguma ação, a resposta deve terminar com **AÇÃO SUA** e o resumo do que devo fazer. Caso contrário, omita esse bloco. Inclua essa regra no `AGENTS.md` do novo projeto.
 
@@ -44,3 +44,7 @@ Para projeto existente, identificar papel, projeto, AGENTS/equivalente na revis�
 ## ISO-001 — Contexto independente
 
 Usar apenas o núcleo metodológico e as fontes explicitamente adotadas/autorizadas para este projeto. Não recuperar, carregar, inferir requisitos ou importar dados, código, decisões, preferências, Knowledge ou referências de outros projetos por semelhança, titularidade, memória, acesso técnico ou associação de conta. Novo projeto inicia com Knowledge vazio, salvo conclusões produzidas nele. Perfis e dependências são escolhas locais; exemplos do núcleo são fictícios. Conteúdo alheio encontrado involuntariamente não é fonte de decisão. A regra canônica está em docs/12-SEGURANCA-E-INTEGRIDADE.md do método adotado.
+
+## Comunicação e iniciativa metodológica
+
+Aplicar COM-002 em toda resposta: explicar humanamente o retorno e seu significado, preferencialmente antes dos detalhes técnicos; resposta simples pode ser a própria síntese. COM-001 permanece como último bloco quando aplicável. Consultar e investigar Skills de forma proativa e proporcional: se a abordagem existente for insuficiente, pesquisar fontes profissionais confiáveis, comparar opções relevantes e recomendar caminho. Recuperar escolhas anteriores; agrupar decisões metodológicas e não pedir microaprovações.

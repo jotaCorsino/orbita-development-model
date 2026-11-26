@@ -51,7 +51,7 @@ O agente de planejamento deve:
 
 Antes de enviar qualquer tarefa de implementação, o agente de planejamento prepara a fundação documental do novo projeto no próprio repositório remoto, quando possuir acesso autorizado para isso.
 
-A fundação deve ser proporcional ao projeto, mas normalmente inclui:
+Na fundação, identificar as necessidades profissionais e propor os [Satélites](03-PAPEIS-E-RESPONSABILIDADES.md#satélites) iniciais, responsabilidades, objetivos e interfaces/dependências. Homologar a composição no gate de planejamento existente e registrar nas fontes canônicas; detalhar progressivamente, sem departamentos ou documentação obrigatória adicional. A fundação deve ser proporcional ao projeto, mas normalmente inclui:
 
 - README inicial no padrão ÓRBITA, com descrição objetiva e, quando o projeto exigir acompanhamento por etapas, painel resumido do desenvolvimento próximo ao início;
 - objetivo e contexto do software;

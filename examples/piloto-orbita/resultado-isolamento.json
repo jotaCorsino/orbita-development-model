@@ -1,0 +1,34 @@
+{
+  "checkpoint": {
+    "authorized": "local validation only",
+    "next": "human homologation; no deployment",
+    "project": "Controle de materiais",
+    "proof_valid": true,
+    "task": "MAT-001"
+  },
+  "checks": {
+    "changed_source_rejected": true,
+    "checkpoint_recovered": true,
+    "cross_project_proof_rejected": true,
+    "distinct_identity": true,
+    "empty_knowledge_both": true,
+    "external_context_rejected": true,
+    "foreign_marker_absent": true,
+    "foundation_a": true,
+    "foundation_b": true,
+    "functional_test": true,
+    "local_knowledge_valid": true,
+    "no_deployment": true,
+    "other_knowledge_unchanged": true,
+    "outside_path_rejected": true,
+    "restored_proof_valid": true,
+    "wrong_hash_rejected": true
+  },
+  "functional_stdout": "PASS: 5 assertions",
+  "limits": "Scripted synthetic exercise; no independent agent, no real consumer, no deployment, no causal efficiency measurement.",
+  "passed": 16,
+  "python": "3.13.5",
+  "revision": "2f82be11e7b9dbe007469aa9f6cf59a1c18796bc",
+  "temporary_directory_removed": true,
+  "total": 16
+}

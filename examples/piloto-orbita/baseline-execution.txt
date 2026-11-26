@@ -1,0 +1,43 @@
+BASELINE: DOC-001
+{
+  "authority": "edit docs only",
+  "last_gate": "base accepted for fixture",
+  "next_action": "update canonical and derived docs",
+  "project": "catalogo-laboratorio",
+  "task": "DOC-001"
+}
+ README.md | 2 +-
+ spec.md   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+BASELINE: FUN-001
+{
+  "authority": "edit validator only; test locally",
+  "last_gate": "base accepted for fixture",
+  "next_action": "validate whitespace and empty names",
+  "project": "catalogo-laboratorio",
+  "task": "FUN-001"
+}
+def normalize(name):
+    return name
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+ validator.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+BASELINE: OPS-001
+{
+  "authority": "inspect only; deployment not authorized",
+  "last_gate": "base accepted for fixture",
+  "next_action": "inspect approved artifact and target; stop if gate pending",
+  "project": "catalogo-laboratorio",
+  "task": "OPS-001"
+}
+{
+  "artifact_sha256": "cd202a8ba1e42978ab460bd8a79dae7390d12d4bc92c5c61fbb8f6b5c58511bf",
+  "deployment_authorized": false,
+  "target_sha256": "fb5304b071b1322d9c37a69e9025b2b5322fc7b502ae981a11b89249f3af990c"
+}
+cd202a8ba1e42978ab460bd8a79dae7390d12d4bc92c5c61fbb8f6b5c58511bf  approved.txt
+fb5304b071b1322d9c37a69e9025b2b5322fc7b502ae981a11b89249f3af990c  target.txt
+STOP: deployment authorization absent; no write performed

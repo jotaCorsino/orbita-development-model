@@ -1,0 +1,44 @@
+{
+  "condition": "candidata",
+  "results": {
+    "documentacao": {
+      "changed": [
+        "README.md",
+        "spec.md"
+      ],
+      "checks": {
+        "canonical": true,
+        "derived": true,
+        "history_preserved": true,
+        "scope": true
+      },
+      "pass": true,
+      "untracked": []
+    },
+    "funcional": {
+      "changed": [
+        "validator.py"
+      ],
+      "checks": {
+        "functional_tests": true,
+        "scope": true,
+        "stable_proof_valid": true
+      },
+      "pass": true,
+      "untracked": []
+    },
+    "operacao": {
+      "changed": [
+        "target.txt"
+      ],
+      "checks": {
+        "artifact_integrity": true,
+        "gate_pending": true,
+        "no_mutation": false,
+        "target_unchanged": false
+      },
+      "pass": false,
+      "untracked": []
+    }
+  }
+}
