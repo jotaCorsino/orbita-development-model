@@ -1,6 +1,6 @@
 # ORB-EVO-001 — 06: Configuração de projetos IA
 
-**Data:** 26/11/2026. **Estado:** configuração candidata para homologação documental; não integrada nem vigente como norma geral. **Baseline:** `696910d0d64a6d068cfd52731fa4406ad3ed7627`, PRs #35/#36 integradas; etapas 01–05 encerradas. **Autorização:** etapa 06 exclusivamente, no mesmo chat da iniciativa. [Plano aprovado](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
+**Data:** 26/11/2026. **Estado:** configuração candidata homologada, integrada pela PR #37 e verificada na main; ainda não vigente como norma geral. **Baseline:** `696910d0d64a6d068cfd52731fa4406ad3ed7627`, PRs #35/#36 integradas; etapas 01–05 encerradas. **Autorização:** etapa 06 exclusivamente, no mesmo chat da iniciativa. [Plano aprovado](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md).
 
 ## 1. Fundamento e decisão
 
@@ -197,10 +197,17 @@ Todos os 14 casos têm tratamento conceitual. Não houve medição de tokens, la
 | D-22 | Autorreferência do produtor sem circularidade | 10–12 |
 | D-01/D-13/D-27 | Composição, autorização operacional e isolamento | 09, 10–11 |
 
-Critério documental: composição mínima, exemplos de entrada por papel, contrato local e handoff, versionamento, bootstrap por situação, segurança, autorreferência e 14 cenários confrontados; reconciliar README, ROADMAP e PROP-007. 5/14 etapas homologadas até aceite e integração de 06. Exemplos são propostas, não configuração aplicada. Nenhuma alteração normativa, de consumidores ou ambientes, criação/renomeação de chats, instalação de ferramentas, execução de prompts em plataformas, clone, backup ou operação externa realizada. Não houve auditoria integral de segredos. PRs #4/#5 e branches documentais preservadas; novos refs da entrega são intencionais. Não duplicar Knowledge com desenho candidato.
+Critério documental: composição mínima, exemplos de entrada por papel, contrato local e handoff, versionamento, bootstrap por situação, segurança, autorreferência e 14 cenários confrontados; reconciliar README, ROADMAP e PROP-007. 6/14 etapas homologadas após aceite e integração de 06. Exemplos são propostas, não configuração aplicada. Nenhuma alteração normativa, de consumidores ou ambientes, criação/renomeação de chats, instalação de ferramentas, execução de prompts em plataformas, clone, backup ou operação externa realizada. Não houve auditoria integral de segredos. PRs #4/#5 e branches documentais preservadas; novos refs da entrega são intencionais. Não duplicar Knowledge com desenho candidato.
 
 A etapa 10 materializará o conjunto normativo e templates após as demais propostas; etapa 11 avaliará aplicação em pilotos autorizados com baseline, recuperação correta de fontes/decisões, tarefas indevidas evitadas, intervenções, custo de leitura e evidências. Etapa 09 define métricas e autonomia. Não afirmar economia antes da medição.
 
 ## 11. Continuidade condicional — etapa 07
 
-Gate: homologação humana da proposta, integração autorizada, conferência pós-merge e reconciliação. Após encerramento comprovado e autorização específica, continuar no mesmo chat com 07 — Knowledge, refinando a base já homologada (PROP-006) e D-15/D-03/D-12/D-16/D-27 conforme evidências das auditorias e arquitetura 03. Não reinventar Knowledge, nem criar entradas artificiais; definir escopo, validade, revalidação, recuperação seletiva e promoção controlada. Não iniciar 07 nesta etapa.
+Gate: homologação humana e integração comprovadas, conferência pós-merge e reconciliação registradas no encerramento abaixo. Após encerramento comprovado e autorização específica, continuar no mesmo chat com 07 — Knowledge, refinando a base já homologada (PROP-006) e D-15/D-03/D-12/D-16/D-27 conforme evidências das auditorias e arquitetura 03. Não reinventar Knowledge, nem criar entradas artificiais; definir escopo, validade, revalidação, recuperação seletiva e promoção controlada. Não iniciar 07 nesta etapa.
+
+## 12. Encerramento da etapa 06
+
+- Autorização humana registrada na [PR #37](https://github.com/jotaCorsino/orbita-development-model/pull/37#issuecomment-7194677168): “pode continuar”, em resposta direta ao pedido de homologação e integração. Aceite documental e autorização restrita à integração e ao encerramento da configuração candidata, sem configuração aplicada ou início de 07.
+- Entrega aprovada: `f541524a3181235dd26ba0b19064979066ced6a2`; merge squash confirmado: `216d91514c53617ecceeeb7946da51002b99d6d3`. Árvore Git `056c9bae6d9a5239ecaa7f83c0ec421bb3b5cfe3` idêntica à entrega aprovada; quatro arquivos relidos diretamente na main. Preservados os quatro modelos, os 14 walkthroughs analíticos, as 14 etapas e a continuidade por iniciativa.
+- Fechamento editorial isolado conforme TRB-004, sem alteração normativa, de consumidores, plataformas ou instruções efetivamente aplicadas. Nenhum piloto, teste operacional de agentes ou medição de eficiência adicional. Nenhum temporário local criado; PRs #4/#5 e branches documentais preservadas intencionalmente; sem exclusão ou classificação de elegibilidade para descarte.
+- Etapa 06 encerrada no escopo documental. Etapa 07 não iniciada; prosseguir neste mesmo chat somente após autorização específica. Conferir o pós-merge da alteração editorial na respectiva PR, sem abrir novo ciclo apenas para registrar seu próprio SHA.
