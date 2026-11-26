@@ -227,7 +227,7 @@ O método é autônomo e aplicável desde o início de um projeto. Os exemplos s
 
 ## Troubleshooting e aprendizados observados
 
-Ocorrências observadas em projetos que utilizam o método são registradas separadamente para preservar evidências, diagnóstico e aprendizado. Um troubleshooting não altera automaticamente o ÓRBITA; quando gera refinamento metodológico, a incorporação depende de análise, homologação humana e merge na `main`.
+Ocorrências observadas em projetos que utilizam o método são registradas exclusivamente em seus próprios contextos. O troubleshooting do núcleo reúne diagnósticos independentes e ocorrências do próprio método, sem dados ou referências de consumidores (ISO-001). Um troubleshooting não altera automaticamente o ÓRBITA; quando gera refinamento metodológico, a incorporação depende de análise, homologação humana e merge na `main`.
 
 - [TRB-001 — `.git` somente leitura no sandbox do Codex](troubleshooting/001-BOOTSTRAP-GIT-CODEX-SANDBOX-SOMENTE-LEITURA.md) — diagnóstico entre sandbox e filesystem real incorporado ao método pelo PR #2.
 - [TRB-002 — Deploy/preview sem recuperação do fluxo operacional](troubleshooting/002-DEPLOY-PREVIEW-FLUXO-OPERACIONAL-NAO-RECUPERADO.md) — preflight operacional e dependências entre projetos incorporados pelo PR #7.
@@ -236,7 +236,7 @@ Ocorrências observadas em projetos que utilizam o método são registradas sepa
 
 ## Propostas de melhoria do método
 
-As propostas registram evoluções candidatas surgidas do uso real. Enquanto estão em análise, **não são regras oficiais**. Quando homologadas e integradas à `main`, tornam-se parte do método e o arquivo permanece como registro histórico da decisão.
+As propostas registram evoluções candidatas formuladas de modo independente; a experiência pode motivar melhorias, mas não autoriza importar registros ou referências de outros projetos (ISO-001). Enquanto estão em análise, **não são regras oficiais**. Quando homologadas e integradas à `main`, tornam-se parte do método e o arquivo permanece como registro histórico da decisão.
 
 - [PROP-001 — Painel visual de acompanhamento no README](proposals/001-README-ACOMPANHAMENTO-VISUAL.md) — acompanhamento proporcional e estados visuais incorporados pelo PR #3.
 - [PROP-002 — Preflight operacional e dependências entre projetos](proposals/002-PREFLIGHT-OPERACIONAL-E-DEPENDENCIAS-ENTRE-PROJETOS.md) — verificação condicional antes de operações em ambientes existentes incorporada pelo PR #7.
@@ -298,7 +298,7 @@ O segundo é **demonstrativo**: tornar visíveis não apenas resultados de softw
 
 A sistematização e a documentação do Método ÓRBITA neste repositório foram organizadas por **João Corsino**, a partir de experiência prática em projetos de software assistidos por IA.
 
-O modelo é evolutivo e pode incorporar novas práticas conforme seu uso em projetos reais revele problemas, limitações e oportunidades de melhoria.
+O modelo é evolutivo. A experiência prática pode motivar novas regras autônomas, verificadas independentemente, sem importar contexto de outros projetos (ISO-001).
 
 ---
 

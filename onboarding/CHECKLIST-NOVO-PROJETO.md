@@ -10,7 +10,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] identidade e ambientes do projeto compreendidos
 - [ ] processo de inicialização compreendido
 - [ ] contrato de trabalho para agentes lido
-- [ ] regra COM-001 de fechamento **AÇÃO SUA** compreendida pelos agentes de planejamento e implementação
+- [ ] COM-001 (**AÇÃO SUA**), COM-002 (explicação humana) e ISO-001 (isolamento de contexto) compreendidas pelos agentes de planejamento e implementação
 - [ ] baseline de segurança e integridade lido
 
 ## B. Contexto e identidade inicial
@@ -39,7 +39,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] `knowledge/README.md` criado como índice inicial, mesmo sem entradas
 - [ ] arquitetura inicial registrada quando necessária
 - [ ] regras locais do projeto registradas
-- [ ] `AGENTS.md` criado a partir do [template oficial](../templates/AGENTS-TEMPLATE.md) ou equivalente e contém COM-001 (fechamento `AÇÃO SUA` quando houver tarefa humana)
+- [ ] `AGENTS.md` criado a partir do [template oficial](../templates/AGENTS-TEMPLATE.md) ou equivalente e contém COM-001, COM-002 e ISO-001 conforme o template
 - [ ] estados de acompanhamento definidos
 - [ ] critérios de aceite/homologação definidos
 - [ ] riscos de segurança/publicação avaliados
@@ -94,7 +94,7 @@ Use este checklist para verificar se um projeto novo foi inicializado corretamen
 - [ ] dependências/configurações sensíveis foram consideradas
 - [ ] testes negativos ou de controles sensíveis foram definidos quando necessários
 - [ ] visibilidade pública ou privada do projeto foi avaliada
-- [ ] case sanitizado separado foi considerado quando aplicável
+- [ ] case sanitizado separado no contexto próprio do projeto foi considerado quando aplicável; não transferir ao núcleo ÓRBITA (ISO-001)
 
 ## Gate
 

@@ -8,7 +8,7 @@ O objetivo é garantir que o agente compreenda **como o projeto será organizado
 
 ---
 
-**Revisão:** consulte o aviso de versão candidata no [README](../README.md). Para adoção nova, confirme revisão do método e fontes locais. Para continuidade, recupere somente contexto pertinente conforme [IA no método](../docs/07-IA-NO-METODO.md); não repetir as 15 leituras se adoção comprovada e fontes aplicáveis não mudaram.
+**Revisão:** consulte a situação da revisão homologada no [README](../README.md). Para adoção nova, confirme revisão do método e fontes locais. Para continuidade, recupere somente contexto pertinente conforme [IA no método](../docs/07-IA-NO-METODO.md); não repetir as 15 leituras se adoção comprovada e fontes aplicáveis não mudaram.
 
 ## 1. Papéis fundamentais
 
@@ -126,7 +126,7 @@ Quando possuir acesso autorizado ao repositório, deve criar ou organizar direta
 - escopo inicial;
 - planejamento/roadmap;
 - arquitetura inicial quando necessária;
-- regras locais e AGENTS.md/equivalente com fontes/revisão adotadas e COM-001;
+- regras locais e AGENTS.md/equivalente com fontes/revisão adotadas, COM-001, COM-002 e ISO-001, conforme o [template AGENTS](../templates/AGENTS-TEMPLATE.md);
 - backlog no README e knowledge/README.md (vazio quando não há conclusões);
 - estados de acompanhamento;
 - critérios de aceite e homologação;
@@ -340,7 +340,7 @@ sanitização
 case público
 ```
 
-Não exponha desnecessariamente credenciais, infraestrutura, dados pessoais, dados de clientes, identificadores operacionais ou configurações internas.
+O case pertence exclusivamente ao contexto e portfólio autorizado do projeto que o produziu; não deve ser importado para o núcleo ÓRBITA, nem mesmo sanitizado (ISO-001). Não exponha desnecessariamente credenciais, infraestrutura, dados pessoais, dados de clientes, identificadores operacionais ou configurações internas.
 
 ---
 

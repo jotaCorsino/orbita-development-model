@@ -61,7 +61,7 @@ Na fundação, identificar as necessidades profissionais e propor os [Satélites
 - backlog de evolução no README, inicialmente vazio quando ainda não houver necessidades futuras registradas;
 - base `knowledge/` com índice inicial para conhecimento operacional reutilizável;
 - regras locais do projeto;
-- arquivo `AGENTS.md` da raiz (gerado a partir do [template oficial](../templates/AGENTS-TEMPLATE.md) ou equivalente), contendo obrigatoriamente a regra de resposta **COM-001 — `AÇÃO SUA`** e as restrições próprias deste projeto;
+- arquivo `AGENTS.md` da raiz (gerado a partir do [template oficial](../templates/AGENTS-TEMPLATE.md) ou equivalente), contendo obrigatoriamente **COM-001 — `AÇÃO SUA`**, COM-002, ISO-001, as fontes adotadas e as restrições próprias deste projeto, conforme o template;
 - estados de acompanhamento;
 - critérios de homologação;
 - riscos e restrições conhecidos;
