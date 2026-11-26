@@ -1,6 +1,6 @@
 # ORB-EVO-001 — 02: Auditoria HUB e projetos governados
 
-**Data:** 26/11/2026. **Estado:** entrega documental para homologação humana; não integrada. **Baseline ÓRBITA:** `abef1205a566c7fea54b222741955941261d5a71`, PRs #27 e #28 integradas; comparação com main idêntica. **Escopo:** somente etapa 02 do [plano aprovado](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md). A autorização específica desta etapa foi concedida pelo responsável após o fechamento da [etapa 01](007-01-AUDITORIA-INTEGRAL.md). Não altera normas vigentes, consumidores, ambientes ou critérios de maturidade.
+**Data:** 26/11/2026. **Estado:** homologada, integrada e verificada na main pela PR #29. **Baseline ÓRBITA:** `abef1205a566c7fea54b222741955941261d5a71`, PRs #27 e #28 integradas; comparação com main idêntica. **Escopo:** somente etapa 02 do [plano aprovado](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md). A autorização específica desta etapa foi concedida pelo responsável após o fechamento da [etapa 01](007-01-AUDITORIA-INTEGRAL.md). Não altera normas vigentes, consumidores, ambientes ou critérios de maturidade.
 
 ## 1. Procedimento, fronteira e tratamento de evidência
 
@@ -110,10 +110,17 @@ As referências nesta matriz são o tipo de fonte e o alias do inventário; os d
 
 - Escopo de leitura não produziu clones locais, downloads de dados, scripts de servidor, backups, alterações em consumidores ou ambientes. Não foram removidos recursos.
 - PRs antigas #4/#5 do ÓRBITA permanecem abertas/draft no levantamento; preservadas conforme etapa 01. PRs dos consumidores são inventário de risco, não lista de exclusão. Não houve classificação exaustiva de refs não-PR, worktrees ou resíduos físicos. Operações e limpeza dos projetos permanecem em suas fontes/gates.
-- Entrega documental isolada: este relatório e reconciliação do README, ROADMAP e PROP-007. Estado da etapa 01 permanece fechado; 1/14 homologada, etapa 02 aguardando homologação, sem mudança no roadmap v0.1–v1.0. Não criar backlog duplicado, Knowledge sem conclusão distinta ou segundo case público sem gate próprio.
+- Entrega documental isolada: este relatório e reconciliação do README, ROADMAP e PROP-007. Estado da etapa 01 permanece fechado; 2/14 homologadas após integração da etapa 02, sem mudança no roadmap v0.1–v1.0. Não criar backlog duplicado, Knowledge sem conclusão distinta ou segundo case público sem gate próprio.
 - Limites: não foram reexecutadas suítes, testados servidores, inspecionados chats completos, aferidas métricas de eficiência, certificados segredos/licenças ou avaliadas todas as PRs/diffs. Nenhuma conclusão de ausência de falha ou de replicabilidade universal. A seleção analítica e a anonimização foram decisões da auditoria.
-- Critério de saída documental: universo declarado, 28/28 diagnósticos confrontados, práticas/ocorrências e limites classificados, evidência sanitizada, superfícies reconciliadas e diff restrito. A homologação humana, integração e verificação pós-merge ainda dependem do gate. O registro de encerramento deve refletir apenas o que foi aprovado e efetivamente integrado.
+- Critério de saída documental: universo declarado, 28/28 diagnósticos confrontados, práticas/ocorrências e limites classificados, evidência sanitizada, superfícies reconciliadas e diff restrito. Homologação humana, integração e verificação pós-merge comprovadas no registro de encerramento abaixo.
 
 ## 7. Handoff condicional
 
 **Próximo chat:** 03 — ORB-EVO-001 — Arquitetura metodológica. Somente após homologação humana desta etapa, merge autorizado, verificação da main e reconciliação/encerramento documental, com autorização explícita para a etapa 03. Recuperar baseline real, este relatório, [etapa 01](007-01-AUDITORIA-INTEGRAL.md), [plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md) e [roadmap](../ROADMAP.md). Usar E-01/E-02 e D-01 como insumos, sem reabrir auditorias concluídas; avaliar autoridade, fronteiras, herança, versões e resolução de conflito, preservando canonicidade. Não iniciar essa análise antes do gate. Nenhuma tarefa operacional de consumidor é transferida por este handoff.
+
+## 8. Encerramento da etapa 02
+
+- Homologação humana registrada na [PR #29](https://github.com/jotaCorsino/orbita-development-model/pull/29#issuecomment-7192461563): “aprovado, pode continuar”, em 26/11/2026. Autorização restrita à integração e fechamento da etapa 02.
+- Entrega aprovada: `6fea669e3b73da69cfa68f6606dffac6beba4546`; merge squash confirmado: `62189690449a5239e4856470c8dc42cf674f6a59`. Árvore Git `59dba5cc5590397ea6718e9706678c80d22d3473` idêntica à entrega aprovada; quatro arquivos relidos diretamente na main. Inventário de 13 repositórios, 54 PRs abertas no levantamento, 22 registros de evidência e 28 diagnósticos preservados.
+- Fechamento editorial isolado, conforme TRB-004, sem alterar as matrizes, o plano de 14 etapas, normas, consumidores ou critérios de maturidade. Nenhuma exclusão ou limpeza destrutiva; PRs #4/#5 e branches de auditoria/encerramento preservadas como referências intencionais. Limites de inspeção física, segredos e testes históricos permanecem.
+- Etapa 02 encerrada no escopo documental; etapa 03 não iniciada. Próximo passo: autorização específica para arquitetura metodológica em novo chat. Verificar o pós-merge da alteração editorial na respectiva PR sem abrir novo ciclo apenas para registrar seu próprio SHA.
