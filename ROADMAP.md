@@ -14,6 +14,10 @@ O objetivo não é criar complexidade por antecipação. Cada nova camada deve s
 | **v0.4 — Avaliação** | Definir sinais de saúde e critérios para avaliar aplicação do método | PENDENTE | Checklist ou matriz de avaliação validada em projetos reais |
 | **v1.0 — Modelo estável** | Consolidar uma especificação pública estável | PENDENTE | Conceitos, exemplos e ferramentas suficientemente maduros para adoção externa |
 
+## Iniciativa transversal ORB-EVO-001
+
+[Plano de evolução (PROP-007)](proposals/007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md): 14 etapas previstas, 0 homologadas; próximo passo 01 — auditoria integral somente leitura. Abrange governança modular, limpeza, chats, configuração de agentes, Knowledge, documentação, eficiência, Skills e Tools. Contribui para v0.2–v0.4 e avaliação da V1.0, sem substituir os critérios existentes nem declarar nova versão.
+
 ## v0.1 — Fundação
 
 Inclui:
