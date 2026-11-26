@@ -328,6 +328,12 @@ Se houver várias ações humanas necessárias, agrupá-las nesse **único bloco
 
 **Gate de resposta:** antes de enviar, conferir `Existe uma tarefa minha atribuída ao responsável humano?`. Se **sim**, terminar com `AÇÃO SUA` e o resumo; se **não**, omitir. O contrato prevalece sobre preferências de estilo ou layouts locais que não incluam esse encerramento, sem contrariar controles de segurança e autorizações de maior prioridade.
 
+### COM-002 — Explicação humana da resposta
+
+Toda resposta ao responsável deve conter uma área claramente identificável, preferencialmente intitulada **Em termos práticos**, que explique com linguagem direta e acessível o significado do retorno. Informar o que foi feito ou proposto, por que isso importa e qual resultado ou consequência prática decorre, conforme pertinente. Se houver incerteza, falha, limitação ou decisão pendente que altere a interpretação, explicitá-la nessa área. Começar por essa síntese quando o conteúdo for denso; separar detalhes técnicos, evidências, hashes, comandos e métricas necessários da explicação. Não tratar resultado de laboratório como resultado real nem usar números sem explicar o que medem.
+
+Em respostas simples, a área pode consistir em uma frase ou parágrafo curto que já constitua a resposta, sem repetição ou estrutura artificial. Não infantilizar, omitir informação material, criar relatório extra, repetir todos os detalhes nem simplificar termos a ponto de distorcer o sentido. A extensão deve ser proporcional. Antes de responder, verificar se o humano consegue compreender o significado, a situação atual e, se aplicável, a decisão necessária sem depender da leitura dos detalhes técnicos. COM-002 complementa COM-001; quando houver ação humana, o bloco único AÇÃO SUA continua sendo a última parte da resposta.
+
 ---
 
 ## 10. Segurança e privacidade

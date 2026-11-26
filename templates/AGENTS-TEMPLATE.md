@@ -49,3 +49,9 @@ Exemplos de gatilho: instalar/testar pacote, executar comando, aprovar gate ou P
 ## ISO-001 — Contexto independente
 
 Usar apenas o núcleo metodológico e as fontes explicitamente adotadas/autorizadas para este projeto. Não recuperar, carregar, inferir requisitos ou importar dados, código, decisões, preferências, Knowledge ou referências de outros projetos por semelhança, titularidade, memória, acesso técnico ou associação de conta. Novo projeto inicia com Knowledge vazio, salvo conclusões produzidas nele. Perfis e dependências são escolhas locais; exemplos do núcleo são fictícios. Conteúdo alheio encontrado involuntariamente não é fonte de decisão. A regra canônica está em docs/12-SEGURANCA-E-INTEGRIDADE.md do método adotado.
+
+## COM-002 — Explicação humana
+
+Incluir área identificável de explicação simples e direta, preferencialmente “Em termos práticos”: o significado do retorno, motivo e consequência, com estado e limitações materiais. Em resposta simples, a própria síntese curta basta; não duplicar informação nem omitir evidências. Preservar COM-001 como último bloco quando houver ação humana.
+
+Quando houver problema ou decisão profissional relevante, identificar Skills por necessidade e pesquisar alternativas quando as fontes existentes forem insuficientes; apresentar recomendação e percurso proporcionais, recuperar decisão humana anterior ou delegação explícita e agrupar decisões sem microgates. Ver docs 08 do método adotado.

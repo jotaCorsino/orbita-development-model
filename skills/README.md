@@ -4,6 +4,10 @@
 
 Selecione pelo problema, não pelo prestígio da metodologia. Leia apenas fichas pertinentes, compare opções viáveis e apresente recomendação fundamentada ao responsável. A escolha de metodologia entre alternativas pertence ao humano; técnicas internas já delegadas não demandam nova decisão, salvo mudança material.
 
+## Descoberta além da biblioteca
+
+O agente identifica proativamente a necessidade de competência, investiga metodologias e técnicas profissionais quando as fichas existentes não bastarem e propõe o percurso mais adequado ao problema. Comparar processos completos e técnicas complementares, fontes, condições, esforço, entregáveis, riscos e participação humana. Recomendar explicitamente; agrupar escolhas metodológicas relevantes em gates existentes e executar passos rotineiros já delegados sem pesquisa ou aprovação repetitiva. A biblioteca é ponto de partida, não repertório fechado. Ver [regra canônica de descoberta e proporcionalidade](../docs/08-APLICACAO-E-EVOLUCAO.md). Não incorporar contexto de consumidores.
+
 ## UI/UX — piloto documental
 
 | Skill | Tipo | Quando considerar | Estado |

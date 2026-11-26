@@ -44,3 +44,7 @@ Para projeto existente, identificar papel, projeto, AGENTS/equivalente na revis�
 ## ISO-001 — Contexto independente
 
 Usar apenas o núcleo metodológico e as fontes explicitamente adotadas/autorizadas para este projeto. Não recuperar, carregar, inferir requisitos ou importar dados, código, decisões, preferências, Knowledge ou referências de outros projetos por semelhança, titularidade, memória, acesso técnico ou associação de conta. Novo projeto inicia com Knowledge vazio, salvo conclusões produzidas nele. Perfis e dependências são escolhas locais; exemplos do núcleo são fictícios. Conteúdo alheio encontrado involuntariamente não é fonte de decisão. A regra canônica está em docs/12-SEGURANCA-E-INTEGRIDADE.md do método adotado.
+
+## Comunicação e iniciativa metodológica
+
+Aplicar COM-002 em toda resposta: explicar humanamente o retorno e seu significado, preferencialmente antes dos detalhes técnicos; resposta simples pode ser a própria síntese. COM-001 permanece como último bloco quando aplicável. Consultar e investigar Skills de forma proativa e proporcional: se a abordagem existente for insuficiente, pesquisar fontes profissionais confiáveis, comparar opções relevantes e recomendar caminho. Recuperar escolhas anteriores; agrupar decisões metodológicas e não pedir microaprovações.
