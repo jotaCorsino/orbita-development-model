@@ -172,7 +172,7 @@ Troubleshooting = o que aconteceu e como foi investigado
 Knowledge     = o que aprendemos e devemos reutilizar
 ```
 
-Uma entrada Knowledge deve ser reutilizável, operacionalmente relevante, não trivial e suficientemente comprovada. Hipóteses, logs brutos, transcrições, tarefas futuras, segredos e cópias de documentação canônica não pertencem à base.
+Uma entrada Knowledge deve ser reutilizável, operacionalmente relevante, não trivial, comprovada e compactável. Hipóteses, logs brutos, transcrições, tarefas futuras, segredos e cópias de documentação canônica não pertencem à base.
 
 Estados de validade:
 
@@ -183,6 +183,28 @@ Estados de validade:
 Conhecimento anterior orienta a investigação, mas **evidência atual confirma a decisão** quando o estado puder ter mudado.
 
 Ao final de uma tarefa relevante, deve-se verificar proporcionalmente se surgiu alguma conclusão comprovada e reutilizável que uma sessão futura provavelmente precisaria redescobrir. Quando houver, a entrada existente deve ser atualizada ou uma nova `KN-xxx` criada.
+
+### Validade e compartilhamento de Knowledge
+
+Identificar tipo de evidência (inspeção estática, teste isolado, operação datada, documentação de fornecedor ou relato), origem, data da comprovação, versão/ambiente/condições e limites. Relato não equivale a observação direta; hipótese nunca Vigente; prova parcial sustenta somente conclusão parcial. Distinguir data de edição da data de verificação. Estados Vigente/Revalidar/Obsoleto mantidos; transição justificada por mudança de condição, conflito, substituição ou nova prova, sem validade arbitrária, reativação só com evidência. Revalidar não é depósito de hipóteses. Consultar índice local seletivamente; fontes externas só pertinentes/autorizadas. Conflitos não se resolvem pelo registro mais recente; consultar fonte competente e estado atual. Atualizar índice e entrada equivalente, preservar história e ID. Base vazia é válida.
+
+Knowledge pode existir no projeto, método, HUB ou núcleo sem hierarquia obrigatória. Referenciar antes de copiar; promoção requer conclusão generalizável demonstrada, direitos, privacidade, sanitização, prova e aceite do destino competente. Preservar origem. Não compartilhar automaticamente, ingerir logs brutos ou criar repositório adicional obrigatório. [Templates Knowledge](../templates/KNOWLEDGE-ENTRY-TEMPLATE.md).
+
+## NOM-001 — Nomenclatura humanizada
+
+Todo nome criado por agente deve ser legível, simples, descritivo e consistente. Nome humano comunica finalidade; ID lógico preserva rastreio/unicidade; slug/símbolo técnico respeita tecnologia; hash/tag/revisão identifica versão. ID complementa título, não o substitui. Exemplos: `03-requisitos-funcionais.md`, `feat/revisao-de-interface`, `fix: corrige navegação lateral`, “UX-003 — Revisão da interface”, `verificar-integridade.sh`, `catalogo-homologacao`, `catalogo-pre-migracao-20261126T140000Z.sqlite`, `FiltroCategorias` e `validarAcesso`. Aplicar a arquivos, pastas, etapas/subetapas, tarefas, chats, branches, commits, PRs, scripts, backups, ambientes, releases, componentes, funções, variáveis, Skills, Tools e Knowledge. Não impor IDs a tudo, nem renumerar histórico; respeitar idioma, siglas consagradas, convenções de framework, caminhos, API, nomes obrigatórios, IDs de banco e variáveis locais inequívocas. Não incluir segredos ou dado pessoal desnecessário.
+
+Renomear legado apenas quando autorizado e necessário: confirmar identidade, dependentes, links/âncoras, imports, configurações, automação, ambientes, colisões/case e contratos. Preferir rótulo humano sem mudar identificador técnico se suficiente; preservar ID e origem→destino, testar referências e funcionamento. Não reescrever histórico nem renomear recursos operacionais por estética. [Convenções por categoria e exemplos](../proposals/007-08-DOCUMENTACAO-E-NOMENCLATURA.md) §2.
+
+## Fontes canônicas e documentação proporcional
+
+Canonicidade por assunto: README para identidade/visão rápida e backlog; especificação/tarefa para requisitos, autorização e critérios; arquitetura/decisão para contratos; roadmap para planejamento; PR/testes/gate para evidência; release e destino observado para implantação; runbook para operação; troubleshooting para ocorrência; Knowledge para aprendizado; Skills para técnica; Tools para instrumento; AGENTS para fontes adotadas/regras locais. Resumos referenciam fonte, não replicam estado concorrente. Histórico datado não é status atual. Consolidar sem perda semântica conforme [IA no método](07-IA-NO-METODO.md); verificar cobertura origem→destino em mudanças extensas, links no contexto gerado e derivadas pertinentes antes/depois. Backlog pode usar mecanismo equivalente aprovado com índice/referência, sem duplicar execução; manter seção padrão no README. Selecionado aponta à tarefa; conclusão/descarte exige decisão/evidência.
+
+## Skills — seleção de técnicas profissionais
+
+Catálogo por problema/competência, não prompt de papel ou obrigação de framework. Consultar [índice Skills](../skills/README.md) seletivamente; ficha identifica finalidade, tipo, condições, contraindicações, alternativas/complementos, esforço, insumos, passos, entregáveis, evidência, gates, autoria, fonte, versão/data, direitos e revisão. Curador propõe e responsável competente admite/revisa; síntese própria, fontes primárias, direitos verificados para reprodução, evidência de eficácia distinta de descrição. Revalidar por mudança de fonte/condição; não inventar pesquisa, teste ou eficácia. Distinguir método integral, adaptação e técnica complementar. Padrão obrigatório não é opção descartável.
+
+**Seleção:** recuperar objetivo, restrições, incerteza, acesso e critérios. Quando houver alternativas metodológicas viáveis, apresentar opções pertinentes e condicionais (inclusive abordagem direta/manter método vigente quando cabível), comparar adequação, esforço/custo, riscos, limites, entregáveis e provas; explicitar recomendação contextual e justificar. O humano escolhe antes da execução dependente, salvo escolha anterior ou delegação expressa registrada. Não fabricar alternativa se só uma for admissível; explicar exclusões. Passos internos já delegados não exigem microgate. Registrar escolha, revisão, adaptação e evidência no plano/tarefa existente; mudança material reabre apenas a decisão afetada. Não confundir escolha com autorização de contato, dados, custo, deploy ou homologação. [Contrato detalhado e piloto](../proposals/007-09A-ORBITA-SKILLS.md).
 
 ## Projeto operacional e case público
 

@@ -51,7 +51,7 @@ mesmo projeto
 
 Usar o mesmo nome entre esses ambientes reduz ambiguidade e facilita a retomada.
 
-Os contextos de IA são úteis para continuidade, mas podem estar incompletos ou desatualizados. Por isso, antes de decisões ou alterações relevantes, o estado atual do repositório deve prevalecer.
+Os contextos de IA são úteis para continuidade, mas podem estar incompletos ou desatualizados. Por isso, antes de decisões ou alterações relevantes, recuperar a fonte competente e a revisão aplicável; distinguir estado integrado, trabalho ativo autorizado e estado observado.
 
 ## Fundação documental antes da implementação
 
@@ -137,3 +137,17 @@ O método **não exige um template específico neste momento**. O responsável e
 IA pode errar, interpretar requisitos incorretamente, criar código inseguro ou declarar sucesso com validação insuficiente.
 
 O ÓRBITA não elimina esses riscos. Ele cria pontos explícitos para detectá-los e controlá-los.
+
+## Continuidade por iniciativa e recuperação seletiva
+
+Um projeto pode ter várias iniciativas; cada iniciativa mantém, por padrão, um chat de coordenação enquanto o contexto for suficiente. Etapas, subetapas, correções e gates independentes não exigem novo chat. Abrir outro chat para iniciativa independente, isolamento necessário ou saturação/interrupção/contexto irrecuperável real; usar recuperação seletiva antes de migrar. Não confundir sessão do executor com chat de coordenação. Nome legível com ID quando útil, por exemplo “CAT-014 — Revisão de navegação (continuação 2)”. Não renomear/excluir chats antigos por regra.
+
+Recuperar objetivo, autorização, fontes/revisão adotada, ref ativa, último gate e prova, estado local e remoto pertinentes, pendência e próxima ação segura. Handoff/checkpoint proporcional (no registro existente): identidade; autoridade/escopo; estado comprovado; refs; trabalho não publicado; pendência real; próxima ação autorizada; restrições/limitações. Sem transcrição, segredo ou documento novo por ritual. Mesma conversa: recuperar apenas delta/decisões; nova iniciativa: contexto do projeto + tarefa; retomada interrompida: preservar antes de sincronizar conforme [Git](06-GIT-E-GITHUB.md); ambiente existente: runbook, versão e destino. Se efeito externo incerto, verificar antes de repetir. Se fonte essencial indisponível, bloquear ação dependente e solicitar menor intervenção. Não reexecutar testes válidos por troca de chat.
+
+## Configuração versionada dos agentes
+
+Três partes: (1) entrada compacta do ambiente de IA: identidade, papel, ponteiro para AGENTS/equivalente, salvaguardas essenciais e COM-001; (2) AGENTS/equivalente versionado: fontes adotadas, revisão, domínios, regras locais, índice Knowledge, procedimentos e Skills/Tools pertinentes; (3) tarefa/checkpoint: escopo, ref, critérios, dependências, prova e próximo gate. Não copiar todo método, status volátil ou segredos na configuração. Se a ferramenta não carregar AGENTS automaticamente, recuperá-lo explicitamente quando autorizado.
+
+Exemplo de entrada: “Atue como agente de planejamento [ou implementação] do projeto identificado. Consulte AGENTS.md na revisão aplicável, respeite autorização, segurança e gates; recupere tarefa e contexto pertinente. COM-001: se houver providência humana, encerre cada resposta com um único bloco AÇÃO SUA; sem providência, omita.”
+
+Adoção nova segue as leituras e fundação de [onboarding](../onboarding/README.md) e [docs 11](11-INICIALIZACAO-DE-NOVO-PROJETO.md); retomadas não repetem integralmente onboarding já comprovado. Distinguir revisão versionada do AGENTS, revisão efetivamente carregada, método adotado e estado de execução observado. Não declarar configuração aplicada só por commit; conferir quando possível. Legado sem revisão fixada: registrar desconhecida, regularizar com autoridade competente; não atualizar silenciosamente. [Template AGENTS](../templates/AGENTS-TEMPLATE.md).
