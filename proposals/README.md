@@ -38,3 +38,5 @@ Uma proposta deve deixar claro:
 - como validar se o ganho justifica essa complexidade.
 
 Sempre que possível, prefira mudanças proporcionais e condicionais em vez de transformar toda ocorrência em nova regra transversal.
+
+ISO-001: propostas do núcleo devem ser autônomas. Não carregar exemplos, registros, identidades, links ou dados de outros projetos, nem mesmo anonimizados. Validação pública em cenários independentes; evidência de projetos permanece em seu próprio contexto.

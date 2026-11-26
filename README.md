@@ -20,6 +20,10 @@
 
 O núcleo pode ser adotado diretamente ou combinado com HUB organizacional e métodos especializados explicitamente aplicáveis. [Knowledge](docs/08-APLICACAO-E-EVOLUCAO.md) preserva aprendizados; [Skills](skills/README.md) apoia seleção humana de abordagens; [Tools](tools/README.md) orienta consumo governado de ferramentas. Essas capacidades não são camadas obrigatórias nem conferem autoridade. Consulte [papéis e composição](docs/03-PAPEIS-E-RESPONSABILIDADES.md).
 
+## Neutralidade e isolamento de contexto — ISO-001
+
+O ÓRBITA fornece método, instruções genéricas, templates e referências profissionais independentes. Não fornece contexto de projetos de terceiros ou do mantenedor, ainda que anonimizado, nem exige acesso a repositórios externos de projetos. Novo projeto começa com identidade, requisitos, decisões, backlog e Knowledge próprios; Knowledge inicial vazio. HUB, métodos, perfis, ferramentas e fontes externas só são incorporados por escolha explícita do responsável daquele projeto, no escopo definido. Não consultar memória, chats, arquivos, integrações ou repositórios de outros projetos para fundamentar decisões sem autorização própria. Não importar contexto por associação de conta, titular, organização ou semelhança. [Regra de isolamento](docs/12-SEGURANCA-E-INTEGRIDADE.md).
+
 ## Como funciona
 
 O ÓRBITA parte de uma ideia simples: **o desenvolvimento assistido por IA funciona melhor quando cada parte do trabalho tem um papel e um lugar definidos**.
@@ -200,13 +204,11 @@ O método foi desenhado para reduzir alguns padrões que podem comprometer clare
 
 A discussão completa está em [Anti-padrões](docs/09-ANTI-PADROES.md).
 
-## Preferência de validação do mantenedor — QA local-first
+## Validação proporcional
 
-Para projetos dirigidos por este mantenedor, consultar [perfil QA local-first](onboarding/PERFIL-MANTENEDOR-VALIDACAO-LOCAL.md): **testes locais reproduzíveis como padrão**, GitHub Actions excepcional e manual. Isso não reduz testes ou aceites obrigatórios, e não constitui exigência universal para outros usuários do ÓRBITA.
+Escolher execução local, CI ou ambiente isolado conforme risco, recursos, independência e requisitos do projeto. Nenhuma plataforma, coleção visual ou preferência pessoal é padrão obrigatório. Aplicar [governança](docs/05-GOVERNANCA-E-HOMOLOGACAO.md) e [segurança](docs/12-SEGURANCA-E-INTEGRIDADE.md).
 
-## Perfil de iconografia para projetos do mantenedor
 
-Quando um **site ou sistema com interface** for desenvolvido sob a direção do mantenedor deste repositório, consultar o [perfil ICON-001 — Iconify](onboarding/PERFIL-MANTENEDOR-ICONOGRAFIA.md) e registrar sua adoção no repositório específico. A preferência privilegia coleções licenciadas e coerentes (Tabler como padrão inicial), em vez de ícones criados por IA. **É uma preferência de projeto, não uma regra universal do Método ÓRBITA.**
 
 ## Adoção
 
@@ -218,15 +220,9 @@ Ela define a ordem de leitura, o contrato de trabalho esperado, o checklist de i
 
 O objetivo é permitir que um novo agente compreenda **como trabalhar** antes de receber a descrição do software e o repositório específico que será desenvolvido.
 
-## Estudo de caso
+## Exemplos independentes
 
-O ÓRBITA não nasceu apenas como conceito. Seus princípios vêm sendo aplicados em projetos reais.
-
-O primeiro estudo de caso documentado é **[Tickets Recorrentes HESK](examples/01-TICKETS-RECORRENTES-HESK.md)**. Sua representação pública está no repositório sanitizado **[hesk-recurring-tickets](https://github.com/jotaCorsino/hesk-recurring-tickets)**.
-
-O case mostra a evolução por prova de conceito, persistência, scheduler, segurança contra duplicidade, processamento em lote, interface administrativa, implantação e operação. Cada etapa avançou por implementação, validação, evidências e homologação antes da próxima.
-
-O projeto operacional real permanece separado da representação pública. Essa separação passou a fazer parte do próprio aprendizado do ÓRBITA: **portfólio deve expor decisões, arquitetura, processo e resultados sem exigir a exposição do ambiente operacional completo**.
+O método é autônomo e aplicável desde o início de um projeto. Os exemplos são fictícios, construídos para explicar conceitos ou testar controles; não carregam informações, código, arquitetura, identidade, decisões ou dados de outros projetos. [Exemplo de adoção](examples/01-APLICACAO-FICTICIA.md).
 
 ## Troubleshooting e aprendizados observados
 
@@ -248,7 +244,7 @@ As propostas registram evoluções candidatas surgidas do uso real. Enquanto est
 - [PROP-005 — Backlog de evolução do projeto](proposals/005-BACKLOG-DE-EVOLUCAO.md) — backlog padrão no README para capturar necessidades futuras sem autorizar implementação, incorporado pelo PR #19.
 - [PROP-006 — Knowledge: base de conhecimento operacional do projeto](proposals/006-KNOWLEDGE-BASE-DE-CONHECIMENTO-OPERACIONAL.md) — memória operacional externa e reutilizável incorporada pelo PR #21.
 
-- [PROP-007 — ORB-EVO-001: refinamento e evolução metodológica](proposals/007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md) — planejamento aprovado com ampliação Skills/Tools; [etapa 01 — auditoria integral](proposals/007-01-AUDITORIA-INTEGRAL.md) homologada e integrada pela PR #27; [etapa 02 — auditoria HUB e projetos governados](proposals/007-02-AUDITORIA-HUB-E-PROJETOS.md) homologada e integrada pela PR #29; [etapa 03 — arquitetura metodológica](proposals/007-03-ARQUITETURA-METODOLOGICA.md) homologada como arquitetura candidata e integrada pela PR #31; [etapa 04 — limpeza operacional](proposals/007-04-LIMPEZA-OPERACIONAL.md) homologada como protocolo candidato e integrada pela PR #33; [etapa 05 — chats e continuidade](proposals/007-05-CHATS-E-CONTINUIDADE.md) homologada como protocolo candidato e integrada pela PR #35; [etapa 06 — configuração de projetos IA](proposals/007-06-CONFIGURACAO-DE-PROJETOS-IA.md) homologada como configuração candidata e integrada pela PR #37; [etapa 07 — evolução do Knowledge](proposals/007-07-EVOLUCAO-DO-KNOWLEDGE.md) homologada como refinamento candidato e integrada pela PR #39; [etapa 08 — documentação e nomenclatura](proposals/007-08-DOCUMENTACAO-E-NOMENCLATURA.md) homologada como refinamento candidato e integrada pela PR #41; [etapa 09 — eficiência e autonomia](proposals/007-09-EFICIENCIA-E-AUTONOMIA.md) homologada como refinamento candidato e integrada pela PR #43; [etapa 09A — ÓRBITA Skills](proposals/007-09A-ORBITA-SKILLS.md) homologada documentalmente e integrada pela PR #45, com [catálogo piloto](skills/README.md); [etapa 09B — ÓRBITA Tools](proposals/007-09B-ORBITA-TOOLS.md) homologada documentalmente e integrada pela PR #47, com [catálogo piloto](tools/README.md); [etapa 10 — integração metodológica](proposals/007-10-INTEGRACAO-METODOLOGICA.md) homologada documentalmente e integrada pela PR #49; etapa 11 aguarda autorização específica.
+- [PROP-007 — ORB-EVO-001: refinamento e evolução metodológica](proposals/007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md) — planejamento aprovado com ampliação Skills/Tools; [etapa 01 — auditoria integral](proposals/007-01-AUDITORIA-INTEGRAL.md) homologada e integrada pela PR #27; [etapa 02 — avaliação da composição metodológica](proposals/007-02-AUDITORIA-HUB-E-PROJETOS.md) homologada e integrada pela PR #29; [etapa 03 — arquitetura metodológica](proposals/007-03-ARQUITETURA-METODOLOGICA.md) homologada como arquitetura candidata e integrada pela PR #31; [etapa 04 — limpeza operacional](proposals/007-04-LIMPEZA-OPERACIONAL.md) homologada como protocolo candidato e integrada pela PR #33; [etapa 05 — chats e continuidade](proposals/007-05-CHATS-E-CONTINUIDADE.md) homologada como protocolo candidato e integrada pela PR #35; [etapa 06 — configuração de projetos IA](proposals/007-06-CONFIGURACAO-DE-PROJETOS-IA.md) homologada como configuração candidata e integrada pela PR #37; [etapa 07 — evolução do Knowledge](proposals/007-07-EVOLUCAO-DO-KNOWLEDGE.md) homologada como refinamento candidato e integrada pela PR #39; [etapa 08 — documentação e nomenclatura](proposals/007-08-DOCUMENTACAO-E-NOMENCLATURA.md) homologada como refinamento candidato e integrada pela PR #41; [etapa 09 — eficiência e autonomia](proposals/007-09-EFICIENCIA-E-AUTONOMIA.md) homologada como refinamento candidato e integrada pela PR #43; [etapa 09A — ÓRBITA Skills](proposals/007-09A-ORBITA-SKILLS.md) homologada documentalmente e integrada pela PR #45, com [catálogo piloto](skills/README.md); [etapa 09B — ÓRBITA Tools](proposals/007-09B-ORBITA-TOOLS.md) homologada documentalmente e integrada pela PR #47, com [catálogo independente](tools/README.md); [etapa 10 — integração metodológica](proposals/007-10-INTEGRACAO-METODOLOGICA.md) homologada documentalmente e integrada pela PR #49; etapa 11 em andamento; [correção de neutralidade e isolamento](proposals/007-11-NEUTRALIDADE-E-ISOLAMENTO.md) em revisão; validação prática ainda pendente.
 
 ## Backlog
 

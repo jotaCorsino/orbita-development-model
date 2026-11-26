@@ -4,7 +4,7 @@
 
 ## 1. Decisões de materialização
 
-Integrar normas nas fontes existentes e referências nos templates, preservar histórico e exemplos. AGENTS raiz auto-referente à revisão autorizada, sem pin circular. Não criar nova versão numérica, licença, política de branch, serviço, repositório, configuração efetiva de agente ou adoção de consumidor. Manter sete fichas Skills candidatas e Tool restrita; nenhum código privado transferido. A revisão candidata rege avaliação autorizada, não substitui automaticamente contratos adotados. Matriz e protocolos detalhados permanecem rastreáveis nas propostas homologadas, sem duplicar integralmente cada uma em templates.
+Integrar normas nas fontes existentes e referências nos templates, preservar histórico e exemplos. AGENTS raiz auto-referente à revisão autorizada, sem pin circular. Não criar nova versão numérica, licença, política de branch, serviço, repositório, configuração efetiva de agente ou adoção de consumidor. Manter sete fichas Skills candidatas e contrato Tools; decisão posterior de neutralidade retira toda ficha de ferramenta particular. A revisão candidata rege avaliação autorizada, não substitui automaticamente contratos adotados. Matriz e protocolos detalhados permanecem rastreáveis nas propostas homologadas, sem duplicar integralmente cada uma em templates.
 
 ## 2. Rastreabilidade das 28 constatações
 
@@ -34,7 +34,7 @@ Integrar normas nas fontes existentes e referências nos templates, preservar hi
 | D-22 | AGENTS raiz, README público sem painel compulsório | Proteção de branch em 12 |
 | D-23 | docs 08 NOM-001, contrato/templates, exemplos | Sem renomear legado |
 | D-24 | docs 08, Skills: escolha humana, recomendação, curadoria | Sete fichas candidatas preservadas |
-| D-25 | docs 10, Tools: admissão, direitos, integração e limites | Nenhuma Tool admitida |
+| D-25 | docs 10, Tools: admissão, direitos, integração e limites | Nenhuma Tool admitida; catálogo neutro após decisão posterior |
 | D-26 | docs 05 e ROADMAP referenciam protocolo 09 §7 | Sem métrica empírica até 11 |
 | D-27 | docs 03/12, Knowledge/Tools: acesso, sanitização e fronteiras | Sem auditoria integral de segredos |
 | D-28 | README-template: link relativo ao arquivo gerado preservado | Validar no contexto correto |
@@ -61,11 +61,13 @@ Alterações limitadas a documentação do núcleo, onboarding, templates, índi
 
 ## 5. Gate e continuidade
 
-12/14 etapas homologadas após aceite da integração. Homologação humana e integração comprovadas; reconciliação e conferência pós-merge registradas no encerramento. Etapa 11 — validação prática: selecionar pilotos autorizados de perfis distintos, baseline conforme 09 §7, critérios técnicos/não técnicos, recuperação/autoridade/Skills/Tools, evidência, falhas e correções proporcionais. Não implantar Tool restrita, usar dados reais ou modificar consumidores sem autorização específica. Etapa 12: auditoria, licença, decisão de publicação e critérios vigentes de maturidade. Não iniciar 11 nesta etapa.
+12/14 etapas homologadas após aceite da integração. Homologação humana e integração comprovadas; reconciliação e conferência pós-merge registradas no encerramento. Etapa 11 — validação prática: selecionar pilotos autorizados de perfis distintos, baseline conforme 09 §7, critérios técnicos/não técnicos, recuperação/autoridade/Skills/Tools, evidência, falhas e correções proporcionais. Não implantar Tool não admitida, usar dados reais ou modificar consumidores sem autorização específica. Etapa 12: auditoria, licença, decisão de publicação e critérios vigentes de maturidade. Não iniciar 11 nesta etapa.
 
 ## 6. Encerramento da etapa 10
 
 - Homologação humana registrada na [PR #49](https://github.com/jotaCorsino/orbita-development-model/pull/49#issuecomment-7196903635): “aprovado, pode continuar”, em resposta direta ao pedido de homologação e integração. Aceite documental da especificação candidata, restrito à integração e ao encerramento de 10.
-- Entrega aprovada: `ea8039498ec4489ef1dd35b1f82f46a3e7bee5cb`; merge squash confirmado: `b7fa46c686b938608d6381b87817b0517cc7b1de`. Árvore Git `3c462ef5d0513b759e4312d86b605c0f64999795` idêntica à entrega aprovada; comparação integral das árvores recursivas confirma os 68 arquivos e seus blobs, incluindo os 34 arquivos da alteração. Preservados matriz D-01–D-28, 14 etapas, seis estados e Pausado, COM-001, seleção metodológica humana, fichas Skills e restrições Tools.
+- Entrega aprovada: `ea8039498ec4489ef1dd35b1f82f46a3e7bee5cb`; merge squash confirmado: `b7fa46c686b938608d6381b87817b0517cc7b1de`. Árvore Git `3c462ef5d0513b759e4312d86b605c0f64999795` idêntica à entrega aprovada; comparação integral das árvores recursivas confirma os 68 arquivos e seus blobs, incluindo os 34 arquivos da alteração. Preservados matriz D-01–D-28, 14 etapas, seis estados e Pausado, COM-001, seleção metodológica humana, fichas Skills e limites Tools.
 - Fechamento editorial isolado: README, ROADMAP, PROP-007 e este relatório reconciliam o estado após o merge. Nenhuma alteração de regra aprovada, licença, proteção de branch, consumidor, ambiente, ferramenta ou publicação; nenhum teste empírico. PRs #4/#5 e branches documentais preservadas intencionalmente. Sem temporários locais criados.
 - Etapa 10 encerrada no escopo documental. Etapa 11 não iniciada; continuar neste mesmo chat após autorização específica. Conferir pós-merge da alteração editorial na respectiva PR, sem criar outro ciclo apenas para registrar seu SHA.
+
+**Decisão posterior ISO-001:** a homologação de 10 precedeu a neutralização; não utilizar os antigos exemplos ou fichas particulares como fonte. O contrato metodológico permanece; o catálogo atual não admite ferramentas. A comparação histórica da árvore de 10 descreve aquele gate, não o estado posterior.

@@ -45,3 +45,7 @@ Exemplos de gatilho: instalar/testar pacote, executar comando, aprovar gate ou P
 ---
 
 > **Antes de publicar no repositório:** substituir placeholders; preservar a referência metodológica. Este template é para a fundação de novos projetos, não é permissão de alterar ambientes.
+
+## ISO-001 — Contexto independente
+
+Usar apenas o núcleo metodológico e as fontes explicitamente adotadas/autorizadas para este projeto. Não recuperar, carregar, inferir requisitos ou importar dados, código, decisões, preferências, Knowledge ou referências de outros projetos por semelhança, titularidade, memória, acesso técnico ou associação de conta. Novo projeto inicia com Knowledge vazio, salvo conclusões produzidas nele. Perfis e dependências são escolhas locais; exemplos do núcleo são fictícios. Conteúdo alheio encontrado involuntariamente não é fonte de decisão. A regra canônica está em docs/12-SEGURANCA-E-INTEGRIDADE.md do método adotado.

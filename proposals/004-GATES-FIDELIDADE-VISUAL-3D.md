@@ -2,21 +2,17 @@
 
 - **Categoria:** extensão proporcional de evidências e homologação para projetos com requisito visual.
 - **Registrada em:** 22/10/2026.
-- **Origem:** [the-mmo-idea](https://github.com/jotaCorsino/the-mmo-idea), [PR #7 — CHAR-001](https://github.com/jotaCorsino/the-mmo-idea/pull/7) e [PR #10 — VIS-001](https://github.com/jotaCorsino/the-mmo-idea/pull/10).
+- **Natureza:** motivação metodológica autônoma; exemplos fictícios, sem referências particulares.
 - **Estado:** refinamento metodológico **APROVADO e INCORPORADO à `main` pelo PR #13**.
 - **Escopo:** jogos 3D, interfaces, identidades visuais e outros produtos cuja adequação estética faça parte explícita do objetivo.
 
-## 1. Ocorrência
+## 1. Cenário ilustrativo
 
-Na CHAR-001 do MMO, o Codex entregou um cavaleiro estático que podia ser aberto no Blender, exportado em FBX e renderizado no Unity, com controles preservados e sem novos erros. **O pipeline técnico funcionou**, porém o resultado visual era composto de formas geométricas simplificadas e foi considerado insuficiente em relação às imagens aprovadas.
-
-Prosseguir diretamente para rigging/animações teria aumentado retrabalho. A equipe passou a exigir uma prova separada de fidelidade 3D, com três PNGs canônicos e a reprodução de um pequeno cenário e cavaleiro. Na VIS-001.1, o primeiro cenário também exibiu estrutura básica reconhecível, mas ainda não tinha acabamento correspondente. A execução foi interrompida por limite do agente, antes da homologação, e o escopo seguinte foi reduzido a **uma única árvore de alta qualidade**.
-
-O erro não foi a ausência de testes de software: foi tomar uma **validação técnica necessária, mas insuficiente**, como evidência de que uma necessidade artística poderia estar satisfeita.
+Um asset 3D fictício abre, exporta e importa corretamente, mas não corresponde à referência visual aprovada. Avançar para rigging, animação ou produção em escala pode gerar retrabalho. Separar prova focal de fidelidade e aceite da direção antes da próxima dependência. Validação técnica necessária não é evidência suficiente de adequação artística.
 
 ## 2. Distinções observadas no caso 3D
 
-No projeto que originou a proposta, foi útil distinguir diferentes **marcos de validação**, sem tratá-los como novos estados normativos do ÓRBITA:
+É útil distinguir diferentes **marcos de validação**, sem tratá-los como novos estados normativos do ÓRBITA:
 
 - **pipeline técnico validado:** arquivo abre, exporta, importa, executa e não quebra funções existentes;
 - **blockout avaliado:** escala, composição, silhueta geral e distribuição espacial podem ser avaliadas;
@@ -111,14 +107,14 @@ Foram conscientemente **mantidos fora do núcleo**:
 
 ### Limite da evidência
 
-A proposta deriva de ocorrências documentadas no projeto MMO, especialmente CHAR-001 e VIS-001. O método incorpora o princípio geral demonstrado por esses casos, mas **não transforma o protocolo específico daquele projeto em padrão universal**.
+Exemplos deste documento são ilustrativos, sem comprovação empírica de eficácia.
 
 ## 7. Referências
 
 - [Governança e homologação](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md).
 - [Contrato de trabalho](../onboarding/CONTRATO-DE-TRABALHO.md).
-- [CHAR-001 — PR #7](https://github.com/jotaCorsino/the-mmo-idea/pull/7).
-- [VIS-001 — PR #10](https://github.com/jotaCorsino/the-mmo-idea/pull/10), especialmente `VisualProof/ANALISE-TECNICA-VIS-001.0.md`.
+
+
 
 
 ## 8. Estado de incorporação

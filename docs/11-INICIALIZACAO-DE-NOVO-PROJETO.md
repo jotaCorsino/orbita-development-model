@@ -251,3 +251,7 @@ A fundação documental vem **antes** da primeira implementação.
 A sincronização local vem **antes** da primeira funcionalidade.
 
 Isso garante que planejamento, implementação e histórico já nasçam vinculados ao mesmo projeto.
+
+## Fundação independente — ISO-001
+
+Criar contexto, identidade, requisitos, decisões e backlog do novo projeto sem carregar projetos anteriores. Inicializar Knowledge vazio. As fontes do núcleo contêm apenas método e exemplos independentes; perfis, HUB, métodos e dependências externas requerem adoção expressa no escopo autorizado.
