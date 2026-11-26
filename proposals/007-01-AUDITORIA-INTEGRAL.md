@@ -1,6 +1,6 @@
 # ORB-EVO-001 — 01: Auditoria integral do ÓRBITA
 
-**Data:** 26/11/2026. **Estado da entrega:** aguardando homologação humana. **Escopo:** diagnóstico documental, não alteração normativa. **Planejamento:** [PROP-007](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md), [PR #26](https://github.com/jotaCorsino/orbita-development-model/pull/26). A aprovação do plano não equivale à homologação desta auditoria ou à autorização da etapa 02.
+**Data:** 26/11/2026. **Estado da entrega:** homologada, integrada e verificada na main (PR #27). **Escopo:** diagnóstico documental, não alteração normativa. **Planejamento:** [PROP-007](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md), [PR #26](https://github.com/jotaCorsino/orbita-development-model/pull/26). A aprovação do plano não equivale à homologação desta auditoria ou à autorização da etapa 02.
 
 ## 1. Base e procedimento
 
@@ -143,7 +143,7 @@ Referências a docs NN, PROP e TRB remetem aos caminhos pinados no inventário. 
 
 ### Reconciliação limitada
 
-O README canônico, roadmap e registros TRB/PROP encerrados estão alinhados quanto aos PRs de incorporação, com as ressalvas D-17/D-18. A presente entrega somente propõe link do diagnóstico e estado de revisão no README/ROADMAP/PROP-007, preservando o planejamento aprovado. O diagnóstico não é item novo de Knowledge (não há conclusão operacional distinta a promover) nem backlog duplicado (as oportunidades já estão mapeadas para a iniciativa aprovada). Nenhum arquivo normativo, template, ocorrência encerrada ou perfil foi editado. Nenhuma atividade em projeto consumidor.
+O README canônico, roadmap e registros TRB/PROP encerrados estão alinhados quanto aos PRs de incorporação, com as ressalvas D-17/D-18. A entrega vinculou o diagnóstico ao README/ROADMAP/PROP-007, preservando o planejamento aprovado. O encerramento documental atualiza exclusivamente o estado da etapa 01 nessas superfícies. O diagnóstico não é item novo de Knowledge (não há conclusão operacional distinta a promover) nem backlog duplicado (as oportunidades já estão mapeadas para a iniciativa aprovada). Nenhum arquivo normativo, template, ocorrência encerrada ou perfil foi editado. Nenhuma atividade em projeto consumidor.
 
 ## 6. Elementos a preservar explicitamente
 
@@ -169,9 +169,9 @@ A fragilidade principal é **operacionalização e distribuição do contexto**,
 | Matriz com fontes, risco, encaminhamento e preservação | Entregue: 28 diagnósticos |
 | Histórico/PRs ativos e resíduos | Observados e classificados no limite acima; nenhuma exclusão |
 | Alteração normativa / etapa 02 | Nenhuma / não iniciada |
-| Reconciliação de acompanhamento | Proposta documental isolada, pendente de integração |
-| Homologação humana | Pendente |
-| Pós-merge na main | Não executado; depende do gate |
+| Reconciliação de acompanhamento | PR #27 integrada; fechamento editorial isolado atualiza estado |
+| Homologação humana | Aprovada pelo responsável, registrada na PR #27 |
+| Pós-merge na main | PR #27 encerrada e integrada; árvore Git idêntica à homologada; quatro arquivos relidos diretamente na main |
 | Limites | Sem verificação de fontes externas, execução local, âncoras, licença externa, histórico completo de diffs, ou evidências empíricas dos projetos |
 
 ## 8. Handoff para o próximo chat (condicional)
@@ -180,4 +180,9 @@ A fragilidade principal é **operacionalização e distribuição do contexto**,
 
 Antes de iniciar, confirmar homologação desta entrega, integração efetiva e verificação pós-merge das superfícies alteradas diretamente na main; se pendente, concluir somente o gate 01. Consultar este relatório, o [plano](007-ORB-EVO-001-PLANO-DE-EVOLUCAO.md), o [roadmap](../ROADMAP.md) e o contrato de trabalho. Não repetir a auditoria integral 01; recuperar apenas o delta e as referências relevantes. Depois de autorização explícita da etapa 02, identificar HUB e projetos governados e suas referências efetivas; realizar somente leitura autorizada; confrontar práticas, incidentes e limites com D-01 a D-28; sanitizar evidências para o repositório público; separar fatos, hipóteses, lacunas de método e falhas de execução. Não implementar normas, não alterar consumidores, não excluir recursos e não iniciar etapa 03. Respeitar COM-001 e os gates existentes.
 
-O SHA de integração da entrega ainda não existe no momento de elaboração; deve ser confirmado no pós-merge, não inferido a partir do snapshot auditado.
+## 9. Encerramento da etapa 01
+
+- Homologação humana registrada na [PR #27](https://github.com/jotaCorsino/orbita-development-model/pull/27#issuecomment-7190703260): “aprovado, pode continuar”. A autorização abrange a integração e o fechamento da etapa 01, não a etapa 02.
+- Entrega aprovada: `4e7454228724c60e85e88abef8e641e99cc6958d`; merge confirmado: `8aaa0fa60e4fddb24818b47ce9d944fc47ef04b1`. Árvore Git `26671e072d6fbdd35bed8c68db16261a71a926e9` idêntica à árvore da entrega. Os quatro arquivos foram lidos diretamente na main; 44 registros de inventário e 28 diagnósticos permanecem preservados.
+- Reconciliação de estado em alteração documental curta e isolada conforme TRB-004. Nenhuma mudança de regra, template, perfil, projeto consumidor ou critério de maturidade. Nenhuma exclusão ou limpeza destrutiva. PRs #4/#5 e branches históricas permanecem preservadas para avaliação futura; a branch de auditoria e a de fechamento são rastros documentais intencionais.
+- Etapa 01 concluída; etapa 02 não iniciada. Próxima ação: autorização específica do responsável para a auditoria HUB e projetos governados, em novo chat. O pós-merge da alteração editorial de fechamento deve ser confirmado na respectiva PR, sem novo ciclo de atualização meramente para gravar o próprio SHA.
