@@ -139,3 +139,28 @@ Recomendar ao responsável aprovar o percurso e delegar os passos internos conhe
 ### Gate revisado
 
 Aguardar homologação humana do refinamento COM-002, descoberta proativa e validação delimitada da etapa 11. A execução de pesquisa documental complementa os exercícios anteriores, não comprova causalidade, comportamento autônomo de outros agentes, maturidade V1.0 ou eficácia comparativa. Nenhuma alteração de consumidor, histórico, visibilidade, publicação ou licença. PR #51 em revisão; 12/14 etapas homologadas. Não iniciar 12 antes de encerramento e autorização específica.
+
+## 13. Complemento — organização por frentes e planejamento incremental
+
+**Em termos práticos:** o humano define o produto e as decisões relevantes; a IA coordena o trabalho e assume as responsabilidades profissionais necessárias em cada momento. O projeto tem visão global e fonte canônica comum, mas é desenvolvido em fatias verificáveis. O agente não precisa escolher todos os métodos ou detalhar todas as etapas desde o início.
+
+A confirmação de COM-002 e descoberta proativa de Skills pelo responsável veio acompanhada desta nova orientação. A revisão candidata incorpora frentes profissionais adaptáveis em docs 03, planejamento progressivo em docs 04, ligação com Skills em docs 08, contrato, AGENTS e template de tarefa. Não criar organograma obrigatório, arquivos, chats, aprovações ou agentes extras. Preservar controle humano, integração, segurança, ISO-001 e evidência. Atribuição de função não comprova competência certificada ou independência de avaliação.
+
+### Percurso ilustrativo, não executado
+
+Mesmo cenário independente de catálogo fictício. A visão inicial delimita finalidade, público hipotético, limites, macroetapas, riscos e critérios gerais; funcionalidades distantes permanecem hipóteses. As frentes trabalham com o mesmo registro canônico do projeto, sem transferir dados de outros projetos.
+
+| Momento | Frente principal e interfaces | Decisão/resultado verificável |
+| --- | --- | --- |
+| Início | Produto e coordenação; arquitetura/segurança consultadas para riscos essenciais | Objetivo, necessidade, restrições, requisitos prioritários e critérios iniciais. Não decidir todos os componentes. |
+| Primeira fatia | UX e produto, com viabilidade técnica | Fluxo de cadastro e busca; opções de técnica proporcionais; escolha humana quando necessária, critérios de interação. |
+| Incremento funcional | Engenharia com UX e qualidade | Uma fatia testável ponta a ponta, com contratos, critérios e evidências; sem antecipar funcionalidades distantes. |
+| Revisão | Qualidade, segurança e coordenação | Verificar critérios e interfaces afetadas; correção focal; gate humano aplicável. |
+| Próxima fatia | Frente necessária conforme resultados e dependências | Reavaliar prioridade e plano sem repetir decisões válidas; somente detalhar o próximo trabalho relevante. |
+| Encerramento | Coordenação, qualidade e operações se aplicável | Homologação, integração e evidência de entrega; publicação somente se autorizada. |
+
+Walkthroughs analíticos: (1) requisito distante incerto permanece no roadmap, não vira implementação; (2) risco de dados capaz de alterar arquitetura é investigado cedo, mesmo que a frente principal seja UX; (3) frentes independentes podem avançar com interfaces acordadas, sem concorrência obrigatória; (4) mudança de contrato exige reconciliar consumidores afetados antes de executar a dependência; (5) tarefa pequena combina competências sem novo gate; (6) revisão independente obrigatória não pode ser declarada pela mera troca de papel do mesmo agente. Estes são exemplos de aplicação e verificação de coerência documental, não testes executados nem avaliação independente de agentes.
+
+### Gate atualizado
+
+Homologação da revisão que reúne COM-002, descoberta proativa de Skills, frentes profissionais e planejamento incremental, junto à validação delimitada anterior. Não iniciar etapa 12, não declarar maturidade ou eficácia causal. 12/14 etapas homologadas até integração e encerramento; nenhuma alteração de consumidor, licença, história, visibilidade ou distribuição.
