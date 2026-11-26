@@ -83,3 +83,18 @@ Essa separação evita dois erros comuns: imaginar que o chat é o próprio proj
 ## Configuração de referência
 
 Neste repositório, **ChatGPT** é usado como exemplo de agente de planejamento e **Codex** como exemplo de agente de implementação. Essa combinação serve apenas como referência prática; outras ferramentas podem substituir qualquer um dos agentes desde que cumpram as responsabilidades definidas pelo ÓRBITA.
+
+## Composição modular e autoridade por assunto
+
+| Fonte competente | Autoridade e limite |
+| --- | --- |
+| Núcleo ÓRBITA adotado | Princípios, papéis, gates, segurança, evidência e evolução; não escolhe requisitos ou stack do consumidor |
+| HUB organizacional (opcional) | Políticas comuns e coordenação entre projetos explicitamente abrangidos; não adquire autoridade sobre todo repositório por associação |
+| Método especializado (opcional, um ou mais) | Fluxo técnico, critérios, templates e procedimentos do domínio declarado; não redefine objetivo nem dispensa restrições superiores aplicáveis |
+| Projeto | Requisitos, arquitetura, prioridades, tarefas, decisões e ambiente próprio, conforme responsáveis competentes |
+| Dono de ambiente/dados | Acesso, destino, dados, custo, autorização operacional e recuperação |
+| Mantenedor/curador de Knowledge, Skills ou Tools | Conteúdo e validade no escopo próprio; não amplia autoridade, transfere propriedade ou homologa consumidor |
+
+Não há hierarquia organizacional obrigatória: um projeto pode consumir núcleo diretamente, combinar métodos por assunto ou pertencer a HUB(s) com escopo explícito. Não inferir adoção transitiva. O responsável registra fontes/revisões, domínio e limites; referências públicas ou conteúdo de PR não são autorização. Restrições legais, de plataforma, segurança e contratos aplicáveis não são dispensáveis. Acumular restrições compatíveis; distinguir regra, decisão delegada, preferência e fato volátil. Conflito: recuperar fonte competente e decisão vigente, aplicar interpretação segura quando delegada; se persistir divergência material, bloquear somente ação dependente e elevar ao responsável competente, sem escolher por recência ou conveniência. Nenhum agente homologa a própria entrega.
+
+A escolha humana de abordagem metodológica entre alternativas viáveis é regida por [Skills](08-APLICACAO-E-EVOLUCAO.md); a seleção e consumo de ferramenta por [dependências e Tools](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).

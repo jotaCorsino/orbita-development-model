@@ -1,15 +1,21 @@
 # AGENTS — [NOME DO PROJETO]
 
-**Escopo:** [descrever o software e limites em uma ou duas frases]. **Fonte metodológica:** [Método ÓRBITA](https://github.com/jotaCorsino/orbita-development-model) — ler o [Contrato de Trabalho para Agentes](https://github.com/jotaCorsino/orbita-development-model/blob/main/onboarding/CONTRATO-DE-TRABALHO.md) antes de planejar ou implementar.
+**Escopo:** [descrever o software e limites em uma ou duas frases]. **Fonte metodológica:** [URL do ÓRBITA e revisão adotada (tag/commit); caminho do contrato nessa revisão]. **HUB/métodos aplicáveis:** [fonte, revisão, domínio ou nenhum]. Não adotar main automaticamente; se legado desconhecido, registrar e regularizar com responsável.
 
 ## Leitura inicial obrigatória
 
 1. `README.md` — objetivo, status, pendências e próximo passo;
 2. roadmap/planejamento canônico e última homologação;
 3. branch/PR ativa e estado do repositório;
-4. procedimentos e dependências específicos do projeto, quando pertinentes.
+4. índice `knowledge/README.md`, entradas relevantes e condição de validade;
+5. procedimentos e dependências específicos, Skills/Tools pertinentes, quando aplicáveis;
+6. tarefa autorizada, ref, critérios, último gate e restrições. Recuperar seletivamente na continuidade; preservar estado local antes de sincronizar. Não confundir revisão do AGENTS com configuração efetivamente carregada.
 
 Nenhum agente deve presumir estado de produção, autorização ou progresso a partir de memória de conversa.
+
+## Limites e continuidade
+
+Um chat por iniciativa enquanto suficiente; não por etapa. Agir dentro de autorização; comparar métodos viáveis, recomendar e aguardar decisão humana salvo escolha/delegação registrada. Reutilizar prova válida, preservar gates, aplicar NOM-001 e limpeza proporcional. Referenciar fontes competentes; não armazenar segredos, status volátil ou duplicar método.
 
 ## COM-001 — Regra absoluta de comunicação ao responsável
 

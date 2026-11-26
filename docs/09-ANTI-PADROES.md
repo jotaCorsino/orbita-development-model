@@ -64,7 +64,7 @@ A revisão deixa de saber quais mudanças eram necessárias e quais foram oportu
 
 ### Resposta ÓRBITA
 
-Manter escopo explícito. Necessidades novas tornam-se nova tarefa, salvo quando forem pré-requisitos inevitáveis e devidamente registrados.
+Manter escopo explícito. Necessidades novas tornam-se nova tarefa, salvo correções inseparáveis que satisfaçam todas as condições da [matriz de autoridade](05-GOVERNANCA-E-HOMOLOGACAO.md) e sejam devidamente registradas.
 
 ---
 
@@ -137,3 +137,11 @@ Definir uma identidade canônica para o projeto, reutilizar o mesmo nome nos amb
 ## Regra de leitura
 
 Quanto mais desses anti-padrões aparecem ao mesmo tempo, maior a necessidade de aumentar a formalidade do processo.
+
+## Anti-padrões complementares
+
+- Microaprovação, nova leitura integral ou diagnóstico repetido sem necessidade: recuperar autorização e provas válidas, agrupar trabalho compatível.
+- Catálogo como autorização: consultar Skills/Tools pertinentes, preservar escolha humana de metodologia, direitos, versão, acesso e gates.
+- Limpeza por aparência: classificar, preservar e verificar alvos; não descartar material por idade ou merge.
+- Status por inferência: pin, build, teste, homologação, merge e implantação não são equivalentes. Referenciar fonte competente e evidência.
+- Chat por microetapa: manter continuidade por iniciativa, handoff proporcional quando necessário.

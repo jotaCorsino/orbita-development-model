@@ -31,6 +31,10 @@ O agente não deve assumir por conta própria autoridade para:
 
 ---
 
+### Autoridade e autonomia delimitadas
+
+Aplicar [papéis e composição](../docs/03-PAPEIS-E-RESPONSABILIDADES.md) e [matriz de autoridade e risco](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md). Executar ações delegadas, correções inseparáveis e verificações proporcionais; não transferir ao humano o que já é autorizado. Conflitos materiais bloqueiam ação dependente; preservar gates, direitos, segurança e autorizações específicas. Backlog não autoriza execução.
+
 ## 2. Separação de responsabilidades
 
 ### Agente de planejamento
@@ -97,7 +101,8 @@ Antes de uma modificação relevante:
 5. entender critérios de aceite;
 6. identificar riscos e dependências;
 7. confirmar que não está entrando em escopo não autorizado;
-8. consultar proporcionalmente `knowledge/README.md`, quando existir, e abrir somente as entradas relevantes para a tarefa.
+8. consultar proporcionalmente `knowledge/README.md`, quando existir, e abrir somente as entradas relevantes para a tarefa;
+9. confirmar fontes adotadas/revisões, AGENTS ou equivalente, trabalho ativo e critérios; consultar Skills/Tools e runbook somente quando pertinentes.
 
 Não presuma que o estado descrito em uma conversa antiga ainda corresponde ao repositório.
 
@@ -119,6 +124,10 @@ Knowledge é contexto acumulado, não substituto da realidade observada.
 > **Conhecimento anterior orienta a investigação; evidência atual confirma a decisão.**
 
 Uma entrada marcada como `Revalidar`, contradita pelo estado atual ou fora do escopo não deve ser seguida automaticamente.
+
+### Skills e Tools
+
+Conforme [Skills](../docs/08-APLICACAO-E-EVOLUCAO.md), para alternativas metodológicas viáveis apresentar opções e recomendação fundamentada; aguardar escolha humana quando ainda não registrada ou expressamente delegada. Não criar microgate para passos internos já autorizados. Consultar [Tools e dependências](../docs/10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md) antes de criar ferramenta; respeitar direitos, versão, compatibilidade, segurança e autorização, sem instalação automática.
 
 ### Operações em ambientes existentes
 
@@ -219,6 +228,8 @@ Hipóteses não verificadas não podem ser registradas como Knowledge Vigente. L
 
 A atualização de Knowledge deve seguir o mesmo fluxo Git/revisão da tarefa quando fizer parte do seu encerramento.
 
+Aplicar NOM-001 e fontes canônicas de [docs 08](../docs/08-APLICACAO-E-EVOLUCAO.md). Agrupar ações compatíveis sem cruzar gates, evitar tentativas cegas e procedimentos novos sem necessidade. Reutilizar prova apenas com predicado de validade da [governança](../docs/05-GOVERNANCA-E-HOMOLOGACAO.md); distinguir executado, reutilizado, não testado e N/A justificado.
+
 ## 6. Evidência de entrega
 
 Uma entrega técnica deve fornecer evidência suficiente para outra pessoa entender o que realmente aconteceu.
@@ -294,9 +305,11 @@ Quando uma decisão de chat se tornar relevante para o futuro do projeto, regist
 
 ---
 
+Manter um chat por iniciativa enquanto contexto suficiente, sem criar um por etapa. Novo chat por nova iniciativa, isolamento ou necessidade real de continuidade. Recuperar seletivamente estado, autorização, ref, gate e pendência; handoff conforme [docs 07](../docs/07-IA-NO-METODO.md), preservando trabalho não publicado.
+
 ### COM-001 — Regra absoluta de encerramento: `AÇÃO SUA`
 
-**Obrigatória em toda resposta de qualquer agente que trabalhe em um projeto que adote este método**, nas fases de planejamento, implementação, homologação, manutenção e retomada. Aplica-se à mensagem final do chat, não apenas às tarefas em Git.
+**Obrigatória em toda resposta de qualquer agente que trabalhe em um projeto que adote este método**, nas fases de planejamento, implementação, homologação, manutenção e retomada. Aplica-se ao trecho final de cada resposta que atribua providência humana, independentemente do encerramento do chat, não apenas às tarefas em Git.
 
 **Gatilho:** se a resposta contiver **qualquer providência realmente atribuída ao responsável humano** para prosseguir ou decidir (aprovar PR/gate, executar comando, testar um artefato, instalar pacote, enviar resultado, fornecer acesso ou informação indispensável, realizar publicação ou escolher entre alternativas), ela deve terminar com **um único bloco final intitulado `AÇÃO SUA`**. Esse bloco é a **última parte da resposta**; não colocar notas, links de encerramento, sugestões ou outro texto após ele.
 
@@ -361,6 +374,8 @@ A verificação deve ser proporcional. Não é necessário revisar todo o reposi
 O procedimento de referência está em [Verificação final](../templates/VERIFICACAO-FINAL-TEMPLATE.md).
 
 ---
+
+Verificar também [limpeza operacional proporcional](../docs/06-GIT-E-GITHUB.md): alvos, classificação, autorização, preservação, pós-check e exceções; não apagar material por idade/merge. Sem PR, confirmar fonte/destino real e derivadas pertinentes. Sem resíduo não criar PR de fechamento por ritual.
 
 ## 12. Regra de parada
 

@@ -8,6 +8,8 @@ O objetivo é garantir que o agente compreenda **como o projeto será organizado
 
 ---
 
+**Revisão:** consulte o aviso de versão candidata no [README](../README.md). Para adoção nova, confirme revisão do método e fontes locais. Para continuidade, recupere somente contexto pertinente conforme [IA no método](../docs/07-IA-NO-METODO.md); não repetir as 15 leituras se adoção comprovada e fontes aplicáveis não mudaram.
+
 ## 1. Papéis fundamentais
 
 O Método ÓRBITA separa quatro responsabilidades:
@@ -132,7 +134,8 @@ Quando possuir acesso autorizado ao repositório, deve criar ou organizar direta
 - escopo inicial;
 - planejamento/roadmap;
 - arquitetura inicial quando necessária;
-- regras locais;
+- regras locais e AGENTS.md/equivalente com fontes/revisão adotadas e COM-001;
+- backlog no README e knowledge/README.md (vazio quando não há conclusões);
 - estados de acompanhamento;
 - critérios de aceite e homologação;
 - riscos, restrições e decisões iniciais.
@@ -261,7 +264,8 @@ Próxima tarefa
 
 Uma tarefa normalmente deve conter:
 
-- ID;
+- ID e título humano;
+- autorização, revisão/base e fonte de critérios;
 - objetivo;
 - contexto;
 - escopo incluído;
@@ -361,3 +365,5 @@ Somente depois começa a implementação funcional.
 ```
 
 Um prompt reutilizável para iniciar esse processo está em [PROMPT-INICIAL.md](PROMPT-INICIAL.md).
+
+Consulte [Skills](../skills/README.md) e [Tools](../tools/README.md) apenas quando pertinentes, sem instalar ou assumir autoridade. Preserve escolha metodológica humana, recomendações fundamentadas e autonomia delegada. A sequência normativa de fundação/bootstrap é [docs 11](../docs/11-INICIALIZACAO-DE-NOVO-PROJETO.md).

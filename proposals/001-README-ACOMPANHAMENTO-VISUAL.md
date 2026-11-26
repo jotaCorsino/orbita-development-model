@@ -66,7 +66,7 @@ Descrição breve do que é e do problema resolvido.
 
 **Legenda:** ⚪ Planejado / autorizado · 🟡 Em implementação · 🔵 Em validação / aguardando homologação · 🟢 Concluído (homologado) · 🟠 Pausado.
 
-Detalhamento: [Roadmap](docs/ROADMAP.md)
+Detalhamento: [Roadmap](../ROADMAP.md)
 
 ## Problema e solução
 ...
@@ -131,4 +131,4 @@ A proposta poderá ser considerada validada quando:
 4. o modelo for testado em pelo menos dois projetos com perfis distintos;
 5. o conjunto de documentos oficiais for revisado numa alteração específica, com evidências e homologação.
 
-**Próxima ação para o método:** incorporar o conjunto homologado à `main` por meio do PR #3. A publicação deste arquivo, isoladamente, **não** constitui alteração normativa automática.
+**Próxima ação prevista à época:** incorporar o conjunto homologado à `main` por meio do PR #3. **Estado verificado em 26/11/2026:** PR #3 integrada; critérios de validação em projetos distintos permanecem sujeitos à evidência correspondente. A publicação deste arquivo, isoladamente, **não** constitui alteração normativa automática.

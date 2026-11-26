@@ -7,6 +7,8 @@ Você está atuando como **agente de implementação** no primeiro handoff deste
 - **Projeto:** [NOME_CANONICO]
 - **Repositório remoto:** [URL_OU_OWNER_REPO]
 - **Branch principal esperada:** [MAIN_OU_OUTRA]
+- **Revisão da fundação / método adotado:** [ref e fontes]
+- **Autorização:** [referência da tarefa de bootstrap]
 
 O responsável humano já criou e abriu a pasta local destinada exclusivamente a este projeto.
 
@@ -27,7 +29,7 @@ Esta tarefa é apenas de bootstrap. **Não implemente funcionalidades.**
 7. busque o estado remoto;
 8. sincronize a branch principal de forma segura;
 9. não apague, sobrescreva ou force conteúdo local único sem autorização;
-10. confirme que a documentação inicial do projeto foi recebida;
+10. confirme README, documentação, backlog, knowledge/README.md e AGENTS/equivalente com revisão/fonte adotada;
 11. verifique `git status`, branch atual e remoto;
 12. pare após a validação.
 

@@ -66,14 +66,14 @@ A verificação ocorre em duas passagens:
 
 1. identificar o registro ou artefato canônico da mudança;
 2. identificar quais superfícies derivadas podem repetir ou resumir a mesma informação;
-3. comparar a branch com a `main` atual e confirmar que o diff permanece no escopo;
+3. comparar a branch com a `main` atual quando houver integração Git e confirmar que a alteração permanece no escopo; sem PR, conferir origem, autorização e alteração prevista;
 4. conferir IDs, nomes, links, títulos e estados relacionados;
 5. procurar referências claramente obsoletas relacionadas à mudança.
 
-### Depois do merge
+### Depois do merge ou aplicação autorizada (quando não houver PR)
 
-1. confirmar o PR efetivamente mergeado e o commit resultante;
-2. verificar os arquivos relevantes diretamente na `main`;
+1. confirmar o PR efetivamente mergeado e o commit resultante, quando houver; sem PR, confirmar o registro/artefato final e o destino real pertinente;
+2. verificar os arquivos relevantes diretamente na linha integrada aplicável, ou o destino final quando não houver integração Git;
 3. conferir os resumos, índices e painéis derivados aplicáveis;
 4. repetir a busca por status ou referências antigas relacionadas à alteração;
 5. validar links e caminhos principais afetados;
@@ -88,7 +88,7 @@ Se a correção pós-merge for apenas de status ou fechamento documental, ela po
 
 O checklist reutilizável está em [../templates/VERIFICACAO-FINAL-TEMPLATE.md](../templates/VERIFICACAO-FINAL-TEMPLATE.md).
 
-## Estados sugeridos
+## Estados normativos
 
 ```text
 PLANEJADA
@@ -106,6 +106,10 @@ CONCLUIDA
 
 Quando uma validação falha, a tarefa retorna ao estágio adequado.
 
+
+### Dimensões do estado
+
+Preservar os seis estados oficiais. Planejamento, autorização, implementação, teste, homologação, integração e publicação são evidências/dimensões distintas, não novos estados. Registrar aceite humano e ressalvas com revisão e escopo; quando integração/verificação for exigida, manter explícito “homologado — integração/encerramento pendente” sem declarar encerramento completo. Só marcar CONCLUIDA quando gate definido e ações de encerramento exigidas estiverem satisfeitos. Main, artefato aprovado e destino real podem divergir; não inferir publicação do merge.
 
 ### Interrupção e retomada
 
@@ -168,3 +172,5 @@ Uma boa tarefa deve responder, no mínimo:
 - Quais riscos de segurança, dados ou exposição precisam ser considerados?
 
 O template oficial está em [../templates/TASK-TEMPLATE.md](../templates/TASK-TEMPLATE.md).
+
+Encerramento inclui [limpeza proporcional](06-GIT-E-GITHUB.md) e preservação de evidências. Correção editorial só requer PR adicional se houver resíduo real e o fluxo exigir; não criar ciclo para registrar o próprio SHA. Em tarefas independentes, agrupar ações autorizadas quando não houver gate intermediário, conflito de recursos ou risco incompatível.

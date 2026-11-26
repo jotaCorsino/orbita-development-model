@@ -26,11 +26,11 @@ Ele não cria novo estado no fluxo do ÓRBITA e não exige varredura integral do
 
 [registrar somente o necessário]
 
-## B. Depois do merge
+## B. Depois do merge ou aplicação (sem PR, confirmar fonte/destino final)
 
-- [ ] PR confirmado como mergeado;
+- [ ] PR confirmado como mergeado quando houver; sem PR, registro/artefato final comprovado;
 - [ ] commit de integração identificado;
-- [ ] arquivos canônicos verificados diretamente na `main`;
+- [ ] arquivos canônicos verificados diretamente na linha integrada ou destino pertinente;
 - [ ] README/roadmap/índices/painéis relevantes conferidos quando aplicável;
 - [ ] busca por estados ou referências antigas repetida quando aplicável;
 - [ ] links/caminhos principais afetados continuam válidos;
@@ -39,6 +39,14 @@ Ele não cria novo estado no fluxo do ÓRBITA e não exige varredura integral do
 - [ ] nenhum item de backlog foi tratado como autorização implícita para nova implementação;
 - [ ] conclusões comprovadas, reutilizáveis e operacionalmente relevantes descobertas no ciclo foram registradas ou atualizadas em `knowledge/` quando aplicável;
 - [ ] nenhuma hipótese não confirmada foi promovida a Knowledge Vigente.
+
+## C. Resíduos operacionais (quando aplicável)
+
+- [ ] alvos inventariados/classificados, identidade e dependências verificadas;
+- [ ] autoridade, preservação e recuperação adequadas; não excluir por nome/idade/merge;
+- [ ] pós-check confirma resultado e preservação dos demais recursos;
+- [ ] exceções/falhas parciais registradas com responsável, risco e condição de saída;
+- [ ] sem PR adicional por ritual quando não há resíduo; mudança material retorna ao gate.
 
 ## Verificação de comunicação — COM-001
 

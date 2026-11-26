@@ -89,3 +89,7 @@ Isso inclui, quando aplicável:
 Testes são evidência importante, mas não provam ausência de vulnerabilidades.
 
 Ver [12 — Segurança e integridade do projeto](12-SEGURANCA-E-INTEGRIDADE.md).
+
+## Princípio transversal — Autonomia delimitada e eficiência
+
+Executar o que já está autorizado, sem microaprovações, e parar diante de decisão material ou gate pendente. Não trocar qualidade, segurança ou evidência por velocidade. Consultar fontes e procedimentos pertinentes; reaproveitar provas cuja validade esteja demonstrada, revalidar apenas o alcance necessário e evitar repetição sem justificativa. [Governança e matriz de autoridade](05-GOVERNANCA-E-HOMOLOGACAO.md).

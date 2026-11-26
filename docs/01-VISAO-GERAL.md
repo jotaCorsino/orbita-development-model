@@ -53,3 +53,7 @@ Essa organização cria uma relação um-para-um entre os contextos usados para 
 O GitHub permanece como fonte persistente da verdade. Os agentes de planejamento e implementação mantêm contextos de trabalho especializados, enquanto a pasta local materializa a working copy sincronizada com o remoto.
 
 Ver [10 — Identidade e ambiente do projeto](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).
+
+## Composição e capacidades
+
+O núcleo é independente de fornecedor e pode ser usado diretamente ou combinado com HUB organizacional e métodos especializados adotados para domínios explícitos. Knowledge, Skills e Tools apoiam o trabalho sem constituir níveis de autoridade. Ver [papéis e composição](03-PAPEIS-E-RESPONSABILIDADES.md), [aplicação](08-APLICACAO-E-EVOLUCAO.md) e [dependências](10-IDENTIDADE-E-AMBIENTE-DO-PROJETO.md).

@@ -126,3 +126,25 @@ Possíveis resultados:
 - **Replanejamento necessário** — a solução ou requisito precisa ser revisto.
 
 O template está em [../templates/HOMOLOGACAO-TEMPLATE.md](../templates/HOMOLOGACAO-TEMPLATE.md).
+
+## Autoridade e risco — matriz operacional
+
+Classificar ação concreta por autoridade/escopo, destino, dados e acesso, reversibilidade, persistência, indisponibilidade, dependências, custo, incerteza e dimensões de aceite. Investigar desconhecidos de forma segura; controle mais restritivo aplicável governa a ação afetada, não todas as demais. Os níveis de formalidade de projeto permanecem distintos.
+
+| Impacto | Controle |
+| --- | --- |
+| Baixo | Consulta autorizada, diagnóstico focal, ajuste reversível e teste isolado inerentes ao escopo: executar e evidenciar sem microaprovação, preservando gate previsto |
+| Intermediário | Mudança funcional, integração isolada, pacote de QA: escopo, refs, critérios, dependências, regressão/segurança e homologação proporcionais |
+| Crítico/material | Produção, dados reais, migração, permissões sensíveis, exclusão material, custo não aprovado ou publicação: autorização específica competente, preflight/runbook, recuperação e pós-check; parar se faltar requisito |
+
+Baixo risco fora do escopo não é autorização. Alto impacto já explicitamente autorizado e com controles cumpridos não exige novo aceite redundante. Autorizações identificam objeto, revisão, destino e condições; um gate pode cobrir artefato e operação se explícito. Agente pode escolher implementação técnica equivalente delegada, corrigir a própria falha, agrupar ações independentes e preparar entrega no fluxo autorizado. Não altera requisito, arquitetura material, direção criativa, contrato, custo, segurança, destino, direitos ou gate por conveniência. Aprovação com ressalva identifica pendência, impacto, responsável, condição de avanço e gate posterior; não dispensa requisito crítico ou obrigatório.
+
+### Correção inseparável
+
+Somente quando todas as condições forem satisfeitas: necessária ao critério autorizado; menor mudança demonstrável; preserva objetivo, contratos, direção e comportamento alheio; permanece no risco, destino, custo e autoridade concedidos; pode ser testada e evidenciada sem dispensar controles. Registrar no diff/entrega. Caso contrário, registrar necessidade fora do escopo e elevar decisão material. Risco crítico exige comunicação imediata e interrupção da ação afetada conforme segurança.
+
+### Reutilização de evidência
+
+Identificar afirmação/critério, revisão, artefato, ambiente, dados, configuração, dependências, método, resultado, limitações, fonte e delta desde a prova. Reutilizar apenas quando cobertura e pressupostos permanecem válidos, prova recuperável e gate não exige independência/repetição. Cobertura parcial: executar lacuna; mudança relevante: revalidar alcance afetado. Distinguir executado agora, reutilizado, não testado e não aplicável com justificativa. Hash não prova instalação ou segurança; pré e pós-operação comprovam momentos diferentes. Evidência técnica não substitui aceite visual/UX nem homologação. Não contar reutilização como nova execução.
+
+Para desempenho, consultar [protocolo de avaliação da etapa 09](../proposals/007-09-EFICIENCIA-E-AUTONOMIA.md) §7: baseline comparável, tempo ativo/ciclo, intervenções necessárias/evitáveis, repetição, reuso, retomada, retrabalho, reincidência, recursos, qualidade/segurança e encerramento. Dados ausentes não são zero; não alegar ganho sem comparação válida nem omitir controles para melhorar métricas.

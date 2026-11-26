@@ -1,10 +1,12 @@
-# TASK — Título
+# [ID] — [Título humano]
 
 ## Identidade / base
 
 - **Projeto:** [nome canônico]
 - **Repositório:** [owner/repo]
-- **Base esperada:** [branch, tag ou estado homologado]
+- **Base esperada:** [branch, tag, commit ou estado homologado]
+- **Autorização / gate:** [decisão, escopo e referência]
+- **Fontes / dependências:** [requisitos, AGENTS/revisão, runbook e Skill/Tool selecionada quando pertinente]
 
 ## Objetivo
 

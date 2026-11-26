@@ -2,9 +2,11 @@
 
 - **Categoria:** [Ambiente / Operação / Pitfall / Integração / Restrição / outra]
 - **Estado:** [Vigente / Revalidar / Obsoleto]
-- **Verificado em:** [AAAA-MM-DD]
+- **Verificado em:** [AAAA-MM-DD da evidência, não da edição]
+- **Tipo de evidência:** [estática / teste isolado / operação / documento de fornecedor / relato — limites]
 - **Origem:** [tarefa / PR / troubleshooting / operação / evidência]
-- **Escopo:** [onde este conhecimento se aplica]
+- **Escopo:** [onde se aplica, versão, ambiente e condições]
+- **Relações opcionais:** [entrada/origem relacionada, sem duplicação]
 
 ## Conhecimento
 
@@ -16,7 +18,7 @@
 
 ## Evidência / origem
 
-[Referência suficiente para recuperar a comprovação.]
+[Referência recuperável, afirmação comprovada e limites; não confundir relato, hipótese e observação.]
 
 ## Revalidar quando
 

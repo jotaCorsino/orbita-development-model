@@ -33,7 +33,7 @@ O responsável humano:
 3. inicia uma nova conversa dentro desse Projeto;
 4. apresenta a ideia inicial do software;
 5. fornece o repositório do Método ÓRBITA;
-6. fornece o repositório remoto criado para o novo software.
+6. fornece o repositório remoto criado para o novo software e confirma as fontes metodológicas/revisões adotadas, incluindo HUB/métodos somente quando aplicáveis.
 
 Neste momento não existe autorização implícita para implementar funcionalidades.
 
@@ -45,7 +45,7 @@ O agente de planejamento deve:
 2. compreender papéis, governança, fluxo, evidências e homologação;
 3. inspecionar o repositório remoto do novo projeto;
 4. confirmar que entendeu como deverá trabalhar;
-5. compreender a ideia, problema, usuários, restrições e objetivo inicial do software.
+5. compreender a ideia, problema, usuários, restrições e objetivo inicial do software; identificar Skills/Tools pertinentes sem impor adoção e registrar decisões necessárias.
 
 ### 3. O agente de planejamento funda o projeto no repositório remoto
 
@@ -96,6 +96,10 @@ Indicadores visuais podem ser usados para facilitar a leitura, mas devem estar s
 Quando README e roadmap acompanharem o progresso, ambos devem permanecer coerentes após mudanças de estado. O README funciona como visão rápida; o roadmap preserva o detalhamento.
 
 Projetos muito simples, bibliotecas pequenas ou repositórios sem evolução por fases podem adaptar ou omitir o painel de acompanhamento para evitar burocracia artificial.
+
+### Perfis de apresentação
+
+Perfil A — construção/primeira entrega: macroetapas, estado textual e próximo gate. Perfil B — produto com baseline homologada em evolução: baseline/release/implantação distintamente comprovadas, iniciativas ativas e próxima pendência; preservar histórico da primeira entrega. Perfil simples: adaptar/omitir painel. Não inferir publicação da homologação. [Modelos ilustrativos A/B](../proposals/007-08-DOCUMENTACAO-E-NOMENCLATURA.md) §4. O template existente continua único e adaptável.
 
 ### Backlog no README inicial
 
@@ -176,7 +180,7 @@ O agente de implementação deve, conforme o estado encontrado:
 5. buscar o estado do repositório remoto;
 6. sincronizar a branch principal sem apagar conteúdo local único silenciosamente;
 7. confirmar que README e documentação inicial estão presentes localmente;
-8. verificar branch atual, remoto e estado da árvore;
+8. verificar branch atual, HEAD, remoto, estado da árvore e presença do AGENTS/equivalente, backlog e índice Knowledge; confirmar fonte/revisão adotada;
 9. relatar as evidências da sincronização;
 10. parar.
 

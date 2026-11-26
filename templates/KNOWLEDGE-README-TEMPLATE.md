@@ -18,10 +18,13 @@ Consulte este índice antes de tarefas relevantes e abra somente as entradas pot
 
 ## Regras
 
-- registrar somente conclusões comprovadas, reutilizáveis e operacionalmente relevantes;
+- registrar somente conclusões comprovadas, reutilizáveis, operacionalmente relevantes, não triviais e compactáveis;
 - não registrar hipóteses como conhecimento Vigente;
 - não armazenar segredos, tokens, senhas ou dados sensíveis;
 - não duplicar documentação canônica;
 - atualizar uma entrada existente quando a conclusão for a mesma;
 - criar novo `KN-xxx` somente para conhecimento distinto;
 - revalidar quando a decisão depender de informação volátil.
+
+- manter data de evidência, escopo/condições e fonte; transições de estado justificadas, sem expiração arbitrária;
+- conflito exige fonte competente e prova atual; promoção entre bases exige direitos, sanitização, aplicabilidade, evidência e aceite do destino; referenciar antes de copiar.

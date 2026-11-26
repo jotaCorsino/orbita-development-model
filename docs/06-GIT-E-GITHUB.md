@@ -136,3 +136,9 @@ Boas práticas esperadas, conforme a criticidade:
 Se um segredo real for encontrado no histórico, removê-lo do arquivo atual não é suficiente. O incidente deve ser reportado e a credencial deve ser revogada/rotacionada quando aplicável.
 
 Ver [Segurança e integridade](12-SEGURANCA-E-INTEGRIDADE.md).
+
+## Limpeza operacional proporcional
+
+Verificar continuamente resíduos e no encerramento. Classificar alvo: permanente, operacional, recuperação, evidência, trabalho ativo, temporário, obsoleto candidato ou indeterminado; aplicar maior proteção quando classes coincidirem. Idade, extensão, nome, merge ou existência de backup não demonstram elegibilidade. Preservar estado local único, recuperação, histórico e dependências. Só descartar autonomamente temporário próprio isolado criado no ciclo autorizado sem material exclusivo, terceiros ou dependências. Backups, dados, ambientes, refs remotas, trabalho não integrado, recursos de terceiros e exclusões irreversíveis exigem autorização competente e escopo delimitado; não impor quantidade universal de backups.
+
+Procedimento proporcional: prevenir resíduos; inventariar alvos, titularidade, classes, dependências e identidade real (symlink/mount/reparse quando pertinente); definir autorização e preservação/recuperação; conferir alvo imediatamente antes da ação; executar apenas lote autorizado, sem exclusão ampla por padrão; verificar ausência dos alvos e preservação dos demais/funcionamento; registrar falhas parciais e exceção com dono, razão, risco e condição de saída. Dry-run não comprova exclusão; hash não comprova restauração. Não criar backup sem finalidade nem apagar backup existente por estética. Não fechar PR ou excluir branch só porque antiga/mergeada; verificar conteúdo, consumidores e autorização. Não declarar limpeza local sem inspeção. Usar [verificação final](../templates/VERIFICACAO-FINAL-TEMPLATE.md).

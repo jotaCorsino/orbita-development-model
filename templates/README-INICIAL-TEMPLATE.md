@@ -111,3 +111,7 @@ Ao utilizá-lo:
 8. mantenha a seção **Backlog** como área padrão de captura de necessidades futuras, mesmo quando inicialmente vazia;
 9. mantenha o link para **Knowledge** e crie `knowledge/README.md` mesmo quando a base ainda estiver vazia;
 10. remova exemplos e placeholders antes de publicar o README real.
+
+### Adaptação para produto em evolução (perfil B)
+
+Substituir painel de fases por baseline homologada (ref/escopo), release (versão comprovada ou não publicada), implantação (somente quando comprovada), iniciativas ativas, estados e próximo gate. Preservar histórico de primeira entrega no registro próprio. Perfil A permanece padrão para construção; perfil simples pode omitir painel. Não usar porcentagem sem denominador objetivo. O link Knowledge é relativo à raiz do README gerado, não ao diretório templates.
