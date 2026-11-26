@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catálogo fictício</title>
+<style>
+body{font:16px Arial,sans-serif;color:#222;background:#fafafa;margin:24px}main{max-width:600px;margin:auto}h1{font-size:24px}form{display:flex;gap:8px;align-items:center;flex-wrap:wrap}input,button{font:inherit;padding:9px;border:1px solid #777;border-radius:4px;background:white}button{cursor:pointer}li{padding:6px 0}#status{margin:16px 0}ul{padding-left:22px}
+</style>
+<main>
+<h1>Catálogo de livros fictícios</h1>
+<form id="search"><label for="query">Título</label><input id="query" type="search"><button>OK</button></form>
+<p id="status"></p><ul id="results"></ul>
+</main>
+<script>
+const books=['A Ilha de Vidro','O Jardim de Papel','Mapas do Céu'];
+const form=document.querySelector('#search'),query=document.querySelector('#query'),results=document.querySelector('#results');
+function render(items){results.replaceChildren(...items.map(title=>{const li=document.createElement('li');li.textContent=title;return li;}));}
+form.addEventListener('submit',event=>{event.preventDefault();render(books.filter(title=>title.toLocaleLowerCase('pt-BR').includes(query.value.trim().toLocaleLowerCase('pt-BR'))));});
+render(books);
+</script>
+</html>

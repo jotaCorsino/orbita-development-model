@@ -80,4 +80,4 @@ Antes de prosseguir com a etapa 11, o responsável determinou que o ÓRBITA não
 
 [Correção de neutralidade e isolamento](007-11-NEUTRALIDADE-E-ISOLAMENTO.md): preparação dentro da etapa 11, sem nova etapa no denominador. Correção homologada pelo responsável e integrada pela [PR #52](https://github.com/jotaCorsino/orbita-development-model/pull/52); validação de campo anterior foi substituída por proposta de pilotos fictícios independentes. Histórico e distribuição limpa aguardam decisão específica.
 
-- [11 — Validação prática](007-11-VALIDACAO-PRATICA.md): rodada inicial preservada, ISO-001 integrada; rodada complementar independente em andamento. 12 de 14 etapas homologadas; etapa 12 não autorizada.
+- [11 — Validação prática](007-11-VALIDACAO-PRATICA.md): rodada inicial preservada, ISO-001 integrada; rodada complementar independente executada, incluindo escolha humana e aplicação focal de Skill; entrega para homologação limitada, sem evidência causal ou adoção real. 12 de 14 etapas homologadas; etapa 12 não autorizada.
